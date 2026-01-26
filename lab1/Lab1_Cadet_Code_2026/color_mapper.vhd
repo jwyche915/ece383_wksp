@@ -42,6 +42,7 @@ constant num_vertical_gridblocks : integer := 8;
 constant center_column : integer := 320;
 constant center_row : integer := 220;
 constant hash_size : integer := 2;
+constant trigger_size : integer := 4;
 constant hash_horizontal_spacing : integer := 10;
 constant hash_vertical_spacing : integer := 15;
 
@@ -69,13 +70,26 @@ is_horizontal_hash <=
     is_within_grid and
     (((position.col - grid_start_col) mod hash_vertical_spacing) = 0) and        --evenly spaced hash marks
     ((position.row >= (center_row - hash_size)) and (position.row <= (center_row + hash_size)));    --hash length [(2*hash_size) + 1] pixels tall
+is_trigger_time <=
+    is_within_grid and
+    ( ((position.row = grid_start_row) and (position.col >= (trigger.t - trigger_size)) and (position.col <= (trigger.t + trigger_size))) or
+    ((position.row = grid_start_row + 1) and (position.col >= (trigger.t - (trigger_size - 1))) and (position.col <= (trigger.t + (trigger_size - 1)))) or
+    ((position.row = grid_start_row + 2) and (position.col >= (trigger.t - (trigger_size - 2))) and (position.col <= (trigger.t + (trigger_size - 2)))) or
+    ((position.row = grid_start_row + 3) and (position.col >= (trigger.t - (trigger_size - 3))) and (position.col <= (trigger.t + (trigger_size - 3)))) );
+is_trigger_volt <=
+    is_within_grid and
+    ( ((position.col = grid_start_col) and (position.row >= (trigger.v - trigger_size)) and (position.row <= (trigger.v + trigger_size))) or
+    ((position.col = grid_start_col + 1) and (position.row >= (trigger.v - (trigger_size - 1))) and (position.row <= (trigger.v + (trigger_size - 1)))) or
+    ((position.col = grid_start_col + 2) and (position.row >= (trigger.v - (trigger_size - 2))) and (position.row <= (trigger.v + (trigger_size - 2)))) or
+    ((position.col = grid_start_col + 3) and (position.row >= (trigger.v - (trigger_size - 3))) and (position.row <= (trigger.v + (trigger_size - 3)))) );
 
 -- Use your booleans to choose the color
 --color <=        trigger_color when (is_trigger_time or is_trigger_volt) else -- You can do multiple lines like this
 color <=    ch1_color       when is_ch1_line    else
             ch2_color       when is_ch2_line    else
+            trigger_color   when (is_trigger_time or is_trigger_volt) else
             gridline_color  when (is_horizontal_gridline or is_vertical_gridline) else
-            hash_color      when (is_vertical_hash or is_horizontal_hash) else
+            hash_color      when (is_vertical_hash or is_horizontal_hash) else 
             background_color;           
 
 end color_mapper_arch;

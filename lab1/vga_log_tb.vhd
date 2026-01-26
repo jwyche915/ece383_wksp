@@ -99,6 +99,8 @@ begin
 
     -- optional: enable channels / trigger changes (edit as desired)
     wait for 200*CLK_PERIOD;
+    trigger.t <= to_unsigned(320, trigger.t'length);
+    trigger.v <= to_unsigned(220, trigger.v'length);
 
 
 

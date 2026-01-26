@@ -2,9 +2,9 @@
 2020.2
 Nov  8 2024
 22:36:57
-C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab1/Lab1_Cadet_Code_2026/color_mapper.vhd,1769396382,vhdl,,,,color_mapper,,,,,,,,
-C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab1/Lab1_Cadet_Code_2026/ece383_pkg.vhd,1769093286,vhdl,C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab1/Lab1_Cadet_Code_2026/color_mapper.vhd,,,ece383_pkg,,,,,,,,
+C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab1/Lab1_Cadet_Code_2026/color_mapper.vhd,1769443325,vhdl,,,,color_mapper,,,,,,,,
+C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab1/Lab1_Cadet_Code_2026/ece383_pkg.vhd,1769093286,vhdl,C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab1/vga_log_tb.vhd,,,ece383_pkg,,,,,,,,
 C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab1/Lab1_Cadet_Code_2026/vga_signal_generator.vhd,1769386945,vhdl,,,,vga_signal_generator,,,,,,,,
 C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab1/counter.vhd,1769011557,vhdl,C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab1/Lab1_Cadet_Code_2026/vga_signal_generator.vhd,,,counter,,,,,,,,
 C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab1/instructor_tb.vhd,1769386994,vhdl,,,,instructor_tb,,,,,,,,
-C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab1/vga_log_tb.vhd,1769393475,vhdl,,,,vga_log_tb,,,,,,,,
+C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab1/vga_log_tb.vhd,1769443480,vhdl,,,,vga_log_tb,,,,,,,,
