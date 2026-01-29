@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../Lab1_Cadet_Code_2026/numeric_stepper.vhd" \
+"../../../../../Lab1_Cadet_Code_2026/numeric_stepper_tb.vhd" \
+
+# Do not sort compile order
+nosort

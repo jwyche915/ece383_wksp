@@ -72,6 +72,7 @@ package ece383_pkg is
     num_bits  : integer := 8;
     max_value : integer := 127;
     min_value : integer := -128;
+	start_value : integer := 0;
     delta     : integer := 10
   );
   port (

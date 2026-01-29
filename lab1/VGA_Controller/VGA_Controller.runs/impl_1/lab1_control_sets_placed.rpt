@@ -1,0 +1,91 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Wed Jan 28 17:19:29 2026
+| Host         : WycheSurfacePro running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file lab1_control_sets_placed.rpt
+| Design       : lab1
+| Device       : xc7a200t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    13 |
+|    Minimum number of control sets                        |    13 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    63 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    13 |
+| >= 0 to < 4        |     4 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     4 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     2 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              61 |           14 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              34 |           15 |
+| Yes          | No                    | No                     |               4 |            4 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              30 |           11 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------------------------------+--------------------------------------------------------+-----------------------------------------------------------------+------------------+----------------+--------------+
+|                      Clock Signal                      |                      Enable Signal                     |                         Set/Reset Signal                        | Slice Load Count | Bel Load Count | Bels / Slice |
++--------------------------------------------------------+--------------------------------------------------------+-----------------------------------------------------------------+------------------+----------------+--------------+
+|  clk_IBUF                                              | trigv_stepper/prev_down0_out                           |                                                                 |                1 |              1 |         1.00 |
+|  clk_IBUF                                              | trigv_stepper/prev_up1_out                             |                                                                 |                1 |              1 |         1.00 |
+|  clk_IBUF                                              | trigt_stepper/prev_down0_out                           |                                                                 |                1 |              1 |         1.00 |
+|  clk_IBUF                                              | trigt_stepper/prev_up1_out                             |                                                                 |                1 |              1 |         1.00 |
+|  inst_video/mmcm_adv_inst_display_clocks/inst/clk_out2 |                                                        | inst_video/inst_dvid/shift_red[7]_i_1_n_0                       |                1 |              5 |         5.00 |
+|  inst_video/mmcm_adv_inst_display_clocks/inst/clk_out2 |                                                        | inst_video/inst_dvid/shift_red[9]_i_1_n_0                       |                2 |              6 |         3.00 |
+|  clk_IBUF                                              | trigv_stepper/process_q[10]_i_1_n_0                    | inst_video/Inst_vga/inst_vga_signal_gen/h_counter/SR[0]         |                3 |             10 |         3.33 |
+|  clk_IBUF                                              | trigt_stepper/process_q[10]_i_1__0_n_0                 | inst_video/Inst_vga/inst_vga_signal_gen/h_counter/SR[0]         |                3 |             10 |         3.33 |
+|  inst_video/mmcm_adv_inst_display_clocks/inst/clk_out1 | inst_video/Inst_vga/inst_vga_signal_gen/h_counter/E[0] | inst_video/Inst_vga/inst_vga_signal_gen/h_counter/SR[0]         |                5 |             10 |         2.00 |
+|  inst_video/mmcm_adv_inst_display_clocks/inst/clk_out1 |                                                        | inst_video/Inst_vga/inst_vga_signal_gen/h_counter/SR[0]         |                7 |             11 |         1.57 |
+|  inst_video/mmcm_adv_inst_display_clocks/inst/clk_out1 |                                                        | inst_video/Inst_vga/inst_vga_signal_gen/h_blank_is_low_reg_3[0] |                5 |             12 |         2.40 |
+|  inst_video/mmcm_adv_inst_display_clocks/inst/clk_out2 |                                                        |                                                                 |                6 |             29 |         4.83 |
+|  inst_video/mmcm_adv_inst_display_clocks/inst/clk_out1 |                                                        |                                                                 |                8 |             32 |         4.00 |
++--------------------------------------------------------+--------------------------------------------------------+-----------------------------------------------------------------+------------------+----------------+--------------+
+
+

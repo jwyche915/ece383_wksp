@@ -1,2 +1,4 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab1/vga_log_tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'vga_log_tb'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab1/Lab1_Cadet_Code_2026/numeric_stepper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'numeric_stepper'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab1/Lab1_Cadet_Code_2026/numeric_stepper_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'NumStepper_tb'

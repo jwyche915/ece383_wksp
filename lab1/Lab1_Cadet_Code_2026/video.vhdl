@@ -59,7 +59,7 @@ begin
 	------------------------------------------------------------------------------
 	-- H and V synch are used to interface to the DVID module
 	------------------------------------------------------------------------------
-	Inst_vga: vga
+	Inst_vga: entity work.vga
 		port map ( clk => pixel_clk,
 			reset_n => reset_n,
 			vga => vga_signal,
