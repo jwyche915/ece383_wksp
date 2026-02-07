@@ -1,0 +1,10 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../src/keyboard.vhd" \
+"../../../../src/lec11.vhdl" \
+"../../../../src/lec11_cu.vhd" \
+"../../../../src/lec11_dp.vhdl" \
+"../../../../src/lec11_tb.vhdl" \
+
+# Do not sort compile order
+nosort
