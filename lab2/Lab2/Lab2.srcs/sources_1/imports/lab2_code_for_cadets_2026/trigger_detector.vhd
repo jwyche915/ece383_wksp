@@ -18,7 +18,8 @@ entity trigger_detector is
 end entity trigger_detector;
 
 architecture trigger_detector_arch of trigger_detector is
-    signal previous : unsigned(15 downto 0);
+    signal previous_sample : unsigned(15 downto 0);
+    
 begin
 
     -- Register to hold previous value
@@ -27,12 +28,15 @@ begin
         if rising_edge(clk) then
             if reset_n = '0' then
                 -- Add code here
-            elsif 
+                crossed_trigger <= '0';
+            else 
                 -- Add code here
+                previous_sample <= monitored_signal;
             end if;
         end if;
     end process;
 
-    crossed_trigger <= -- Add code here
+    -- Add code here 
+    crossed_trigger <= '1' when (monitored_signal > threshold) AND (previous_sample < threshold) else '0';
 
 end architecture trigger_detector_arch;

@@ -82,20 +82,6 @@ architecture lab2_datapath_arch of lab2_datapath is
     
 begin
 
-    -- Determine if the current row matches the stored data from BRAM which means the channel should be active (drawn)
-	-- Add code here
-	ch1_in_vgrid <= (unsigned(ch1.from_bram(15 downto 7)) > 55) and
-	                (unsigned(ch1.from_bram(15 downto 7)) < 457) and
-	                (unsigned(ch1.from_bram(15 downto 7)) = (position.row + 36));
-	ch2_in_vgrid <= (unsigned(ch2.from_bram(15 downto 7)) > 55) and
-	                (unsigned(ch2.from_bram(15 downto 7)) < 457) and
-	                (unsigned(ch2.from_bram(15 downto 7)) = (position.row + 36));
-	               
-    ch1.active <= '1' when ch1_in_vgrid else
-                  '0';
-    ch2.active <= '1' when ch2_in_vgrid else
-                  '0';
-
 	-------------------------------------------------------------------------------
 	--  Buffer a copy of the sample memory to look for positive trigger crossing
 	--  "Loop back" digitized audio input to the output to confirm interface is working
@@ -110,73 +96,75 @@ begin
 			elsif(sw_ready = '1') then
 				-- Add code here
 				ch1.to_ac <= ch1.from_ac;
+				ch1.incoming_sample <= ch1.from_ac(17 downto 2);
 				ch2.to_ac <= ch2.from_ac;
+				ch2.incoming_sample <= ch2.from_ac(17 downto 2);
 			end if;
 		end if;
 	end process;
+	
+	----------------------------------------------------------------------------------
+	-- Audio Codec stuff goes here
+            --  '0' simulate audio; '1' live audio
+            -- should a switch go here?
+    -----------------------------------------------------------------------------------
+    is_live <=  '0' when (switch(3) = '0') else
+                '1';         
 
-    -- Convert Signed sample from Codec into an unsigned value
-    -- Add code here (Look at make_unsigned function)
-    ch1.current_sample <= make_unsigned(ch1.incoming_sample);
-    ch2.current_sample <= make_unsigned(ch2.incoming_sample);
-    
-    -- Send the unsigned current sample to the BRAM
-    -- Add code here
-     
-	
-    -- Need logic for the FLAG register
-	-- Add code here
-	
-    ------------------------------------------------------------------------------
-	-- If a button has been pressed then increment of decrement the trigger time and Volt
-	--    should this be debounced?
-	--  Use a debounced numeric stepper
-	------------------------------------------------------------------------------
-    
-    -- Add 2 numeric steppers
-    trigv_stepper : entity work.numeric_stepper
-    generic map (
-        num_bits => 11,
-        max_value => 420,
-        min_value => 20,
-        start_value => 220,
-        delta => 10
-    )
-    port map (
-        clk => clk,
-        reset_n => reset_n,
-        en => reset_n,
-        up => btn(DOWN),       --up in step equates to going down on screen, so use the down button
-        down => btn(UP),       --down in step equated to going up on screen, so use the up button
-        q => num_stepper_v
-    );
-    
-    trigt_stepper : entity work.numeric_stepper
-    generic map (
-        num_bits => 11,
-        max_value => 620,
-        min_value => 20,
-        start_value => 320,
-        delta => 10
-    )
-    port map (
-        clk => clk,
-        reset_n => reset_n,
-        en => reset_n,
-        up => btn(RIGHT),       --up in step equates to moving right on screen, so use right button
-        down => btn(LEFT),      --down in step equated to moving left on screen, so use left button
-        q => num_stepper_t
-    );
+    Audio_Codec : Audio_Codec_Wrapper
+        Port map ( clk => clk,
+            reset_n => reset_n, 
+            ac_mclk => ac_mclk,
+            ac_adc_sdata => ac_adc_sdata,
+            ac_dac_sdata => ac_dac_sdata,
+            ac_bclk => ac_bclk,
+            ac_lrclk => ac_lrclk,
+            ready => sw_ready,
+            L_bus_in => ch1.to_ac, -- left channel input to DAC
+            R_bus_in => ch2.to_ac, -- right channel input to DAC
+            L_bus_out => ch1.from_ac, -- left channel output from ADC
+            R_bus_out => ch2.from_ac, -- right channel output from ADC
+            scl => scl,
+            sda => sda,
+            sim_live => is_live);  --  '0' simulate audio; '1' live audio
 
-    trigger.v <= unsigned(num_stepper_v);
-    trigger.t <= unsigned(num_stepper_t);
-	
 	-------------------------------------------------------------------------------
 	-- Address counter for RAM
 	-- What range of addresses does it need to span?  Should it start at zero or something else?
 	-- How high should it count?  Will it go to its start value on reset or load?
 	-------------------------------------------------------------------------------
 	-- Add code here.  Use a previously built counter.
+	address_counter : entity work.counter
+	generic map (
+	   num_bits => 10,
+	   max_value => 1023
+	)
+	port map (
+	   clk => clk,
+	   reset_n => reset_n,
+	   ctrl => '1',                     ------------------cw_counter_conrol, <= UPDATE THIS LINE FOR GATE CHECK 3
+	   roll => sw_last_address,
+	   Q => writeCntr
+	);
+            
+    write_address <=    writeCntr when (exSel = '0') else
+                        unsigned(exWrAddr);
+
+    ---------------------------------------------------------------------------------------
+    -- Convert Signed sample from Codec into an unsigned value
+    ---------------------------------------------------------------------------------------
+    -- Add code here (Look at make_unsigned function)
+    ch1.current_sample <= make_unsigned(ch1.incoming_sample);
+    ch2.current_sample <= make_unsigned(ch2.incoming_sample);
+    
+    -----------------------------------------------------------------------------------------
+    -- Send the unsigned current sample to the BRAM
+    -----------------------------------------------------------------------------------------
+    -- Add code here
+    ch1.to_bram <=  ch1.current_sample when (exSel = '0') else
+                    exLBus;
+    ch2.to_bram <= ch2.current_sample when (exSel = '0') else
+                    exRBus;
 	
 	-------------------------------------------------------------------------------
 	-- Triggering Logic: A positive crossing of the trigger occurs when the previous value is 
@@ -184,59 +172,19 @@ begin
 	-- the trigger.  Set the status word to alert the FSM that it should start 
 	-- recording the samples.
 	-------------------------------------------------------------------------------		
---	trig_detect : trigger_detector
---    port map (
---        clk  => clk,
---        reset_n => reset_n,
---        threshold => ,
---        ready => sw_ready,
---        monitored_signal => ,
---        crossed_trigger => sw_trigger
---    );
-	
-	-------------------------------------------------------------------------------
-	-- Instantiate the video driver from Lab1 - should integrate smoothly
-	-------------------------------------------------------------------------------
-	video_inst: video port map( 
-		clk =>clk,
-		reset_n => reset_n,
-        tmds => tmds,
-		tmdsb => tmdsb,
-		trigger => trigger,
-		position => position,
-		ch1 => ch1, 
-		ch2 => ch2); 
-
-    ch1.en <= switch(0);  -- Add code here
-    ch2.en <= switch(1);  -- Add code here
-
-
--- Audio Codec stuff goes here
-
---is_live <=   --  '0' simulate audio; '1' live audio
-                  -- should a switch go here?
-                  
-
-Audio_Codec : Audio_Codec_Wrapper
-    Port map ( clk => clk,
-        reset_n => reset_n, 
-        ac_mclk => ac_mclk,
-        ac_adc_sdata => ac_adc_sdata,
-        ac_dac_sdata => ac_dac_sdata,
-        ac_bclk => ac_bclk,
-        ac_lrclk => ac_lrclk,
+	trig_v_detect : trigger_detector
+    port map (
+        clk  => clk,
+        reset_n => reset_n,
+        threshold => trigger.v,
         ready => sw_ready,
-        L_bus_in => ch1.to_ac, -- left channel input to DAC
-        R_bus_in => ch2.to_ac, -- right channel input to DAC
-        L_bus_out => ch1.from_ac, -- left channel output from ADC
-        R_bus_out => ch2.from_ac, -- right channel output from ADC
-        scl => scl,
-        sda => sda,
-        sim_live => is_live);  --  '0' simulate audio; '1' live audio
+        monitored_signal => unsigned(ch1.current_sample),
+        crossed_trigger => sw_trigger
+    );
 
-
+    --------------------------------------------------------------------------------------
     -- BRAM stuff goes here
-
+    --------------------------------------------------------------------------------------
 	reset <= not reset_n;
 	
 	leftChannelMemory : BRAM_SDP_MACRO
@@ -323,13 +271,11 @@ Audio_Codec : Audio_Codec_Wrapper
             RDEN => '1',                    -- read enable
             REGCE => '1',                   -- 1-bit input read output register enable
             DI => ch1.to_bram,                   -- Input data port, width defined by WRITE_WIDTH parameter
-            WE => "10",                     -- Input write enable, width defined by write port depth
+            WE => "11",                     -- Input write enable, width defined by write port depth
             WRADDR => std_logic_vector(write_address),                -- Input write address, width defined by write port depth
             WRCLK => clk,                   -- 1-bit input write clock
-            WREN => cw_write_en);              -- 1-bit input write port enable
+            WREN => '1'); ---------**********************************************--cw_write_en);              -- 1-bit input write port enable
             -- End of BRAM_SDP_MACRO_inst instantiation
-
-
 		
 	rightChannelMemory : BRAM_SDP_MACRO
 		generic map (
@@ -415,11 +361,96 @@ Audio_Codec : Audio_Codec_Wrapper
             RDEN => '1',
             REGCE => '1',                   -- 1-bit input read output register enable
             DI => ch2.to_bram,                    -- Input data port, width defined by WRITE_WIDTH parameter
-            WE => "10",                        -- Input write enable, width defined by write port depth
+            WE => "11",                        -- Input write enable, width defined by write port depth
             WRADDR => std_logic_vector(write_address),                -- Input write address, width defined by write port depth
             WRCLK => clk,                    -- 1-bit input write clock
-            WREN => cw_write_en);                -- 1-bit input write port enable
+            WREN => '1'); ----------*******************************************************cw_write_en);                -- 1-bit input write port enable
             -- End of BRAM_SDP_MACRO_inst instantiation
+
+    ----------------------------------------------------------------------------------------------------------------------
+    -- Determine if the current row matches the stored data from BRAM which means the channel should be active (drawn)
+    ----------------------------------------------------------------------------------------------------------------------
+	-- Add code here
+	ch1_in_vgrid <= (unsigned(ch1.from_bram(15 downto 7)) > 55) and
+	                (unsigned(ch1.from_bram(15 downto 7)) < 457) and
+	                (unsigned(ch1.from_bram(15 downto 7)) = (position.row + 36));
+	ch2_in_vgrid <= (unsigned(ch2.from_bram(15 downto 7)) > 55) and
+	                (unsigned(ch2.from_bram(15 downto 7)) < 457) and
+	                (unsigned(ch2.from_bram(15 downto 7)) = (position.row + 36));
+	               
+    ch1.active <= '1' when ch1_in_vgrid else
+                  '0';
+    ch2.active <= '1' when ch2_in_vgrid else
+                  '0';
+
+    ------------------------------------------------------------------------------
+	-- If a button has been pressed then increment of decrement the trigger time and Volt
+	--    should this be debounced?
+	--  Use a debounced numeric stepper
+	------------------------------------------------------------------------------
+    -- Add 2 numeric steppers
+    trigv_stepper : entity work.numeric_stepper
+    generic map (
+        num_bits => 11,
+        max_value => 420,
+        min_value => 20,
+        start_value => 220,
+        delta => 10
+    )
+    port map (
+        clk => clk,
+        reset_n => reset_n,
+        en => reset_n,
+        up => btn(DOWN),       --up in step equates to going down on screen, so use the down button
+        down => btn(UP),       --down in step equated to going up on screen, so use the up button
+        q => num_stepper_v
+    );
+    
+    trigt_stepper : entity work.numeric_stepper
+    generic map (
+        num_bits => 11,
+        max_value => 620,
+        min_value => 20,
+        start_value => 320,
+        delta => 10
+    )
+    port map (
+        clk => clk,
+        reset_n => reset_n,
+        en => reset_n,
+        up => btn(RIGHT),       --up in step equates to moving right on screen, so use right button
+        down => btn(LEFT),      --down in step equated to moving left on screen, so use left button
+        q => num_stepper_t
+    );
+
+    trigger.v <= unsigned(num_stepper_v);
+    trigger.t <= unsigned(num_stepper_t);
+
+	-------------------------------------------------------------------------------
+	-- Instantiate the video driver from Lab1 - should integrate smoothly
+	-------------------------------------------------------------------------------
+	video_inst: video port map( 
+		clk =>clk,
+		reset_n => reset_n,
+        tmds => tmds,
+		tmdsb => tmdsb,
+		trigger => trigger,
+		position => position,
+		ch1 => ch1, 
+		ch2 => ch2); 
+
+    ch1.en <= switch(0);  -- Add code here
+    ch2.en <= switch(1);  -- Add code here
+
+
+
+
+
+	
+    -- Need logic for the FLAG register
+	-- Add code here
+	
+	
 
     sw(0) <= sw_ready;
     sw(1) <= sw_last_address;

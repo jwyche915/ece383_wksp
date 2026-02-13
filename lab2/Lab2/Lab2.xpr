@@ -118,6 +118,14 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/imports/hw7/button_debounce.vhdl">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../hw7/button_debounce.vhdl"/>
+          <Attr Name="ImportTime" Val="1770264332"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/imports/lab2_code_for_cadets_2026/ece383_pkg.vhd">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../lab2_code_for_cadets_2026/ece383_pkg.vhd"/>
@@ -190,10 +198,26 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/imports/hw7/lec10.vhdl">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../hw7/lec10.vhdl"/>
+          <Attr Name="ImportTime" Val="1770256362"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/imports/lab1/Lab1_Cadet_Code_2026/tdms.vhdl">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../lab1/Lab1_Cadet_Code_2026/tdms.vhdl"/>
           <Attr Name="ImportTime" Val="1769093286"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/lab2_code_for_cadets_2026/trigger_detector.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../lab2_code_for_cadets_2026/trigger_detector.vhd"/>
+          <Attr Name="ImportTime" Val="1770823187"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -239,30 +263,11 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/lab2_code_for_cadets_2026/trigger_detector.vhd">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../lab2_code_for_cadets_2026/trigger_detector.vhd"/>
-          <Attr Name="ImportTime" Val="1770823187"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/lab1/Lab1_Cadet_Code_2026/numeric_stepper_tb.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../../lab1/Lab1_Cadet_Code_2026/numeric_stepper_tb.vhd"/>
           <Attr Name="ImportTime" Val="1769093286"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/hw7/button_debounce.vhdl">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../hw7/button_debounce.vhdl"/>
-          <Attr Name="ImportTime" Val="1770264332"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>

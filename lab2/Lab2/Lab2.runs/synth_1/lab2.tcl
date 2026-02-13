@@ -58,6 +58,8 @@ if {$::dispatch::connected} {
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 3
 set_param xicom.use_bs_reader 1
+set_msg_config -id {HDL 9-1061} -limit 100000
+set_msg_config -id {HDL 9-1654} -limit 100000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a200tsbg484-1
 
@@ -80,6 +82,7 @@ read_verilog -library xil_defaultlib C:/Users/Jason.Wyche/source/repos/ece383_wk
 read_vhdl -library xil_defaultlib {
   C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd
   C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/TWICtl.vhd
+  C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/hw7/button_debounce.vhdl
   C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/ece383_pkg.vhd
   C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab1/Lab1_Cadet_Code_2026/color_mapper.vhd
   C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab1/counter.vhd
@@ -89,7 +92,9 @@ read_vhdl -library xil_defaultlib {
   C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab1/Lab1_Cadet_Code_2026/numeric_stepper.vhd
   C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2_datapath.vhdl
   C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2_fsm.vhdl
+  C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/hw7/lec10.vhdl
   C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab1/Lab1_Cadet_Code_2026/tdms.vhdl
+  C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/trigger_detector.vhd
   C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab1/Lab1_Cadet_Code_2026/vga.vhd
   C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab1/Lab1_Cadet_Code_2026/vga_signal_generator.vhd
   C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab1/Lab1_Cadet_Code_2026/video.vhdl

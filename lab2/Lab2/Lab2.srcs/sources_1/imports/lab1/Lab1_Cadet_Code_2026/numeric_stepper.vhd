@@ -1,5 +1,8 @@
 -- Numeric Stepper: Holds a value and increments or decrements it based on button presses
--- James Trimble, 20 Jan 2026
+-- James Trimble, 20 Jan 2026 (template)
+-- Modified by Jason Wyche, 13 Feb 2026
+--  - completed stepper architecture and added debounce functionality
+---------------------------------------------------------------------------------------------
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
@@ -24,12 +27,30 @@ entity numeric_stepper is
 end numeric_stepper;
 
 architecture numeric_stepper_arch of numeric_stepper is
+
     signal process_q : signed(num_bits-1 downto 0) := to_signed(start_value,num_bits);
     signal prev_up, prev_down : std_logic := '0';
     signal is_increment, is_decrement : boolean := false;
+    signal debounced_up : std_logic;
+    signal debounced_down: std_logic;
+
 begin
-    is_increment <= ((up = '1') and (down = '0') and (en = '1') and (prev_up = '0') and (process_q < max_value));
-    is_decrement <= ((up = '0') and (down = '1') and (en = '1') and (prev_down = '0') and (process_q > min_value));
+    up_button_debounce_inst : entity work.button_debounce
+	   port map(
+	       clk => clk,
+	       reset => reset_n,
+	       button => up,
+	       action => debounced_up);
+			
+    down_button_debounce_inst : entity work.button_debounce
+        port map (
+            clk => clk,
+            reset => reset_n,
+            button => down,
+            action => debounced_down);
+
+    is_increment <= ((debounced_up = '1') and (debounced_down = '0') and (en = '1') and (prev_up = '0') and (process_q < max_value));
+    is_decrement <= ((debounced_up = '0') and (debounced_down = '1') and (en = '1') and (prev_down = '0') and (process_q > min_value));
 
     process(clk)
     begin

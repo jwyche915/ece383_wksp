@@ -1,9 +1,11 @@
 --------------------------------------------------------------------
--- Name:	George York
+-- Name:	George York (template)
 -- Date:	Feb 2, 2021
 -- File:	button_debounce.vhdl
 -- HW:	    Template for HW7
 --	Crs:	ECE 383
+--
+-- Modified by: Jason M. Wyche, 4 Feb 2026
 --
 -- Purp:	For this debouncer, we assume the clock is slowed from 100MHz to 100KHz,
 --          and the ringing time is less than 20ms
