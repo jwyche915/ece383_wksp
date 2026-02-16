@@ -55,7 +55,12 @@ begin
                 processQ <= (others => '0');
                 roll <= '0';
             elsif (ctrl = '1') then
-                processQ <= (processQ + 1) mod (max_value + 1);
+                if (processQ = max_value) then
+                    processQ <= (others => '0');
+                else
+                    processQ <= (processQ + 1);
+                end if;
+                
                 if (processQ = (max_value-1)) then
                     roll <= '1';
                 else

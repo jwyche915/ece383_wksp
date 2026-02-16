@@ -8,7 +8,7 @@
   **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
   **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
   **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-  **** Start of session at: Fri Feb 13 15:50:24 2026
+  **** Start of session at: Sun Feb 15 21:13:36 2026
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 
@@ -25,14 +25,14 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 22200
+INFO: [Synth 8-7075] Helper process launched with PID 10656
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1015.566 ; gain = 469.094
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1015.496 ; gain = 469.699
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'lab2' [C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2.vhd:23]
 INFO: [Synth 8-3491] module 'lab2_datapath' declared at 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2_datapath.vhdl:18' bound to instance 'datapath' of component 'lab2_datapath' [C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2.vhd:61]
 INFO: [Synth 8-638] synthesizing module 'lab2_datapath' [C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2_datapath.vhdl:42]
-INFO: [Synth 8-3491] module 'Audio_Codec_Wrapper' declared at 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:35' bound to instance 'Audio_Codec' of component 'Audio_Codec_Wrapper' [C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2_datapath.vhdl:114]
+INFO: [Synth 8-3491] module 'Audio_Codec_Wrapper' declared at 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:35' bound to instance 'Audio_Codec' of component 'Audio_Codec_Wrapper' [C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2_datapath.vhdl:115]
 INFO: [Synth 8-638] synthesizing module 'Audio_Codec_Wrapper' [C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:53]
 INFO: [Synth 8-3491] module 'audio_init' declared at 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/audio_init.v:24' bound to instance 'initialize_audio' of component 'audio_init' [C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:143]
 INFO: [Synth 8-6157] synthesizing module 'audio_init' [C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/audio_init.v:24]
@@ -46,8 +46,8 @@ INFO: [Synth 8-226] default block is never used [C:/Users/Jason.Wyche/source/rep
 INFO: [Synth 8-256] done synthesizing module 'TWICtl' (0#1) [C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/TWICtl.vhd:119]
 INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/audio_init.v:151]
 INFO: [Synth 8-6155] done synthesizing module 'audio_init' (0#1) [C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/audio_init.v:24]
-INFO: [Synth 8-3491] module 'clk_wiz_1' declared at 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.runs/synth_1/.Xil/Vivado-16548-WycheSurfacePro/realtime/clk_wiz_1_stub.vhdl:6' bound to instance 'audiocodec_master_clock' of component 'clk_wiz_1' [C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:150]
-INFO: [Synth 8-638] synthesizing module 'clk_wiz_1' [C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.runs/synth_1/.Xil/Vivado-16548-WycheSurfacePro/realtime/clk_wiz_1_stub.vhdl:18]
+INFO: [Synth 8-3491] module 'clk_wiz_1' declared at 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.runs/synth_1/.Xil/Vivado-20684-WycheSurfacePro/realtime/clk_wiz_1_stub.vhdl:6' bound to instance 'audiocodec_master_clock' of component 'clk_wiz_1' [C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:150]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_1' [C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.runs/synth_1/.Xil/Vivado-20684-WycheSurfacePro/realtime/clk_wiz_1_stub.vhdl:18]
 	Parameter C_DATA_WIDTH bound to: 24 - type: integer 
 INFO: [Synth 8-3491] module 'i2s_ctl' declared at 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/i2s_ctl.vhd:36' bound to instance 'audio_inout' of component 'i2s_ctl' [C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd:157]
 INFO: [Synth 8-638] synthesizing module 'i2s_ctl' [C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/i2s_ctl.vhd:63]
@@ -694,7 +694,7 @@ INFO: [Synth 8-638] synthesizing module 'counter' [C:/Users/Jason.Wyche/source/r
 	Parameter num_bits bound to: 10 - type: integer 
 	Parameter max_value bound to: 1023 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'counter' (0#1) [C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab1/counter.vhd:47]
-INFO: [Synth 8-3491] module 'trigger_detector' declared at 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/trigger_detector.vhd:9' bound to instance 'trig_v_detect' of component 'trigger_detector' [C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2_datapath.vhdl:175]
+INFO: [Synth 8-3491] module 'trigger_detector' declared at 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/trigger_detector.vhd:9' bound to instance 'trig_v_detect' of component 'trigger_detector' [C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2_datapath.vhdl:176]
 INFO: [Synth 8-638] synthesizing module 'trigger_detector' [C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/trigger_detector.vhd:20]
 INFO: [Synth 8-256] done synthesizing module 'trigger_detector' (0#1) [C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/trigger_detector.vhd:20]
 	Parameter BRAM_SIZE bound to: 18Kb - type: string 
@@ -770,7 +770,7 @@ INFO: [Synth 8-256] done synthesizing module 'trigger_detector' (0#1) [C:/Users/
 	Parameter SIM_COLLISION_CHECK bound to: NONE - type: string 
 	Parameter SRVAL bound to: 72'b000000000000000000000000000000000000000000000000000000000000000000000000 
 	Parameter WRITE_WIDTH bound to: 16 - type: integer 
-INFO: [Synth 8-3491] module 'BRAM_SDP_MACRO' declared at 'C:/Xilinx/Vivado/2024.2/data/vhdl/src/unimacro/BRAM_SDP_MACRO.vhd:38' bound to instance 'leftChannelMemory' of component 'BRAM_SDP_MACRO' [C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2_datapath.vhdl:190]
+INFO: [Synth 8-3491] module 'BRAM_SDP_MACRO' declared at 'C:/Xilinx/Vivado/2024.2/data/vhdl/src/unimacro/BRAM_SDP_MACRO.vhd:38' bound to instance 'leftChannelMemory' of component 'BRAM_SDP_MACRO' [C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2_datapath.vhdl:193]
 INFO: [Synth 8-638] synthesizing module 'unimacro_BRAM_SDP_MACRO__parameterized1' [C:/Xilinx/Vivado/2024.2/data/vhdl/src/unimacro/BRAM_SDP_MACRO.vhd:217]
 	Parameter BRAM_SIZE bound to: 18Kb - type: string 
 	Parameter DEVICE bound to: 7SERIES - type: string 
@@ -1088,7 +1088,7 @@ INFO: [Synth 8-256] done synthesizing module 'unimacro_BRAM_SDP_MACRO__parameter
 	Parameter SIM_COLLISION_CHECK bound to: NONE - type: string 
 	Parameter SRVAL bound to: 72'b000000000000000000000000000000000000000000000000000000000000000000000000 
 	Parameter WRITE_WIDTH bound to: 16 - type: integer 
-INFO: [Synth 8-3491] module 'BRAM_SDP_MACRO' declared at 'C:/Xilinx/Vivado/2024.2/data/vhdl/src/unimacro/BRAM_SDP_MACRO.vhd:38' bound to instance 'rightChannelMemory' of component 'BRAM_SDP_MACRO' [C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2_datapath.vhdl:280]
+INFO: [Synth 8-3491] module 'BRAM_SDP_MACRO' declared at 'C:/Xilinx/Vivado/2024.2/data/vhdl/src/unimacro/BRAM_SDP_MACRO.vhd:38' bound to instance 'rightChannelMemory' of component 'BRAM_SDP_MACRO' [C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2_datapath.vhdl:283]
 INFO: [Synth 8-638] synthesizing module 'unimacro_BRAM_SDP_MACRO__parameterized2' [C:/Xilinx/Vivado/2024.2/data/vhdl/src/unimacro/BRAM_SDP_MACRO.vhd:217]
 	Parameter BRAM_SIZE bound to: 18Kb - type: string 
 	Parameter DEVICE bound to: 7SERIES - type: string 
@@ -1354,10 +1354,10 @@ INFO: [Synth 8-638] synthesizing module 'numeric_stepper__parameterized0' [C:/Us
 	Parameter start_value bound to: 320 - type: integer 
 	Parameter delta bound to: 10 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'numeric_stepper__parameterized0' (0#1) [C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab1/Lab1_Cadet_Code_2026/numeric_stepper.vhd:29]
-INFO: [Synth 8-3491] module 'video' declared at 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab1/Lab1_Cadet_Code_2026/video.vhdl:11' bound to instance 'video_inst' of component 'video' [C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2_datapath.vhdl:432]
+INFO: [Synth 8-3491] module 'video' declared at 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab1/Lab1_Cadet_Code_2026/video.vhdl:11' bound to instance 'video_inst' of component 'video' [C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2_datapath.vhdl:435]
 INFO: [Synth 8-638] synthesizing module 'video' [C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab1/Lab1_Cadet_Code_2026/video.vhdl:22]
-INFO: [Synth 8-3491] module 'clk_wiz_0' declared at 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.runs/synth_1/.Xil/Vivado-16548-WycheSurfacePro/realtime/clk_wiz_0_stub.vhdl:6' bound to instance 'mmcm_adv_inst_display_clocks' of component 'clk_wiz_0' [C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab1/Lab1_Cadet_Code_2026/video.vhdl:51]
-INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.runs/synth_1/.Xil/Vivado-16548-WycheSurfacePro/realtime/clk_wiz_0_stub.vhdl:19]
+INFO: [Synth 8-3491] module 'clk_wiz_0' declared at 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.runs/synth_1/.Xil/Vivado-20684-WycheSurfacePro/realtime/clk_wiz_0_stub.vhdl:6' bound to instance 'mmcm_adv_inst_display_clocks' of component 'clk_wiz_0' [C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab1/Lab1_Cadet_Code_2026/video.vhdl:51]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.runs/synth_1/.Xil/Vivado-20684-WycheSurfacePro/realtime/clk_wiz_0_stub.vhdl:19]
 INFO: [Synth 8-638] synthesizing module 'vga' [C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab1/Lab1_Cadet_Code_2026/vga.vhd:21]
 INFO: [Synth 8-3491] module 'vga_signal_generator' declared at 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab1/Lab1_Cadet_Code_2026/vga_signal_generator.vhd:8' bound to instance 'inst_vga_signal_gen' of component 'vga_signal_generator' [C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab1/Lab1_Cadet_Code_2026/vga.vhd:27]
 INFO: [Synth 8-638] synthesizing module 'vga_signal_generator' [C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab1/Lab1_Cadet_Code_2026/vga_signal_generator.vhd:15]
@@ -1403,9 +1403,9 @@ INFO: [Synth 8-113] binding component instance 'OBUFDS_green' to cell 'OBUFDS' [
 INFO: [Synth 8-113] binding component instance 'OBUFDS_clock' to cell 'OBUFDS' [C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab1/Lab1_Cadet_Code_2026/video.vhdl:102]
 INFO: [Synth 8-256] done synthesizing module 'video' (0#1) [C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab1/Lab1_Cadet_Code_2026/video.vhdl:22]
 INFO: [Synth 8-256] done synthesizing module 'lab2_datapath' (0#1) [C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2_datapath.vhdl:42]
-INFO: [Synth 8-3491] module 'lab2_fsm' declared at 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2_fsm.vhdl:22' bound to instance 'control' of component 'lab2_fsm' [C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2.vhd:88]
-INFO: [Synth 8-638] synthesizing module 'lab2_fsm' [C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2_fsm.vhdl:29]
-INFO: [Synth 8-256] done synthesizing module 'lab2_fsm' (0#1) [C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2_fsm.vhdl:29]
+INFO: [Synth 8-3491] module 'lab2_fsm' declared at 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2_fsm.vhdl:25' bound to instance 'control' of component 'lab2_fsm' [C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2.vhd:88]
+INFO: [Synth 8-638] synthesizing module 'lab2_fsm' [C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2_fsm.vhdl:32]
+INFO: [Synth 8-256] done synthesizing module 'lab2_fsm' (0#1) [C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2_fsm.vhdl:32]
 INFO: [Synth 8-256] done synthesizing module 'lab2' (0#1) [C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2.vhd:23]
 WARNING: [Synth 8-6014] Unused sequential element timeOutCnt_reg was removed.  [C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/TWICtl.vhd:236]
 WARNING: [Synth 8-6014] Unused sequential element errTypeR_reg was removed.  [C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/TWICtl.vhd:313]
@@ -1414,17 +1414,9 @@ WARNING: [Synth 8-6014] Unused sequential element initFbWe_reg was removed.  [C:
 WARNING: [Synth 8-3848] Net Lbus_out in module/entity lab2_datapath does not have driver. [C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2_datapath.vhdl:36]
 WARNING: [Synth 8-3848] Net Rbus_out in module/entity lab2_datapath does not have driver. [C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2_datapath.vhdl:36]
 WARNING: [Synth 8-3848] Net flagQ in module/entity lab2_datapath does not have driver. [C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2_datapath.vhdl:38]
-WARNING: [Synth 8-3848] Net ch1[prev_sample] in module/entity lab2_datapath does not have driver. [C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2_datapath.vhdl:71]
-WARNING: [Synth 8-3848] Net ch2[prev_sample] in module/entity lab2_datapath does not have driver. [C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2_datapath.vhdl:71]
-WARNING: [Synth 8-3848] Net cw in module/entity lab2_fsm does not have driver. [C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2_fsm.vhdl:26]
-WARNING: [Synth 8-7129] Port cw[2] in module lab2_fsm is either unconnected or has no load
-WARNING: [Synth 8-7129] Port cw[1] in module lab2_fsm is either unconnected or has no load
-WARNING: [Synth 8-7129] Port cw[0] in module lab2_fsm is either unconnected or has no load
-WARNING: [Synth 8-7129] Port clk in module lab2_fsm is either unconnected or has no load
-WARNING: [Synth 8-7129] Port reset_n in module lab2_fsm is either unconnected or has no load
+WARNING: [Synth 8-3848] Net ch1[prev_sample] in module/entity lab2_datapath does not have driver. [C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2_datapath.vhdl:72]
+WARNING: [Synth 8-3848] Net ch2[prev_sample] in module/entity lab2_datapath does not have driver. [C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2_datapath.vhdl:72]
 WARNING: [Synth 8-7129] Port sw[2] in module lab2_fsm is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sw[1] in module lab2_fsm is either unconnected or has no load
-WARNING: [Synth 8-7129] Port sw[0] in module lab2_fsm is either unconnected or has no load
 WARNING: [Synth 8-7129] Port ch1[to_ac][17] in module color_mapper is either unconnected or has no load
 WARNING: [Synth 8-7129] Port ch1[to_ac][16] in module color_mapper is either unconnected or has no load
 WARNING: [Synth 8-7129] Port ch1[to_ac][15] in module color_mapper is either unconnected or has no load
@@ -1517,20 +1509,27 @@ WARNING: [Synth 8-7129] Port ch1[to_bram][11] in module color_mapper is either u
 WARNING: [Synth 8-7129] Port ch1[to_bram][10] in module color_mapper is either unconnected or has no load
 WARNING: [Synth 8-7129] Port ch1[to_bram][9] in module color_mapper is either unconnected or has no load
 WARNING: [Synth 8-7129] Port ch1[to_bram][8] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch1[to_bram][7] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch1[to_bram][6] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch1[to_bram][5] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch1[to_bram][4] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch1[to_bram][3] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch1[to_bram][2] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ch1[to_bram][1] in module color_mapper is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1139.387 ; gain = 592.914
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1138.789 ; gain = 592.992
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1139.387 ; gain = 592.914
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1138.789 ; gain = 592.992
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1139.387 ; gain = 592.914
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1138.789 ; gain = 592.992
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 1139.387 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 1138.789 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 12 Unisim elements for replacement
 WARNING: [Netlist 29-151] Pin 'C1' on instance 'datapath/video_inst/inst_dvid/ODDR2_blue' of cell type 'ODDR2' does not have an equivalent function on the new cell type 'ODDR'. Net 'clk_n' that is connected to this pin will not be connected to the replacement instance.
 WARNING: [Netlist 29-151] Pin 'C1' on instance 'datapath/video_inst/inst_dvid/ODDR2_clock' of cell type 'ODDR2' does not have an equivalent function on the new cell type 'ODDR'. Net 'clk_n' that is connected to this pin will not be connected to the replacement instance.
@@ -1552,24 +1551,24 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/lab2_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1230.508 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1236.297 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 8 instances were transformed.
   OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS(x2)): 4 instances
   ODDR2 => ODDR: 4 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1230.508 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1236.297 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:17 . Memory (MB): peak = 1230.508 ; gain = 684.035
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 1236.297 ; gain = 690.500
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a200tsbg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:17 . Memory (MB): peak = 1230.508 ; gain = 684.035
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 1236.297 ; gain = 690.500
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -1579,10 +1578,11 @@ Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  c:/User
 Applied set_property KEEP_HIERARCHY = SOFT for datapath/Audio_Codec/audiocodec_master_clock. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for datapath/video_inst/mmcm_adv_inst_display_clocks. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:17 . Memory (MB): peak = 1230.508 ; gain = 684.035
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 1236.297 ; gain = 690.500
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'TWICtl'
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'button_debounce'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'lab2_fsm'
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -1613,8 +1613,16 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
                  action0 |                      10000000000 |                             1001
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'button_debounce'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+        wait_for_trigger |                              001 |                               00
+          wait_for_ready |                              010 |                               01
+           store_samples |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'lab2_fsm'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:18 . Memory (MB): peak = 1230.508 ; gain = 684.035
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:17 . Memory (MB): peak = 1236.297 ; gain = 690.500
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -1671,10 +1679,12 @@ Detailed RTL Component Info :
 	   9 Input    4 Bit        Muxes := 1     
 	  21 Input    4 Bit        Muxes := 1     
 	   2 Input    4 Bit        Muxes := 15    
+	   3 Input    3 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 1     
 	   3 Input    2 Bit        Muxes := 5     
-	   2 Input    1 Bit        Muxes := 40    
+	   2 Input    1 Bit        Muxes := 41    
 	   4 Input    1 Bit        Muxes := 25    
-	   3 Input    1 Bit        Muxes := 5     
+	   3 Input    1 Bit        Muxes := 6     
 	   9 Input    1 Bit        Muxes := 1     
 	  10 Input    1 Bit        Muxes := 6     
 	  36 Input    1 Bit        Muxes := 1     
@@ -1697,26 +1707,26 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:38 . Memory (MB): peak = 1359.879 ; gain = 813.406
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:36 . Memory (MB): peak = 1364.512 ; gain = 818.715
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-565] redefining clock 'clk'
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:45 . Memory (MB): peak = 1380.242 ; gain = 833.770
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:42 . Memory (MB): peak = 1388.918 ; gain = 843.121
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:50 . Memory (MB): peak = 1444.246 ; gain = 897.773
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:48 . Memory (MB): peak = 1437.277 ; gain = 891.480
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:51 . Memory (MB): peak = 1462.324 ; gain = 915.852
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:48 . Memory (MB): peak = 1454.559 ; gain = 908.762
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -1734,37 +1744,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:55 . Memory (MB): peak = 1616.418 ; gain = 1069.945
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:52 . Memory (MB): peak = 1617.652 ; gain = 1071.855
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:55 . Memory (MB): peak = 1616.418 ; gain = 1069.945
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:52 . Memory (MB): peak = 1617.652 ; gain = 1071.855
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:55 . Memory (MB): peak = 1616.418 ; gain = 1069.945
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:52 . Memory (MB): peak = 1617.652 ; gain = 1071.855
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:55 . Memory (MB): peak = 1616.418 ; gain = 1069.945
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:52 . Memory (MB): peak = 1617.652 ; gain = 1071.855
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:55 . Memory (MB): peak = 1616.418 ; gain = 1069.945
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:52 . Memory (MB): peak = 1617.652 ; gain = 1071.855
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:55 . Memory (MB): peak = 1616.418 ; gain = 1069.945
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:52 . Memory (MB): peak = 1617.652 ; gain = 1071.855
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -1786,14 +1796,14 @@ Report Cell Usage:
 |2     |clk_wiz_1_bbox |     1|
 |3     |CARRY4         |    60|
 |4     |LUT1           |    52|
-|5     |LUT2           |   156|
-|6     |LUT3           |   126|
-|7     |LUT4           |   133|
-|8     |LUT5           |   203|
-|9     |LUT6           |   274|
+|5     |LUT2           |   154|
+|6     |LUT3           |   130|
+|7     |LUT4           |   135|
+|8     |LUT5           |   170|
+|9     |LUT6           |   285|
 |10    |ODDR2          |     4|
 |11    |RAMB18E1       |     4|
-|15    |FDRE           |   484|
+|15    |FDRE           |   488|
 |16    |FDSE           |    36|
 |17    |IBUF           |    10|
 |18    |IOBUF          |     2|
@@ -1801,13 +1811,13 @@ Report Cell Usage:
 |20    |OBUFDS         |     4|
 +------+---------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:55 . Memory (MB): peak = 1616.418 ; gain = 1069.945
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:52 . Memory (MB): peak = 1617.652 ; gain = 1071.855
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 275 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:52 . Memory (MB): peak = 1616.418 ; gain = 978.824
-Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:55 . Memory (MB): peak = 1616.418 ; gain = 1069.945
+Synthesis finished with 0 errors, 0 critical warnings and 270 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:49 . Memory (MB): peak = 1617.652 ; gain = 974.348
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:52 . Memory (MB): peak = 1617.652 ; gain = 1071.855
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 1621.629 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1622.707 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 74 Unisim elements for replacement
 WARNING: [Netlist 29-151] Pin 'C1' on instance 'datapath/video_inst/inst_dvid/ODDR2_blue' of cell type 'ODDR2' does not have an equivalent function on the new cell type 'ODDR'. Net 'clk_out3' that is connected to this pin will not be connected to the replacement instance.
 WARNING: [Netlist 29-151] Pin 'C1' on instance 'datapath/video_inst/inst_dvid/ODDR2_clock' of cell type 'ODDR2' does not have an equivalent function on the new cell type 'ODDR'. Net 'clk_out3' that is connected to this pin will not be connected to the replacement instance.
@@ -1817,19 +1827,19 @@ INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1631.867 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1632.961 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 10 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 2 instances
   OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS(x2)): 4 instances
   ODDR2 => ODDR: 4 instances
 
-Synth Design complete | Checksum: 643acc2b
+Synth Design complete | Checksum: d9c27675
 INFO: [Common 17-83] Releasing license: Synthesis
-119 Infos, 121 Warnings, 0 Critical Warnings and 0 Errors encountered.
+121 Infos, 120 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:01:02 . Memory (MB): peak = 1631.867 ; gain = 1326.480
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1631.867 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:59 . Memory (MB): peak = 1632.961 ; gain = 1328.055
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1632.961 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.runs/synth_1/lab2.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file lab2_utilization_synth.rpt -pb lab2_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Feb 13 15:51:30 2026...
+INFO: [Common 17-206] Exiting Vivado at Sun Feb 15 21:14:38 2026...

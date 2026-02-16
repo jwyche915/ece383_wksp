@@ -68,14 +68,15 @@ architecture lab2_datapath_arch of lab2_datapath is
     
     
     signal counter_reset : std_logic;
+    signal writeCntr: unsigned (9 downto 0);
     signal ch1, ch2: channel_t;       
     signal is_live: std_logic;    
     signal trigger: trigger_t;
     signal num_stepper_t, num_stepper_v : signed(10 downto 0);
-    signal writeCntr: unsigned (9 downto 0);
     signal position: coordinate_t;
     signal reset: std_logic;   
     signal write_address: unsigned(9 downto 0);
+    signal write_enable: std_logic;
     
     signal ch1_in_vgrid : boolean := false;
     signal ch2_in_vgrid : boolean := false;
@@ -132,7 +133,7 @@ begin
 	-- Address counter for RAM
 	-- What range of addresses does it need to span?  Should it start at zero or something else?
 	-- How high should it count?  Will it go to its start value on reset or load?
-	-------------------------------------------------------------------------------
+	-------------------------------------------------------------------------------	
 	-- Add code here.  Use a previously built counter.
 	address_counter : entity work.counter
 	generic map (
@@ -141,8 +142,8 @@ begin
 	)
 	port map (
 	   clk => clk,
-	   reset_n => reset_n,
-	   ctrl => '1',                     ------------------cw_counter_conrol, <= UPDATE THIS LINE FOR GATE CHECK 3
+	   reset_n => cw_counter_control(1),
+	   ctrl => cw_counter_control(0),       -- <= UPDATE THIS LINE FOR GATE CHECK 3
 	   roll => sw_last_address,
 	   Q => writeCntr
 	);
@@ -186,6 +187,8 @@ begin
     -- BRAM stuff goes here
     --------------------------------------------------------------------------------------
 	reset <= not reset_n;
+	write_enable <=    cw_write_en when (exSel = '0') else
+	                   exWen;
 	
 	leftChannelMemory : BRAM_SDP_MACRO
 		generic map (
@@ -274,7 +277,7 @@ begin
             WE => "11",                     -- Input write enable, width defined by write port depth
             WRADDR => std_logic_vector(write_address),                -- Input write address, width defined by write port depth
             WRCLK => clk,                   -- 1-bit input write clock
-            WREN => '1'); ---------**********************************************--cw_write_en);              -- 1-bit input write port enable
+            WREN => write_enable);             -- 1-bit input write port enable
             -- End of BRAM_SDP_MACRO_inst instantiation
 		
 	rightChannelMemory : BRAM_SDP_MACRO
@@ -364,7 +367,7 @@ begin
             WE => "11",                        -- Input write enable, width defined by write port depth
             WRADDR => std_logic_vector(write_address),                -- Input write address, width defined by write port depth
             WRCLK => clk,                    -- 1-bit input write clock
-            WREN => '1'); ----------*******************************************************cw_write_en);                -- 1-bit input write port enable
+            WREN => write_enable);                -- 1-bit input write port enable
             -- End of BRAM_SDP_MACRO_inst instantiation
 
     ----------------------------------------------------------------------------------------------------------------------

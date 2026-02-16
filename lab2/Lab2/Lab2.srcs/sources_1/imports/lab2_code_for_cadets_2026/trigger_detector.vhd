@@ -19,8 +19,10 @@ end entity trigger_detector;
 
 architecture trigger_detector_arch of trigger_detector is
     signal previous_sample : unsigned(15 downto 0);
+    signal is_ready : boolean := false;
     
 begin
+    is_ready <= (ready = '1');
 
     -- Register to hold previous value
     process (clk)
@@ -29,7 +31,7 @@ begin
             if reset_n = '0' then
                 -- Add code here
                 crossed_trigger <= '0';
-            else 
+            elsif (is_ready) then
                 -- Add code here
                 previous_sample <= monitored_signal;
             end if;
@@ -37,6 +39,6 @@ begin
     end process;
 
     -- Add code here 
-    crossed_trigger <= '1' when (monitored_signal > threshold) AND (previous_sample < threshold) else '0';
+    crossed_trigger <= '1' when ((monitored_signal > threshold) AND (previous_sample < threshold)) else '0';
 
 end architecture trigger_detector_arch;

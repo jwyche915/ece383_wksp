@@ -3,7 +3,10 @@
 -- Date:	Spring 2023
 -- File:    lab2_fsm.vhd
 -- HW:	    Lab 2 
--- Pupr:	Lab 2 Finite State Machine for the write circuitry.  
+-- Pupr:	Lab 2 Finite State Machine for the write circuitry. 
+--
+-- Modified By: Jason M Wyche (14 Feb 2026)
+--      completed FSM for Lab2_datapath 
 --
 -- Doc:	Adapted from Dr Coulston's Lab exercise
 -- 	
@@ -28,35 +31,64 @@ end lab2_fsm;
 
 architecture Behavioral of lab2_fsm is
 
---	type state_type is NEED_SOMETHING_HERE;
---	signal state: state_type;
+type state_type is (wait_for_trigger, wait_for_ready, store_samples);
+signal state: state_type;
+
+signal is_ready : boolean := false;
+signal at_last_address : boolean := false;
+signal triggered : boolean := false;
 
 begin
 
 	-------------------------------------------------------------------------------
-	--		SW		meaning
-	--		
+	--     SW		meaning
+	--     sw(0) --> sw_ready (sample from audio codec ready to be processed/stored)
+	--     sw(1) --> sw_last_address (address counter has reached the last address and rolled over to starting adress)
+	--     sw(2) --> sw_trigger (trigger threshold met by signal)    
 	-------------------------------------------------------------------------------
+	is_ready <= (sw(0) = '1');
+    at_last_address <= (sw(1) = '1');
+    triggered <= (sw(2) = '1');
+    
 	state_proces: process(clk)  
 	begin
 		if (rising_edge(clk)) then
---			if (reset_n = '0') then 
---				state <= NEED_SOMETHING_HERE;
---			else 
---				case state is
---					when NEED_SOMETHING_HERE
---				end case;
---			end if;
+			if (reset_n = '0') then 
+				state <= wait_for_trigger;
+			else 
+				case state is
+					when wait_for_trigger =>
+					   state <= wait_for_ready;  -----------------if (triggered) then state <= wait_for_ready; end if;
+					when wait_for_ready =>
+					   if (is_ready) then state <= store_samples; end if;
+					when store_samples =>
+					   if (at_last_address) then 
+					       state <= wait_for_trigger;
+					   elsif (not at_last_address) then
+					       state <= wait_for_ready; 
+					   end if;   
+				end case;
+			end if;
 		end if;
 	end process;
 
 	-------------------------------------------------------------------------------
 	--  CW output table
-	--		CW		meaning
-	--		
+	--		CW		   meaning
+	--		cw(1:0) --> address counter controll
+	--         00      reset
+	--         01      reset
+	--         10      hold
+	--         11      count up
+	--         note: cw(1) is connected to reset_n of counter in lab2_datapath. cw(0) is connected to counter control input
+	--     cw(2) --> write enable for BRAM in lab2_datapath
+	--         0       write NOT enabled
+	--         1       write enabled
 	-------------------------------------------------------------------------------
-	
-	-- NEED_SOMETHING_HERE
+	cw <=  "000"   when state = wait_for_trigger else
+	       "010"   when state = wait_for_ready else
+	       "111"   when state = store_samples  else
+	       "000";
 
 end Behavioral;
 
