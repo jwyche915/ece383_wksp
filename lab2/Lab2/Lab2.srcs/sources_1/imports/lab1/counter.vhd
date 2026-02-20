@@ -34,7 +34,8 @@ use IEEE.NUMERIC_STD.ALL;
 entity counter is
     generic (
             num_bits :  integer := 4;
-            max_value : integer := 9
+            max_value : integer := 9;
+            initial_value : integer := 0
     );     
     Port ( clk : in STD_LOGIC;
            reset_n : in STD_LOGIC;
@@ -45,14 +46,14 @@ entity counter is
 end counter;
 
 architecture Behavioral of counter is
-    signal processQ : unsigned (num_bits-1 downto 0);
+    signal processQ : unsigned (num_bits-1 downto 0) := to_unsigned(initial_value,num_bits);
 
 begin
     process(clk)
     begin
         if (rising_edge(clk)) then
             if (reset_n = '0') then
-                processQ <= (others => '0');
+                processQ <= to_unsigned(initial_value,num_bits);
                 roll <= '0';
             elsif (ctrl = '1') then
                 if (processQ = max_value) then

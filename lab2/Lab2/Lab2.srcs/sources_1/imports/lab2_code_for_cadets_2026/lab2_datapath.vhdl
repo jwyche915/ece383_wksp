@@ -109,7 +109,7 @@ begin
             --  '0' simulate audio; '1' live audio
             -- should a switch go here?
     -----------------------------------------------------------------------------------
-    is_live <=  '0' when (switch(3) = '0') else
+    is_live <=  '0' when (switch(IS_LIVE_SWITCH) = '0') else
                 '1';         
 
     Audio_Codec : Audio_Codec_Wrapper
@@ -138,12 +138,13 @@ begin
 	address_counter : entity work.counter
 	generic map (
 	   num_bits => 10,
-	   max_value => 1023
+	   max_value => 1023,
+	   initial_value => 20
 	)
 	port map (
 	   clk => clk,
 	   reset_n => cw_counter_control(1),
-	   ctrl => cw_counter_control(0),       -- <= UPDATE THIS LINE FOR GATE CHECK 3
+	   ctrl => cw_counter_control(0), 
 	   roll => sw_last_address,
 	   Q => writeCntr
 	);
@@ -374,12 +375,12 @@ begin
     -- Determine if the current row matches the stored data from BRAM which means the channel should be active (drawn)
     ----------------------------------------------------------------------------------------------------------------------
 	-- Add code here
-	ch1_in_vgrid <= (unsigned(ch1.from_bram(15 downto 7)) > 55) and
-	                (unsigned(ch1.from_bram(15 downto 7)) < 457) and
-	                (unsigned(ch1.from_bram(15 downto 7)) = (position.row + 36));
-	ch2_in_vgrid <= (unsigned(ch2.from_bram(15 downto 7)) > 55) and
-	                (unsigned(ch2.from_bram(15 downto 7)) < 457) and
-	                (unsigned(ch2.from_bram(15 downto 7)) = (position.row + 36));
+	ch1_in_vgrid <= --(unsigned(ch1.from_bram(15 downto 7)) > 55) and
+	                --(unsigned(ch1.from_bram(15 downto 7)) < 457) and
+	                (apply_offset(ch1.from_bram(15 downto 7)) = position.row);
+	ch2_in_vgrid <= --(unsigned(ch2.from_bram(15 downto 7)) > 55) and
+	                --(unsigned(ch2.from_bram(15 downto 7)) < 457) and
+	                (apply_offset(ch2.from_bram(15 downto 7)) = position.row);
 	               
     ch1.active <= '1' when ch1_in_vgrid else
                   '0';
@@ -442,8 +443,8 @@ begin
 		ch1 => ch1, 
 		ch2 => ch2); 
 
-    ch1.en <= switch(0);  -- Add code here
-    ch2.en <= switch(1);  -- Add code here
+    ch1.en <= switch(CH1_SWITCH);  -- Add code here
+    ch2.en <= switch(CH2_SWITCH);  -- Add code here
 
 
 

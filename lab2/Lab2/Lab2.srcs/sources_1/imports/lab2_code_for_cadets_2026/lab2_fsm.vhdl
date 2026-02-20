@@ -58,7 +58,7 @@ begin
 			else 
 				case state is
 					when wait_for_trigger =>
-					   if (triggered) then state <= wait_for_ready; end if;  --state <= wait_for_ready; 
+					   if (triggered) then state <= wait_for_ready; end if;
 					when wait_for_ready =>
 					   if (is_ready) then state <= store_samples; end if;
 					when store_samples =>
