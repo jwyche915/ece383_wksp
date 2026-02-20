@@ -179,7 +179,7 @@ begin
         reset_n => reset_n,
         threshold => trigger.v,
         ready => sw_ready,
-        monitored_signal => unsigned(ch1.current_sample),
+        monitored_signal => unsigned(ch1.current_sample(15 downto 7)),
         crossed_trigger => sw_trigger
     );
 

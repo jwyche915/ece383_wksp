@@ -3,134 +3,45 @@
    <wave_state>
    </wave_state>
    <db_ref_list>
-      <db_ref path="lab2_datapath_tb_behav.wdb" id="1">
+      <db_ref path="trigger_detector_tb_behav.wdb" id="1">
          <top_modules>
-            <top_module name="ece383_pkg" />
             <top_module name="glbl" />
-            <top_module name="lab2_datapath_tb" />
+            <top_module name="trigger_detector_tb" />
          </top_modules>
       </db_ref>
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0.000 ns"></ZoomStartTime>
-      <ZoomEndTime time="425.652 ns"></ZoomEndTime>
+      <ZoomEndTime time="740.785 ns"></ZoomEndTime>
       <Cursor1Time time="664.282 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="220"></NameColumnWidth>
-      <ValueColumnWidth column_width="122"></ValueColumnWidth>
+      <NameColumnWidth column_width="218"></NameColumnWidth>
+      <ValueColumnWidth column_width="116"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="28" />
-   <wvobject fp_name="/lab2_datapath_tb/clk" type="logic">
+   <WVObjectSize size="6" />
+   <wvobject fp_name="/trigger_detector_tb/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
    </wvobject>
-   <wvobject fp_name="/lab2_datapath_tb/reset_n" type="logic">
+   <wvobject fp_name="/trigger_detector_tb/reset_n" type="logic">
       <obj_property name="ElementShortName">reset_n</obj_property>
       <obj_property name="ObjectShortName">reset_n</obj_property>
    </wvobject>
-   <wvobject fp_name="/lab2_datapath_tb/ac_mclk" type="logic">
-      <obj_property name="ElementShortName">ac_mclk</obj_property>
-      <obj_property name="ObjectShortName">ac_mclk</obj_property>
+   <wvobject fp_name="/trigger_detector_tb/threshold" type="array">
+      <obj_property name="ElementShortName">threshold[10:0]</obj_property>
+      <obj_property name="ObjectShortName">threshold[10:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/lab2_datapath_tb/ac_adc_sdata" type="logic">
-      <obj_property name="ElementShortName">ac_adc_sdata</obj_property>
-      <obj_property name="ObjectShortName">ac_adc_sdata</obj_property>
+   <wvobject fp_name="/trigger_detector_tb/ready" type="logic">
+      <obj_property name="ElementShortName">ready</obj_property>
+      <obj_property name="ObjectShortName">ready</obj_property>
    </wvobject>
-   <wvobject fp_name="/lab2_datapath_tb/ac_dac_sdata" type="logic">
-      <obj_property name="ElementShortName">ac_dac_sdata</obj_property>
-      <obj_property name="ObjectShortName">ac_dac_sdata</obj_property>
+   <wvobject fp_name="/trigger_detector_tb/monitored_signal" type="array">
+      <obj_property name="ElementShortName">monitored_signal[8:0]</obj_property>
+      <obj_property name="ObjectShortName">monitored_signal[8:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/lab2_datapath_tb/ac_bclk" type="logic">
-      <obj_property name="ElementShortName">ac_bclk</obj_property>
-      <obj_property name="ObjectShortName">ac_bclk</obj_property>
-   </wvobject>
-   <wvobject fp_name="/lab2_datapath_tb/ac_lrclk" type="logic">
-      <obj_property name="ElementShortName">ac_lrclk</obj_property>
-      <obj_property name="ObjectShortName">ac_lrclk</obj_property>
-   </wvobject>
-   <wvobject fp_name="/lab2_datapath_tb/scl" type="logic">
-      <obj_property name="ElementShortName">scl</obj_property>
-      <obj_property name="ObjectShortName">scl</obj_property>
-   </wvobject>
-   <wvobject fp_name="/lab2_datapath_tb/sda" type="logic">
-      <obj_property name="ElementShortName">sda</obj_property>
-      <obj_property name="ObjectShortName">sda</obj_property>
-   </wvobject>
-   <wvobject fp_name="/lab2_datapath_tb/tmds" type="array">
-      <obj_property name="ElementShortName">tmds[3:0]</obj_property>
-      <obj_property name="ObjectShortName">tmds[3:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/lab2_datapath_tb/tmdsb" type="array">
-      <obj_property name="ElementShortName">tmdsb[3:0]</obj_property>
-      <obj_property name="ObjectShortName">tmdsb[3:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/lab2_datapath_tb/sw" type="array">
-      <obj_property name="ElementShortName">sw[2:0]</obj_property>
-      <obj_property name="ObjectShortName">sw[2:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/lab2_datapath_tb/cw" type="array">
-      <obj_property name="ElementShortName">cw[2:0]</obj_property>
-      <obj_property name="ObjectShortName">cw[2:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/lab2_datapath_tb/btn" type="array">
-      <obj_property name="ElementShortName">btn[4:0]</obj_property>
-      <obj_property name="ObjectShortName">btn[4:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/lab2_datapath_tb/switch" type="array">
-      <obj_property name="ElementShortName">switch[3:0]</obj_property>
-      <obj_property name="ObjectShortName">switch[3:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/lab2_datapath_tb/exWrAddr" type="array">
-      <obj_property name="ElementShortName">exWrAddr[9:0]</obj_property>
-      <obj_property name="ObjectShortName">exWrAddr[9:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/lab2_datapath_tb/exWen" type="logic">
-      <obj_property name="ElementShortName">exWen</obj_property>
-      <obj_property name="ObjectShortName">exWen</obj_property>
-   </wvobject>
-   <wvobject fp_name="/lab2_datapath_tb/exSel" type="logic">
-      <obj_property name="ElementShortName">exSel</obj_property>
-      <obj_property name="ObjectShortName">exSel</obj_property>
-   </wvobject>
-   <wvobject fp_name="/lab2_datapath_tb/Lbus_out" type="array">
-      <obj_property name="ElementShortName">Lbus_out[15:0]</obj_property>
-      <obj_property name="ObjectShortName">Lbus_out[15:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/lab2_datapath_tb/Rbus_out" type="array">
-      <obj_property name="ElementShortName">Rbus_out[15:0]</obj_property>
-      <obj_property name="ObjectShortName">Rbus_out[15:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/lab2_datapath_tb/exLbus" type="array">
-      <obj_property name="ElementShortName">exLbus[15:0]</obj_property>
-      <obj_property name="ObjectShortName">exLbus[15:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/lab2_datapath_tb/exRbus" type="array">
-      <obj_property name="ElementShortName">exRbus[15:0]</obj_property>
-      <obj_property name="ObjectShortName">exRbus[15:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/lab2_datapath_tb/flagQ" type="logic">
-      <obj_property name="ElementShortName">flagQ</obj_property>
-      <obj_property name="ObjectShortName">flagQ</obj_property>
-   </wvobject>
-   <wvobject fp_name="/lab2_datapath_tb/flagClear" type="logic">
-      <obj_property name="ElementShortName">flagClear</obj_property>
-      <obj_property name="ObjectShortName">flagClear</obj_property>
-   </wvobject>
-   <wvobject fp_name="/lab2_datapath_tb/CLK_PERIOD" type="other">
-      <obj_property name="ElementShortName">CLK_PERIOD</obj_property>
-      <obj_property name="ObjectShortName">CLK_PERIOD</obj_property>
-   </wvobject>
-   <wvobject fp_name="/lab2_datapath_tb/uut/writeCntr" type="array">
-      <obj_property name="ElementShortName">writeCntr[9:0]</obj_property>
-      <obj_property name="ObjectShortName">writeCntr[9:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/lab2_datapath_tb/uut/write_address" type="array">
-      <obj_property name="ElementShortName">write_address[9:0]</obj_property>
-      <obj_property name="ObjectShortName">write_address[9:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/lab2_datapath_tb/uut/ch1" type="array">
-      <obj_property name="ElementShortName">ch1</obj_property>
-      <obj_property name="ObjectShortName">ch1</obj_property>
+   <wvobject fp_name="/trigger_detector_tb/crossed_trigger" type="logic">
+      <obj_property name="ElementShortName">crossed_trigger</obj_property>
+      <obj_property name="ObjectShortName">crossed_trigger</obj_property>
    </wvobject>
 </wave_config>
