@@ -57,7 +57,6 @@ if {$::dispatch::connected} {
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 3
-set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a200tsbg484-1
 
@@ -86,6 +85,7 @@ read_vhdl -library xil_defaultlib {
   C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab1/counter.vhd
   C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab1/Lab1_Cadet_Code_2026/dvid.vhdl
   C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/dvid.vhdl
+  C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/lab2_code_for_cadets_2026/flag_register.vhd
   C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/i2s_ctl.vhd
   C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab1/Lab1_Cadet_Code_2026/numeric_stepper.vhd
   C:/Users/Jason.Wyche/source/repos/ece383_wksp/lab2/Lab2/Lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2_datapath.vhdl

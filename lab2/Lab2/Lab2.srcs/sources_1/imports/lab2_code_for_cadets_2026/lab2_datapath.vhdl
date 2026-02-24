@@ -433,7 +433,8 @@ begin
 	-------------------------------------------------------------------------------
 	-- Instantiate the video driver from Lab1 - should integrate smoothly
 	-------------------------------------------------------------------------------
-	video_inst: video port map( 
+	video_inst: video 
+	port map( 
 		clk =>clk,
 		reset_n => reset_n,
         tmds => tmds,
@@ -446,14 +447,17 @@ begin
     ch1.en <= switch(CH1_SWITCH);  -- Add code here
     ch2.en <= switch(CH2_SWITCH);  -- Add code here
 
-
-
-
-
-	
+--------------------------------------------------------------------------------------	
     -- Need logic for the FLAG register
 	-- Add code here
-	
+--------------------------------------------------------------------------------------
+    flag_reg_inst : entity work.flag_register
+    port map(
+        clk => clk,
+        reset_n => reset_n,
+        set => sw_ready,
+        clear => flagClear,
+        Q => flagQ);
 	
 
     sw(0) <= sw_ready;

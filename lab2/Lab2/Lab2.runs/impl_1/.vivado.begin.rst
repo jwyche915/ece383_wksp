@@ -1,110 +1,15 @@
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="Jason.Wyche" Host="WYCHESURFACEPRO" Pid="7512" HostCore="12" HostMemory="016995635200">
+    <Process Command="vivado.bat" Owner="Jason.Wyche" Host="WYCHESURFACEPRO" Pid="19428" HostCore="12" HostMemory="016995635200">
     </Process>
 </ProcessHandle>
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="Jason.Wyche" Host="WYCHESURFACEPRO" Pid="20088" HostCore="12" HostMemory="016995635200">
+    <Process Command="vivado.bat" Owner="Jason.Wyche" Host="WYCHESURFACEPRO" Pid="17448" HostCore="12" HostMemory="016995635200">
     </Process>
 </ProcessHandle>
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="Jason.Wyche" Host="WYCHESURFACEPRO" Pid="2596" HostCore="12" HostMemory="016995635200">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="Jason.Wyche" Host="WYCHESURFACEPRO" Pid="13372" HostCore="12" HostMemory="016995635200">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="Jason.Wyche" Host="WYCHESURFACEPRO" Pid="14708" HostCore="12" HostMemory="016995635200">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="Jason.Wyche" Host="WYCHESURFACEPRO" Pid="9204" HostCore="12" HostMemory="016995635200">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="Jason.Wyche" Host="WYCHESURFACEPRO" Pid="19288" HostCore="12" HostMemory="016995635200">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="Jason.Wyche" Host="WYCHESURFACEPRO" Pid="14436" HostCore="12" HostMemory="016995635200">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="Jason.Wyche" Host="WYCHESURFACEPRO" Pid="18164" HostCore="12" HostMemory="016995635200">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="Jason.Wyche" Host="WYCHESURFACEPRO" Pid="14448" HostCore="12" HostMemory="016995635200">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="Jason.Wyche" Host="WYCHESURFACEPRO" Pid="8888" HostCore="12" HostMemory="016995635200">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="Jason.Wyche" Host="WYCHESURFACEPRO" Pid="19256" HostCore="12" HostMemory="016995635200">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="Jason.Wyche" Host="WYCHESURFACEPRO" Pid="24392" HostCore="12" HostMemory="016995635200">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="Jason.Wyche" Host="WYCHESURFACEPRO" Pid="22456" HostCore="12" HostMemory="016995635200">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="Jason.Wyche" Host="WYCHESURFACEPRO" Pid="24264" HostCore="12" HostMemory="016995635200">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="Jason.Wyche" Host="WYCHESURFACEPRO" Pid="11184" HostCore="12" HostMemory="016995635200">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="Jason.Wyche" Host="WYCHESURFACEPRO" Pid="10648" HostCore="12" HostMemory="016995635200">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="Jason.Wyche" Host="WYCHESURFACEPRO" Pid="21404" HostCore="12" HostMemory="016995635200">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="Jason.Wyche" Host="WYCHESURFACEPRO" Pid="20812" HostCore="12" HostMemory="016995635200">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="Jason.Wyche" Host="WYCHESURFACEPRO" Pid="14268" HostCore="12" HostMemory="016995635200">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="Jason.Wyche" Host="WYCHESURFACEPRO" Pid="21976" HostCore="12" HostMemory="016995635200">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="Jason.Wyche" Host="WYCHESURFACEPRO" Pid="12076" HostCore="12" HostMemory="016995635200">
+    <Process Command="vivado.bat" Owner="Jason.Wyche" Host="WYCHESURFACEPRO" Pid="20760" HostCore="12" HostMemory="016995635200">
     </Process>
 </ProcessHandle>

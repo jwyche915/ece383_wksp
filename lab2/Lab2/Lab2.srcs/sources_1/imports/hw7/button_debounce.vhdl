@@ -7,7 +7,7 @@
 --
 -- Modified by: Jason M. Wyche, 4 Feb 2026
 --
--- Purp:	For this debouncer, we assume the clock is slowed from 100MHz to 100KHz,
+-- Purp:	For this debouncer, we assume the clock is 100MHz,
 --          and the ringing time is less than 20ms
 --
 -- Academic Integrity Statement: I certify that, while others may have 
@@ -47,11 +47,11 @@ architecture behavior of button_debounce is
 				Q: out unsigned (N-1 downto 0));
     END COMPONENT;
 	
-	-- these values are for 100KHz
-    signal D : unsigned(9 downto 0) := (others => '0');
-    signal Q : unsigned(9 downto 0);
+	-- these values are for 100MHz
+    signal D : unsigned(19 downto 0) := (others => '0');
+    signal Q : unsigned(19 downto 0);
     
-    constant k_20MS_COUNT   : natural   := 1000;
+    constant k_20MS_COUNT   : natural   := 1000000;
     
     signal less : boolean := false;
         
@@ -60,7 +60,7 @@ begin
 	--   DATAPATH
 	----------------------------------------------------------------------
 	delay_counter: lec10 
-    Generic map(10)
+    Generic map(20)
 	PORT MAP (
           clk => clk,
           reset => reset,
@@ -69,8 +69,8 @@ begin
           Q => Q
         );	
 	
-	-- reminder: counter counter every other clock cycle!
-   	-- these values are for 100KHz clock
+	-- reminder: counter counts every other clock cycle!
+   	-- these values are for 100MHz clock
     less <= (Q < k_20MS_COUNT);
     
    -----------------------------------------------------------------------
