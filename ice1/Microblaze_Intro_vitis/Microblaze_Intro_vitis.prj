@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="Microblaze_Intro_vitis" location="C:/Users/Jason.Wyche/source/repos/ece383_wksp/Microblaze_Intro_vitis" platform="C:/Users/Jason.Wyche/source/repos/ece383_wksp/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm" platformUID="xilinx:nexys_video::0.0(custom)" systemProject="Microblaze_Intro_vitis_system" sysConfig="design_1_wrapper" runtime="cpp" cpu="standalone_microblaze_0" cpuInstance="microblaze_0" os="standalone" mssSignature="792b92355604125cb024a4a065b9bbbb">
+  <configuration name="Debug" id="xilinx.gnu.mb.exe.debug.1581621228">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.mb.exe.release.198140661" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>
