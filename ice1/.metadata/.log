@@ -1,0 +1,644 @@
+!SESSION 2026-03-02 21:38:51.980 -----------------------------------------------
+eclipse.buildId=2024.2
+java.version=11.0.16.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 4 4 2026-03-02 21:39:10.104
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-02 21:39:18.216
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-19
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-02 21:39:18.216
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-1: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-02 21:39:18.231
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-02 21:39:18.250
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-19
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-02 21:39:18.251
+!MESSAGE XSCT Command: [setws C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice1], Thread: Thread-19
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-02 21:39:18.417
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-1: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-02 21:39:18.420
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-02 21:39:18.420
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-1: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-02 21:39:18.420
+!MESSAGE XSCT command with result: [setws C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice1], Result: [null, ]. Thread: Thread-19
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-02 21:39:18.433
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, C:/Xilinx/Vitis/2024.2/data]. Thread: Worker-1: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 1 0 2026-03-02 21:46:00.356
+!MESSAGE Opening file dialog using preferences. Current path: null, Local preference: , Group preference: null
+
+!ENTRY com.xilinx.sdk.utils 1 0 2026-03-02 21:46:00.356
+!MESSAGE Workspace path used is: C:\Users\Jason.Wyche\source\repos\ece383_wksp\ice1
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-03-02 21:47:06.902
+!MESSAGE Indexed 'Microblaze_Intro_vitis_system' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2026-03-02 21:47:07.055
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.ui.part.IntroPart.dispose(IntroPart.java:99)
+	at org.eclipse.ui.internal.ViewIntroAdapterPart.dispose(ViewIntroAdapterPart.java:153)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.invalidate(CompatibilityPart.java:260)
+	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.destroy(CompatibilityPart.java:417)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:1002)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:967)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.uninject(InjectorImpl.java:200)
+	at org.eclipse.e4.core.internal.di.Requestor.uninject(Requestor.java:176)
+	at org.eclipse.e4.core.internal.contexts.ContextObjectSupplier$ContextInjectionListener.update(ContextObjectSupplier.java:89)
+	at org.eclipse.e4.core.internal.contexts.TrackableComputationExt.update(TrackableComputationExt.java:105)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.removeListenersTo(EclipseContext.java:491)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.uninject(ContextInjectionFactory.java:184)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:954)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:873)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:868)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:852)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ElementReferenceRenderer.disposeWidget(ElementReferenceRenderer.java:115)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeRemoveGui(PartRenderingEngine.java:945)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$1(PartRenderingEngine.java:873)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:868)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.removeGui(PartRenderingEngine.java:852)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.subscribeTopicToBeRendered(PartRenderingEngine.java:187)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.di.internal.extensions.EventObjectSupplier$DIEventHandler.handleEvent(EventObjectSupplier.java:92)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:132)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.e4.ui.model.application.ui.impl.UIElementImpl.setToBeRendered(UIElementImpl.java:314)
+	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.hidePart(PartServiceImpl.java:1406)
+	at org.eclipse.ui.internal.WorkbenchPage.hidePart(WorkbenchPage.java:1537)
+	at org.eclipse.ui.internal.WorkbenchPage.hidePart(WorkbenchPage.java:1496)
+	at org.eclipse.ui.internal.WorkbenchPage.hideView(WorkbenchPage.java:2609)
+	at org.eclipse.ui.internal.WorkbenchIntroManager.closeIntro(WorkbenchIntroManager.java:98)
+	at com.xilinx.sdx.ui.utils.SWTUtils.closeWelcomeView(SWTUtils.java:529)
+	at com.xilinx.sdx.system.datatransfer.ui.SdxArchiveImportWizard.lambda$0(SdxArchiveImportWizard.java:82)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3897)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3527)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.block(ModalContext.java:166)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:368)
+	at org.eclipse.jface.wizard.WizardDialog.run(WizardDialog.java:1033)
+	at com.xilinx.sdx.system.datatransfer.ui.SdxArchiveImportWizard.performFinish(SdxArchiveImportWizard.java:85)
+	at org.eclipse.jface.wizard.WizardDialog.finishPressed(WizardDialog.java:832)
+	at org.eclipse.jface.wizard.WizardDialog.buttonPressed(WizardDialog.java:472)
+	at org.eclipse.jface.dialogs.Dialog.lambda$0(Dialog.java:619)
+	at org.eclipse.swt.events.SelectionListener$1.widgetSelected(SelectionListener.java:84)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4105)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3922)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3524)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at com.xilinx.sdx.system.datatransfer.ui.SdxArchiveImportAction.openImportWizard(SdxArchiveImportAction.java:51)
+	at com.xilinx.sdx.system.datatransfer.ui.SdxArchiveImportAction.run(SdxArchiveImportAction.java:41)
+	at com.xilinx.sdx.system.datatransfer.ui.SdxArchiveImportAction.run(SdxArchiveImportAction.java:104)
+	at com.xilinx.sdx.system.datatransfer.ui.SdxArchiveImportAction.clicked(SdxArchiveImportAction.java:109)
+	at com.xilinx.ide.product.intro.IDEIntroPart.importProject(IDEIntroPart.java:541)
+	at com.xilinx.ide.product.intro.IDEIntroPart$8.run(IDEIntroPart.java:337)
+	at com.xilinx.ide.product.intro.IDEIntroPart$14.mouseUp(IDEIntroPart.java:456)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:224)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4105)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3922)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3524)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:658)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:154)
+	at com.xilinx.ide.application.ui.Application.start(Application.java:80)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+
+!ENTRY org.eclipse.launchbar.core 2 0 2026-03-02 21:47:07.123
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2026-03-02 21:47:07.123
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2026-03-02 21:47:07.123
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-03-02 21:47:07.730
+!MESSAGE Indexed 'Microblaze_Intro_vitis' (2 sources, 41 headers) in 0.828 sec: 1,440 declarations; 2,087 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-03-02 21:47:13.527
+!MESSAGE Indexed 'design_1_wrapper' (176 sources, 303 headers) in 5.78 sec: 6,433 declarations; 18,999 references; 143 unresolved inclusions; 48 syntax errors; 705 unresolved names (2.7%)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-02 21:48:17.363
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice1/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-02 21:48:18.050
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice1/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-02 21:48:18.065
+!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice1/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-02 21:48:18.065
+!MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice1/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa], Result: [null, {"device": "7a200t",
+"family": "artix7",
+"timestamp": "Sun Mar  1 18:10:47 2026",
+"vivado_version": "2024.2",
+"part": "xc7a200tsbg484-1",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-02 21:48:18.071
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice1/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-02 21:48:18.071
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice1/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa], Result: [null, {"axi_smc": {"hier_name": "axi_smc",
+"type": "smartconnect",
+"version": "1.0",
+"ip_type": "BUS",
+},
+"axi_smc_1": {"hier_name": "axi_smc_1",
+"type": "smartconnect",
+"version": "1.0",
+"ip_type": "BUS",
+},
+"axi_uartlite_0": {"hier_name": "axi_uartlite_0",
+"type": "axi_uartlite",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"clk_wiz_1": {"hier_name": "clk_wiz_1",
+"type": "clk_wiz",
+"version": "6.0",
+"ip_type": "PERIPHERAL",
+},
+"mdm_1": {"hier_name": "mdm_1",
+"type": "mdm",
+"version": "3.2",
+"ip_type": "DEBUG",
+},
+"microblaze_0": {"hier_name": "microblaze_0",
+"type": "microblaze",
+"version": "11.0",
+"ip_type": "PROCESSOR",
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {"hier_name": "microblaze_0_local_memory_dlmb_bram_if_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"microblaze_0_local_memory_dlmb_v10": {"hier_name": "microblaze_0_local_memory_dlmb_v10",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {"hier_name": "microblaze_0_local_memory_ilmb_bram_if_cntlr",
+"type": "lmb_bram_if_cntlr",
+"version": "4.0",
+"ip_type": "MEMORY_CNTLR",
+},
+"microblaze_0_local_memory_ilmb_v10": {"hier_name": "microblaze_0_local_memory_ilmb_v10",
+"type": "lmb_v10",
+"version": "3.0",
+"ip_type": "BUS",
+},
+"microblaze_0_local_memory_lmb_bram": {"hier_name": "microblaze_0_local_memory_lmb_bram",
+"type": "blk_mem_gen",
+"version": "8.4",
+"ip_type": "MEMORY",
+},
+"mig_7series_0": {"hier_name": "mig_7series_0",
+"type": "mig_7series",
+"version": "4.2",
+"ip_type": "MEMORY_CNTLR",
+},
+"rst_clk_wiz_1_100M": {"hier_name": "rst_clk_wiz_1_100M",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+"rst_mig_7series_0_100M": {"hier_name": "rst_mig_7series_0_100M",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+"util_ds_buf_0": {"hier_name": "util_ds_buf_0",
+"type": "util_ds_buf",
+"version": "2.2",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-02 21:48:18.192
+!MESSAGE XSCT Command: [::hsi::utils::get_ps_config_params -json C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice1/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa], Thread: Worker-7: Launching Debugger_Microblaze_Intro_vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-02 21:48:18.194
+!MESSAGE XSCT command with result: [::hsi::utils::get_ps_config_params -json C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice1/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa], Result: [null, {}]. Thread: Worker-7: Launching Debugger_Microblaze_Intro_vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-02 21:48:18.194
+!MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice1/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa microblaze_0], Thread: Worker-7: Launching Debugger_Microblaze_Intro_vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-02 21:48:18.208
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_register_data -json C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice1/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa microblaze_0], Result: [null, {"axi_uartlite_0": {"RX_FIFO": {"description": "Receive data FIFO",
+"address_offset": "0x0",
+"access": "read-only",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"RX_DATA": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "8",
+"desc": "UART Receive Data
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1080033280,
+},
+"TX_FIFO": {"description": "Transmit data FIFO",
+"address_offset": "0x4",
+"access": "write-only",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"TX_DATA": {"access": "write-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "8",
+"desc": "UART Transmit Data
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1080033284,
+},
+"CTRL_REG": {"description": "UART Lite control register",
+"address_offset": "0xC",
+"access": "write-only",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"RST_TXFIFO": {"access": "write-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Reset/clear the transmit FIFO
+Writing a 1 to this bit position clears the transmit FIFO
+  0 - Do nothing
+  1 - Clear the transmit FIFO
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"RST_RXFIFO": {"access": "write-only",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Reset/clear the receive FIFO
+Writing a 1 to this bit position clears the receive FIFO
+  0 - Do nothing
+  1 - Clear the receive FIFO
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Enable_Intr": {"access": "write-only",
+"bit_offset": "4",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable interrupt for the AXI UART Lite
+  0 - Disable interrupt signal
+  1 - Enable interrupt signal
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1080033292,
+},
+"STAT_REG": {"description": "UART Lite status register",
+"address_offset": "0x8",
+"access": "read-only",
+"size": "32",
+"interface": "S_AXI",
+"fields": {"RX_FIFO_Valid_Data": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates if the receive FIFO has data.
+  0 - Receive FIFO is empty
+  1 - Receive FIFO has data
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"RX_FIFO_Full": {"access": "read-only",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates if the receive FIFO is full.
+  0 - Receive FIFO is not full
+  1 - Receive FIFO is full
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"TX_FIFO_Empty": {"access": "read-only",
+"bit_offset": "2",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates if the transmit FIFO is empty.
+  0 - Transmit FIFO is not empty
+  1 - Transmit FIFO is empty
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"TX_FIFO_Full": {"access": "read-only",
+"bit_offset": "3",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates if the transmit FIFO is full.
+  0 - Transmit FIFO is not full
+  1 - Transmit FIFO is full
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Intr_Enabled": {"access": "read-only",
+"bit_offset": "4",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates that interrupts is enabled.
+  0 - Interrupt is disabled
+  1 - Interrupt is enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Overrun_Error": {"access": "read-only",
+"bit_offset": "5",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates that a overrun error has occurred after the last time the status register was read. Overrun is when a new character has been received but the receive FIFO is full. The received character is ignored and not written into the receive FIFO. This bit is cleared when the status register is read.      0 - No overrun error has occurred      1 - Overrun error has occurred
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Frame_Error": {"access": "read-only",
+"bit_offset": "6",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates that a frame error has occurred after the last time the status register was read. Frame error is defined as detection of a stop bit with the value 0. The receive character is ignored and not written to the receive FIFO. This bit is cleared when the status register is read.      0 - No frame error has occurred   1 - Frame error has occurred
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Parity_Error": {"access": "read-only",
+"bit_offset": "7",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Indicates that a parity error has occurred after the last time the status register was read. If the UART is configured without any parity handling, this bit is always 0. The received character is written into the receive FIFO. This bit is cleared when the status register is read.      0 - No parity error has occurred      1 - Parity error has occurred
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 1080033288,
+},
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr": {},
+"microblaze_0_local_memory_ilmb_bram_if_cntlr": {},
+"mig_7series_0": {},
+}]. Thread: Worker-7: Launching Debugger_Microblaze_Intro_vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-02 21:48:18.208
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice1/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa microblaze_0], Thread: Worker-7: Launching Debugger_Microblaze_Intro_vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-02 21:48:18.215
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice1/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa microblaze_0], Result: [null, {"axi_uartlite_0_S_AXI": {"name": "axi_uartlite_0",
+"base": "0x40600000",
+"high": "0x4060FFFF",
+"size": "65536",
+"slaveintf": "S_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"microblaze_0_local_memory_dlmb_bram_if_cntlr_SLMB_Mem": {"name": "microblaze_0_local_memory_dlmb_bram_if_cntlr",
+"base": "0x00000000",
+"high": "0x00007FFF",
+"size": "32768",
+"slaveintf": "SLMB",
+"type": "MEMORY",
+"flags": "7",
+"segment": "Mem",
+"acctype": "",
+"tz": "",
+},
+"mig_7series_0_S_AXI_memaddr": {"name": "mig_7series_0",
+"base": "0x80000000",
+"high": "0x9FFFFFFF",
+"size": "536870912",
+"slaveintf": "S_AXI",
+"type": "MEMORY",
+"flags": "7",
+"segment": "memaddr",
+"acctype": "",
+"tz": "",
+},
+}]. Thread: Worker-7: Launching Debugger_Microblaze_Intro_vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-02 21:48:18.215
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice1/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa microblaze_0 C_DEBUG_ENABLED], Thread: Worker-7: Launching Debugger_Microblaze_Intro_vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-02 21:48:18.215
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice1/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa microblaze_0 C_DEBUG_ENABLED], Result: [null, 1]. Thread: Worker-7: Launching Debugger_Microblaze_Intro_vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-02 21:48:18.215
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice1/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa microblaze_0 C_DEBUG_EVENT_COUNTERS], Thread: Worker-7: Launching Debugger_Microblaze_Intro_vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-02 21:48:18.239
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice1/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa microblaze_0 C_DEBUG_EVENT_COUNTERS], Result: [null, 5]. Thread: Worker-7: Launching Debugger_Microblaze_Intro_vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-02 21:48:18.239
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice1/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa microblaze_0 C_DEBUG_LATENCY_COUNTERS], Thread: Worker-7: Launching Debugger_Microblaze_Intro_vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-02 21:48:18.239
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice1/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa microblaze_0 C_DEBUG_LATENCY_COUNTERS], Result: [null, 1]. Thread: Worker-7: Launching Debugger_Microblaze_Intro_vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-02 21:48:18.239
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice1/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa microblaze_0 C_DEBUG_COUNTER_WIDTH], Thread: Worker-7: Launching Debugger_Microblaze_Intro_vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-02 21:48:18.255
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice1/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa microblaze_0 C_DEBUG_COUNTER_WIDTH], Result: [null, 32]. Thread: Worker-7: Launching Debugger_Microblaze_Intro_vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-02 21:48:18.255
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice1/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa microblaze_0 C_FREQ], Thread: Worker-7: Launching Debugger_Microblaze_Intro_vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-02 21:48:18.255
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice1/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa microblaze_0 C_FREQ], Result: [null, 100000000]. Thread: Worker-7: Launching Debugger_Microblaze_Intro_vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-02 21:48:18.255
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice1/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa microblaze_0 C_CPU_CLK_FREQ_HZ], Thread: Worker-7: Launching Debugger_Microblaze_Intro_vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-02 21:48:18.255
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice1/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa microblaze_0 C_CPU_CLK_FREQ_HZ], Result: [null, ]. Thread: Worker-7: Launching Debugger_Microblaze_Intro_vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-02 21:48:18.255
+!MESSAGE XSCT Command: [::hsi::utils::get_cpu_nr -json C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice1/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa], Thread: Worker-7: Launching Debugger_Microblaze_Intro_vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-02 21:48:18.288
+!MESSAGE XSCT command with result: [::hsi::utils::get_cpu_nr -json C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice1/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa], Result: [null, {"microblaze_0": {"bscan": "2",
+"index": "0",
+},
+}]. Thread: Worker-7: Launching Debugger_Microblaze_Intro_vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-02 21:48:18.288
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice1/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa mdm_1], Thread: Worker-7: Launching Debugger_Microblaze_Intro_vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-02 21:48:18.288
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice1/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa mdm_1], Result: [null, {}]. Thread: Worker-7: Launching Debugger_Microblaze_Intro_vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-02 21:48:18.288
+!MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice1/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa mdm_1], Thread: Worker-7: Launching Debugger_Microblaze_Intro_vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-02 21:48:18.288
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_register_data -json C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice1/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa mdm_1], Result: [null, {"microblaze_0": {},
+}]. Thread: Worker-7: Launching Debugger_Microblaze_Intro_vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-02 21:48:18.320
+!MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice1/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa mdm_1], Thread: Worker-7: Launching Debugger_Microblaze_Intro_vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-02 21:48:18.326
+!MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice1/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa mdm_1], Result: [null, microblaze_0]. Thread: Worker-7: Launching Debugger_Microblaze_Intro_vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-02 21:48:18.326
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-7: Launching Debugger_Microblaze_Intro_vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-02 21:48:20.702
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: Worker-7: Launching Debugger_Microblaze_Intro_vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-02 21:48:20.702
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-7: Launching Debugger_Microblaze_Intro_vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-02 21:48:23.972
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null, ]. Thread: Worker-7: Launching Debugger_Microblaze_Intro_vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-02 21:48:26.976
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-7: Launching Debugger_Microblaze_Intro_vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-02 21:48:29.974
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null, ]. Thread: Worker-7: Launching Debugger_Microblaze_Intro_vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-02 21:48:29.995
+!MESSAGE XSCT Command: [version -server], Thread: Worker-7: Launching Debugger_Microblaze_Intro_vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-02 21:48:29.995
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2024.2]. Thread: Worker-7: Launching Debugger_Microblaze_Intro_vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-02 21:48:29.995
+!MESSAGE XSCT Command: [version], Thread: Worker-7: Launching Debugger_Microblaze_Intro_vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-02 21:48:29.995
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2024.2.0
+SW Build 5239620 on Sun Nov 10 09:56:12 MST 2024
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.]. Thread: Worker-7: Launching Debugger_Microblaze_Intro_vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-02 21:48:29.995
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-7: Launching Debugger_Microblaze_Intro_vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-02 21:48:33.003
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null, ]. Thread: Worker-7: Launching Debugger_Microblaze_Intro_vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-02 21:48:36.006
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-7: Launching Debugger_Microblaze_Intro_vitis-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2026-03-02 21:48:39.006
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null, ]. Thread: Worker-7: Launching Debugger_Microblaze_Intro_vitis-Default
