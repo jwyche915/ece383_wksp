@@ -1,0 +1,23 @@
+timestamp=[2026-03-02 17:18:51], mode=WORKBENCH_START, duration=0:00:06.963, duration_ms=6963, data={}
+timestamp=[2026-03-02 17:18:51], mode=WORKBENCH_UI_INIT, duration=0:00:00.036, duration_ms=36, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
+timestamp=[2026-03-02 17:18:52], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.099, duration_ms=99, data={}
+timestamp=[2026-03-02 17:20:31], mode=APP_CREATION, duration=0:00:06.051, duration_ms=6051, data={name=Microblaze_Counter_Vitis, project_type=sdk, os=standalone, processor=microblaze, runtime=cpp, platform=design_1_wrapper, application_type=application}
+timestamp=[2026-03-02 17:22:37], mode=PLATFORM_GENERATION, duration=0:00:03.984, duration_ms=3984, data={name=design_1_wrapper}
+timestamp=[2026-03-02 17:23:56], mode=PLATFORM_GENERATION, duration=0:00:03.045, duration_ms=3045, data={name=design_1_wrapper}
+timestamp=[2026-03-02 17:23:56], mode=BUILD, duration=0:00:00.406, duration_ms=406, data={name=Microblaze_Counter_Vitis, configuration=Debug, clean_build=false}
+timestamp=[2026-03-02 20:17:44], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.015, duration_ms=15, data={}
+timestamp=[2026-03-02 20:17:49], mode=WORKBENCH_START, duration=0:00:12.451, duration_ms=12451, data={}
+timestamp=[2026-03-02 20:17:49], mode=WORKBENCH_UI_INIT, duration=0:00:00.146, duration_ms=146, data={editors_count=3, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=Microblaze_Counter_Vitis,Microblaze_Counter_Vitis_system,RemoteSystemsTempFiles,design_1_wrapper}
+timestamp=[2026-03-02 20:30:54], mode=PLATFORM_GENERATION, duration=0:00:04.482, duration_ms=4482, data={name=design_1_wrapper}
+timestamp=[2026-03-02 20:31:06], mode=PLATFORM_GENERATION, duration=0:00:02.266, duration_ms=2266, data={name=design_1_wrapper}
+timestamp=[2026-03-02 20:31:07], mode=BUILD, duration=0:00:00.281, duration_ms=281, data={name=Microblaze_Counter_Vitis, configuration=Debug, clean_build=true}
+timestamp=[2026-03-02 20:31:31], mode=PLATFORM_GENERATION, duration=0:00:07.459, duration_ms=7459, data={name=design_1_wrapper}
+timestamp=[2026-03-02 20:31:49], mode=BUILD, duration=0:00:03.680, duration_ms=3680, data={name=Microblaze_Counter_Vitis, configuration=Debug, clean_build=false}
+timestamp=[2026-03-02 21:22:20], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.051, duration_ms=51, data={}
+timestamp=[2026-03-02 21:22:21], mode=WORKBENCH_START, duration=0:00:09.446, duration_ms=9446, data={}
+timestamp=[2026-03-02 21:22:21], mode=WORKBENCH_UI_INIT, duration=0:00:00.231, duration_ms=231, data={editors_count=4, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=Microblaze_Counter_Vitis,Microblaze_Counter_Vitis_system,RemoteSystemsTempFiles,design_1_wrapper}
+timestamp=[2026-03-03 06:20:15], mode=WORKBENCH_START, duration=0:00:07.039, duration_ms=7039, data={}
+timestamp=[2026-03-03 06:20:15], mode=WORKBENCH_UI_INIT, duration=0:00:00.261, duration_ms=261, data={editors_count=4, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=Microblaze_Counter_Vitis,Microblaze_Counter_Vitis_system,RemoteSystemsTempFiles,design_1_wrapper}
+timestamp=[2026-03-03 06:20:16], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.066, duration_ms=66, data={}
+timestamp=[2026-03-03 06:24:26], mode=PLATFORM_GENERATION, duration=0:00:10.265, duration_ms=10265, data={name=design_1_wrapper}
+timestamp=[2026-03-03 06:24:38], mode=BUILD, duration=0:00:00.185, duration_ms=185, data={name=Microblaze_Counter_Vitis, configuration=Debug, clean_build=false}
