@@ -1,0 +1,4 @@
+1772640056147	Delete resource 'Microblaze_Interrupts_Vitis_system'
+1772640105337	Delete resource 'design_1_wrapper'
+1772640308197	Delete resource 'design_1_wrapper/hw/drivers'
+1772640386358	Delete resource 'design_1_wrapper/microblaze_0/standalone_microblaze_0/bsp/microblaze_0/libsrc/My_Counter_IP_v1_0'
