@@ -108,7 +108,7 @@ vcom -work xil_defaultlib -93  -incr \
 "../../../bd/design_1/ip/design_1_util_ds_buf_0_0/sim/design_1_util_ds_buf_0_0.vhd" \
 "../../../bd/design_1/ip/design_1_axi_smc_1_0/design_1_axi_smc_1_0_sim_netlist.vhdl" \
 "../../../bd/design_1/ip/design_1_rst_mig_7series_0_100M_0/sim/design_1_rst_mig_7series_0_100M_0.vhd" \
-"c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ip/design_1_OScope_2Channel_IP_0_0/design_1_OScope_2Channel_IP_0_0_sim_netlist.vhdl" \
+"../../../bd/design_1/ip/design_1_OScope_2Channel_IP_0_0/design_1_OScope_2Channel_IP_0_0_sim_netlist.vhdl" \
 "../../../bd/design_1/sim/design_1.vhd" \
 
 vlog -work xil_defaultlib \

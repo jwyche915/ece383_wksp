@@ -4,7 +4,7 @@
     "xci_name": "design_1_OScope_2Channel_IP_0_0",
     "cell_name": "OScope_2Channel_IP_0",
     "component_reference": "xilinx.com:user:OScope_2Channel_IP:1.0",
-    "ip_revision": "14",
+    "ip_revision": "16",
     "gen_directory": "../../../../../../Software_Controlled_Datapath.gen/sources_1/bd/design_1/ip/design_1_OScope_2Channel_IP_0_0",
     "parameters": {
       "component_parameters": {
@@ -33,7 +33,7 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
-        "IPREVISION": [ { "value": "14" } ],
+        "IPREVISION": [ { "value": "16" } ],
         "MANAGED": [ { "value": "TRUE" } ],
         "OUTPUTDIR": [ { "value": "../../../../../../Software_Controlled_Datapath.gen/sources_1/bd/design_1/ip/design_1_OScope_2Channel_IP_0_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],

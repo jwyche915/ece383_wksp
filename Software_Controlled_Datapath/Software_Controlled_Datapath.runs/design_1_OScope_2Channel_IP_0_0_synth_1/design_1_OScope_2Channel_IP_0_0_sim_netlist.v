@@ -2,7 +2,7 @@
 // Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-// Date        : Sat Mar 14 01:54:39 2026
+// Date        : Sat Mar 14 13:55:41 2026
 // Host        : WycheSurfacePro running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
 //               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ design_1_OScope_2Channel_IP_0_0_sim_netlist.v
@@ -28,10 +28,10 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Audio_Codec_Wrapper
     s00_axi_aresetn,
     s00_axi_aclk,
     SR,
-    Q,
+    process_Q_reg,
     flagQ,
+    Q,
     \Data_Out_int_reg[30] ,
-    \Data_Out_int_reg[30]_0 ,
     ac_adc_sdata,
     switch,
     lopt);
@@ -49,10 +49,10 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Audio_Codec_Wrapper
   input s00_axi_aresetn;
   input s00_axi_aclk;
   input [0:0]SR;
-  input [0:0]Q;
+  input [0:0]process_Q_reg;
   input flagQ;
+  input [17:0]Q;
   input [17:0]\Data_Out_int_reg[30] ;
-  input [17:0]\Data_Out_int_reg[30]_0 ;
   input ac_adc_sdata;
   input [0:0]switch;
   output lopt;
@@ -62,10 +62,9 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Audio_Codec_Wrapper
   wire [15:0]DO;
   wire [17:0]\D_R_O_int_reg[23] ;
   wire [17:0]\Data_Out_int_reg[30] ;
-  wire [17:0]\Data_Out_int_reg[30]_0 ;
   wire [0:0]E;
   wire LRCLK_reg;
-  wire [0:0]Q;
+  wire [17:0]Q;
   wire [0:0]SR;
   wire ac_adc_sdata;
   wire ac_dac_sdata;
@@ -83,6 +82,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Audio_Codec_Wrapper
   wire flagQ;
   wire lopt;
   wire [9:0]plusOp;
+  wire [0:0]process_Q_reg;
   wire [17:2]readR;
   wire ready_sig_i_2_n_0;
   wire s00_axi_aclk;
@@ -123,8 +123,8 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Audio_Codec_Wrapper
         .DOADO(DO),
         .\D_R_O_int_reg[23]_0 (\D_R_O_int_reg[23] ),
         .\Data_Out_int_reg[30]_0 (\Data_Out_int_reg[30] ),
-        .\Data_Out_int_reg[30]_1 (\Data_Out_int_reg[30]_0 ),
         .LRCLK_reg_0(LRCLK_reg),
+        .Q(Q),
         .SR(SR),
         .ac_adc_sdata(ac_adc_sdata),
         .ac_dac_sdata(ac_dac_sdata),
@@ -132,7 +132,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Audio_Codec_Wrapper
         .\ac_lrclk_count_reg[2] (audio_inout_n_3),
         .\ac_lrclk_count_reg[2]_0 (ac_lrclk_sig_prev_reg_n_0),
         .ac_lrclk_sig_prev_reg(audio_inout_n_2),
-        .\ch2_reg[incoming_sample][15] (readR),
+        .\ch2_reg[to_ac][17] (readR),
         .ready_sig_reg(ready_sig_i_2_n_0),
         .ready_sig_reg_0(E),
         .s00_axi_aclk(s00_axi_aclk),
@@ -322,7 +322,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_Audio_Codec_Wrapper
   LUT3 #(
     .INIT(8'hD4)) 
     process_Q_i_1
-       (.I0(Q),
+       (.I0(process_Q_reg),
         .I1(E),
         .I2(flagQ),
         .O(\slv_reg10_reg[0] ));
@@ -619,6 +619,8 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_OScope_2Channel_IP_slave_lite_v
   wire \FSM_sequential_state_read[0]_i_1_n_0 ;
   wire \FSM_sequential_state_read[1]_i_1_n_0 ;
   wire LRCLK_reg;
+  wire [14:0]Lbus_out;
+  wire [14:0]Rbus_out;
   wire WREN;
   wire ac_adc_sdata;
   wire ac_dac_sdata;
@@ -644,8 +646,10 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_OScope_2Channel_IP_slave_lite_v
   wire [3:0]btn;
   wire control_n_0;
   wire control_n_1;
-  wire datapath_n_24;
-  wire datapath_n_25;
+  wire datapath_n_12;
+  wire datapath_n_40;
+  wire datapath_n_56;
+  wire datapath_n_57;
   wire flagQ;
   wire [5:2]mem_logic;
   wire [31:7]p_1_in;
@@ -659,6 +663,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_OScope_2Channel_IP_slave_lite_v
   wire [31:0]s00_axi_rdata;
   wire \s00_axi_rdata[0]_INST_0_i_10_n_0 ;
   wire \s00_axi_rdata[0]_INST_0_i_11_n_0 ;
+  wire \s00_axi_rdata[0]_INST_0_i_12_n_0 ;
   wire \s00_axi_rdata[0]_INST_0_i_1_n_0 ;
   wire \s00_axi_rdata[0]_INST_0_i_2_n_0 ;
   wire \s00_axi_rdata[0]_INST_0_i_3_n_0 ;
@@ -670,6 +675,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_OScope_2Channel_IP_slave_lite_v
   wire \s00_axi_rdata[0]_INST_0_i_9_n_0 ;
   wire \s00_axi_rdata[10]_INST_0_i_10_n_0 ;
   wire \s00_axi_rdata[10]_INST_0_i_11_n_0 ;
+  wire \s00_axi_rdata[10]_INST_0_i_12_n_0 ;
   wire \s00_axi_rdata[10]_INST_0_i_1_n_0 ;
   wire \s00_axi_rdata[10]_INST_0_i_2_n_0 ;
   wire \s00_axi_rdata[10]_INST_0_i_3_n_0 ;
@@ -681,6 +687,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_OScope_2Channel_IP_slave_lite_v
   wire \s00_axi_rdata[10]_INST_0_i_9_n_0 ;
   wire \s00_axi_rdata[11]_INST_0_i_10_n_0 ;
   wire \s00_axi_rdata[11]_INST_0_i_11_n_0 ;
+  wire \s00_axi_rdata[11]_INST_0_i_12_n_0 ;
   wire \s00_axi_rdata[11]_INST_0_i_1_n_0 ;
   wire \s00_axi_rdata[11]_INST_0_i_2_n_0 ;
   wire \s00_axi_rdata[11]_INST_0_i_3_n_0 ;
@@ -692,6 +699,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_OScope_2Channel_IP_slave_lite_v
   wire \s00_axi_rdata[11]_INST_0_i_9_n_0 ;
   wire \s00_axi_rdata[12]_INST_0_i_10_n_0 ;
   wire \s00_axi_rdata[12]_INST_0_i_11_n_0 ;
+  wire \s00_axi_rdata[12]_INST_0_i_12_n_0 ;
   wire \s00_axi_rdata[12]_INST_0_i_1_n_0 ;
   wire \s00_axi_rdata[12]_INST_0_i_2_n_0 ;
   wire \s00_axi_rdata[12]_INST_0_i_3_n_0 ;
@@ -703,6 +711,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_OScope_2Channel_IP_slave_lite_v
   wire \s00_axi_rdata[12]_INST_0_i_9_n_0 ;
   wire \s00_axi_rdata[13]_INST_0_i_10_n_0 ;
   wire \s00_axi_rdata[13]_INST_0_i_11_n_0 ;
+  wire \s00_axi_rdata[13]_INST_0_i_12_n_0 ;
   wire \s00_axi_rdata[13]_INST_0_i_1_n_0 ;
   wire \s00_axi_rdata[13]_INST_0_i_2_n_0 ;
   wire \s00_axi_rdata[13]_INST_0_i_3_n_0 ;
@@ -714,6 +723,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_OScope_2Channel_IP_slave_lite_v
   wire \s00_axi_rdata[13]_INST_0_i_9_n_0 ;
   wire \s00_axi_rdata[14]_INST_0_i_10_n_0 ;
   wire \s00_axi_rdata[14]_INST_0_i_11_n_0 ;
+  wire \s00_axi_rdata[14]_INST_0_i_12_n_0 ;
   wire \s00_axi_rdata[14]_INST_0_i_1_n_0 ;
   wire \s00_axi_rdata[14]_INST_0_i_2_n_0 ;
   wire \s00_axi_rdata[14]_INST_0_i_3_n_0 ;
@@ -725,6 +735,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_OScope_2Channel_IP_slave_lite_v
   wire \s00_axi_rdata[14]_INST_0_i_9_n_0 ;
   wire \s00_axi_rdata[15]_INST_0_i_10_n_0 ;
   wire \s00_axi_rdata[15]_INST_0_i_11_n_0 ;
+  wire \s00_axi_rdata[15]_INST_0_i_12_n_0 ;
   wire \s00_axi_rdata[15]_INST_0_i_1_n_0 ;
   wire \s00_axi_rdata[15]_INST_0_i_2_n_0 ;
   wire \s00_axi_rdata[15]_INST_0_i_3_n_0 ;
@@ -780,6 +791,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_OScope_2Channel_IP_slave_lite_v
   wire \s00_axi_rdata[19]_INST_0_i_9_n_0 ;
   wire \s00_axi_rdata[1]_INST_0_i_10_n_0 ;
   wire \s00_axi_rdata[1]_INST_0_i_11_n_0 ;
+  wire \s00_axi_rdata[1]_INST_0_i_12_n_0 ;
   wire \s00_axi_rdata[1]_INST_0_i_1_n_0 ;
   wire \s00_axi_rdata[1]_INST_0_i_2_n_0 ;
   wire \s00_axi_rdata[1]_INST_0_i_3_n_0 ;
@@ -901,6 +913,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_OScope_2Channel_IP_slave_lite_v
   wire \s00_axi_rdata[29]_INST_0_i_9_n_0 ;
   wire \s00_axi_rdata[2]_INST_0_i_10_n_0 ;
   wire \s00_axi_rdata[2]_INST_0_i_11_n_0 ;
+  wire \s00_axi_rdata[2]_INST_0_i_12_n_0 ;
   wire \s00_axi_rdata[2]_INST_0_i_1_n_0 ;
   wire \s00_axi_rdata[2]_INST_0_i_2_n_0 ;
   wire \s00_axi_rdata[2]_INST_0_i_3_n_0 ;
@@ -934,6 +947,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_OScope_2Channel_IP_slave_lite_v
   wire \s00_axi_rdata[31]_INST_0_i_9_n_0 ;
   wire \s00_axi_rdata[3]_INST_0_i_10_n_0 ;
   wire \s00_axi_rdata[3]_INST_0_i_11_n_0 ;
+  wire \s00_axi_rdata[3]_INST_0_i_12_n_0 ;
   wire \s00_axi_rdata[3]_INST_0_i_1_n_0 ;
   wire \s00_axi_rdata[3]_INST_0_i_2_n_0 ;
   wire \s00_axi_rdata[3]_INST_0_i_3_n_0 ;
@@ -945,6 +959,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_OScope_2Channel_IP_slave_lite_v
   wire \s00_axi_rdata[3]_INST_0_i_9_n_0 ;
   wire \s00_axi_rdata[4]_INST_0_i_10_n_0 ;
   wire \s00_axi_rdata[4]_INST_0_i_11_n_0 ;
+  wire \s00_axi_rdata[4]_INST_0_i_12_n_0 ;
   wire \s00_axi_rdata[4]_INST_0_i_1_n_0 ;
   wire \s00_axi_rdata[4]_INST_0_i_2_n_0 ;
   wire \s00_axi_rdata[4]_INST_0_i_3_n_0 ;
@@ -956,6 +971,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_OScope_2Channel_IP_slave_lite_v
   wire \s00_axi_rdata[4]_INST_0_i_9_n_0 ;
   wire \s00_axi_rdata[5]_INST_0_i_10_n_0 ;
   wire \s00_axi_rdata[5]_INST_0_i_11_n_0 ;
+  wire \s00_axi_rdata[5]_INST_0_i_12_n_0 ;
   wire \s00_axi_rdata[5]_INST_0_i_1_n_0 ;
   wire \s00_axi_rdata[5]_INST_0_i_2_n_0 ;
   wire \s00_axi_rdata[5]_INST_0_i_3_n_0 ;
@@ -967,6 +983,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_OScope_2Channel_IP_slave_lite_v
   wire \s00_axi_rdata[5]_INST_0_i_9_n_0 ;
   wire \s00_axi_rdata[6]_INST_0_i_10_n_0 ;
   wire \s00_axi_rdata[6]_INST_0_i_11_n_0 ;
+  wire \s00_axi_rdata[6]_INST_0_i_12_n_0 ;
   wire \s00_axi_rdata[6]_INST_0_i_1_n_0 ;
   wire \s00_axi_rdata[6]_INST_0_i_2_n_0 ;
   wire \s00_axi_rdata[6]_INST_0_i_3_n_0 ;
@@ -978,6 +995,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_OScope_2Channel_IP_slave_lite_v
   wire \s00_axi_rdata[6]_INST_0_i_9_n_0 ;
   wire \s00_axi_rdata[7]_INST_0_i_10_n_0 ;
   wire \s00_axi_rdata[7]_INST_0_i_11_n_0 ;
+  wire \s00_axi_rdata[7]_INST_0_i_12_n_0 ;
   wire \s00_axi_rdata[7]_INST_0_i_1_n_0 ;
   wire \s00_axi_rdata[7]_INST_0_i_2_n_0 ;
   wire \s00_axi_rdata[7]_INST_0_i_3_n_0 ;
@@ -989,6 +1007,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_OScope_2Channel_IP_slave_lite_v
   wire \s00_axi_rdata[7]_INST_0_i_9_n_0 ;
   wire \s00_axi_rdata[8]_INST_0_i_10_n_0 ;
   wire \s00_axi_rdata[8]_INST_0_i_11_n_0 ;
+  wire \s00_axi_rdata[8]_INST_0_i_12_n_0 ;
   wire \s00_axi_rdata[8]_INST_0_i_1_n_0 ;
   wire \s00_axi_rdata[8]_INST_0_i_2_n_0 ;
   wire \s00_axi_rdata[8]_INST_0_i_3_n_0 ;
@@ -1000,6 +1019,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_OScope_2Channel_IP_slave_lite_v
   wire \s00_axi_rdata[8]_INST_0_i_9_n_0 ;
   wire \s00_axi_rdata[9]_INST_0_i_10_n_0 ;
   wire \s00_axi_rdata[9]_INST_0_i_11_n_0 ;
+  wire \s00_axi_rdata[9]_INST_0_i_12_n_0 ;
   wire \s00_axi_rdata[9]_INST_0_i_1_n_0 ;
   wire \s00_axi_rdata[9]_INST_0_i_2_n_0 ;
   wire \s00_axi_rdata[9]_INST_0_i_3_n_0 ;
@@ -1416,9 +1436,9 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_OScope_2Channel_IP_slave_lite_v
         .Q(s00_axi_wready),
         .R(\trig_v_detect/p_0_in ));
   decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_lab2_fsm control
-       (.CO(datapath_n_24),
+       (.CO(datapath_n_56),
         .\FSM_onehot_state_reg[2]_0 (control_n_0),
-        .\FSM_onehot_state_reg[2]_1 (datapath_n_25),
+        .\FSM_onehot_state_reg[2]_1 (datapath_n_57),
         .Q(slv_reg1),
         .SR(\trig_v_detect/p_0_in ),
         .SS(control_n_1),
@@ -1428,10 +1448,10 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_OScope_2Channel_IP_slave_lite_v
         .switch(switch[2]));
   decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_lab2_datapath datapath
        (.BCLK_int_reg(BCLK_int_reg),
-        .CO(datapath_n_24),
+        .CO(datapath_n_56),
         .E(control_n_0),
         .LRCLK_reg(LRCLK_reg),
-        .Q(slv_reg10),
+        .Q({datapath_n_12,Lbus_out}),
         .SR(\trig_v_detect/p_0_in ),
         .SS(control_n_1),
         .WREN(WREN),
@@ -1439,9 +1459,11 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_OScope_2Channel_IP_slave_lite_v
         .ac_dac_sdata(ac_dac_sdata),
         .ac_mclk(ac_mclk),
         .btn(btn),
+        .\ch2_reg[incoming_sample][15]_0 ({datapath_n_40,Rbus_out}),
         .flagQ(flagQ),
+        .process_Q_reg(slv_reg10),
         .\process_q_reg[10] (trig_time),
-        .\process_q_reg[9] (datapath_n_25),
+        .\process_q_reg[9] (datapath_n_57),
         .q(trig_volt),
         .s00_axi_aclk(s00_axi_aclk),
         .s00_axi_aresetn(s00_axi_aresetn),
@@ -1488,6 +1510,16 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_OScope_2Channel_IP_slave_lite_v
         .I4(\axi_araddr_reg[2]_rep_n_0 ),
         .I5(slv_reg0[0]),
         .O(\s00_axi_rdata[0]_INST_0_i_11_n_0 ));
+  LUT6 #(
+    .INIT(64'hAFA0CFCFAFA0C0C0)) 
+    \s00_axi_rdata[0]_INST_0_i_12 
+       (.I0(slv_reg7[0]),
+        .I1(Rbus_out[0]),
+        .I2(\axi_araddr_reg[3]_rep_n_0 ),
+        .I3(Lbus_out[0]),
+        .I4(\axi_araddr_reg[2]_rep_n_0 ),
+        .I5(slv_reg4[0]),
+        .O(\s00_axi_rdata[0]_INST_0_i_12_n_0 ));
   MUXF7 \s00_axi_rdata[0]_INST_0_i_2 
        (.I0(\s00_axi_rdata[0]_INST_0_i_7_n_0 ),
         .I1(\s00_axi_rdata[0]_INST_0_i_8_n_0 ),
@@ -1498,16 +1530,11 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_OScope_2Channel_IP_slave_lite_v
         .I1(\s00_axi_rdata[0]_INST_0_i_10_n_0 ),
         .O(\s00_axi_rdata[0]_INST_0_i_3_n_0 ),
         .S(sel0[2]));
-  LUT6 #(
-    .INIT(64'h8830FFFF88300000)) 
-    \s00_axi_rdata[0]_INST_0_i_4 
-       (.I0(slv_reg7[0]),
-        .I1(\axi_araddr_reg[3]_rep_n_0 ),
-        .I2(slv_reg4[0]),
-        .I3(\axi_araddr_reg[2]_rep_n_0 ),
-        .I4(sel0[2]),
-        .I5(\s00_axi_rdata[0]_INST_0_i_11_n_0 ),
-        .O(\s00_axi_rdata[0]_INST_0_i_4_n_0 ));
+  MUXF7 \s00_axi_rdata[0]_INST_0_i_4 
+       (.I0(\s00_axi_rdata[0]_INST_0_i_11_n_0 ),
+        .I1(\s00_axi_rdata[0]_INST_0_i_12_n_0 ),
+        .O(\s00_axi_rdata[0]_INST_0_i_4_n_0 ),
+        .S(sel0[2]));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
     \s00_axi_rdata[0]_INST_0_i_5 
@@ -1592,6 +1619,16 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_OScope_2Channel_IP_slave_lite_v
         .I4(\axi_araddr_reg[2]_rep_n_0 ),
         .I5(slv_reg0__0[10]),
         .O(\s00_axi_rdata[10]_INST_0_i_11_n_0 ));
+  LUT6 #(
+    .INIT(64'hAFA0CFCFAFA0C0C0)) 
+    \s00_axi_rdata[10]_INST_0_i_12 
+       (.I0(slv_reg7[10]),
+        .I1(Rbus_out[10]),
+        .I2(\axi_araddr_reg[3]_rep_n_0 ),
+        .I3(Lbus_out[10]),
+        .I4(\axi_araddr_reg[2]_rep_n_0 ),
+        .I5(slv_reg4[10]),
+        .O(\s00_axi_rdata[10]_INST_0_i_12_n_0 ));
   MUXF7 \s00_axi_rdata[10]_INST_0_i_2 
        (.I0(\s00_axi_rdata[10]_INST_0_i_7_n_0 ),
         .I1(\s00_axi_rdata[10]_INST_0_i_8_n_0 ),
@@ -1602,16 +1639,11 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_OScope_2Channel_IP_slave_lite_v
         .I1(\s00_axi_rdata[10]_INST_0_i_10_n_0 ),
         .O(\s00_axi_rdata[10]_INST_0_i_3_n_0 ),
         .S(sel0[2]));
-  LUT6 #(
-    .INIT(64'h8830FFFF88300000)) 
-    \s00_axi_rdata[10]_INST_0_i_4 
-       (.I0(slv_reg7[10]),
-        .I1(\axi_araddr_reg[3]_rep_n_0 ),
-        .I2(slv_reg4[10]),
-        .I3(\axi_araddr_reg[2]_rep_n_0 ),
-        .I4(sel0[2]),
-        .I5(\s00_axi_rdata[10]_INST_0_i_11_n_0 ),
-        .O(\s00_axi_rdata[10]_INST_0_i_4_n_0 ));
+  MUXF7 \s00_axi_rdata[10]_INST_0_i_4 
+       (.I0(\s00_axi_rdata[10]_INST_0_i_11_n_0 ),
+        .I1(\s00_axi_rdata[10]_INST_0_i_12_n_0 ),
+        .O(\s00_axi_rdata[10]_INST_0_i_4_n_0 ),
+        .S(sel0[2]));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
     \s00_axi_rdata[10]_INST_0_i_5 
@@ -1696,6 +1728,16 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_OScope_2Channel_IP_slave_lite_v
         .I4(\axi_araddr_reg[2]_rep_n_0 ),
         .I5(slv_reg0__0[11]),
         .O(\s00_axi_rdata[11]_INST_0_i_11_n_0 ));
+  LUT6 #(
+    .INIT(64'hAFA0CFCFAFA0C0C0)) 
+    \s00_axi_rdata[11]_INST_0_i_12 
+       (.I0(slv_reg7[11]),
+        .I1(Rbus_out[11]),
+        .I2(\axi_araddr_reg[3]_rep_n_0 ),
+        .I3(Lbus_out[11]),
+        .I4(\axi_araddr_reg[2]_rep_n_0 ),
+        .I5(slv_reg4[11]),
+        .O(\s00_axi_rdata[11]_INST_0_i_12_n_0 ));
   MUXF7 \s00_axi_rdata[11]_INST_0_i_2 
        (.I0(\s00_axi_rdata[11]_INST_0_i_7_n_0 ),
         .I1(\s00_axi_rdata[11]_INST_0_i_8_n_0 ),
@@ -1706,16 +1748,11 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_OScope_2Channel_IP_slave_lite_v
         .I1(\s00_axi_rdata[11]_INST_0_i_10_n_0 ),
         .O(\s00_axi_rdata[11]_INST_0_i_3_n_0 ),
         .S(sel0[2]));
-  LUT6 #(
-    .INIT(64'h8830FFFF88300000)) 
-    \s00_axi_rdata[11]_INST_0_i_4 
-       (.I0(slv_reg7[11]),
-        .I1(\axi_araddr_reg[3]_rep_n_0 ),
-        .I2(slv_reg4[11]),
-        .I3(\axi_araddr_reg[2]_rep_n_0 ),
-        .I4(sel0[2]),
-        .I5(\s00_axi_rdata[11]_INST_0_i_11_n_0 ),
-        .O(\s00_axi_rdata[11]_INST_0_i_4_n_0 ));
+  MUXF7 \s00_axi_rdata[11]_INST_0_i_4 
+       (.I0(\s00_axi_rdata[11]_INST_0_i_11_n_0 ),
+        .I1(\s00_axi_rdata[11]_INST_0_i_12_n_0 ),
+        .O(\s00_axi_rdata[11]_INST_0_i_4_n_0 ),
+        .S(sel0[2]));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
     \s00_axi_rdata[11]_INST_0_i_5 
@@ -1799,6 +1836,16 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_OScope_2Channel_IP_slave_lite_v
         .I4(\axi_araddr_reg[2]_rep_n_0 ),
         .I5(slv_reg0__0[12]),
         .O(\s00_axi_rdata[12]_INST_0_i_11_n_0 ));
+  LUT6 #(
+    .INIT(64'hAFA0CFCFAFA0C0C0)) 
+    \s00_axi_rdata[12]_INST_0_i_12 
+       (.I0(slv_reg7[12]),
+        .I1(Rbus_out[12]),
+        .I2(\axi_araddr_reg[3]_rep_n_0 ),
+        .I3(Lbus_out[12]),
+        .I4(\axi_araddr_reg[2]_rep_n_0 ),
+        .I5(slv_reg4[12]),
+        .O(\s00_axi_rdata[12]_INST_0_i_12_n_0 ));
   MUXF7 \s00_axi_rdata[12]_INST_0_i_2 
        (.I0(\s00_axi_rdata[12]_INST_0_i_7_n_0 ),
         .I1(\s00_axi_rdata[12]_INST_0_i_8_n_0 ),
@@ -1809,16 +1856,11 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_OScope_2Channel_IP_slave_lite_v
         .I1(\s00_axi_rdata[12]_INST_0_i_10_n_0 ),
         .O(\s00_axi_rdata[12]_INST_0_i_3_n_0 ),
         .S(sel0[2]));
-  LUT6 #(
-    .INIT(64'h8830FFFF88300000)) 
-    \s00_axi_rdata[12]_INST_0_i_4 
-       (.I0(slv_reg7[12]),
-        .I1(\axi_araddr_reg[3]_rep_n_0 ),
-        .I2(slv_reg4[12]),
-        .I3(\axi_araddr_reg[2]_rep_n_0 ),
-        .I4(sel0[2]),
-        .I5(\s00_axi_rdata[12]_INST_0_i_11_n_0 ),
-        .O(\s00_axi_rdata[12]_INST_0_i_4_n_0 ));
+  MUXF7 \s00_axi_rdata[12]_INST_0_i_4 
+       (.I0(\s00_axi_rdata[12]_INST_0_i_11_n_0 ),
+        .I1(\s00_axi_rdata[12]_INST_0_i_12_n_0 ),
+        .O(\s00_axi_rdata[12]_INST_0_i_4_n_0 ),
+        .S(sel0[2]));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
     \s00_axi_rdata[12]_INST_0_i_5 
@@ -1902,6 +1944,16 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_OScope_2Channel_IP_slave_lite_v
         .I4(\axi_araddr_reg[2]_rep_n_0 ),
         .I5(slv_reg0__0[13]),
         .O(\s00_axi_rdata[13]_INST_0_i_11_n_0 ));
+  LUT6 #(
+    .INIT(64'hAFA0CFCFAFA0C0C0)) 
+    \s00_axi_rdata[13]_INST_0_i_12 
+       (.I0(slv_reg7[13]),
+        .I1(Rbus_out[13]),
+        .I2(\axi_araddr_reg[3]_rep_n_0 ),
+        .I3(Lbus_out[13]),
+        .I4(\axi_araddr_reg[2]_rep_n_0 ),
+        .I5(slv_reg4[13]),
+        .O(\s00_axi_rdata[13]_INST_0_i_12_n_0 ));
   MUXF7 \s00_axi_rdata[13]_INST_0_i_2 
        (.I0(\s00_axi_rdata[13]_INST_0_i_7_n_0 ),
         .I1(\s00_axi_rdata[13]_INST_0_i_8_n_0 ),
@@ -1912,16 +1964,11 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_OScope_2Channel_IP_slave_lite_v
         .I1(\s00_axi_rdata[13]_INST_0_i_10_n_0 ),
         .O(\s00_axi_rdata[13]_INST_0_i_3_n_0 ),
         .S(sel0[2]));
-  LUT6 #(
-    .INIT(64'h8830FFFF88300000)) 
-    \s00_axi_rdata[13]_INST_0_i_4 
-       (.I0(slv_reg7[13]),
-        .I1(\axi_araddr_reg[3]_rep_n_0 ),
-        .I2(slv_reg4[13]),
-        .I3(\axi_araddr_reg[2]_rep_n_0 ),
-        .I4(sel0[2]),
-        .I5(\s00_axi_rdata[13]_INST_0_i_11_n_0 ),
-        .O(\s00_axi_rdata[13]_INST_0_i_4_n_0 ));
+  MUXF7 \s00_axi_rdata[13]_INST_0_i_4 
+       (.I0(\s00_axi_rdata[13]_INST_0_i_11_n_0 ),
+        .I1(\s00_axi_rdata[13]_INST_0_i_12_n_0 ),
+        .O(\s00_axi_rdata[13]_INST_0_i_4_n_0 ),
+        .S(sel0[2]));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
     \s00_axi_rdata[13]_INST_0_i_5 
@@ -2005,6 +2052,16 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_OScope_2Channel_IP_slave_lite_v
         .I4(\axi_araddr_reg[2]_rep_n_0 ),
         .I5(slv_reg0__0[14]),
         .O(\s00_axi_rdata[14]_INST_0_i_11_n_0 ));
+  LUT6 #(
+    .INIT(64'hAFA0CFCFAFA0C0C0)) 
+    \s00_axi_rdata[14]_INST_0_i_12 
+       (.I0(slv_reg7[14]),
+        .I1(Rbus_out[14]),
+        .I2(\axi_araddr_reg[3]_rep_n_0 ),
+        .I3(Lbus_out[14]),
+        .I4(\axi_araddr_reg[2]_rep_n_0 ),
+        .I5(slv_reg4[14]),
+        .O(\s00_axi_rdata[14]_INST_0_i_12_n_0 ));
   MUXF7 \s00_axi_rdata[14]_INST_0_i_2 
        (.I0(\s00_axi_rdata[14]_INST_0_i_7_n_0 ),
         .I1(\s00_axi_rdata[14]_INST_0_i_8_n_0 ),
@@ -2015,16 +2072,11 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_OScope_2Channel_IP_slave_lite_v
         .I1(\s00_axi_rdata[14]_INST_0_i_10_n_0 ),
         .O(\s00_axi_rdata[14]_INST_0_i_3_n_0 ),
         .S(sel0[2]));
-  LUT6 #(
-    .INIT(64'h8830FFFF88300000)) 
-    \s00_axi_rdata[14]_INST_0_i_4 
-       (.I0(slv_reg7[14]),
-        .I1(\axi_araddr_reg[3]_rep_n_0 ),
-        .I2(slv_reg4[14]),
-        .I3(\axi_araddr_reg[2]_rep_n_0 ),
-        .I4(sel0[2]),
-        .I5(\s00_axi_rdata[14]_INST_0_i_11_n_0 ),
-        .O(\s00_axi_rdata[14]_INST_0_i_4_n_0 ));
+  MUXF7 \s00_axi_rdata[14]_INST_0_i_4 
+       (.I0(\s00_axi_rdata[14]_INST_0_i_11_n_0 ),
+        .I1(\s00_axi_rdata[14]_INST_0_i_12_n_0 ),
+        .O(\s00_axi_rdata[14]_INST_0_i_4_n_0 ),
+        .S(sel0[2]));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
     \s00_axi_rdata[14]_INST_0_i_5 
@@ -2108,6 +2160,16 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_OScope_2Channel_IP_slave_lite_v
         .I4(\axi_araddr_reg[2]_rep_n_0 ),
         .I5(slv_reg0__0[15]),
         .O(\s00_axi_rdata[15]_INST_0_i_11_n_0 ));
+  LUT6 #(
+    .INIT(64'hA0AF3F3FA0AF3030)) 
+    \s00_axi_rdata[15]_INST_0_i_12 
+       (.I0(slv_reg7[15]),
+        .I1(datapath_n_40),
+        .I2(\axi_araddr_reg[3]_rep_n_0 ),
+        .I3(datapath_n_12),
+        .I4(\axi_araddr_reg[2]_rep_n_0 ),
+        .I5(slv_reg4[15]),
+        .O(\s00_axi_rdata[15]_INST_0_i_12_n_0 ));
   MUXF7 \s00_axi_rdata[15]_INST_0_i_2 
        (.I0(\s00_axi_rdata[15]_INST_0_i_7_n_0 ),
         .I1(\s00_axi_rdata[15]_INST_0_i_8_n_0 ),
@@ -2118,16 +2180,11 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_OScope_2Channel_IP_slave_lite_v
         .I1(\s00_axi_rdata[15]_INST_0_i_10_n_0 ),
         .O(\s00_axi_rdata[15]_INST_0_i_3_n_0 ),
         .S(sel0[2]));
-  LUT6 #(
-    .INIT(64'h8830FFFF88300000)) 
-    \s00_axi_rdata[15]_INST_0_i_4 
-       (.I0(slv_reg7[15]),
-        .I1(\axi_araddr_reg[3]_rep_n_0 ),
-        .I2(slv_reg4[15]),
-        .I3(\axi_araddr_reg[2]_rep_n_0 ),
-        .I4(sel0[2]),
-        .I5(\s00_axi_rdata[15]_INST_0_i_11_n_0 ),
-        .O(\s00_axi_rdata[15]_INST_0_i_4_n_0 ));
+  MUXF7 \s00_axi_rdata[15]_INST_0_i_4 
+       (.I0(\s00_axi_rdata[15]_INST_0_i_11_n_0 ),
+        .I1(\s00_axi_rdata[15]_INST_0_i_12_n_0 ),
+        .O(\s00_axi_rdata[15]_INST_0_i_4_n_0 ),
+        .S(sel0[2]));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
     \s00_axi_rdata[15]_INST_0_i_5 
@@ -2624,6 +2681,16 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_OScope_2Channel_IP_slave_lite_v
         .I4(\axi_araddr_reg[2]_rep_n_0 ),
         .I5(slv_reg0[1]),
         .O(\s00_axi_rdata[1]_INST_0_i_11_n_0 ));
+  LUT6 #(
+    .INIT(64'hAFA0CFCFAFA0C0C0)) 
+    \s00_axi_rdata[1]_INST_0_i_12 
+       (.I0(slv_reg7[1]),
+        .I1(Rbus_out[1]),
+        .I2(\axi_araddr_reg[3]_rep_n_0 ),
+        .I3(Lbus_out[1]),
+        .I4(\axi_araddr_reg[2]_rep_n_0 ),
+        .I5(slv_reg4[1]),
+        .O(\s00_axi_rdata[1]_INST_0_i_12_n_0 ));
   MUXF7 \s00_axi_rdata[1]_INST_0_i_2 
        (.I0(\s00_axi_rdata[1]_INST_0_i_7_n_0 ),
         .I1(\s00_axi_rdata[1]_INST_0_i_8_n_0 ),
@@ -2634,16 +2701,11 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_OScope_2Channel_IP_slave_lite_v
         .I1(\s00_axi_rdata[1]_INST_0_i_10_n_0 ),
         .O(\s00_axi_rdata[1]_INST_0_i_3_n_0 ),
         .S(sel0[2]));
-  LUT6 #(
-    .INIT(64'h8830FFFF88300000)) 
-    \s00_axi_rdata[1]_INST_0_i_4 
-       (.I0(slv_reg7[1]),
-        .I1(\axi_araddr_reg[3]_rep_n_0 ),
-        .I2(slv_reg4[1]),
-        .I3(\axi_araddr_reg[2]_rep_n_0 ),
-        .I4(sel0[2]),
-        .I5(\s00_axi_rdata[1]_INST_0_i_11_n_0 ),
-        .O(\s00_axi_rdata[1]_INST_0_i_4_n_0 ));
+  MUXF7 \s00_axi_rdata[1]_INST_0_i_4 
+       (.I0(\s00_axi_rdata[1]_INST_0_i_11_n_0 ),
+        .I1(\s00_axi_rdata[1]_INST_0_i_12_n_0 ),
+        .O(\s00_axi_rdata[1]_INST_0_i_4_n_0 ),
+        .S(sel0[2]));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
     \s00_axi_rdata[1]_INST_0_i_5 
@@ -3759,6 +3821,16 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_OScope_2Channel_IP_slave_lite_v
         .I4(\axi_araddr_reg[2]_rep_n_0 ),
         .I5(slv_reg0[2]),
         .O(\s00_axi_rdata[2]_INST_0_i_11_n_0 ));
+  LUT6 #(
+    .INIT(64'hAFA0CFCFAFA0C0C0)) 
+    \s00_axi_rdata[2]_INST_0_i_12 
+       (.I0(slv_reg7[2]),
+        .I1(Rbus_out[2]),
+        .I2(\axi_araddr_reg[3]_rep_n_0 ),
+        .I3(Lbus_out[2]),
+        .I4(\axi_araddr_reg[2]_rep_n_0 ),
+        .I5(slv_reg4[2]),
+        .O(\s00_axi_rdata[2]_INST_0_i_12_n_0 ));
   MUXF7 \s00_axi_rdata[2]_INST_0_i_2 
        (.I0(\s00_axi_rdata[2]_INST_0_i_7_n_0 ),
         .I1(\s00_axi_rdata[2]_INST_0_i_8_n_0 ),
@@ -3769,16 +3841,11 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_OScope_2Channel_IP_slave_lite_v
         .I1(\s00_axi_rdata[2]_INST_0_i_10_n_0 ),
         .O(\s00_axi_rdata[2]_INST_0_i_3_n_0 ),
         .S(sel0[2]));
-  LUT6 #(
-    .INIT(64'h8830FFFF88300000)) 
-    \s00_axi_rdata[2]_INST_0_i_4 
-       (.I0(slv_reg7[2]),
-        .I1(\axi_araddr_reg[3]_rep_n_0 ),
-        .I2(slv_reg4[2]),
-        .I3(\axi_araddr_reg[2]_rep_n_0 ),
-        .I4(sel0[2]),
-        .I5(\s00_axi_rdata[2]_INST_0_i_11_n_0 ),
-        .O(\s00_axi_rdata[2]_INST_0_i_4_n_0 ));
+  MUXF7 \s00_axi_rdata[2]_INST_0_i_4 
+       (.I0(\s00_axi_rdata[2]_INST_0_i_11_n_0 ),
+        .I1(\s00_axi_rdata[2]_INST_0_i_12_n_0 ),
+        .O(\s00_axi_rdata[2]_INST_0_i_4_n_0 ),
+        .S(sel0[2]));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
     \s00_axi_rdata[2]_INST_0_i_5 
@@ -4070,6 +4137,16 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_OScope_2Channel_IP_slave_lite_v
         .I4(\axi_araddr_reg[2]_rep_n_0 ),
         .I5(slv_reg0[3]),
         .O(\s00_axi_rdata[3]_INST_0_i_11_n_0 ));
+  LUT6 #(
+    .INIT(64'hAFA0CFCFAFA0C0C0)) 
+    \s00_axi_rdata[3]_INST_0_i_12 
+       (.I0(slv_reg7[3]),
+        .I1(Rbus_out[3]),
+        .I2(\axi_araddr_reg[3]_rep_n_0 ),
+        .I3(Lbus_out[3]),
+        .I4(\axi_araddr_reg[2]_rep_n_0 ),
+        .I5(slv_reg4[3]),
+        .O(\s00_axi_rdata[3]_INST_0_i_12_n_0 ));
   MUXF7 \s00_axi_rdata[3]_INST_0_i_2 
        (.I0(\s00_axi_rdata[3]_INST_0_i_7_n_0 ),
         .I1(\s00_axi_rdata[3]_INST_0_i_8_n_0 ),
@@ -4080,16 +4157,11 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_OScope_2Channel_IP_slave_lite_v
         .I1(\s00_axi_rdata[3]_INST_0_i_10_n_0 ),
         .O(\s00_axi_rdata[3]_INST_0_i_3_n_0 ),
         .S(sel0[2]));
-  LUT6 #(
-    .INIT(64'h8830FFFF88300000)) 
-    \s00_axi_rdata[3]_INST_0_i_4 
-       (.I0(slv_reg7[3]),
-        .I1(\axi_araddr_reg[3]_rep_n_0 ),
-        .I2(slv_reg4[3]),
-        .I3(\axi_araddr_reg[2]_rep_n_0 ),
-        .I4(sel0[2]),
-        .I5(\s00_axi_rdata[3]_INST_0_i_11_n_0 ),
-        .O(\s00_axi_rdata[3]_INST_0_i_4_n_0 ));
+  MUXF7 \s00_axi_rdata[3]_INST_0_i_4 
+       (.I0(\s00_axi_rdata[3]_INST_0_i_11_n_0 ),
+        .I1(\s00_axi_rdata[3]_INST_0_i_12_n_0 ),
+        .O(\s00_axi_rdata[3]_INST_0_i_4_n_0 ),
+        .S(sel0[2]));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
     \s00_axi_rdata[3]_INST_0_i_5 
@@ -4175,6 +4247,16 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_OScope_2Channel_IP_slave_lite_v
         .I4(\axi_araddr_reg[2]_rep_n_0 ),
         .I5(slv_reg0[4]),
         .O(\s00_axi_rdata[4]_INST_0_i_11_n_0 ));
+  LUT6 #(
+    .INIT(64'hAFA0CFCFAFA0C0C0)) 
+    \s00_axi_rdata[4]_INST_0_i_12 
+       (.I0(slv_reg7[4]),
+        .I1(Rbus_out[4]),
+        .I2(\axi_araddr_reg[3]_rep_n_0 ),
+        .I3(Lbus_out[4]),
+        .I4(\axi_araddr_reg[2]_rep_n_0 ),
+        .I5(slv_reg4[4]),
+        .O(\s00_axi_rdata[4]_INST_0_i_12_n_0 ));
   MUXF7 \s00_axi_rdata[4]_INST_0_i_2 
        (.I0(\s00_axi_rdata[4]_INST_0_i_7_n_0 ),
         .I1(\s00_axi_rdata[4]_INST_0_i_8_n_0 ),
@@ -4185,16 +4267,11 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_OScope_2Channel_IP_slave_lite_v
         .I1(\s00_axi_rdata[4]_INST_0_i_10_n_0 ),
         .O(\s00_axi_rdata[4]_INST_0_i_3_n_0 ),
         .S(sel0[2]));
-  LUT6 #(
-    .INIT(64'h8830FFFF88300000)) 
-    \s00_axi_rdata[4]_INST_0_i_4 
-       (.I0(slv_reg7[4]),
-        .I1(\axi_araddr_reg[3]_rep_n_0 ),
-        .I2(slv_reg4[4]),
-        .I3(\axi_araddr_reg[2]_rep_n_0 ),
-        .I4(sel0[2]),
-        .I5(\s00_axi_rdata[4]_INST_0_i_11_n_0 ),
-        .O(\s00_axi_rdata[4]_INST_0_i_4_n_0 ));
+  MUXF7 \s00_axi_rdata[4]_INST_0_i_4 
+       (.I0(\s00_axi_rdata[4]_INST_0_i_11_n_0 ),
+        .I1(\s00_axi_rdata[4]_INST_0_i_12_n_0 ),
+        .O(\s00_axi_rdata[4]_INST_0_i_4_n_0 ),
+        .S(sel0[2]));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
     \s00_axi_rdata[4]_INST_0_i_5 
@@ -4280,6 +4357,16 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_OScope_2Channel_IP_slave_lite_v
         .I4(\axi_araddr_reg[2]_rep_n_0 ),
         .I5(slv_reg0[5]),
         .O(\s00_axi_rdata[5]_INST_0_i_11_n_0 ));
+  LUT6 #(
+    .INIT(64'hAFA0CFCFAFA0C0C0)) 
+    \s00_axi_rdata[5]_INST_0_i_12 
+       (.I0(slv_reg7[5]),
+        .I1(Rbus_out[5]),
+        .I2(\axi_araddr_reg[3]_rep_n_0 ),
+        .I3(Lbus_out[5]),
+        .I4(\axi_araddr_reg[2]_rep_n_0 ),
+        .I5(slv_reg4[5]),
+        .O(\s00_axi_rdata[5]_INST_0_i_12_n_0 ));
   MUXF7 \s00_axi_rdata[5]_INST_0_i_2 
        (.I0(\s00_axi_rdata[5]_INST_0_i_7_n_0 ),
         .I1(\s00_axi_rdata[5]_INST_0_i_8_n_0 ),
@@ -4290,16 +4377,11 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_OScope_2Channel_IP_slave_lite_v
         .I1(\s00_axi_rdata[5]_INST_0_i_10_n_0 ),
         .O(\s00_axi_rdata[5]_INST_0_i_3_n_0 ),
         .S(sel0[2]));
-  LUT6 #(
-    .INIT(64'h8830FFFF88300000)) 
-    \s00_axi_rdata[5]_INST_0_i_4 
-       (.I0(slv_reg7[5]),
-        .I1(\axi_araddr_reg[3]_rep_n_0 ),
-        .I2(slv_reg4[5]),
-        .I3(\axi_araddr_reg[2]_rep_n_0 ),
-        .I4(sel0[2]),
-        .I5(\s00_axi_rdata[5]_INST_0_i_11_n_0 ),
-        .O(\s00_axi_rdata[5]_INST_0_i_4_n_0 ));
+  MUXF7 \s00_axi_rdata[5]_INST_0_i_4 
+       (.I0(\s00_axi_rdata[5]_INST_0_i_11_n_0 ),
+        .I1(\s00_axi_rdata[5]_INST_0_i_12_n_0 ),
+        .O(\s00_axi_rdata[5]_INST_0_i_4_n_0 ),
+        .S(sel0[2]));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
     \s00_axi_rdata[5]_INST_0_i_5 
@@ -4385,6 +4467,16 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_OScope_2Channel_IP_slave_lite_v
         .I4(\axi_araddr_reg[2]_rep_n_0 ),
         .I5(slv_reg0[6]),
         .O(\s00_axi_rdata[6]_INST_0_i_11_n_0 ));
+  LUT6 #(
+    .INIT(64'hAFA0CFCFAFA0C0C0)) 
+    \s00_axi_rdata[6]_INST_0_i_12 
+       (.I0(slv_reg7[6]),
+        .I1(Rbus_out[6]),
+        .I2(\axi_araddr_reg[3]_rep_n_0 ),
+        .I3(Lbus_out[6]),
+        .I4(\axi_araddr_reg[2]_rep_n_0 ),
+        .I5(slv_reg4[6]),
+        .O(\s00_axi_rdata[6]_INST_0_i_12_n_0 ));
   MUXF7 \s00_axi_rdata[6]_INST_0_i_2 
        (.I0(\s00_axi_rdata[6]_INST_0_i_7_n_0 ),
         .I1(\s00_axi_rdata[6]_INST_0_i_8_n_0 ),
@@ -4395,16 +4487,11 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_OScope_2Channel_IP_slave_lite_v
         .I1(\s00_axi_rdata[6]_INST_0_i_10_n_0 ),
         .O(\s00_axi_rdata[6]_INST_0_i_3_n_0 ),
         .S(sel0[2]));
-  LUT6 #(
-    .INIT(64'h8830FFFF88300000)) 
-    \s00_axi_rdata[6]_INST_0_i_4 
-       (.I0(slv_reg7[6]),
-        .I1(\axi_araddr_reg[3]_rep_n_0 ),
-        .I2(slv_reg4[6]),
-        .I3(\axi_araddr_reg[2]_rep_n_0 ),
-        .I4(sel0[2]),
-        .I5(\s00_axi_rdata[6]_INST_0_i_11_n_0 ),
-        .O(\s00_axi_rdata[6]_INST_0_i_4_n_0 ));
+  MUXF7 \s00_axi_rdata[6]_INST_0_i_4 
+       (.I0(\s00_axi_rdata[6]_INST_0_i_11_n_0 ),
+        .I1(\s00_axi_rdata[6]_INST_0_i_12_n_0 ),
+        .O(\s00_axi_rdata[6]_INST_0_i_4_n_0 ),
+        .S(sel0[2]));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
     \s00_axi_rdata[6]_INST_0_i_5 
@@ -4490,6 +4577,16 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_OScope_2Channel_IP_slave_lite_v
         .I4(\axi_araddr_reg[2]_rep_n_0 ),
         .I5(slv_reg0[7]),
         .O(\s00_axi_rdata[7]_INST_0_i_11_n_0 ));
+  LUT6 #(
+    .INIT(64'hAFA0CFCFAFA0C0C0)) 
+    \s00_axi_rdata[7]_INST_0_i_12 
+       (.I0(slv_reg7[7]),
+        .I1(Rbus_out[7]),
+        .I2(\axi_araddr_reg[3]_rep_n_0 ),
+        .I3(Lbus_out[7]),
+        .I4(\axi_araddr_reg[2]_rep_n_0 ),
+        .I5(slv_reg4[7]),
+        .O(\s00_axi_rdata[7]_INST_0_i_12_n_0 ));
   MUXF7 \s00_axi_rdata[7]_INST_0_i_2 
        (.I0(\s00_axi_rdata[7]_INST_0_i_7_n_0 ),
         .I1(\s00_axi_rdata[7]_INST_0_i_8_n_0 ),
@@ -4500,16 +4597,11 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_OScope_2Channel_IP_slave_lite_v
         .I1(\s00_axi_rdata[7]_INST_0_i_10_n_0 ),
         .O(\s00_axi_rdata[7]_INST_0_i_3_n_0 ),
         .S(sel0[2]));
-  LUT6 #(
-    .INIT(64'h8830FFFF88300000)) 
-    \s00_axi_rdata[7]_INST_0_i_4 
-       (.I0(slv_reg7[7]),
-        .I1(\axi_araddr_reg[3]_rep_n_0 ),
-        .I2(slv_reg4[7]),
-        .I3(\axi_araddr_reg[2]_rep_n_0 ),
-        .I4(sel0[2]),
-        .I5(\s00_axi_rdata[7]_INST_0_i_11_n_0 ),
-        .O(\s00_axi_rdata[7]_INST_0_i_4_n_0 ));
+  MUXF7 \s00_axi_rdata[7]_INST_0_i_4 
+       (.I0(\s00_axi_rdata[7]_INST_0_i_11_n_0 ),
+        .I1(\s00_axi_rdata[7]_INST_0_i_12_n_0 ),
+        .O(\s00_axi_rdata[7]_INST_0_i_4_n_0 ),
+        .S(sel0[2]));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
     \s00_axi_rdata[7]_INST_0_i_5 
@@ -4595,6 +4687,16 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_OScope_2Channel_IP_slave_lite_v
         .I4(\axi_araddr_reg[2]_rep_n_0 ),
         .I5(slv_reg0[8]),
         .O(\s00_axi_rdata[8]_INST_0_i_11_n_0 ));
+  LUT6 #(
+    .INIT(64'hAFA0CFCFAFA0C0C0)) 
+    \s00_axi_rdata[8]_INST_0_i_12 
+       (.I0(slv_reg7[8]),
+        .I1(Rbus_out[8]),
+        .I2(\axi_araddr_reg[3]_rep_n_0 ),
+        .I3(Lbus_out[8]),
+        .I4(\axi_araddr_reg[2]_rep_n_0 ),
+        .I5(slv_reg4[8]),
+        .O(\s00_axi_rdata[8]_INST_0_i_12_n_0 ));
   MUXF7 \s00_axi_rdata[8]_INST_0_i_2 
        (.I0(\s00_axi_rdata[8]_INST_0_i_7_n_0 ),
         .I1(\s00_axi_rdata[8]_INST_0_i_8_n_0 ),
@@ -4605,16 +4707,11 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_OScope_2Channel_IP_slave_lite_v
         .I1(\s00_axi_rdata[8]_INST_0_i_10_n_0 ),
         .O(\s00_axi_rdata[8]_INST_0_i_3_n_0 ),
         .S(sel0[2]));
-  LUT6 #(
-    .INIT(64'h8830FFFF88300000)) 
-    \s00_axi_rdata[8]_INST_0_i_4 
-       (.I0(slv_reg7[8]),
-        .I1(\axi_araddr_reg[3]_rep_n_0 ),
-        .I2(slv_reg4[8]),
-        .I3(\axi_araddr_reg[2]_rep_n_0 ),
-        .I4(sel0[2]),
-        .I5(\s00_axi_rdata[8]_INST_0_i_11_n_0 ),
-        .O(\s00_axi_rdata[8]_INST_0_i_4_n_0 ));
+  MUXF7 \s00_axi_rdata[8]_INST_0_i_4 
+       (.I0(\s00_axi_rdata[8]_INST_0_i_11_n_0 ),
+        .I1(\s00_axi_rdata[8]_INST_0_i_12_n_0 ),
+        .O(\s00_axi_rdata[8]_INST_0_i_4_n_0 ),
+        .S(sel0[2]));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
     \s00_axi_rdata[8]_INST_0_i_5 
@@ -4700,6 +4797,16 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_OScope_2Channel_IP_slave_lite_v
         .I4(\axi_araddr_reg[2]_rep_n_0 ),
         .I5(slv_reg0[9]),
         .O(\s00_axi_rdata[9]_INST_0_i_11_n_0 ));
+  LUT6 #(
+    .INIT(64'hAFA0CFCFAFA0C0C0)) 
+    \s00_axi_rdata[9]_INST_0_i_12 
+       (.I0(slv_reg7[9]),
+        .I1(Rbus_out[9]),
+        .I2(\axi_araddr_reg[3]_rep_n_0 ),
+        .I3(Lbus_out[9]),
+        .I4(\axi_araddr_reg[2]_rep_n_0 ),
+        .I5(slv_reg4[9]),
+        .O(\s00_axi_rdata[9]_INST_0_i_12_n_0 ));
   MUXF7 \s00_axi_rdata[9]_INST_0_i_2 
        (.I0(\s00_axi_rdata[9]_INST_0_i_7_n_0 ),
         .I1(\s00_axi_rdata[9]_INST_0_i_8_n_0 ),
@@ -4710,16 +4817,11 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_OScope_2Channel_IP_slave_lite_v
         .I1(\s00_axi_rdata[9]_INST_0_i_10_n_0 ),
         .O(\s00_axi_rdata[9]_INST_0_i_3_n_0 ),
         .S(sel0[2]));
-  LUT6 #(
-    .INIT(64'h8830FFFF88300000)) 
-    \s00_axi_rdata[9]_INST_0_i_4 
-       (.I0(slv_reg7[9]),
-        .I1(\axi_araddr_reg[3]_rep_n_0 ),
-        .I2(slv_reg4[9]),
-        .I3(\axi_araddr_reg[2]_rep_n_0 ),
-        .I4(sel0[2]),
-        .I5(\s00_axi_rdata[9]_INST_0_i_11_n_0 ),
-        .O(\s00_axi_rdata[9]_INST_0_i_4_n_0 ));
+  MUXF7 \s00_axi_rdata[9]_INST_0_i_4 
+       (.I0(\s00_axi_rdata[9]_INST_0_i_11_n_0 ),
+        .I1(\s00_axi_rdata[9]_INST_0_i_12_n_0 ),
+        .O(\s00_axi_rdata[9]_INST_0_i_4_n_0 ),
+        .S(sel0[2]));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
     \s00_axi_rdata[9]_INST_0_i_5 
@@ -20722,15 +20824,15 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_i2s_ctl
     s00_axi_aclk,
     s00_axi_aresetn,
     \ac_lrclk_count_reg[2]_0 ,
+    Q,
     \Data_Out_int_reg[30]_0 ,
-    \Data_Out_int_reg[30]_1 ,
     ac_lrclk_count__0,
     ready_sig_reg,
     ready_sig_reg_0,
     ac_adc_sdata,
     switch,
     DOADO,
-    \ch2_reg[incoming_sample][15] );
+    \ch2_reg[to_ac][17] );
   output BCLK_int_reg_0;
   output LRCLK_reg_0;
   output ac_lrclk_sig_prev_reg;
@@ -20745,15 +20847,15 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_i2s_ctl
   input s00_axi_aclk;
   input s00_axi_aresetn;
   input \ac_lrclk_count_reg[2]_0 ;
+  input [17:0]Q;
   input [17:0]\Data_Out_int_reg[30]_0 ;
-  input [17:0]\Data_Out_int_reg[30]_1 ;
   input [2:0]ac_lrclk_count__0;
   input ready_sig_reg;
   input ready_sig_reg_0;
   input ac_adc_sdata;
   input [0:0]switch;
   input [15:0]DOADO;
-  input [15:0]\ch2_reg[incoming_sample][15] ;
+  input [15:0]\ch2_reg[to_ac][17] ;
 
   wire BCLK_Fall_int;
   wire BCLK_int_i_2_n_0;
@@ -20803,7 +20905,6 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_i2s_ctl
   wire \Data_Out_int[31]_i_3_n_0 ;
   wire \Data_Out_int[31]_i_4_n_0 ;
   wire [17:0]\Data_Out_int_reg[30]_0 ;
-  wire [17:0]\Data_Out_int_reg[30]_1 ;
   wire \Data_Out_int_reg_n_0_[13] ;
   wire \Data_Out_int_reg_n_0_[14] ;
   wire \Data_Out_int_reg_n_0_[15] ;
@@ -20825,6 +20926,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_i2s_ctl
   wire LRCLK_i_1_n_0;
   wire LRCLK_i_2_n_0;
   wire LRCLK_reg_0;
+  wire [17:0]Q;
   wire [0:0]SR;
   wire ac_adc_sdata;
   wire ac_dac_sdata;
@@ -20832,7 +20934,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_i2s_ctl
   wire \ac_lrclk_count_reg[2] ;
   wire \ac_lrclk_count_reg[2]_0 ;
   wire ac_lrclk_sig_prev_reg;
-  wire [15:0]\ch2_reg[incoming_sample][15] ;
+  wire [15:0]\ch2_reg[to_ac][17] ;
   wire i__carry_i_1__5_n_0;
   wire i__carry_i_2_n_0;
   wire [4:0]p_0_in;
@@ -21476,18 +21578,18 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_i2s_ctl
   LUT4 #(
     .INIT(16'hF888)) 
     \Data_Out_int[13]_i_1 
-       (.I0(\Data_Out_int_reg[30]_0 [0]),
+       (.I0(Q[0]),
         .I1(\Data_Out_int[30]_i_3_n_0 ),
-        .I2(\Data_Out_int_reg[30]_1 [0]),
+        .I2(\Data_Out_int_reg[30]_0 [0]),
         .I3(\Data_Out_int[30]_i_2_n_0 ),
         .O(\Data_Out_int[13]_i_1_n_0 ));
   LUT6 #(
     .INIT(64'hFFFFF888F888F888)) 
     \Data_Out_int[14]_i_1 
        (.I0(\Data_Out_int[30]_i_2_n_0 ),
-        .I1(\Data_Out_int_reg[30]_1 [1]),
+        .I1(\Data_Out_int_reg[30]_0 [1]),
         .I2(\Data_Out_int[30]_i_3_n_0 ),
-        .I3(\Data_Out_int_reg[30]_0 [1]),
+        .I3(Q[1]),
         .I4(\Data_Out_int_reg_n_0_[13] ),
         .I5(\Data_Out_int[31]_i_4_n_0 ),
         .O(\Data_Out_int[14]_i_1_n_0 ));
@@ -21495,9 +21597,9 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_i2s_ctl
     .INIT(64'hFFFFF888F888F888)) 
     \Data_Out_int[15]_i_1 
        (.I0(\Data_Out_int[30]_i_2_n_0 ),
-        .I1(\Data_Out_int_reg[30]_1 [2]),
+        .I1(\Data_Out_int_reg[30]_0 [2]),
         .I2(\Data_Out_int[30]_i_3_n_0 ),
-        .I3(\Data_Out_int_reg[30]_0 [2]),
+        .I3(Q[2]),
         .I4(\Data_Out_int_reg_n_0_[14] ),
         .I5(\Data_Out_int[31]_i_4_n_0 ),
         .O(\Data_Out_int[15]_i_1_n_0 ));
@@ -21505,9 +21607,9 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_i2s_ctl
     .INIT(64'hFFFFF888F888F888)) 
     \Data_Out_int[16]_i_1 
        (.I0(\Data_Out_int[30]_i_2_n_0 ),
-        .I1(\Data_Out_int_reg[30]_1 [3]),
+        .I1(\Data_Out_int_reg[30]_0 [3]),
         .I2(\Data_Out_int[30]_i_3_n_0 ),
-        .I3(\Data_Out_int_reg[30]_0 [3]),
+        .I3(Q[3]),
         .I4(\Data_Out_int_reg_n_0_[15] ),
         .I5(\Data_Out_int[31]_i_4_n_0 ),
         .O(\Data_Out_int[16]_i_1_n_0 ));
@@ -21515,9 +21617,9 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_i2s_ctl
     .INIT(64'hFFFFF888F888F888)) 
     \Data_Out_int[17]_i_1 
        (.I0(\Data_Out_int[30]_i_2_n_0 ),
-        .I1(\Data_Out_int_reg[30]_1 [4]),
+        .I1(\Data_Out_int_reg[30]_0 [4]),
         .I2(\Data_Out_int[30]_i_3_n_0 ),
-        .I3(\Data_Out_int_reg[30]_0 [4]),
+        .I3(Q[4]),
         .I4(\Data_Out_int_reg_n_0_[16] ),
         .I5(\Data_Out_int[31]_i_4_n_0 ),
         .O(\Data_Out_int[17]_i_1_n_0 ));
@@ -21525,9 +21627,9 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_i2s_ctl
     .INIT(64'hFFFFF888F888F888)) 
     \Data_Out_int[18]_i_1 
        (.I0(\Data_Out_int[30]_i_2_n_0 ),
-        .I1(\Data_Out_int_reg[30]_1 [5]),
+        .I1(\Data_Out_int_reg[30]_0 [5]),
         .I2(\Data_Out_int[30]_i_3_n_0 ),
-        .I3(\Data_Out_int_reg[30]_0 [5]),
+        .I3(Q[5]),
         .I4(\Data_Out_int_reg_n_0_[17] ),
         .I5(\Data_Out_int[31]_i_4_n_0 ),
         .O(\Data_Out_int[18]_i_1_n_0 ));
@@ -21535,9 +21637,9 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_i2s_ctl
     .INIT(64'hFFFFF888F888F888)) 
     \Data_Out_int[19]_i_1 
        (.I0(\Data_Out_int[30]_i_2_n_0 ),
-        .I1(\Data_Out_int_reg[30]_1 [6]),
+        .I1(\Data_Out_int_reg[30]_0 [6]),
         .I2(\Data_Out_int[30]_i_3_n_0 ),
-        .I3(\Data_Out_int_reg[30]_0 [6]),
+        .I3(Q[6]),
         .I4(\Data_Out_int_reg_n_0_[18] ),
         .I5(\Data_Out_int[31]_i_4_n_0 ),
         .O(\Data_Out_int[19]_i_1_n_0 ));
@@ -21545,9 +21647,9 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_i2s_ctl
     .INIT(64'hFFFFF888F888F888)) 
     \Data_Out_int[20]_i_1 
        (.I0(\Data_Out_int[30]_i_2_n_0 ),
-        .I1(\Data_Out_int_reg[30]_1 [7]),
+        .I1(\Data_Out_int_reg[30]_0 [7]),
         .I2(\Data_Out_int[30]_i_3_n_0 ),
-        .I3(\Data_Out_int_reg[30]_0 [7]),
+        .I3(Q[7]),
         .I4(\Data_Out_int_reg_n_0_[19] ),
         .I5(\Data_Out_int[31]_i_4_n_0 ),
         .O(\Data_Out_int[20]_i_1_n_0 ));
@@ -21555,9 +21657,9 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_i2s_ctl
     .INIT(64'hFFFFF888F888F888)) 
     \Data_Out_int[21]_i_1 
        (.I0(\Data_Out_int[30]_i_2_n_0 ),
-        .I1(\Data_Out_int_reg[30]_1 [8]),
+        .I1(\Data_Out_int_reg[30]_0 [8]),
         .I2(\Data_Out_int[30]_i_3_n_0 ),
-        .I3(\Data_Out_int_reg[30]_0 [8]),
+        .I3(Q[8]),
         .I4(\Data_Out_int_reg_n_0_[20] ),
         .I5(\Data_Out_int[31]_i_4_n_0 ),
         .O(\Data_Out_int[21]_i_1_n_0 ));
@@ -21565,9 +21667,9 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_i2s_ctl
     .INIT(64'hFFFFF888F888F888)) 
     \Data_Out_int[22]_i_1 
        (.I0(\Data_Out_int[30]_i_2_n_0 ),
-        .I1(\Data_Out_int_reg[30]_1 [9]),
+        .I1(\Data_Out_int_reg[30]_0 [9]),
         .I2(\Data_Out_int[30]_i_3_n_0 ),
-        .I3(\Data_Out_int_reg[30]_0 [9]),
+        .I3(Q[9]),
         .I4(\Data_Out_int_reg_n_0_[21] ),
         .I5(\Data_Out_int[31]_i_4_n_0 ),
         .O(\Data_Out_int[22]_i_1_n_0 ));
@@ -21575,9 +21677,9 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_i2s_ctl
     .INIT(64'hFFFFF888F888F888)) 
     \Data_Out_int[23]_i_1 
        (.I0(\Data_Out_int[30]_i_2_n_0 ),
-        .I1(\Data_Out_int_reg[30]_1 [10]),
+        .I1(\Data_Out_int_reg[30]_0 [10]),
         .I2(\Data_Out_int[30]_i_3_n_0 ),
-        .I3(\Data_Out_int_reg[30]_0 [10]),
+        .I3(Q[10]),
         .I4(\Data_Out_int_reg_n_0_[22] ),
         .I5(\Data_Out_int[31]_i_4_n_0 ),
         .O(\Data_Out_int[23]_i_1_n_0 ));
@@ -21585,9 +21687,9 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_i2s_ctl
     .INIT(64'hFFFFF888F888F888)) 
     \Data_Out_int[24]_i_1 
        (.I0(\Data_Out_int[30]_i_2_n_0 ),
-        .I1(\Data_Out_int_reg[30]_1 [11]),
+        .I1(\Data_Out_int_reg[30]_0 [11]),
         .I2(\Data_Out_int[30]_i_3_n_0 ),
-        .I3(\Data_Out_int_reg[30]_0 [11]),
+        .I3(Q[11]),
         .I4(\Data_Out_int_reg_n_0_[23] ),
         .I5(\Data_Out_int[31]_i_4_n_0 ),
         .O(\Data_Out_int[24]_i_1_n_0 ));
@@ -21595,9 +21697,9 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_i2s_ctl
     .INIT(64'hFFFFF888F888F888)) 
     \Data_Out_int[25]_i_1 
        (.I0(\Data_Out_int[30]_i_2_n_0 ),
-        .I1(\Data_Out_int_reg[30]_1 [12]),
+        .I1(\Data_Out_int_reg[30]_0 [12]),
         .I2(\Data_Out_int[30]_i_3_n_0 ),
-        .I3(\Data_Out_int_reg[30]_0 [12]),
+        .I3(Q[12]),
         .I4(\Data_Out_int_reg_n_0_[24] ),
         .I5(\Data_Out_int[31]_i_4_n_0 ),
         .O(\Data_Out_int[25]_i_1_n_0 ));
@@ -21605,9 +21707,9 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_i2s_ctl
     .INIT(64'hFFFFF888F888F888)) 
     \Data_Out_int[26]_i_1 
        (.I0(\Data_Out_int[30]_i_2_n_0 ),
-        .I1(\Data_Out_int_reg[30]_1 [13]),
+        .I1(\Data_Out_int_reg[30]_0 [13]),
         .I2(\Data_Out_int[30]_i_3_n_0 ),
-        .I3(\Data_Out_int_reg[30]_0 [13]),
+        .I3(Q[13]),
         .I4(\Data_Out_int_reg_n_0_[25] ),
         .I5(\Data_Out_int[31]_i_4_n_0 ),
         .O(\Data_Out_int[26]_i_1_n_0 ));
@@ -21615,9 +21717,9 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_i2s_ctl
     .INIT(64'hFFFFF888F888F888)) 
     \Data_Out_int[27]_i_1 
        (.I0(\Data_Out_int[30]_i_2_n_0 ),
-        .I1(\Data_Out_int_reg[30]_1 [14]),
+        .I1(\Data_Out_int_reg[30]_0 [14]),
         .I2(\Data_Out_int[30]_i_3_n_0 ),
-        .I3(\Data_Out_int_reg[30]_0 [14]),
+        .I3(Q[14]),
         .I4(\Data_Out_int_reg_n_0_[26] ),
         .I5(\Data_Out_int[31]_i_4_n_0 ),
         .O(\Data_Out_int[27]_i_1_n_0 ));
@@ -21625,9 +21727,9 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_i2s_ctl
     .INIT(64'hFFFFF888F888F888)) 
     \Data_Out_int[28]_i_1 
        (.I0(\Data_Out_int[30]_i_2_n_0 ),
-        .I1(\Data_Out_int_reg[30]_1 [15]),
+        .I1(\Data_Out_int_reg[30]_0 [15]),
         .I2(\Data_Out_int[30]_i_3_n_0 ),
-        .I3(\Data_Out_int_reg[30]_0 [15]),
+        .I3(Q[15]),
         .I4(\Data_Out_int_reg_n_0_[27] ),
         .I5(\Data_Out_int[31]_i_4_n_0 ),
         .O(\Data_Out_int[28]_i_1_n_0 ));
@@ -21635,9 +21737,9 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_i2s_ctl
     .INIT(64'hFFFFF888F888F888)) 
     \Data_Out_int[29]_i_1 
        (.I0(\Data_Out_int[30]_i_2_n_0 ),
-        .I1(\Data_Out_int_reg[30]_1 [16]),
+        .I1(\Data_Out_int_reg[30]_0 [16]),
         .I2(\Data_Out_int[30]_i_3_n_0 ),
-        .I3(\Data_Out_int_reg[30]_0 [16]),
+        .I3(Q[16]),
         .I4(\Data_Out_int_reg_n_0_[28] ),
         .I5(\Data_Out_int[31]_i_4_n_0 ),
         .O(\Data_Out_int[29]_i_1_n_0 ));
@@ -21645,9 +21747,9 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_i2s_ctl
     .INIT(64'hFFFFF888F888F888)) 
     \Data_Out_int[30]_i_1 
        (.I0(\Data_Out_int[30]_i_2_n_0 ),
-        .I1(\Data_Out_int_reg[30]_1 [17]),
+        .I1(\Data_Out_int_reg[30]_0 [17]),
         .I2(\Data_Out_int[30]_i_3_n_0 ),
-        .I3(\Data_Out_int_reg[30]_0 [17]),
+        .I3(Q[17]),
         .I4(\Data_Out_int_reg_n_0_[29] ),
         .I5(\Data_Out_int[31]_i_4_n_0 ),
         .O(\Data_Out_int[30]_i_1_n_0 ));
@@ -21886,33 +21988,18 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_i2s_ctl
         .I1(s00_axi_aresetn),
         .I2(LRCLK_reg_0),
         .O(ac_lrclk_sig_prev_reg));
-  (* SOFT_HLUTNM = "soft_lutpair25" *) 
-  LUT2 #(
-    .INIT(4'h8)) 
-    \ch1[to_ac][0]_i_1 
-       (.I0(switch),
-        .I1(D_L_O_int[6]),
-        .O(D[0]));
-  (* SOFT_HLUTNM = "soft_lutpair11" *) 
+  (* SOFT_HLUTNM = "soft_lutpair7" *) 
   LUT3 #(
     .INIT(8'hB8)) 
-    \ch1[to_ac][10]_i_1 
-       (.I0(D_L_O_int[16]),
+    \ch1[incoming_sample][0]_i_1 
+       (.I0(D_L_O_int[8]),
         .I1(switch),
-        .I2(DOADO[8]),
-        .O(D[10]));
+        .I2(DOADO[0]),
+        .O(D[2]));
   (* SOFT_HLUTNM = "soft_lutpair12" *) 
   LUT3 #(
     .INIT(8'hB8)) 
-    \ch1[to_ac][11]_i_1 
-       (.I0(D_L_O_int[17]),
-        .I1(switch),
-        .I2(DOADO[9]),
-        .O(D[11]));
-  (* SOFT_HLUTNM = "soft_lutpair12" *) 
-  LUT3 #(
-    .INIT(8'hB8)) 
-    \ch1[to_ac][12]_i_1 
+    \ch1[incoming_sample][10]_i_1 
        (.I0(D_L_O_int[18]),
         .I1(switch),
         .I2(DOADO[10]),
@@ -21920,7 +22007,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_i2s_ctl
   (* SOFT_HLUTNM = "soft_lutpair13" *) 
   LUT3 #(
     .INIT(8'hB8)) 
-    \ch1[to_ac][13]_i_1 
+    \ch1[incoming_sample][11]_i_1 
        (.I0(D_L_O_int[19]),
         .I1(switch),
         .I2(DOADO[11]),
@@ -21928,7 +22015,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_i2s_ctl
   (* SOFT_HLUTNM = "soft_lutpair13" *) 
   LUT3 #(
     .INIT(8'hB8)) 
-    \ch1[to_ac][14]_i_1 
+    \ch1[incoming_sample][12]_i_1 
        (.I0(D_L_O_int[20]),
         .I1(switch),
         .I2(DOADO[12]),
@@ -21936,7 +22023,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_i2s_ctl
   (* SOFT_HLUTNM = "soft_lutpair14" *) 
   LUT3 #(
     .INIT(8'hB8)) 
-    \ch1[to_ac][15]_i_1 
+    \ch1[incoming_sample][13]_i_1 
        (.I0(D_L_O_int[21]),
         .I1(switch),
         .I2(DOADO[13]),
@@ -21944,7 +22031,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_i2s_ctl
   (* SOFT_HLUTNM = "soft_lutpair14" *) 
   LUT3 #(
     .INIT(8'hB8)) 
-    \ch1[to_ac][16]_i_1 
+    \ch1[incoming_sample][14]_i_1 
        (.I0(D_L_O_int[22]),
         .I1(switch),
         .I2(DOADO[14]),
@@ -21952,30 +22039,15 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_i2s_ctl
   (* SOFT_HLUTNM = "soft_lutpair7" *) 
   LUT3 #(
     .INIT(8'h8B)) 
-    \ch1[to_ac][17]_i_1 
+    \ch1[incoming_sample][15]_i_2 
        (.I0(D_L_O_int[23]),
         .I1(switch),
         .I2(DOADO[15]),
         .O(D[17]));
-  (* SOFT_HLUTNM = "soft_lutpair25" *) 
-  LUT2 #(
-    .INIT(4'h8)) 
-    \ch1[to_ac][1]_i_1 
-       (.I0(switch),
-        .I1(D_L_O_int[7]),
-        .O(D[1]));
-  (* SOFT_HLUTNM = "soft_lutpair7" *) 
-  LUT3 #(
-    .INIT(8'hB8)) 
-    \ch1[to_ac][2]_i_1 
-       (.I0(D_L_O_int[8]),
-        .I1(switch),
-        .I2(DOADO[0]),
-        .O(D[2]));
   (* SOFT_HLUTNM = "soft_lutpair8" *) 
   LUT3 #(
     .INIT(8'hB8)) 
-    \ch1[to_ac][3]_i_1 
+    \ch1[incoming_sample][1]_i_1 
        (.I0(D_L_O_int[9]),
         .I1(switch),
         .I2(DOADO[1]),
@@ -21983,7 +22055,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_i2s_ctl
   (* SOFT_HLUTNM = "soft_lutpair8" *) 
   LUT3 #(
     .INIT(8'hB8)) 
-    \ch1[to_ac][4]_i_1 
+    \ch1[incoming_sample][2]_i_1 
        (.I0(D_L_O_int[10]),
         .I1(switch),
         .I2(DOADO[2]),
@@ -21991,7 +22063,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_i2s_ctl
   (* SOFT_HLUTNM = "soft_lutpair9" *) 
   LUT3 #(
     .INIT(8'hB8)) 
-    \ch1[to_ac][5]_i_1 
+    \ch1[incoming_sample][3]_i_1 
        (.I0(D_L_O_int[11]),
         .I1(switch),
         .I2(DOADO[3]),
@@ -21999,7 +22071,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_i2s_ctl
   (* SOFT_HLUTNM = "soft_lutpair9" *) 
   LUT3 #(
     .INIT(8'hB8)) 
-    \ch1[to_ac][6]_i_1 
+    \ch1[incoming_sample][4]_i_1 
        (.I0(D_L_O_int[12]),
         .I1(switch),
         .I2(DOADO[4]),
@@ -22007,7 +22079,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_i2s_ctl
   (* SOFT_HLUTNM = "soft_lutpair10" *) 
   LUT3 #(
     .INIT(8'hB8)) 
-    \ch1[to_ac][7]_i_1 
+    \ch1[incoming_sample][5]_i_1 
        (.I0(D_L_O_int[13]),
         .I1(switch),
         .I2(DOADO[5]),
@@ -22015,7 +22087,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_i2s_ctl
   (* SOFT_HLUTNM = "soft_lutpair10" *) 
   LUT3 #(
     .INIT(8'hB8)) 
-    \ch1[to_ac][8]_i_1 
+    \ch1[incoming_sample][6]_i_1 
        (.I0(D_L_O_int[14]),
         .I1(switch),
         .I2(DOADO[6]),
@@ -22023,11 +22095,169 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_i2s_ctl
   (* SOFT_HLUTNM = "soft_lutpair11" *) 
   LUT3 #(
     .INIT(8'hB8)) 
-    \ch1[to_ac][9]_i_1 
+    \ch1[incoming_sample][7]_i_1 
        (.I0(D_L_O_int[15]),
         .I1(switch),
         .I2(DOADO[7]),
         .O(D[9]));
+  (* SOFT_HLUTNM = "soft_lutpair11" *) 
+  LUT3 #(
+    .INIT(8'hB8)) 
+    \ch1[incoming_sample][8]_i_1 
+       (.I0(D_L_O_int[16]),
+        .I1(switch),
+        .I2(DOADO[8]),
+        .O(D[10]));
+  (* SOFT_HLUTNM = "soft_lutpair12" *) 
+  LUT3 #(
+    .INIT(8'hB8)) 
+    \ch1[incoming_sample][9]_i_1 
+       (.I0(D_L_O_int[17]),
+        .I1(switch),
+        .I2(DOADO[9]),
+        .O(D[11]));
+  (* SOFT_HLUTNM = "soft_lutpair25" *) 
+  LUT2 #(
+    .INIT(4'h8)) 
+    \ch1[to_ac][0]_i_1 
+       (.I0(switch),
+        .I1(D_L_O_int[6]),
+        .O(D[0]));
+  (* SOFT_HLUTNM = "soft_lutpair25" *) 
+  LUT2 #(
+    .INIT(4'h8)) 
+    \ch1[to_ac][1]_i_1 
+       (.I0(switch),
+        .I1(D_L_O_int[7]),
+        .O(D[1]));
+  (* SOFT_HLUTNM = "soft_lutpair15" *) 
+  LUT3 #(
+    .INIT(8'hB8)) 
+    \ch2[incoming_sample][0]_i_1 
+       (.I0(D_R_O_int[8]),
+        .I1(switch),
+        .I2(\ch2_reg[to_ac][17] [0]),
+        .O(\D_R_O_int_reg[23]_0 [2]));
+  (* SOFT_HLUTNM = "soft_lutpair20" *) 
+  LUT3 #(
+    .INIT(8'hB8)) 
+    \ch2[incoming_sample][10]_i_1 
+       (.I0(D_R_O_int[18]),
+        .I1(switch),
+        .I2(\ch2_reg[to_ac][17] [10]),
+        .O(\D_R_O_int_reg[23]_0 [12]));
+  (* SOFT_HLUTNM = "soft_lutpair21" *) 
+  LUT3 #(
+    .INIT(8'hB8)) 
+    \ch2[incoming_sample][11]_i_1 
+       (.I0(D_R_O_int[19]),
+        .I1(switch),
+        .I2(\ch2_reg[to_ac][17] [11]),
+        .O(\D_R_O_int_reg[23]_0 [13]));
+  (* SOFT_HLUTNM = "soft_lutpair21" *) 
+  LUT3 #(
+    .INIT(8'hB8)) 
+    \ch2[incoming_sample][12]_i_1 
+       (.I0(D_R_O_int[20]),
+        .I1(switch),
+        .I2(\ch2_reg[to_ac][17] [12]),
+        .O(\D_R_O_int_reg[23]_0 [14]));
+  (* SOFT_HLUTNM = "soft_lutpair22" *) 
+  LUT3 #(
+    .INIT(8'hB8)) 
+    \ch2[incoming_sample][13]_i_1 
+       (.I0(D_R_O_int[21]),
+        .I1(switch),
+        .I2(\ch2_reg[to_ac][17] [13]),
+        .O(\D_R_O_int_reg[23]_0 [15]));
+  (* SOFT_HLUTNM = "soft_lutpair22" *) 
+  LUT3 #(
+    .INIT(8'hB8)) 
+    \ch2[incoming_sample][14]_i_1 
+       (.I0(D_R_O_int[22]),
+        .I1(switch),
+        .I2(\ch2_reg[to_ac][17] [14]),
+        .O(\D_R_O_int_reg[23]_0 [16]));
+  (* SOFT_HLUTNM = "soft_lutpair15" *) 
+  LUT3 #(
+    .INIT(8'h8B)) 
+    \ch2[incoming_sample][15]_i_1 
+       (.I0(D_R_O_int[23]),
+        .I1(switch),
+        .I2(\ch2_reg[to_ac][17] [15]),
+        .O(\D_R_O_int_reg[23]_0 [17]));
+  (* SOFT_HLUTNM = "soft_lutpair16" *) 
+  LUT3 #(
+    .INIT(8'hB8)) 
+    \ch2[incoming_sample][1]_i_1 
+       (.I0(D_R_O_int[9]),
+        .I1(switch),
+        .I2(\ch2_reg[to_ac][17] [1]),
+        .O(\D_R_O_int_reg[23]_0 [3]));
+  (* SOFT_HLUTNM = "soft_lutpair16" *) 
+  LUT3 #(
+    .INIT(8'hB8)) 
+    \ch2[incoming_sample][2]_i_1 
+       (.I0(D_R_O_int[10]),
+        .I1(switch),
+        .I2(\ch2_reg[to_ac][17] [2]),
+        .O(\D_R_O_int_reg[23]_0 [4]));
+  (* SOFT_HLUTNM = "soft_lutpair17" *) 
+  LUT3 #(
+    .INIT(8'hB8)) 
+    \ch2[incoming_sample][3]_i_1 
+       (.I0(D_R_O_int[11]),
+        .I1(switch),
+        .I2(\ch2_reg[to_ac][17] [3]),
+        .O(\D_R_O_int_reg[23]_0 [5]));
+  (* SOFT_HLUTNM = "soft_lutpair17" *) 
+  LUT3 #(
+    .INIT(8'hB8)) 
+    \ch2[incoming_sample][4]_i_1 
+       (.I0(D_R_O_int[12]),
+        .I1(switch),
+        .I2(\ch2_reg[to_ac][17] [4]),
+        .O(\D_R_O_int_reg[23]_0 [6]));
+  (* SOFT_HLUTNM = "soft_lutpair18" *) 
+  LUT3 #(
+    .INIT(8'hB8)) 
+    \ch2[incoming_sample][5]_i_1 
+       (.I0(D_R_O_int[13]),
+        .I1(switch),
+        .I2(\ch2_reg[to_ac][17] [5]),
+        .O(\D_R_O_int_reg[23]_0 [7]));
+  (* SOFT_HLUTNM = "soft_lutpair18" *) 
+  LUT3 #(
+    .INIT(8'hB8)) 
+    \ch2[incoming_sample][6]_i_1 
+       (.I0(D_R_O_int[14]),
+        .I1(switch),
+        .I2(\ch2_reg[to_ac][17] [6]),
+        .O(\D_R_O_int_reg[23]_0 [8]));
+  (* SOFT_HLUTNM = "soft_lutpair19" *) 
+  LUT3 #(
+    .INIT(8'hB8)) 
+    \ch2[incoming_sample][7]_i_1 
+       (.I0(D_R_O_int[15]),
+        .I1(switch),
+        .I2(\ch2_reg[to_ac][17] [7]),
+        .O(\D_R_O_int_reg[23]_0 [9]));
+  (* SOFT_HLUTNM = "soft_lutpair19" *) 
+  LUT3 #(
+    .INIT(8'hB8)) 
+    \ch2[incoming_sample][8]_i_1 
+       (.I0(D_R_O_int[16]),
+        .I1(switch),
+        .I2(\ch2_reg[to_ac][17] [8]),
+        .O(\D_R_O_int_reg[23]_0 [10]));
+  (* SOFT_HLUTNM = "soft_lutpair20" *) 
+  LUT3 #(
+    .INIT(8'hB8)) 
+    \ch2[incoming_sample][9]_i_1 
+       (.I0(D_R_O_int[17]),
+        .I1(switch),
+        .I2(\ch2_reg[to_ac][17] [9]),
+        .O(\D_R_O_int_reg[23]_0 [11]));
   (* SOFT_HLUTNM = "soft_lutpair26" *) 
   LUT2 #(
     .INIT(4'h8)) 
@@ -22035,70 +22265,6 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_i2s_ctl
        (.I0(switch),
         .I1(D_R_O_int[6]),
         .O(\D_R_O_int_reg[23]_0 [0]));
-  (* SOFT_HLUTNM = "soft_lutpair19" *) 
-  LUT3 #(
-    .INIT(8'hB8)) 
-    \ch2[to_ac][10]_i_1 
-       (.I0(D_R_O_int[16]),
-        .I1(switch),
-        .I2(\ch2_reg[incoming_sample][15] [8]),
-        .O(\D_R_O_int_reg[23]_0 [10]));
-  (* SOFT_HLUTNM = "soft_lutpair20" *) 
-  LUT3 #(
-    .INIT(8'hB8)) 
-    \ch2[to_ac][11]_i_1 
-       (.I0(D_R_O_int[17]),
-        .I1(switch),
-        .I2(\ch2_reg[incoming_sample][15] [9]),
-        .O(\D_R_O_int_reg[23]_0 [11]));
-  (* SOFT_HLUTNM = "soft_lutpair20" *) 
-  LUT3 #(
-    .INIT(8'hB8)) 
-    \ch2[to_ac][12]_i_1 
-       (.I0(D_R_O_int[18]),
-        .I1(switch),
-        .I2(\ch2_reg[incoming_sample][15] [10]),
-        .O(\D_R_O_int_reg[23]_0 [12]));
-  (* SOFT_HLUTNM = "soft_lutpair21" *) 
-  LUT3 #(
-    .INIT(8'hB8)) 
-    \ch2[to_ac][13]_i_1 
-       (.I0(D_R_O_int[19]),
-        .I1(switch),
-        .I2(\ch2_reg[incoming_sample][15] [11]),
-        .O(\D_R_O_int_reg[23]_0 [13]));
-  (* SOFT_HLUTNM = "soft_lutpair21" *) 
-  LUT3 #(
-    .INIT(8'hB8)) 
-    \ch2[to_ac][14]_i_1 
-       (.I0(D_R_O_int[20]),
-        .I1(switch),
-        .I2(\ch2_reg[incoming_sample][15] [12]),
-        .O(\D_R_O_int_reg[23]_0 [14]));
-  (* SOFT_HLUTNM = "soft_lutpair22" *) 
-  LUT3 #(
-    .INIT(8'hB8)) 
-    \ch2[to_ac][15]_i_1 
-       (.I0(D_R_O_int[21]),
-        .I1(switch),
-        .I2(\ch2_reg[incoming_sample][15] [13]),
-        .O(\D_R_O_int_reg[23]_0 [15]));
-  (* SOFT_HLUTNM = "soft_lutpair22" *) 
-  LUT3 #(
-    .INIT(8'hB8)) 
-    \ch2[to_ac][16]_i_1 
-       (.I0(D_R_O_int[22]),
-        .I1(switch),
-        .I2(\ch2_reg[incoming_sample][15] [14]),
-        .O(\D_R_O_int_reg[23]_0 [16]));
-  (* SOFT_HLUTNM = "soft_lutpair15" *) 
-  LUT3 #(
-    .INIT(8'h8B)) 
-    \ch2[to_ac][17]_i_1 
-       (.I0(D_R_O_int[23]),
-        .I1(switch),
-        .I2(\ch2_reg[incoming_sample][15] [15]),
-        .O(\D_R_O_int_reg[23]_0 [17]));
   (* SOFT_HLUTNM = "soft_lutpair26" *) 
   LUT2 #(
     .INIT(4'h8)) 
@@ -22106,70 +22272,6 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_i2s_ctl
        (.I0(switch),
         .I1(D_R_O_int[7]),
         .O(\D_R_O_int_reg[23]_0 [1]));
-  (* SOFT_HLUTNM = "soft_lutpair15" *) 
-  LUT3 #(
-    .INIT(8'hB8)) 
-    \ch2[to_ac][2]_i_1 
-       (.I0(D_R_O_int[8]),
-        .I1(switch),
-        .I2(\ch2_reg[incoming_sample][15] [0]),
-        .O(\D_R_O_int_reg[23]_0 [2]));
-  (* SOFT_HLUTNM = "soft_lutpair16" *) 
-  LUT3 #(
-    .INIT(8'hB8)) 
-    \ch2[to_ac][3]_i_1 
-       (.I0(D_R_O_int[9]),
-        .I1(switch),
-        .I2(\ch2_reg[incoming_sample][15] [1]),
-        .O(\D_R_O_int_reg[23]_0 [3]));
-  (* SOFT_HLUTNM = "soft_lutpair16" *) 
-  LUT3 #(
-    .INIT(8'hB8)) 
-    \ch2[to_ac][4]_i_1 
-       (.I0(D_R_O_int[10]),
-        .I1(switch),
-        .I2(\ch2_reg[incoming_sample][15] [2]),
-        .O(\D_R_O_int_reg[23]_0 [4]));
-  (* SOFT_HLUTNM = "soft_lutpair17" *) 
-  LUT3 #(
-    .INIT(8'hB8)) 
-    \ch2[to_ac][5]_i_1 
-       (.I0(D_R_O_int[11]),
-        .I1(switch),
-        .I2(\ch2_reg[incoming_sample][15] [3]),
-        .O(\D_R_O_int_reg[23]_0 [5]));
-  (* SOFT_HLUTNM = "soft_lutpair17" *) 
-  LUT3 #(
-    .INIT(8'hB8)) 
-    \ch2[to_ac][6]_i_1 
-       (.I0(D_R_O_int[12]),
-        .I1(switch),
-        .I2(\ch2_reg[incoming_sample][15] [4]),
-        .O(\D_R_O_int_reg[23]_0 [6]));
-  (* SOFT_HLUTNM = "soft_lutpair18" *) 
-  LUT3 #(
-    .INIT(8'hB8)) 
-    \ch2[to_ac][7]_i_1 
-       (.I0(D_R_O_int[13]),
-        .I1(switch),
-        .I2(\ch2_reg[incoming_sample][15] [5]),
-        .O(\D_R_O_int_reg[23]_0 [7]));
-  (* SOFT_HLUTNM = "soft_lutpair18" *) 
-  LUT3 #(
-    .INIT(8'hB8)) 
-    \ch2[to_ac][8]_i_1 
-       (.I0(D_R_O_int[14]),
-        .I1(switch),
-        .I2(\ch2_reg[incoming_sample][15] [6]),
-        .O(\D_R_O_int_reg[23]_0 [8]));
-  (* SOFT_HLUTNM = "soft_lutpair19" *) 
-  LUT3 #(
-    .INIT(8'hB8)) 
-    \ch2[to_ac][9]_i_1 
-       (.I0(D_R_O_int[15]),
-        .I1(switch),
-        .I2(\ch2_reg[incoming_sample][15] [7]),
-        .O(\D_R_O_int_reg[23]_0 [9]));
   LUT2 #(
     .INIT(4'h1)) 
     i__carry_i_1__5
@@ -22199,8 +22301,10 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_lab2_datapath
    (SR,
     flagQ,
     q,
+    Q,
     \process_q_reg[10] ,
     sw,
+    \ch2_reg[incoming_sample][15]_0 ,
     CO,
     \process_q_reg[9] ,
     ac_mclk,
@@ -22214,7 +22318,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_lab2_datapath
     s00_axi_aclk,
     WREN,
     s00_axi_aresetn,
-    Q,
+    process_Q_reg,
     \sdp_bl.ramb18_dp_bl.ram18_bl ,
     switch,
     \sdp_bl.ramb18_dp_bl.ram18_bl_0 ,
@@ -22226,8 +22330,10 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_lab2_datapath
   output [0:0]SR;
   output flagQ;
   output [9:0]q;
+  output [15:0]Q;
   output [9:0]\process_q_reg[10] ;
   output [1:0]sw;
+  output [15:0]\ch2_reg[incoming_sample][15]_0 ;
   output [0:0]CO;
   output [0:0]\process_q_reg[9] ;
   output ac_mclk;
@@ -22241,7 +22347,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_lab2_datapath
   input s00_axi_aclk;
   input WREN;
   input s00_axi_aresetn;
-  input [0:0]Q;
+  input [0:0]process_Q_reg;
   input [15:0]\sdp_bl.ramb18_dp_bl.ram18_bl ;
   input [3:0]switch;
   input [15:0]\sdp_bl.ramb18_dp_bl.ram18_bl_0 ;
@@ -22266,7 +22372,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_lab2_datapath
   wire \Inst_vga/inst_color_mapper/is_trigger_volt414_in ;
   wire \Inst_vga/inst_color_mapper/is_trigger_volt513_in ;
   wire LRCLK_reg;
-  wire [0:0]Q;
+  wire [15:0]Q;
   wire [9:0]RDADDR;
   wire [0:0]SR;
   wire [0:0]SS;
@@ -22279,22 +22385,6 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_lab2_datapath
   wire [17:0]\ch1[from_ac] ;
   wire \ch1[incoming_sample] ;
   wire ch1_in_vgrid;
-  wire \ch1_reg[incoming_sample_n_0_][0] ;
-  wire \ch1_reg[incoming_sample_n_0_][10] ;
-  wire \ch1_reg[incoming_sample_n_0_][11] ;
-  wire \ch1_reg[incoming_sample_n_0_][12] ;
-  wire \ch1_reg[incoming_sample_n_0_][13] ;
-  wire \ch1_reg[incoming_sample_n_0_][14] ;
-  wire \ch1_reg[incoming_sample_n_0_][15] ;
-  wire \ch1_reg[incoming_sample_n_0_][1] ;
-  wire \ch1_reg[incoming_sample_n_0_][2] ;
-  wire \ch1_reg[incoming_sample_n_0_][3] ;
-  wire \ch1_reg[incoming_sample_n_0_][4] ;
-  wire \ch1_reg[incoming_sample_n_0_][5] ;
-  wire \ch1_reg[incoming_sample_n_0_][6] ;
-  wire \ch1_reg[incoming_sample_n_0_][7] ;
-  wire \ch1_reg[incoming_sample_n_0_][8] ;
-  wire \ch1_reg[incoming_sample_n_0_][9] ;
   wire \ch1_reg[to_ac_n_0_][0] ;
   wire \ch1_reg[to_ac_n_0_][10] ;
   wire \ch1_reg[to_ac_n_0_][11] ;
@@ -22315,22 +22405,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_lab2_datapath
   wire \ch1_reg[to_ac_n_0_][9] ;
   wire [17:0]\ch2[from_ac] ;
   wire ch2_in_vgrid;
-  wire \ch2_reg[incoming_sample_n_0_][0] ;
-  wire \ch2_reg[incoming_sample_n_0_][10] ;
-  wire \ch2_reg[incoming_sample_n_0_][11] ;
-  wire \ch2_reg[incoming_sample_n_0_][12] ;
-  wire \ch2_reg[incoming_sample_n_0_][13] ;
-  wire \ch2_reg[incoming_sample_n_0_][14] ;
-  wire \ch2_reg[incoming_sample_n_0_][15] ;
-  wire \ch2_reg[incoming_sample_n_0_][1] ;
-  wire \ch2_reg[incoming_sample_n_0_][2] ;
-  wire \ch2_reg[incoming_sample_n_0_][3] ;
-  wire \ch2_reg[incoming_sample_n_0_][4] ;
-  wire \ch2_reg[incoming_sample_n_0_][5] ;
-  wire \ch2_reg[incoming_sample_n_0_][6] ;
-  wire \ch2_reg[incoming_sample_n_0_][7] ;
-  wire \ch2_reg[incoming_sample_n_0_][8] ;
-  wire \ch2_reg[incoming_sample_n_0_][9] ;
+  wire [15:0]\ch2_reg[incoming_sample][15]_0 ;
   wire \ch2_reg[to_ac_n_0_][0] ;
   wire \ch2_reg[to_ac_n_0_][10] ;
   wire \ch2_reg[to_ac_n_0_][11] ;
@@ -22353,6 +22428,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_lab2_datapath
   wire lopt;
   wire [9:0]\position[row] ;
   wire [8:1]previous_sample;
+  wire [0:0]process_Q_reg;
   wire [9:0]\process_q_reg[10] ;
   wire [0:0]\process_q_reg[9] ;
   wire [9:0]q;
@@ -22474,17 +22550,17 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_lab2_datapath
        (.BCLK_int_reg(BCLK_int_reg),
         .D(\ch1[from_ac] ),
         .\D_R_O_int_reg[23] (\ch2[from_ac] ),
-        .\Data_Out_int_reg[30] ({\ch2_reg[to_ac_n_0_][17] ,\ch2_reg[to_ac_n_0_][16] ,\ch2_reg[to_ac_n_0_][15] ,\ch2_reg[to_ac_n_0_][14] ,\ch2_reg[to_ac_n_0_][13] ,\ch2_reg[to_ac_n_0_][12] ,\ch2_reg[to_ac_n_0_][11] ,\ch2_reg[to_ac_n_0_][10] ,\ch2_reg[to_ac_n_0_][9] ,\ch2_reg[to_ac_n_0_][8] ,\ch2_reg[to_ac_n_0_][7] ,\ch2_reg[to_ac_n_0_][6] ,\ch2_reg[to_ac_n_0_][5] ,\ch2_reg[to_ac_n_0_][4] ,\ch2_reg[to_ac_n_0_][3] ,\ch2_reg[to_ac_n_0_][2] ,\ch2_reg[to_ac_n_0_][1] ,\ch2_reg[to_ac_n_0_][0] }),
-        .\Data_Out_int_reg[30]_0 ({\ch1_reg[to_ac_n_0_][17] ,\ch1_reg[to_ac_n_0_][16] ,\ch1_reg[to_ac_n_0_][15] ,\ch1_reg[to_ac_n_0_][14] ,\ch1_reg[to_ac_n_0_][13] ,\ch1_reg[to_ac_n_0_][12] ,\ch1_reg[to_ac_n_0_][11] ,\ch1_reg[to_ac_n_0_][10] ,\ch1_reg[to_ac_n_0_][9] ,\ch1_reg[to_ac_n_0_][8] ,\ch1_reg[to_ac_n_0_][7] ,\ch1_reg[to_ac_n_0_][6] ,\ch1_reg[to_ac_n_0_][5] ,\ch1_reg[to_ac_n_0_][4] ,\ch1_reg[to_ac_n_0_][3] ,\ch1_reg[to_ac_n_0_][2] ,\ch1_reg[to_ac_n_0_][1] ,\ch1_reg[to_ac_n_0_][0] }),
+        .\Data_Out_int_reg[30] ({\ch1_reg[to_ac_n_0_][17] ,\ch1_reg[to_ac_n_0_][16] ,\ch1_reg[to_ac_n_0_][15] ,\ch1_reg[to_ac_n_0_][14] ,\ch1_reg[to_ac_n_0_][13] ,\ch1_reg[to_ac_n_0_][12] ,\ch1_reg[to_ac_n_0_][11] ,\ch1_reg[to_ac_n_0_][10] ,\ch1_reg[to_ac_n_0_][9] ,\ch1_reg[to_ac_n_0_][8] ,\ch1_reg[to_ac_n_0_][7] ,\ch1_reg[to_ac_n_0_][6] ,\ch1_reg[to_ac_n_0_][5] ,\ch1_reg[to_ac_n_0_][4] ,\ch1_reg[to_ac_n_0_][3] ,\ch1_reg[to_ac_n_0_][2] ,\ch1_reg[to_ac_n_0_][1] ,\ch1_reg[to_ac_n_0_][0] }),
         .E(sw[0]),
         .LRCLK_reg(LRCLK_reg),
-        .Q(Q),
+        .Q({\ch2_reg[to_ac_n_0_][17] ,\ch2_reg[to_ac_n_0_][16] ,\ch2_reg[to_ac_n_0_][15] ,\ch2_reg[to_ac_n_0_][14] ,\ch2_reg[to_ac_n_0_][13] ,\ch2_reg[to_ac_n_0_][12] ,\ch2_reg[to_ac_n_0_][11] ,\ch2_reg[to_ac_n_0_][10] ,\ch2_reg[to_ac_n_0_][9] ,\ch2_reg[to_ac_n_0_][8] ,\ch2_reg[to_ac_n_0_][7] ,\ch2_reg[to_ac_n_0_][6] ,\ch2_reg[to_ac_n_0_][5] ,\ch2_reg[to_ac_n_0_][4] ,\ch2_reg[to_ac_n_0_][3] ,\ch2_reg[to_ac_n_0_][2] ,\ch2_reg[to_ac_n_0_][1] ,\ch2_reg[to_ac_n_0_][0] }),
         .SR(SR),
         .ac_adc_sdata(ac_adc_sdata),
         .ac_dac_sdata(ac_dac_sdata),
         .ac_mclk(ac_mclk),
         .flagQ(flagQ),
         .lopt(lopt),
+        .process_Q_reg(process_Q_reg),
         .s00_axi_aclk(s00_axi_aclk),
         .s00_axi_aresetn(s00_axi_aresetn),
         .s00_axi_aresetn_0(\ch1[incoming_sample] ),
@@ -22504,97 +22580,97 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_lab2_datapath
        (.C(s00_axi_aclk),
         .CE(\ch1[incoming_sample] ),
         .D(\ch1[from_ac] [2]),
-        .Q(\ch1_reg[incoming_sample_n_0_][0] ),
+        .Q(Q[0]),
         .R(1'b0));
   FDRE \ch1_reg[incoming_sample][10] 
        (.C(s00_axi_aclk),
         .CE(\ch1[incoming_sample] ),
         .D(\ch1[from_ac] [12]),
-        .Q(\ch1_reg[incoming_sample_n_0_][10] ),
+        .Q(Q[10]),
         .R(1'b0));
   FDRE \ch1_reg[incoming_sample][11] 
        (.C(s00_axi_aclk),
         .CE(\ch1[incoming_sample] ),
         .D(\ch1[from_ac] [13]),
-        .Q(\ch1_reg[incoming_sample_n_0_][11] ),
+        .Q(Q[11]),
         .R(1'b0));
   FDRE \ch1_reg[incoming_sample][12] 
        (.C(s00_axi_aclk),
         .CE(\ch1[incoming_sample] ),
         .D(\ch1[from_ac] [14]),
-        .Q(\ch1_reg[incoming_sample_n_0_][12] ),
+        .Q(Q[12]),
         .R(1'b0));
   FDRE \ch1_reg[incoming_sample][13] 
        (.C(s00_axi_aclk),
         .CE(\ch1[incoming_sample] ),
         .D(\ch1[from_ac] [15]),
-        .Q(\ch1_reg[incoming_sample_n_0_][13] ),
+        .Q(Q[13]),
         .R(1'b0));
   FDRE \ch1_reg[incoming_sample][14] 
        (.C(s00_axi_aclk),
         .CE(\ch1[incoming_sample] ),
         .D(\ch1[from_ac] [16]),
-        .Q(\ch1_reg[incoming_sample_n_0_][14] ),
+        .Q(Q[14]),
         .R(1'b0));
   FDRE \ch1_reg[incoming_sample][15] 
        (.C(s00_axi_aclk),
         .CE(\ch1[incoming_sample] ),
         .D(\ch1[from_ac] [17]),
-        .Q(\ch1_reg[incoming_sample_n_0_][15] ),
+        .Q(Q[15]),
         .R(1'b0));
   FDRE \ch1_reg[incoming_sample][1] 
        (.C(s00_axi_aclk),
         .CE(\ch1[incoming_sample] ),
         .D(\ch1[from_ac] [3]),
-        .Q(\ch1_reg[incoming_sample_n_0_][1] ),
+        .Q(Q[1]),
         .R(1'b0));
   FDRE \ch1_reg[incoming_sample][2] 
        (.C(s00_axi_aclk),
         .CE(\ch1[incoming_sample] ),
         .D(\ch1[from_ac] [4]),
-        .Q(\ch1_reg[incoming_sample_n_0_][2] ),
+        .Q(Q[2]),
         .R(1'b0));
   FDRE \ch1_reg[incoming_sample][3] 
        (.C(s00_axi_aclk),
         .CE(\ch1[incoming_sample] ),
         .D(\ch1[from_ac] [5]),
-        .Q(\ch1_reg[incoming_sample_n_0_][3] ),
+        .Q(Q[3]),
         .R(1'b0));
   FDRE \ch1_reg[incoming_sample][4] 
        (.C(s00_axi_aclk),
         .CE(\ch1[incoming_sample] ),
         .D(\ch1[from_ac] [6]),
-        .Q(\ch1_reg[incoming_sample_n_0_][4] ),
+        .Q(Q[4]),
         .R(1'b0));
   FDRE \ch1_reg[incoming_sample][5] 
        (.C(s00_axi_aclk),
         .CE(\ch1[incoming_sample] ),
         .D(\ch1[from_ac] [7]),
-        .Q(\ch1_reg[incoming_sample_n_0_][5] ),
+        .Q(Q[5]),
         .R(1'b0));
   FDRE \ch1_reg[incoming_sample][6] 
        (.C(s00_axi_aclk),
         .CE(\ch1[incoming_sample] ),
         .D(\ch1[from_ac] [8]),
-        .Q(\ch1_reg[incoming_sample_n_0_][6] ),
+        .Q(Q[6]),
         .R(1'b0));
   FDRE \ch1_reg[incoming_sample][7] 
        (.C(s00_axi_aclk),
         .CE(\ch1[incoming_sample] ),
         .D(\ch1[from_ac] [9]),
-        .Q(\ch1_reg[incoming_sample_n_0_][7] ),
+        .Q(Q[7]),
         .R(1'b0));
   FDRE \ch1_reg[incoming_sample][8] 
        (.C(s00_axi_aclk),
         .CE(\ch1[incoming_sample] ),
         .D(\ch1[from_ac] [10]),
-        .Q(\ch1_reg[incoming_sample_n_0_][8] ),
+        .Q(Q[8]),
         .R(1'b0));
   FDRE \ch1_reg[incoming_sample][9] 
        (.C(s00_axi_aclk),
         .CE(\ch1[incoming_sample] ),
         .D(\ch1[from_ac] [11]),
-        .Q(\ch1_reg[incoming_sample_n_0_][9] ),
+        .Q(Q[9]),
         .R(1'b0));
   FDRE \ch1_reg[to_ac][0] 
        (.C(s00_axi_aclk),
@@ -22708,97 +22784,97 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_lab2_datapath
        (.C(s00_axi_aclk),
         .CE(\ch1[incoming_sample] ),
         .D(\ch2[from_ac] [2]),
-        .Q(\ch2_reg[incoming_sample_n_0_][0] ),
+        .Q(\ch2_reg[incoming_sample][15]_0 [0]),
         .R(1'b0));
   FDRE \ch2_reg[incoming_sample][10] 
        (.C(s00_axi_aclk),
         .CE(\ch1[incoming_sample] ),
         .D(\ch2[from_ac] [12]),
-        .Q(\ch2_reg[incoming_sample_n_0_][10] ),
+        .Q(\ch2_reg[incoming_sample][15]_0 [10]),
         .R(1'b0));
   FDRE \ch2_reg[incoming_sample][11] 
        (.C(s00_axi_aclk),
         .CE(\ch1[incoming_sample] ),
         .D(\ch2[from_ac] [13]),
-        .Q(\ch2_reg[incoming_sample_n_0_][11] ),
+        .Q(\ch2_reg[incoming_sample][15]_0 [11]),
         .R(1'b0));
   FDRE \ch2_reg[incoming_sample][12] 
        (.C(s00_axi_aclk),
         .CE(\ch1[incoming_sample] ),
         .D(\ch2[from_ac] [14]),
-        .Q(\ch2_reg[incoming_sample_n_0_][12] ),
+        .Q(\ch2_reg[incoming_sample][15]_0 [12]),
         .R(1'b0));
   FDRE \ch2_reg[incoming_sample][13] 
        (.C(s00_axi_aclk),
         .CE(\ch1[incoming_sample] ),
         .D(\ch2[from_ac] [15]),
-        .Q(\ch2_reg[incoming_sample_n_0_][13] ),
+        .Q(\ch2_reg[incoming_sample][15]_0 [13]),
         .R(1'b0));
   FDRE \ch2_reg[incoming_sample][14] 
        (.C(s00_axi_aclk),
         .CE(\ch1[incoming_sample] ),
         .D(\ch2[from_ac] [16]),
-        .Q(\ch2_reg[incoming_sample_n_0_][14] ),
+        .Q(\ch2_reg[incoming_sample][15]_0 [14]),
         .R(1'b0));
   FDRE \ch2_reg[incoming_sample][15] 
        (.C(s00_axi_aclk),
         .CE(\ch1[incoming_sample] ),
         .D(\ch2[from_ac] [17]),
-        .Q(\ch2_reg[incoming_sample_n_0_][15] ),
+        .Q(\ch2_reg[incoming_sample][15]_0 [15]),
         .R(1'b0));
   FDRE \ch2_reg[incoming_sample][1] 
        (.C(s00_axi_aclk),
         .CE(\ch1[incoming_sample] ),
         .D(\ch2[from_ac] [3]),
-        .Q(\ch2_reg[incoming_sample_n_0_][1] ),
+        .Q(\ch2_reg[incoming_sample][15]_0 [1]),
         .R(1'b0));
   FDRE \ch2_reg[incoming_sample][2] 
        (.C(s00_axi_aclk),
         .CE(\ch1[incoming_sample] ),
         .D(\ch2[from_ac] [4]),
-        .Q(\ch2_reg[incoming_sample_n_0_][2] ),
+        .Q(\ch2_reg[incoming_sample][15]_0 [2]),
         .R(1'b0));
   FDRE \ch2_reg[incoming_sample][3] 
        (.C(s00_axi_aclk),
         .CE(\ch1[incoming_sample] ),
         .D(\ch2[from_ac] [5]),
-        .Q(\ch2_reg[incoming_sample_n_0_][3] ),
+        .Q(\ch2_reg[incoming_sample][15]_0 [3]),
         .R(1'b0));
   FDRE \ch2_reg[incoming_sample][4] 
        (.C(s00_axi_aclk),
         .CE(\ch1[incoming_sample] ),
         .D(\ch2[from_ac] [6]),
-        .Q(\ch2_reg[incoming_sample_n_0_][4] ),
+        .Q(\ch2_reg[incoming_sample][15]_0 [4]),
         .R(1'b0));
   FDRE \ch2_reg[incoming_sample][5] 
        (.C(s00_axi_aclk),
         .CE(\ch1[incoming_sample] ),
         .D(\ch2[from_ac] [7]),
-        .Q(\ch2_reg[incoming_sample_n_0_][5] ),
+        .Q(\ch2_reg[incoming_sample][15]_0 [5]),
         .R(1'b0));
   FDRE \ch2_reg[incoming_sample][6] 
        (.C(s00_axi_aclk),
         .CE(\ch1[incoming_sample] ),
         .D(\ch2[from_ac] [8]),
-        .Q(\ch2_reg[incoming_sample_n_0_][6] ),
+        .Q(\ch2_reg[incoming_sample][15]_0 [6]),
         .R(1'b0));
   FDRE \ch2_reg[incoming_sample][7] 
        (.C(s00_axi_aclk),
         .CE(\ch1[incoming_sample] ),
         .D(\ch2[from_ac] [9]),
-        .Q(\ch2_reg[incoming_sample_n_0_][7] ),
+        .Q(\ch2_reg[incoming_sample][15]_0 [7]),
         .R(1'b0));
   FDRE \ch2_reg[incoming_sample][8] 
        (.C(s00_axi_aclk),
         .CE(\ch1[incoming_sample] ),
         .D(\ch2[from_ac] [10]),
-        .Q(\ch2_reg[incoming_sample_n_0_][8] ),
+        .Q(\ch2_reg[incoming_sample][15]_0 [8]),
         .R(1'b0));
   FDRE \ch2_reg[incoming_sample][9] 
        (.C(s00_axi_aclk),
         .CE(\ch1[incoming_sample] ),
         .D(\ch2[from_ac] [11]),
-        .Q(\ch2_reg[incoming_sample_n_0_][9] ),
+        .Q(\ch2_reg[incoming_sample][15]_0 [9]),
         .R(1'b0));
   FDRE \ch2_reg[to_ac][0] 
        (.C(s00_axi_aclk),
@@ -22916,7 +22992,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_lab2_datapath
   decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_unimacro_BRAM_SDP_MACRO__parameterized1 leftChannelMemory
        (.ADDRBWRADDR(WRADDR),
         .CO(ch1_in_vgrid),
-        .Q({\ch1_reg[incoming_sample_n_0_][15] ,\ch1_reg[incoming_sample_n_0_][14] ,\ch1_reg[incoming_sample_n_0_][13] ,\ch1_reg[incoming_sample_n_0_][12] ,\ch1_reg[incoming_sample_n_0_][11] ,\ch1_reg[incoming_sample_n_0_][10] ,\ch1_reg[incoming_sample_n_0_][9] ,\ch1_reg[incoming_sample_n_0_][8] ,\ch1_reg[incoming_sample_n_0_][7] ,\ch1_reg[incoming_sample_n_0_][6] ,\ch1_reg[incoming_sample_n_0_][5] ,\ch1_reg[incoming_sample_n_0_][4] ,\ch1_reg[incoming_sample_n_0_][3] ,\ch1_reg[incoming_sample_n_0_][2] ,\ch1_reg[incoming_sample_n_0_][1] ,\ch1_reg[incoming_sample_n_0_][0] }),
+        .Q(Q),
         .S(video_inst_n_54),
         .SR(SR),
         .WREN(WREN),
@@ -22937,12 +23013,12 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_lab2_datapath
         .\dc_bias_reg[3]_i_7_0 (\position[row] [8:0]),
         .s00_axi_aclk(s00_axi_aclk),
         .\sdp_bl.ramb18_dp_bl.ram18_bl_0 (\sdp_bl.ramb18_dp_bl.ram18_bl_0 ),
-        .\sdp_bl.ramb18_dp_bl.ram18_bl_1 ({\ch2_reg[incoming_sample_n_0_][15] ,\ch2_reg[incoming_sample_n_0_][14] ,\ch2_reg[incoming_sample_n_0_][13] ,\ch2_reg[incoming_sample_n_0_][12] ,\ch2_reg[incoming_sample_n_0_][11] ,\ch2_reg[incoming_sample_n_0_][10] ,\ch2_reg[incoming_sample_n_0_][9] ,\ch2_reg[incoming_sample_n_0_][8] ,\ch2_reg[incoming_sample_n_0_][7] ,\ch2_reg[incoming_sample_n_0_][6] ,\ch2_reg[incoming_sample_n_0_][5] ,\ch2_reg[incoming_sample_n_0_][4] ,\ch2_reg[incoming_sample_n_0_][3] ,\ch2_reg[incoming_sample_n_0_][2] ,\ch2_reg[incoming_sample_n_0_][1] ,\ch2_reg[incoming_sample_n_0_][0] }),
+        .\sdp_bl.ramb18_dp_bl.ram18_bl_1 (\ch2_reg[incoming_sample][15]_0 ),
         .switch(switch[2:0]),
         .switch_1_sp_1(rightChannelMemory_n_1));
   decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_trigger_detector trig_v_detect
        (.E(sw[0]),
-        .Q({\ch1_reg[incoming_sample_n_0_][15] ,\ch1_reg[incoming_sample_n_0_][14] ,\ch1_reg[incoming_sample_n_0_][13] ,\ch1_reg[incoming_sample_n_0_][12] ,\ch1_reg[incoming_sample_n_0_][11] ,\ch1_reg[incoming_sample_n_0_][10] ,\ch1_reg[incoming_sample_n_0_][9] ,\ch1_reg[incoming_sample_n_0_][8] ,\ch1_reg[incoming_sample_n_0_][7] }),
+        .Q(Q[15:7]),
         .S(trig_v_detect_n_0),
         .SR(SR),
         .\previous_sample_reg[8]_0 (previous_sample),
@@ -22989,7 +23065,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_lab2_datapath
   decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_numeric_stepper trigv_stepper
        (.CO(CO),
         .DI({trigv_stepper_n_17,trigv_stepper_n_18}),
-        .Q({\ch1_reg[incoming_sample_n_0_][15] ,\ch1_reg[incoming_sample_n_0_][14] ,\ch1_reg[incoming_sample_n_0_][13] ,\ch1_reg[incoming_sample_n_0_][12] ,\ch1_reg[incoming_sample_n_0_][11] ,\ch1_reg[incoming_sample_n_0_][10] ,\ch1_reg[incoming_sample_n_0_][9] ,\ch1_reg[incoming_sample_n_0_][8] ,\ch1_reg[incoming_sample_n_0_][7] }),
+        .Q(Q[15:7]),
         .S({trigv_stepper_n_10,trigv_stepper_n_11}),
         .SR(SR),
         .btn({btn[2],btn[0]}),
@@ -27571,10 +27647,10 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_trigger_detector
   input s00_axi_aclk;
 
   wire [0:0]E;
+  wire [15:15]Lbus_out;
   wire [8:0]Q;
   wire [0:0]S;
   wire [0:0]SR;
-  wire [15:15]monitored_signal;
   wire [0:0]previous_sample;
   wire [7:0]\previous_sample_reg[8]_0 ;
   wire [0:0]q;
@@ -27591,7 +27667,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_trigger_detector
     .INIT(2'h1)) 
     \previous_sample[8]_i_1 
        (.I0(Q[8]),
-        .O(monitored_signal));
+        .O(Lbus_out));
   FDRE \previous_sample_reg[0] 
        (.C(s00_axi_aclk),
         .CE(E),
@@ -27643,7 +27719,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_trigger_detector
   FDRE \previous_sample_reg[8] 
        (.C(s00_axi_aclk),
         .CE(E),
-        .D(monitored_signal),
+        .D(Lbus_out),
         .Q(\previous_sample_reg[8]_0 [7]),
         .R(SR));
 endmodule

@@ -1,0 +1,1341 @@
+TRACE::2026-03-14.14:47:09::SCWPlatform::Trying to open the hw design at C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:09::SCWPlatform::DSA given C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:09::SCWPlatform::DSA absoulate path C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:09::SCWPlatform::DSA directory C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw
+TRACE::2026-03-14.14:47:09::SCWPlatform:: Platform Path C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:09::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-14.14:47:09::SCWPlatform::Do not have an existing db opened. 
+TRACE::2026-03-14.14:47:10::SCWPlatform::Opened new HwDB with name design_1_wrapper_0
+TRACE::2026-03-14.14:47:10::SCWWriter::formatted JSON is {
+	"platformName":	"Software_Controlled_Datapath_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"Software_Controlled_Datapath_wrapper",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/Software_Controlled_Datapath_wrapper.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	""
+}
+TRACE::2026-03-14.14:47:10::SCWWriter::formatted JSON is {
+	"platformName":	"Software_Controlled_Datapath_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"Software_Controlled_Datapath_wrapper",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/Software_Controlled_Datapath_wrapper.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"Software_Controlled_Datapath_wrapper",
+	"systems":	[{
+			"systemName":	"Software_Controlled_Datapath_wrapper",
+			"systemDesc":	"Software_Controlled_Datapath_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"Software_Controlled_Datapath_wrapper"
+		}]
+}
+TRACE::2026-03-14.14:47:10::SCWPlatform::Boot application domains not present, creating them
+TRACE::2026-03-14.14:47:10::SCWPlatform::Pure FPGA device, no boot application will be created.
+TRACE::2026-03-14.14:47:10::SCWWriter::formatted JSON is {
+	"platformName":	"Software_Controlled_Datapath_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"Software_Controlled_Datapath_wrapper",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/Software_Controlled_Datapath_wrapper.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"Software_Controlled_Datapath_wrapper",
+	"systems":	[{
+			"systemName":	"Software_Controlled_Datapath_wrapper",
+			"systemDesc":	"Software_Controlled_Datapath_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"Software_Controlled_Datapath_wrapper"
+		}]
+}
+TRACE::2026-03-14.14:47:10::SCWWriter::formatted JSON is {
+	"platformName":	"Software_Controlled_Datapath_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"Software_Controlled_Datapath_wrapper",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/Software_Controlled_Datapath_wrapper.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"Software_Controlled_Datapath_wrapper",
+	"systems":	[{
+			"systemName":	"Software_Controlled_Datapath_wrapper",
+			"systemDesc":	"Software_Controlled_Datapath_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"Software_Controlled_Datapath_wrapper"
+		}]
+}
+TRACE::2026-03-14.14:47:10::SCWPlatform::Trying to open the hw design at C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:10::SCWPlatform::DSA given C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:10::SCWPlatform::DSA absoulate path C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:10::SCWPlatform::DSA directory C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw
+TRACE::2026-03-14.14:47:10::SCWPlatform:: Platform Path C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:10::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-14.14:47:10::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2026-03-14.14:47:10::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2026-03-14.14:47:10::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-14.14:47:10::SCWPlatform::Trying to open the hw design at C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:10::SCWPlatform::DSA given C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:10::SCWPlatform::DSA absoulate path C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:10::SCWPlatform::DSA directory C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw
+TRACE::2026-03-14.14:47:10::SCWPlatform:: Platform Path C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:10::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-14.14:47:10::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2026-03-14.14:47:10::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2026-03-14.14:47:10::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-14.14:47:10::SCWDomain::checking for install qemu data   : 
+TRACE::2026-03-14.14:47:10::SCWPlatform::Trying to open the hw design at C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:10::SCWPlatform::DSA given C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:10::SCWPlatform::DSA absoulate path C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:10::SCWPlatform::DSA directory C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw
+TRACE::2026-03-14.14:47:10::SCWPlatform:: Platform Path C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:10::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-14.14:47:10::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2026-03-14.14:47:10::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2026-03-14.14:47:10::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-14.14:47:10::SCWPlatform::Trying to open the hw design at C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:10::SCWPlatform::DSA given C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:10::SCWPlatform::DSA absoulate path C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:10::SCWPlatform::DSA directory C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw
+TRACE::2026-03-14.14:47:10::SCWPlatform:: Platform Path C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:10::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-14.14:47:10::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2026-03-14.14:47:10::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2026-03-14.14:47:10::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-14.14:47:10::SCWPlatform::Trying to open the hw design at C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:10::SCWPlatform::DSA given C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:10::SCWPlatform::DSA absoulate path C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:10::SCWPlatform::DSA directory C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw
+TRACE::2026-03-14.14:47:10::SCWPlatform:: Platform Path C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:10::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-14.14:47:10::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2026-03-14.14:47:10::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2026-03-14.14:47:10::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-14.14:47:10::SCWMssOS::Checking the sw design at  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:47:10::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2026-03-14.14:47:10::SCWMssOS::No sw design opened at  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:47:10::SCWMssOS::mss does not exists at C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:47:10::SCWMssOS::Creating sw design at  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:47:10::SCWMssOS::Adding the swdes entry, created swdb C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss with des name C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:47:10::SCWMssOS::updating the scw layer changes to swdes at   C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:47:10::SCWMssOS::Writing mss at C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:47:10::SCWMssOS::Completed writing the mss file at C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp
+TRACE::2026-03-14.14:47:10::SCWMssOS::Picking up changes from newly written mss file into SCW Layer. 
+TRACE::2026-03-14.14:47:10::SCWMssOS::Updated the changes from newly written mss file into SCW Layer. 
+TRACE::2026-03-14.14:47:10::SCWMssOS::Completed writing the mss file at C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp
+TRACE::2026-03-14.14:47:10::SCWMssOS::Forcing BSP Sources regeneration.
+TRACE::2026-03-14.14:47:12::SCWMssOS::Saving the mss changes C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:47:12::SCWMssOS::Adding the swdes entry, mss present, able to open swdb C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss with des name system
+TRACE::2026-03-14.14:47:12::SCWMssOS::Writing the mss file completed C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:47:12::SCWMssOS::Commit changes completed.
+TRACE::2026-03-14.14:47:12::SCWPlatform::Trying to open the hw design at C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform::DSA given C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform::DSA absoulate path C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform::DSA directory C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw
+TRACE::2026-03-14.14:47:12::SCWPlatform:: Platform Path C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-14.14:47:12::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2026-03-14.14:47:12::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2026-03-14.14:47:12::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-14.14:47:12::SCWMssOS::Checking the sw design at  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:47:12::SCWMssOS::DEBUG:  swdes dump  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-03-14.14:47:12::SCWMssOS::Sw design exists and opened at  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:47:12::SCWPlatform::Trying to open the hw design at C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform::DSA given C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform::DSA absoulate path C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform::DSA directory C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw
+TRACE::2026-03-14.14:47:12::SCWPlatform:: Platform Path C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-14.14:47:12::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2026-03-14.14:47:12::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2026-03-14.14:47:12::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-14.14:47:12::SCWMssOS::Checking the sw design at  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:47:12::SCWMssOS::DEBUG:  swdes dump  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-03-14.14:47:12::SCWMssOS::Sw design exists and opened at  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:47:12::SCWPlatform::Trying to open the hw design at C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform::DSA given C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform::DSA absoulate path C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform::DSA directory C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw
+TRACE::2026-03-14.14:47:12::SCWPlatform:: Platform Path C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-14.14:47:12::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2026-03-14.14:47:12::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2026-03-14.14:47:12::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-14.14:47:12::SCWMssOS::Checking the sw design at  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:47:12::SCWMssOS::DEBUG:  swdes dump  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-03-14.14:47:12::SCWMssOS::Sw design exists and opened at  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:47:12::SCWWriter::formatted JSON is {
+	"platformName":	"Software_Controlled_Datapath_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"Software_Controlled_Datapath_wrapper",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/Software_Controlled_Datapath_wrapper.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"Software_Controlled_Datapath_wrapper",
+	"systems":	[{
+			"systemName":	"Software_Controlled_Datapath_wrapper",
+			"systemDesc":	"Software_Controlled_Datapath_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"Software_Controlled_Datapath_wrapper",
+			"sysActiveDom":	"standalone_microblaze_0",
+			"sysDefaultDom":	"standalone_microblaze_0",
+			"domains":	[{
+					"domainName":	"standalone_microblaze_0",
+					"domainDispName":	"standalone_microblaze_0",
+					"domainDesc":	"standalone_microblaze_0",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"9.2",
+					"mssFile":	"",
+					"md5Digest":	"43c7c075edf9de20332a31d304250ca9",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+LOG::2026-03-14.14:47:12::SCWPlatform::Started generating the artifacts platform Software_Controlled_Datapath_wrapper
+TRACE::2026-03-14.14:47:12::SCWPlatform::Sanity checking of platform is completed
+LOG::2026-03-14.14:47:12::SCWPlatform::Started generating the artifacts for system configuration Software_Controlled_Datapath_wrapper
+LOG::2026-03-14.14:47:12::SCWSystem::Checking the domain standalone_microblaze_0
+LOG::2026-03-14.14:47:12::SCWSystem::Not a boot domain 
+LOG::2026-03-14.14:47:12::SCWSystem::Started Processing the domain standalone_microblaze_0
+TRACE::2026-03-14.14:47:12::SCWDomain::Generating domain artifcats
+TRACE::2026-03-14.14:47:12::SCWMssOS::Generating standalone artifcats
+TRACE::2026-03-14.14:47:12::SCWMssOS:: Copying the user libraries. 
+TRACE::2026-03-14.14:47:12::SCWPlatform::Trying to open the hw design at C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform::DSA given C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform::DSA absoulate path C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform::DSA directory C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw
+TRACE::2026-03-14.14:47:12::SCWPlatform:: Platform Path C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-14.14:47:12::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2026-03-14.14:47:12::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2026-03-14.14:47:12::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-14.14:47:12::SCWMssOS::Checking the sw design at  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:47:12::SCWMssOS::DEBUG:  swdes dump  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-03-14.14:47:12::SCWMssOS::Sw design exists and opened at  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:47:12::SCWMssOS::Completed writing the mss file at C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp
+TRACE::2026-03-14.14:47:12::SCWMssOS::Mss edits present, copying mssfile into export location C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:47:12::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2026-03-14.14:47:12::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2026-03-14.14:47:12::SCWDomain::Skipping the build for domain :  standalone_microblaze_0
+TRACE::2026-03-14.14:47:12::SCWMssOS::skipping the bsp build ... 
+TRACE::2026-03-14.14:47:12::SCWMssOS::Copying to export directory.
+TRACE::2026-03-14.14:47:12::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2026-03-14.14:47:12::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2026-03-14.14:47:12::SCWSystem::Completed Processing the domain standalone_microblaze_0
+LOG::2026-03-14.14:47:12::SCWSystem::Completed Processing the sysconfig Software_Controlled_Datapath_wrapper
+LOG::2026-03-14.14:47:12::SCWPlatform::Completed generating the artifacts for system configuration Software_Controlled_Datapath_wrapper
+TRACE::2026-03-14.14:47:12::SCWPlatform::Started preparing the platform 
+TRACE::2026-03-14.14:47:12::SCWSystem::Writing the bif file for system config Software_Controlled_Datapath_wrapper
+TRACE::2026-03-14.14:47:12::SCWSystem::dir created 
+TRACE::2026-03-14.14:47:12::SCWSystem::Writing the bif 
+TRACE::2026-03-14.14:47:12::SCWPlatform::Started writing the spfm file 
+TRACE::2026-03-14.14:47:12::SCWPlatform::Started writing the xpfm file 
+TRACE::2026-03-14.14:47:12::SCWPlatform::Completed generating the platform
+TRACE::2026-03-14.14:47:12::SCWMssOS::Saving the mss changes C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:47:12::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2026-03-14.14:47:12::SCWMssOS::Completed writemss as part of save.
+TRACE::2026-03-14.14:47:12::SCWMssOS::Commit changes completed.
+TRACE::2026-03-14.14:47:12::SCWPlatform::Trying to open the hw design at C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform::DSA given C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform::DSA absoulate path C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform::DSA directory C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw
+TRACE::2026-03-14.14:47:12::SCWPlatform:: Platform Path C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-14.14:47:12::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2026-03-14.14:47:12::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2026-03-14.14:47:12::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-14.14:47:12::SCWMssOS::Checking the sw design at  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:47:12::SCWMssOS::DEBUG:  swdes dump  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-03-14.14:47:12::SCWMssOS::Sw design exists and opened at  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:47:12::SCWPlatform::Trying to open the hw design at C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform::DSA given C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform::DSA absoulate path C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform::DSA directory C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw
+TRACE::2026-03-14.14:47:12::SCWPlatform:: Platform Path C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-14.14:47:12::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2026-03-14.14:47:12::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2026-03-14.14:47:12::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-14.14:47:12::SCWMssOS::Checking the sw design at  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:47:12::SCWMssOS::DEBUG:  swdes dump  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-03-14.14:47:12::SCWMssOS::Sw design exists and opened at  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:47:12::SCWPlatform::Trying to open the hw design at C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform::DSA given C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform::DSA absoulate path C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform::DSA directory C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw
+TRACE::2026-03-14.14:47:12::SCWPlatform:: Platform Path C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-14.14:47:12::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2026-03-14.14:47:12::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2026-03-14.14:47:12::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-14.14:47:12::SCWMssOS::Checking the sw design at  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:47:12::SCWMssOS::DEBUG:  swdes dump  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-03-14.14:47:12::SCWMssOS::Sw design exists and opened at  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:47:12::SCWWriter::formatted JSON is {
+	"platformName":	"Software_Controlled_Datapath_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"Software_Controlled_Datapath_wrapper",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/Software_Controlled_Datapath_wrapper.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"Software_Controlled_Datapath_wrapper",
+	"systems":	[{
+			"systemName":	"Software_Controlled_Datapath_wrapper",
+			"systemDesc":	"Software_Controlled_Datapath_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"Software_Controlled_Datapath_wrapper",
+			"sysActiveDom":	"standalone_microblaze_0",
+			"sysDefaultDom":	"standalone_microblaze_0",
+			"domains":	[{
+					"domainName":	"standalone_microblaze_0",
+					"domainDispName":	"standalone_microblaze_0",
+					"domainDesc":	"standalone_microblaze_0",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"9.2",
+					"mssFile":	"",
+					"md5Digest":	"43c7c075edf9de20332a31d304250ca9",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2026-03-14.14:47:12::SCWPlatform::updated the xpfm file.
+TRACE::2026-03-14.14:47:12::SCWPlatform::Trying to open the hw design at C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform::DSA given C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform::DSA absoulate path C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform::DSA directory C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw
+TRACE::2026-03-14.14:47:12::SCWPlatform:: Platform Path C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-14.14:47:12::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2026-03-14.14:47:12::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2026-03-14.14:47:12::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-14.14:47:12::SCWMssOS::Checking the sw design at  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:47:12::SCWMssOS::DEBUG:  swdes dump  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-03-14.14:47:12::SCWMssOS::Sw design exists and opened at  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:47:12::SCWMssOS::Saving the mss changes C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:47:12::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2026-03-14.14:47:12::SCWMssOS::Completed writemss as part of save.
+TRACE::2026-03-14.14:47:12::SCWMssOS::Commit changes completed.
+TRACE::2026-03-14.14:47:12::SCWPlatform::Trying to open the hw design at C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform::DSA given C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform::DSA absoulate path C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform::DSA directory C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw
+TRACE::2026-03-14.14:47:12::SCWPlatform:: Platform Path C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-14.14:47:12::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2026-03-14.14:47:12::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2026-03-14.14:47:12::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-14.14:47:12::SCWMssOS::Checking the sw design at  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:47:12::SCWMssOS::DEBUG:  swdes dump  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-03-14.14:47:12::SCWMssOS::Sw design exists and opened at  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:47:12::SCWPlatform::Trying to open the hw design at C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform::DSA given C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform::DSA absoulate path C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform::DSA directory C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw
+TRACE::2026-03-14.14:47:12::SCWPlatform:: Platform Path C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-14.14:47:12::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2026-03-14.14:47:12::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2026-03-14.14:47:12::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-14.14:47:12::SCWMssOS::Checking the sw design at  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:47:12::SCWMssOS::DEBUG:  swdes dump  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-03-14.14:47:12::SCWMssOS::Sw design exists and opened at  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:47:12::SCWPlatform::Trying to open the hw design at C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform::DSA given C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform::DSA absoulate path C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform::DSA directory C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw
+TRACE::2026-03-14.14:47:12::SCWPlatform:: Platform Path C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-14.14:47:12::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2026-03-14.14:47:12::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2026-03-14.14:47:12::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-14.14:47:12::SCWMssOS::Checking the sw design at  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:47:12::SCWMssOS::DEBUG:  swdes dump  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-03-14.14:47:12::SCWMssOS::Sw design exists and opened at  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:47:12::SCWWriter::formatted JSON is {
+	"platformName":	"Software_Controlled_Datapath_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"Software_Controlled_Datapath_wrapper",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/Software_Controlled_Datapath_wrapper.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"Software_Controlled_Datapath_wrapper",
+	"systems":	[{
+			"systemName":	"Software_Controlled_Datapath_wrapper",
+			"systemDesc":	"Software_Controlled_Datapath_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"Software_Controlled_Datapath_wrapper",
+			"sysActiveDom":	"standalone_microblaze_0",
+			"sysDefaultDom":	"standalone_microblaze_0",
+			"domains":	[{
+					"domainName":	"standalone_microblaze_0",
+					"domainDispName":	"standalone_microblaze_0",
+					"domainDesc":	"standalone_microblaze_0",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"9.2",
+					"mssFile":	"",
+					"md5Digest":	"43c7c075edf9de20332a31d304250ca9",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2026-03-14.14:47:12::SCWPlatform::Trying to open the hw design at C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform::DSA given C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform::DSA absoulate path C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform::DSA directory C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw
+TRACE::2026-03-14.14:47:12::SCWPlatform:: Platform Path C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-14.14:47:12::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2026-03-14.14:47:12::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2026-03-14.14:47:12::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-14.14:47:12::SCWMssOS::Checking the sw design at  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:47:12::SCWMssOS::DEBUG:  swdes dump  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-03-14.14:47:12::SCWMssOS::Sw design exists and opened at  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:47:12::SCWPlatform::Trying to open the hw design at C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform::DSA given C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform::DSA absoulate path C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform::DSA directory C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw
+TRACE::2026-03-14.14:47:12::SCWPlatform:: Platform Path C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-14.14:47:12::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2026-03-14.14:47:12::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2026-03-14.14:47:12::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-14.14:47:12::SCWMssOS::Checking the sw design at  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:47:12::SCWMssOS::DEBUG:  swdes dump  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-03-14.14:47:12::SCWMssOS::Sw design exists and opened at  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:47:12::SCWMssOS::Saving the mss changes C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:47:12::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2026-03-14.14:47:12::SCWMssOS::Completed writemss as part of save.
+TRACE::2026-03-14.14:47:12::SCWMssOS::Commit changes completed.
+TRACE::2026-03-14.14:47:12::SCWPlatform::Trying to open the hw design at C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform::DSA given C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform::DSA absoulate path C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform::DSA directory C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw
+TRACE::2026-03-14.14:47:12::SCWPlatform:: Platform Path C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-14.14:47:12::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2026-03-14.14:47:12::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2026-03-14.14:47:12::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-14.14:47:12::SCWMssOS::Checking the sw design at  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:47:12::SCWMssOS::DEBUG:  swdes dump  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-03-14.14:47:12::SCWMssOS::Sw design exists and opened at  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:47:12::SCWPlatform::Trying to open the hw design at C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform::DSA given C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform::DSA absoulate path C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform::DSA directory C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw
+TRACE::2026-03-14.14:47:12::SCWPlatform:: Platform Path C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-14.14:47:12::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2026-03-14.14:47:12::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2026-03-14.14:47:12::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-14.14:47:12::SCWMssOS::Checking the sw design at  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:47:12::SCWMssOS::DEBUG:  swdes dump  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-03-14.14:47:12::SCWMssOS::Sw design exists and opened at  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:47:12::SCWPlatform::Trying to open the hw design at C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform::DSA given C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform::DSA absoulate path C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform::DSA directory C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw
+TRACE::2026-03-14.14:47:12::SCWPlatform:: Platform Path C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-14.14:47:12::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2026-03-14.14:47:12::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2026-03-14.14:47:12::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-14.14:47:12::SCWMssOS::Checking the sw design at  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:47:12::SCWMssOS::DEBUG:  swdes dump  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-03-14.14:47:12::SCWMssOS::Sw design exists and opened at  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:47:12::SCWWriter::formatted JSON is {
+	"platformName":	"Software_Controlled_Datapath_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"Software_Controlled_Datapath_wrapper",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/Software_Controlled_Datapath_wrapper.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"Software_Controlled_Datapath_wrapper",
+	"systems":	[{
+			"systemName":	"Software_Controlled_Datapath_wrapper",
+			"systemDesc":	"Software_Controlled_Datapath_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"Software_Controlled_Datapath_wrapper",
+			"sysActiveDom":	"standalone_microblaze_0",
+			"sysDefaultDom":	"standalone_microblaze_0",
+			"domains":	[{
+					"domainName":	"standalone_microblaze_0",
+					"domainDispName":	"standalone_microblaze_0",
+					"domainDesc":	"standalone_microblaze_0",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"9.2",
+					"mssFile":	"",
+					"md5Digest":	"43c7c075edf9de20332a31d304250ca9",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+LOG::2026-03-14.14:47:12::SCWPlatform::Started generating the artifacts platform Software_Controlled_Datapath_wrapper
+TRACE::2026-03-14.14:47:12::SCWPlatform::Sanity checking of platform is completed
+LOG::2026-03-14.14:47:12::SCWPlatform::Started generating the artifacts for system configuration Software_Controlled_Datapath_wrapper
+LOG::2026-03-14.14:47:12::SCWSystem::Started Processing the domain standalone_microblaze_0
+TRACE::2026-03-14.14:47:12::SCWDomain::Generating domain artifcats
+TRACE::2026-03-14.14:47:12::SCWMssOS::Generating standalone artifcats
+TRACE::2026-03-14.14:47:12::SCWMssOS:: Copying the user libraries. 
+TRACE::2026-03-14.14:47:12::SCWPlatform::Trying to open the hw design at C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform::DSA given C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform::DSA absoulate path C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform::DSA directory C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw
+TRACE::2026-03-14.14:47:12::SCWPlatform:: Platform Path C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-14.14:47:12::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2026-03-14.14:47:12::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2026-03-14.14:47:12::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-14.14:47:12::SCWMssOS::Checking the sw design at  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:47:12::SCWMssOS::DEBUG:  swdes dump  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-03-14.14:47:12::SCWMssOS::Sw design exists and opened at  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:47:12::SCWMssOS::Completed writing the mss file at C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp
+TRACE::2026-03-14.14:47:12::SCWMssOS::Mss edits present, copying mssfile into export location C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:47:12::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2026-03-14.14:47:12::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2026-03-14.14:47:12::SCWDomain::Building the domain as part of full build :  standalone_microblaze_0
+TRACE::2026-03-14.14:47:12::SCWMssOS::skipping the bsp build ... 
+TRACE::2026-03-14.14:47:12::SCWMssOS::Copying to export directory.
+TRACE::2026-03-14.14:47:12::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2026-03-14.14:47:12::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2026-03-14.14:47:12::SCWSystem::Completed Processing the domain standalone_microblaze_0
+LOG::2026-03-14.14:47:12::SCWSystem::Completed Processing the sysconfig Software_Controlled_Datapath_wrapper
+LOG::2026-03-14.14:47:12::SCWPlatform::Completed generating the artifacts for system configuration Software_Controlled_Datapath_wrapper
+TRACE::2026-03-14.14:47:12::SCWPlatform::Started preparing the platform 
+TRACE::2026-03-14.14:47:12::SCWSystem::Writing the bif file for system config Software_Controlled_Datapath_wrapper
+TRACE::2026-03-14.14:47:12::SCWSystem::dir created 
+TRACE::2026-03-14.14:47:12::SCWSystem::Writing the bif 
+TRACE::2026-03-14.14:47:12::SCWPlatform::Started writing the spfm file 
+TRACE::2026-03-14.14:47:12::SCWPlatform::Started writing the xpfm file 
+TRACE::2026-03-14.14:47:12::SCWPlatform::Completed generating the platform
+TRACE::2026-03-14.14:47:12::SCWMssOS::Saving the mss changes C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:47:12::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2026-03-14.14:47:12::SCWMssOS::Completed writemss as part of save.
+TRACE::2026-03-14.14:47:12::SCWMssOS::Commit changes completed.
+TRACE::2026-03-14.14:47:12::SCWPlatform::Trying to open the hw design at C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform::DSA given C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform::DSA absoulate path C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform::DSA directory C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw
+TRACE::2026-03-14.14:47:12::SCWPlatform:: Platform Path C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-14.14:47:12::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2026-03-14.14:47:12::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2026-03-14.14:47:12::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-14.14:47:12::SCWMssOS::Checking the sw design at  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:47:12::SCWMssOS::DEBUG:  swdes dump  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-03-14.14:47:12::SCWMssOS::Sw design exists and opened at  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:47:12::SCWPlatform::Trying to open the hw design at C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform::DSA given C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform::DSA absoulate path C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform::DSA directory C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw
+TRACE::2026-03-14.14:47:12::SCWPlatform:: Platform Path C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-14.14:47:12::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2026-03-14.14:47:12::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2026-03-14.14:47:12::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-14.14:47:12::SCWMssOS::Checking the sw design at  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:47:12::SCWMssOS::DEBUG:  swdes dump  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-03-14.14:47:12::SCWMssOS::Sw design exists and opened at  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:47:12::SCWPlatform::Trying to open the hw design at C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform::DSA given C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform::DSA absoulate path C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform::DSA directory C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw
+TRACE::2026-03-14.14:47:12::SCWPlatform:: Platform Path C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:47:12::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-14.14:47:12::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2026-03-14.14:47:12::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2026-03-14.14:47:12::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-14.14:47:12::SCWMssOS::Checking the sw design at  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:47:12::SCWMssOS::DEBUG:  swdes dump  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-03-14.14:47:12::SCWMssOS::Sw design exists and opened at  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:47:12::SCWWriter::formatted JSON is {
+	"platformName":	"Software_Controlled_Datapath_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"Software_Controlled_Datapath_wrapper",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/Software_Controlled_Datapath_wrapper.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"Software_Controlled_Datapath_wrapper",
+	"systems":	[{
+			"systemName":	"Software_Controlled_Datapath_wrapper",
+			"systemDesc":	"Software_Controlled_Datapath_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"Software_Controlled_Datapath_wrapper",
+			"sysActiveDom":	"standalone_microblaze_0",
+			"sysDefaultDom":	"standalone_microblaze_0",
+			"domains":	[{
+					"domainName":	"standalone_microblaze_0",
+					"domainDispName":	"standalone_microblaze_0",
+					"domainDesc":	"standalone_microblaze_0",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"9.2",
+					"mssFile":	"",
+					"md5Digest":	"43c7c075edf9de20332a31d304250ca9",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2026-03-14.14:47:12::SCWPlatform::updated the xpfm file.
+LOG::2026-03-14.14:53:00::SCWPlatform::Started generating the artifacts platform Software_Controlled_Datapath_wrapper
+TRACE::2026-03-14.14:53:00::SCWPlatform::Sanity checking of platform is completed
+LOG::2026-03-14.14:53:00::SCWPlatform::Started generating the artifacts for system configuration Software_Controlled_Datapath_wrapper
+LOG::2026-03-14.14:53:00::SCWSystem::Checking the domain standalone_microblaze_0
+LOG::2026-03-14.14:53:00::SCWSystem::Not a boot domain 
+LOG::2026-03-14.14:53:00::SCWSystem::Started Processing the domain standalone_microblaze_0
+TRACE::2026-03-14.14:53:00::SCWDomain::Generating domain artifcats
+TRACE::2026-03-14.14:53:00::SCWMssOS::Generating standalone artifcats
+TRACE::2026-03-14.14:53:00::SCWMssOS:: Copying the user libraries. 
+TRACE::2026-03-14.14:53:00::SCWPlatform::Trying to open the hw design at C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:53:00::SCWPlatform::DSA given C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:53:00::SCWPlatform::DSA absoulate path C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:53:00::SCWPlatform::DSA directory C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw
+TRACE::2026-03-14.14:53:00::SCWPlatform:: Platform Path C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:53:00::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-14.14:53:00::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2026-03-14.14:53:00::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2026-03-14.14:53:00::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-14.14:53:00::SCWMssOS::Checking the sw design at  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:53:00::SCWMssOS::DEBUG:  swdes dump  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-03-14.14:53:00::SCWMssOS::Sw design exists and opened at  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:53:00::SCWMssOS::Completed writing the mss file at C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp
+TRACE::2026-03-14.14:53:00::SCWMssOS::Mss edits present, copying mssfile into export location C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:53:00::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2026-03-14.14:53:00::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2026-03-14.14:53:00::SCWDomain::Building the domain as part of full build :  standalone_microblaze_0
+TRACE::2026-03-14.14:53:00::SCWMssOS::doing bsp build ... 
+TRACE::2026-03-14.14:53:00::SCWMssOS::System Command Ran  C: & cd  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp & make 
+TRACE::2026-03-14.14:53:00::SCWMssOS::make --no-print-directory seq_libs
+
+TRACE::2026-03-14.14:53:00::SCWMssOS::"Running Make include in microblaze_0/libsrc/bram_v4_11/src"
+
+TRACE::2026-03-14.14:53:00::SCWMssOS::make -C microblaze_0/libsrc/bram_v4_11/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+TRACE::2026-03-14.14:53:00::SCWMssOS::ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall
+TRACE::2026-03-14.14:53:00::SCWMssOS:: -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2026-03-14.14:53:01::SCWMssOS::"Running Make include in microblaze_0/libsrc/cpu_v2_18/src"
+
+TRACE::2026-03-14.14:53:01::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_18/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2026-03-14.14:53:01::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+TRACE::2026-03-14.14:53:01::SCWMssOS::-Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2026-03-14.14:53:01::SCWMssOS::"Running Make include in microblaze_0/libsrc/OScope_2Channel_IP_v1_0/src"
+
+TRACE::2026-03-14.14:53:01::SCWMssOS::make -C microblaze_0/libsrc/OScope_2Channel_IP_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=m
+TRACE::2026-03-14.14:53:01::SCWMssOS::b-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-s
+TRACE::2026-03-14.14:53:01::SCWMssOS::ections -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2026-03-14.14:53:01::SCWMssOS::"Running Make include in microblaze_0/libsrc/standalone_v9_2/src"
+
+TRACE::2026-03-14.14:53:01::SCWMssOS::make -C microblaze_0/libsrc/standalone_v9_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "C
+TRACE::2026-03-14.14:53:01::SCWMssOS::OMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections 
+TRACE::2026-03-14.14:53:01::SCWMssOS::-Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2026-03-14.14:53:02::SCWMssOS::"Running Make include in microblaze_0/libsrc/uartlite_v3_11/src"
+
+TRACE::2026-03-14.14:53:02::SCWMssOS::make -C microblaze_0/libsrc/uartlite_v3_11/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "CO
+TRACE::2026-03-14.14:53:02::SCWMssOS::MPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -
+TRACE::2026-03-14.14:53:02::SCWMssOS::Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2026-03-14.14:53:02::SCWMssOS::"Running Make libs in microblaze_0/libsrc/OScope_2Channel_IP_v1_0/src"
+
+TRACE::2026-03-14.14:53:02::SCWMssOS::make -C microblaze_0/libsrc/OScope_2Channel_IP_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-a
+TRACE::2026-03-14.14:53:02::SCWMssOS::r" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sect
+TRACE::2026-03-14.14:53:02::SCWMssOS::ions -Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2026-03-14.14:53:02::SCWMssOS::"Compiling OScope_2Channel_IP..."
+
+ERROR::2026-03-14.14:53:02::SCWMssOS::Failed to build  the bsp sources for domain - standalone_microblaze_0
+ERROR::2026-03-14.14:53:02::SCWSystem::Error in Processing the domain standalone_microblaze_0
+TRACE::2026-03-14.14:54:19::SCWMssOS::cleaning the bsp 
+TRACE::2026-03-14.14:54:19::SCWMssOS::System Command Ran  C: & cd  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp & make clean 
+TRACE::2026-03-14.14:54:19::SCWMssOS::make -C microblaze_0/libsrc/bram_v4_11/src -s clean 
+
+TRACE::2026-03-14.14:54:19::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_18/src -s clean 
+
+TRACE::2026-03-14.14:54:19::SCWMssOS::make -C microblaze_0/libsrc/standalone_v9_2/src -s clean 
+
+TRACE::2026-03-14.14:54:19::SCWMssOS::make -C microblaze_0/libsrc/uartlite_v3_11/src -s clean 
+
+TRACE::2026-03-14.14:54:19::SCWMssOS::rm -f microblaze_0/lib/libxil.a
+
+LOG::2026-03-14.14:54:45::SCWPlatform::Started generating the artifacts platform Software_Controlled_Datapath_wrapper
+TRACE::2026-03-14.14:54:45::SCWPlatform::Sanity checking of platform is completed
+LOG::2026-03-14.14:54:45::SCWPlatform::Started generating the artifacts for system configuration Software_Controlled_Datapath_wrapper
+LOG::2026-03-14.14:54:45::SCWSystem::Checking the domain standalone_microblaze_0
+LOG::2026-03-14.14:54:45::SCWSystem::Not a boot domain 
+LOG::2026-03-14.14:54:45::SCWSystem::Started Processing the domain standalone_microblaze_0
+TRACE::2026-03-14.14:54:45::SCWDomain::Generating domain artifcats
+TRACE::2026-03-14.14:54:45::SCWMssOS::Generating standalone artifcats
+TRACE::2026-03-14.14:54:45::SCWMssOS:: Copying the user libraries. 
+TRACE::2026-03-14.14:54:45::SCWPlatform::Trying to open the hw design at C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:54:45::SCWPlatform::DSA given C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:54:45::SCWPlatform::DSA absoulate path C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:54:45::SCWPlatform::DSA directory C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw
+TRACE::2026-03-14.14:54:45::SCWPlatform:: Platform Path C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:54:45::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-14.14:54:45::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2026-03-14.14:54:45::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2026-03-14.14:54:45::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-14.14:54:45::SCWMssOS::Checking the sw design at  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:54:45::SCWMssOS::DEBUG:  swdes dump  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-03-14.14:54:45::SCWMssOS::Sw design exists and opened at  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:54:45::SCWMssOS::Completed writing the mss file at C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp
+TRACE::2026-03-14.14:54:45::SCWMssOS::Mss edits present, copying mssfile into export location C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:54:45::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2026-03-14.14:54:45::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2026-03-14.14:54:45::SCWDomain::Building the domain as part of full build :  standalone_microblaze_0
+TRACE::2026-03-14.14:54:45::SCWMssOS::doing bsp build ... 
+TRACE::2026-03-14.14:54:45::SCWMssOS::System Command Ran  C: & cd  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp & make 
+TRACE::2026-03-14.14:54:45::SCWMssOS::make --no-print-directory seq_libs
+
+TRACE::2026-03-14.14:54:46::SCWMssOS::'Finished building libraries sequentially.'
+
+TRACE::2026-03-14.14:54:46::SCWMssOS::make -j 10 --no-print-directory par_libs
+
+TRACE::2026-03-14.14:54:46::SCWMssOS::"Running Make include in microblaze_0/libsrc/bram_v4_11/src"
+
+TRACE::2026-03-14.14:54:46::SCWMssOS::make -C microblaze_0/libsrc/bram_v4_11/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+TRACE::2026-03-14.14:54:46::SCWMssOS::ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall
+TRACE::2026-03-14.14:54:46::SCWMssOS:: -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2026-03-14.14:54:46::SCWMssOS::"Running Make include in microblaze_0/libsrc/cpu_v2_18/src"
+
+TRACE::2026-03-14.14:54:46::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_18/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2026-03-14.14:54:46::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+TRACE::2026-03-14.14:54:46::SCWMssOS::-Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2026-03-14.14:54:46::SCWMssOS::"Running Make include in microblaze_0/libsrc/standalone_v9_2/src"
+
+TRACE::2026-03-14.14:54:46::SCWMssOS::make -C microblaze_0/libsrc/standalone_v9_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "C
+TRACE::2026-03-14.14:54:46::SCWMssOS::OMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections 
+TRACE::2026-03-14.14:54:46::SCWMssOS::-Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2026-03-14.14:54:46::SCWMssOS::"Running Make include in microblaze_0/libsrc/uartlite_v3_11/src"
+
+TRACE::2026-03-14.14:54:46::SCWMssOS::make -C microblaze_0/libsrc/uartlite_v3_11/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "CO
+TRACE::2026-03-14.14:54:46::SCWMssOS::MPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -
+TRACE::2026-03-14.14:54:46::SCWMssOS::Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2026-03-14.14:54:46::SCWMssOS::"Running Make libs in microblaze_0/libsrc/bram_v4_11/src"
+
+TRACE::2026-03-14.14:54:46::SCWMssOS::make -C microblaze_0/libsrc/bram_v4_11/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_
+TRACE::2026-03-14.14:54:46::SCWMssOS::FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -W
+TRACE::2026-03-14.14:54:46::SCWMssOS::extra -fno-tree-loop-distribute-patterns"
+
+TRACE::2026-03-14.14:54:46::SCWMssOS::"Running Make libs in microblaze_0/libsrc/cpu_v2_18/src"
+
+TRACE::2026-03-14.14:54:46::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_18/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+TRACE::2026-03-14.14:54:46::SCWMssOS::LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -We
+TRACE::2026-03-14.14:54:46::SCWMssOS::xtra -fno-tree-loop-distribute-patterns"
+
+TRACE::2026-03-14.14:54:46::SCWMssOS::"Running Make libs in microblaze_0/libsrc/standalone_v9_2/src"
+
+TRACE::2026-03-14.14:54:46::SCWMssOS::make -C microblaze_0/libsrc/standalone_v9_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+TRACE::2026-03-14.14:54:46::SCWMssOS::ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wa
+TRACE::2026-03-14.14:54:46::SCWMssOS::ll -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2026-03-14.14:54:46::SCWMssOS::"Running Make libs in microblaze_0/libsrc/uartlite_v3_11/src"
+
+TRACE::2026-03-14.14:54:46::SCWMssOS::make -C microblaze_0/libsrc/uartlite_v3_11/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPI
+TRACE::2026-03-14.14:54:46::SCWMssOS::LER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wal
+TRACE::2026-03-14.14:54:46::SCWMssOS::l -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2026-03-14.14:54:48::SCWMssOS::"DEBUG NON_LTO_OBJECTS is ../../../lib/microblaze_interrupt_handler.o"
+
+TRACE::2026-03-14.14:54:48::SCWMssOS::'Finished building libraries parallelly.'
+
+TRACE::2026-03-14.14:54:48::SCWMssOS::make --no-print-directory archive
+
+TRACE::2026-03-14.14:54:48::SCWMssOS::mb-ar -r  microblaze_0/lib/libxil.a microblaze_0/lib/_exit.o microblaze_0/lib/errno.o microblaze_0/lib/fcntl.o microblaze_0/lib
+TRACE::2026-03-14.14:54:48::SCWMssOS::/hw_exception_handler.o microblaze_0/lib/inbyte.o microblaze_0/lib/microblaze_disable_dcache.o microblaze_0/lib/microblaze_disa
+TRACE::2026-03-14.14:54:48::SCWMssOS::ble_exceptions.o microblaze_0/lib/microblaze_disable_icache.o microblaze_0/lib/microblaze_disable_interrupts.o microblaze_0/lib
+TRACE::2026-03-14.14:54:48::SCWMssOS::/microblaze_enable_dcache.o microblaze_0/lib/microblaze_enable_exceptions.o microblaze_0/lib/microblaze_enable_icache.o microbl
+TRACE::2026-03-14.14:54:48::SCWMssOS::aze_0/lib/microblaze_enable_interrupts.o microblaze_0/lib/microblaze_exception_handler.o microblaze_0/lib/microblaze_flush_cach
+TRACE::2026-03-14.14:54:48::SCWMssOS::e_ext.o microblaze_0/lib/microblaze_flush_cache_ext_range.o microblaze_0/lib/microblaze_flush_dcache.o microblaze_0/lib/microbl
+TRACE::2026-03-14.14:54:48::SCWMssOS::aze_flush_dcache_range.o microblaze_0/lib/microblaze_init_dcache_range.o microblaze_0/lib/microblaze_init_icache_range.o microb
+TRACE::2026-03-14.14:54:48::SCWMssOS::laze_0/lib/microblaze_interrupt_handler.o microblaze_0/lib/microblaze_interrupts_g.o microblaze_0/lib/microblaze_invalidate_cac
+TRACE::2026-03-14.14:54:48::SCWMssOS::he_ext.o microblaze_0/lib/microblaze_invalidate_cache_ext_range.o microblaze_0/lib/microblaze_invalidate_dcache.o microblaze_0/
+TRACE::2026-03-14.14:54:48::SCWMssOS::lib/microblaze_invalidate_dcache_range.o microblaze_0/lib/microblaze_invalidate_icache.o microblaze_0/lib/microblaze_invalidate
+TRACE::2026-03-14.14:54:48::SCWMssOS::_icache_range.o microblaze_0/lib/microblaze_scrub.o microblaze_0/lib/microblaze_selftest.o microblaze_0/lib/microblaze_sleep.o 
+TRACE::2026-03-14.14:54:48::SCWMssOS::microblaze_0/lib/microblaze_update_dcache.o microblaze_0/lib/microblaze_update_icache.o microblaze_0/lib/outbyte.o microblaze_0
+TRACE::2026-03-14.14:54:48::SCWMssOS::/lib/print.o microblaze_0/lib/pvr.o microblaze_0/lib/xbram.o microblaze_0/lib/xbram_g.o microblaze_0/lib/xbram_intr.o microblaz
+TRACE::2026-03-14.14:54:48::SCWMssOS::e_0/lib/xbram_selftest.o microblaze_0/lib/xbram_sinit.o microblaze_0/lib/xil_assert.o microblaze_0/lib/xil_cache.o microblaze_0
+TRACE::2026-03-14.14:54:48::SCWMssOS::/lib/xil_clocking.o microblaze_0/lib/xil_exception.o microblaze_0/lib/xil_mem.o microblaze_0/lib/xil_misc_psreset_api.o microbl
+TRACE::2026-03-14.14:54:48::SCWMssOS::aze_0/lib/xil_printf.o microblaze_0/lib/xil_sleepcommon.o microblaze_0/lib/xil_sutil.o microblaze_0/lib/xil_testcache.o microbl
+TRACE::2026-03-14.14:54:48::SCWMssOS::aze_0/lib/xil_testio.o microblaze_0/lib/xil_testmem.o microblaze_0/lib/xil_util.o microblaze_0/lib/xinterrupt_wrap.o microblaze
+TRACE::2026-03-14.14:54:48::SCWMssOS::_0/lib/xio.o microblaze_0/lib/xplatform_info.o microblaze_0/lib/xpm_init.o microblaze_0/lib/xuartlite.o microblaze_0/lib/xuartl
+TRACE::2026-03-14.14:54:48::SCWMssOS::ite_g.o microblaze_0/lib/xuartlite_intr.o microblaze_0/lib/xuartlite_l.o microblaze_0/lib/xuartlite_selftest.o microblaze_0/lib
+TRACE::2026-03-14.14:54:48::SCWMssOS::/xuartlite_sinit.o microblaze_0/lib/xuartlite_stats.o
+
+TRACE::2026-03-14.14:54:48::SCWMssOS::'Finished building libraries'
+
+TRACE::2026-03-14.14:54:48::SCWMssOS::Copying to export directory.
+TRACE::2026-03-14.14:54:48::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2026-03-14.14:54:48::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2026-03-14.14:54:48::SCWSystem::Completed Processing the domain standalone_microblaze_0
+LOG::2026-03-14.14:54:48::SCWSystem::Completed Processing the sysconfig Software_Controlled_Datapath_wrapper
+LOG::2026-03-14.14:54:48::SCWPlatform::Completed generating the artifacts for system configuration Software_Controlled_Datapath_wrapper
+TRACE::2026-03-14.14:54:48::SCWPlatform::Started preparing the platform 
+TRACE::2026-03-14.14:54:48::SCWSystem::Writing the bif file for system config Software_Controlled_Datapath_wrapper
+TRACE::2026-03-14.14:54:48::SCWSystem::dir created 
+TRACE::2026-03-14.14:54:48::SCWSystem::Writing the bif 
+TRACE::2026-03-14.14:54:48::SCWPlatform::Started writing the spfm file 
+TRACE::2026-03-14.14:54:48::SCWPlatform::Started writing the xpfm file 
+TRACE::2026-03-14.14:54:48::SCWPlatform::Completed generating the platform
+TRACE::2026-03-14.14:54:48::SCWMssOS::Saving the mss changes C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:54:48::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2026-03-14.14:54:48::SCWMssOS::Completed writemss as part of save.
+TRACE::2026-03-14.14:54:48::SCWMssOS::Commit changes completed.
+TRACE::2026-03-14.14:54:48::SCWPlatform::Trying to open the hw design at C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:54:48::SCWPlatform::DSA given C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:54:48::SCWPlatform::DSA absoulate path C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:54:48::SCWPlatform::DSA directory C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw
+TRACE::2026-03-14.14:54:48::SCWPlatform:: Platform Path C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:54:48::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-14.14:54:48::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2026-03-14.14:54:48::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2026-03-14.14:54:48::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-14.14:54:48::SCWMssOS::Checking the sw design at  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:54:48::SCWMssOS::DEBUG:  swdes dump  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-03-14.14:54:48::SCWMssOS::Sw design exists and opened at  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:54:48::SCWPlatform::Trying to open the hw design at C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:54:48::SCWPlatform::DSA given C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:54:48::SCWPlatform::DSA absoulate path C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:54:48::SCWPlatform::DSA directory C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw
+TRACE::2026-03-14.14:54:48::SCWPlatform:: Platform Path C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:54:48::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-14.14:54:48::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2026-03-14.14:54:48::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2026-03-14.14:54:48::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-14.14:54:48::SCWMssOS::Checking the sw design at  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:54:48::SCWMssOS::DEBUG:  swdes dump  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-03-14.14:54:48::SCWMssOS::Sw design exists and opened at  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:54:48::SCWPlatform::Trying to open the hw design at C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:54:48::SCWPlatform::DSA given C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:54:48::SCWPlatform::DSA absoulate path C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:54:48::SCWPlatform::DSA directory C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw
+TRACE::2026-03-14.14:54:48::SCWPlatform:: Platform Path C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:54:48::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-14.14:54:48::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2026-03-14.14:54:48::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2026-03-14.14:54:48::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-14.14:54:48::SCWMssOS::Checking the sw design at  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:54:48::SCWMssOS::DEBUG:  swdes dump  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-03-14.14:54:48::SCWMssOS::Sw design exists and opened at  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:54:48::SCWWriter::formatted JSON is {
+	"platformName":	"Software_Controlled_Datapath_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"Software_Controlled_Datapath_wrapper",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/Software_Controlled_Datapath_wrapper.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"Software_Controlled_Datapath_wrapper",
+	"systems":	[{
+			"systemName":	"Software_Controlled_Datapath_wrapper",
+			"systemDesc":	"Software_Controlled_Datapath_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"Software_Controlled_Datapath_wrapper",
+			"sysActiveDom":	"standalone_microblaze_0",
+			"sysDefaultDom":	"standalone_microblaze_0",
+			"domains":	[{
+					"domainName":	"standalone_microblaze_0",
+					"domainDispName":	"standalone_microblaze_0",
+					"domainDesc":	"standalone_microblaze_0",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"9.2",
+					"mssFile":	"",
+					"md5Digest":	"43c7c075edf9de20332a31d304250ca9",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2026-03-14.14:54:48::SCWPlatform::updated the xpfm file.
+TRACE::2026-03-14.14:54:48::SCWPlatform::Trying to open the hw design at C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:54:48::SCWPlatform::DSA given C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:54:48::SCWPlatform::DSA absoulate path C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:54:48::SCWPlatform::DSA directory C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw
+TRACE::2026-03-14.14:54:48::SCWPlatform:: Platform Path C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:54:48::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-14.14:54:48::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2026-03-14.14:54:48::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2026-03-14.14:54:48::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-14.14:54:48::SCWMssOS::Checking the sw design at  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:54:48::SCWMssOS::DEBUG:  swdes dump  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-03-14.14:54:48::SCWMssOS::Sw design exists and opened at  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:58:07::SCWMssOS::cleaning the bsp 
+TRACE::2026-03-14.14:58:07::SCWMssOS::System Command Ran  C: & cd  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp & make clean 
+TRACE::2026-03-14.14:58:07::SCWMssOS::make -C microblaze_0/libsrc/bram_v4_11/src -s clean 
+
+TRACE::2026-03-14.14:58:07::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_18/src -s clean 
+
+TRACE::2026-03-14.14:58:07::SCWMssOS::make -C microblaze_0/libsrc/standalone_v9_2/src -s clean 
+
+TRACE::2026-03-14.14:58:07::SCWMssOS::make -C microblaze_0/libsrc/uartlite_v3_11/src -s clean 
+
+TRACE::2026-03-14.14:58:07::SCWMssOS::rm -f microblaze_0/lib/libxil.a
+
+LOG::2026-03-14.14:58:13::SCWPlatform::Started generating the artifacts platform Software_Controlled_Datapath_wrapper
+TRACE::2026-03-14.14:58:13::SCWPlatform::Sanity checking of platform is completed
+LOG::2026-03-14.14:58:13::SCWPlatform::Started generating the artifacts for system configuration Software_Controlled_Datapath_wrapper
+LOG::2026-03-14.14:58:13::SCWSystem::Checking the domain standalone_microblaze_0
+LOG::2026-03-14.14:58:13::SCWSystem::Not a boot domain 
+LOG::2026-03-14.14:58:13::SCWSystem::Started Processing the domain standalone_microblaze_0
+TRACE::2026-03-14.14:58:13::SCWDomain::Generating domain artifcats
+TRACE::2026-03-14.14:58:13::SCWMssOS::Generating standalone artifcats
+TRACE::2026-03-14.14:58:13::SCWMssOS:: Copying the user libraries. 
+TRACE::2026-03-14.14:58:13::SCWPlatform::Trying to open the hw design at C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:58:13::SCWPlatform::DSA given C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:58:13::SCWPlatform::DSA absoulate path C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:58:13::SCWPlatform::DSA directory C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw
+TRACE::2026-03-14.14:58:13::SCWPlatform:: Platform Path C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:58:13::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-14.14:58:13::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2026-03-14.14:58:13::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2026-03-14.14:58:13::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-14.14:58:13::SCWMssOS::Checking the sw design at  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:58:13::SCWMssOS::DEBUG:  swdes dump  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-03-14.14:58:13::SCWMssOS::Sw design exists and opened at  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:58:13::SCWMssOS::Completed writing the mss file at C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp
+TRACE::2026-03-14.14:58:13::SCWMssOS::Mss edits present, copying mssfile into export location C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:58:13::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2026-03-14.14:58:13::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2026-03-14.14:58:13::SCWDomain::Building the domain as part of full build :  standalone_microblaze_0
+TRACE::2026-03-14.14:58:13::SCWMssOS::doing bsp build ... 
+TRACE::2026-03-14.14:58:13::SCWMssOS::System Command Ran  C: & cd  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp & make 
+TRACE::2026-03-14.14:58:13::SCWMssOS::make --no-print-directory seq_libs
+
+TRACE::2026-03-14.14:58:13::SCWMssOS::'Finished building libraries sequentially.'
+
+TRACE::2026-03-14.14:58:13::SCWMssOS::make -j 10 --no-print-directory par_libs
+
+TRACE::2026-03-14.14:58:14::SCWMssOS::"Running Make include in microblaze_0/libsrc/bram_v4_11/src"
+
+TRACE::2026-03-14.14:58:14::SCWMssOS::make -C microblaze_0/libsrc/bram_v4_11/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+TRACE::2026-03-14.14:58:14::SCWMssOS::ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall
+TRACE::2026-03-14.14:58:14::SCWMssOS:: -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2026-03-14.14:58:14::SCWMssOS::"Running Make include in microblaze_0/libsrc/cpu_v2_18/src"
+
+TRACE::2026-03-14.14:58:14::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_18/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILE
+TRACE::2026-03-14.14:58:14::SCWMssOS::R_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall 
+TRACE::2026-03-14.14:58:14::SCWMssOS::-Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2026-03-14.14:58:14::SCWMssOS::"Running Make include in microblaze_0/libsrc/standalone_v9_2/src"
+
+TRACE::2026-03-14.14:58:14::SCWMssOS::make -C microblaze_0/libsrc/standalone_v9_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "C
+TRACE::2026-03-14.14:58:14::SCWMssOS::OMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections 
+TRACE::2026-03-14.14:58:14::SCWMssOS::-Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2026-03-14.14:58:14::SCWMssOS::"Running Make include in microblaze_0/libsrc/uartlite_v3_11/src"
+
+TRACE::2026-03-14.14:58:14::SCWMssOS::make -C microblaze_0/libsrc/uartlite_v3_11/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "CO
+TRACE::2026-03-14.14:58:14::SCWMssOS::MPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -
+TRACE::2026-03-14.14:58:14::SCWMssOS::Wall -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2026-03-14.14:58:14::SCWMssOS::"Running Make libs in microblaze_0/libsrc/bram_v4_11/src"
+
+TRACE::2026-03-14.14:58:14::SCWMssOS::make -C microblaze_0/libsrc/bram_v4_11/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_
+TRACE::2026-03-14.14:58:14::SCWMssOS::FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -W
+TRACE::2026-03-14.14:58:14::SCWMssOS::extra -fno-tree-loop-distribute-patterns"
+
+TRACE::2026-03-14.14:58:14::SCWMssOS::"Running Make libs in microblaze_0/libsrc/cpu_v2_18/src"
+
+TRACE::2026-03-14.14:58:14::SCWMssOS::make -C microblaze_0/libsrc/cpu_v2_18/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPILER_F
+TRACE::2026-03-14.14:58:14::SCWMssOS::LAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall -We
+TRACE::2026-03-14.14:58:14::SCWMssOS::xtra -fno-tree-loop-distribute-patterns"
+
+TRACE::2026-03-14.14:58:14::SCWMssOS::"Running Make libs in microblaze_0/libsrc/standalone_v9_2/src"
+
+TRACE::2026-03-14.14:58:14::SCWMssOS::make -C microblaze_0/libsrc/standalone_v9_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+TRACE::2026-03-14.14:58:14::SCWMssOS::ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wa
+TRACE::2026-03-14.14:58:14::SCWMssOS::ll -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2026-03-14.14:58:14::SCWMssOS::"Running Make libs in microblaze_0/libsrc/uartlite_v3_11/src"
+
+TRACE::2026-03-14.14:58:14::SCWMssOS::make -C microblaze_0/libsrc/uartlite_v3_11/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPI
+TRACE::2026-03-14.14:58:14::SCWMssOS::LER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wal
+TRACE::2026-03-14.14:58:14::SCWMssOS::l -Wextra -fno-tree-loop-distribute-patterns"
+
+TRACE::2026-03-14.14:58:15::SCWMssOS::"DEBUG NON_LTO_OBJECTS is ../../../lib/microblaze_interrupt_handler.o"
+
+TRACE::2026-03-14.14:58:15::SCWMssOS::'Finished building libraries parallelly.'
+
+TRACE::2026-03-14.14:58:15::SCWMssOS::make --no-print-directory archive
+
+TRACE::2026-03-14.14:58:15::SCWMssOS::mb-ar -r  microblaze_0/lib/libxil.a microblaze_0/lib/_exit.o microblaze_0/lib/errno.o microblaze_0/lib/fcntl.o microblaze_0/lib
+TRACE::2026-03-14.14:58:15::SCWMssOS::/hw_exception_handler.o microblaze_0/lib/inbyte.o microblaze_0/lib/microblaze_disable_dcache.o microblaze_0/lib/microblaze_disa
+TRACE::2026-03-14.14:58:15::SCWMssOS::ble_exceptions.o microblaze_0/lib/microblaze_disable_icache.o microblaze_0/lib/microblaze_disable_interrupts.o microblaze_0/lib
+TRACE::2026-03-14.14:58:15::SCWMssOS::/microblaze_enable_dcache.o microblaze_0/lib/microblaze_enable_exceptions.o microblaze_0/lib/microblaze_enable_icache.o microbl
+TRACE::2026-03-14.14:58:15::SCWMssOS::aze_0/lib/microblaze_enable_interrupts.o microblaze_0/lib/microblaze_exception_handler.o microblaze_0/lib/microblaze_flush_cach
+TRACE::2026-03-14.14:58:15::SCWMssOS::e_ext.o microblaze_0/lib/microblaze_flush_cache_ext_range.o microblaze_0/lib/microblaze_flush_dcache.o microblaze_0/lib/microbl
+TRACE::2026-03-14.14:58:15::SCWMssOS::aze_flush_dcache_range.o microblaze_0/lib/microblaze_init_dcache_range.o microblaze_0/lib/microblaze_init_icache_range.o microb
+TRACE::2026-03-14.14:58:15::SCWMssOS::laze_0/lib/microblaze_interrupt_handler.o microblaze_0/lib/microblaze_interrupts_g.o microblaze_0/lib/microblaze_invalidate_cac
+TRACE::2026-03-14.14:58:15::SCWMssOS::he_ext.o microblaze_0/lib/microblaze_invalidate_cache_ext_range.o microblaze_0/lib/microblaze_invalidate_dcache.o microblaze_0/
+TRACE::2026-03-14.14:58:15::SCWMssOS::lib/microblaze_invalidate_dcache_range.o microblaze_0/lib/microblaze_invalidate_icache.o microblaze_0/lib/microblaze_invalidate
+TRACE::2026-03-14.14:58:15::SCWMssOS::_icache_range.o microblaze_0/lib/microblaze_scrub.o microblaze_0/lib/microblaze_selftest.o microblaze_0/lib/microblaze_sleep.o 
+TRACE::2026-03-14.14:58:15::SCWMssOS::microblaze_0/lib/microblaze_update_dcache.o microblaze_0/lib/microblaze_update_icache.o microblaze_0/lib/outbyte.o microblaze_0
+TRACE::2026-03-14.14:58:15::SCWMssOS::/lib/print.o microblaze_0/lib/pvr.o microblaze_0/lib/xbram.o microblaze_0/lib/xbram_g.o microblaze_0/lib/xbram_intr.o microblaz
+TRACE::2026-03-14.14:58:15::SCWMssOS::e_0/lib/xbram_selftest.o microblaze_0/lib/xbram_sinit.o microblaze_0/lib/xil_assert.o microblaze_0/lib/xil_cache.o microblaze_0
+TRACE::2026-03-14.14:58:15::SCWMssOS::/lib/xil_clocking.o microblaze_0/lib/xil_exception.o microblaze_0/lib/xil_mem.o microblaze_0/lib/xil_misc_psreset_api.o microbl
+TRACE::2026-03-14.14:58:15::SCWMssOS::aze_0/lib/xil_printf.o microblaze_0/lib/xil_sleepcommon.o microblaze_0/lib/xil_sutil.o microblaze_0/lib/xil_testcache.o microbl
+TRACE::2026-03-14.14:58:15::SCWMssOS::aze_0/lib/xil_testio.o microblaze_0/lib/xil_testmem.o microblaze_0/lib/xil_util.o microblaze_0/lib/xinterrupt_wrap.o microblaze
+TRACE::2026-03-14.14:58:15::SCWMssOS::_0/lib/xio.o microblaze_0/lib/xplatform_info.o microblaze_0/lib/xpm_init.o microblaze_0/lib/xuartlite.o microblaze_0/lib/xuartl
+TRACE::2026-03-14.14:58:15::SCWMssOS::ite_g.o microblaze_0/lib/xuartlite_intr.o microblaze_0/lib/xuartlite_l.o microblaze_0/lib/xuartlite_selftest.o microblaze_0/lib
+TRACE::2026-03-14.14:58:15::SCWMssOS::/xuartlite_sinit.o microblaze_0/lib/xuartlite_stats.o
+
+TRACE::2026-03-14.14:58:15::SCWMssOS::'Finished building libraries'
+
+TRACE::2026-03-14.14:58:16::SCWMssOS::Copying to export directory.
+TRACE::2026-03-14.14:58:16::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2026-03-14.14:58:16::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2026-03-14.14:58:16::SCWSystem::Completed Processing the domain standalone_microblaze_0
+LOG::2026-03-14.14:58:16::SCWSystem::Completed Processing the sysconfig Software_Controlled_Datapath_wrapper
+LOG::2026-03-14.14:58:16::SCWPlatform::Completed generating the artifacts for system configuration Software_Controlled_Datapath_wrapper
+TRACE::2026-03-14.14:58:16::SCWPlatform::Started preparing the platform 
+TRACE::2026-03-14.14:58:16::SCWSystem::Writing the bif file for system config Software_Controlled_Datapath_wrapper
+TRACE::2026-03-14.14:58:16::SCWSystem::dir created 
+TRACE::2026-03-14.14:58:16::SCWSystem::Writing the bif 
+TRACE::2026-03-14.14:58:16::SCWPlatform::Started writing the spfm file 
+TRACE::2026-03-14.14:58:16::SCWPlatform::Started writing the xpfm file 
+TRACE::2026-03-14.14:58:16::SCWPlatform::Completed generating the platform
+TRACE::2026-03-14.14:58:16::SCWMssOS::Saving the mss changes C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:58:16::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2026-03-14.14:58:16::SCWMssOS::Completed writemss as part of save.
+TRACE::2026-03-14.14:58:16::SCWMssOS::Commit changes completed.
+TRACE::2026-03-14.14:58:16::SCWPlatform::Trying to open the hw design at C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:58:16::SCWPlatform::DSA given C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:58:16::SCWPlatform::DSA absoulate path C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:58:16::SCWPlatform::DSA directory C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw
+TRACE::2026-03-14.14:58:16::SCWPlatform:: Platform Path C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:58:16::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-14.14:58:16::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2026-03-14.14:58:16::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2026-03-14.14:58:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-14.14:58:16::SCWMssOS::Checking the sw design at  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:58:16::SCWMssOS::DEBUG:  swdes dump  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-03-14.14:58:16::SCWMssOS::Sw design exists and opened at  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:58:16::SCWPlatform::Trying to open the hw design at C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:58:16::SCWPlatform::DSA given C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:58:16::SCWPlatform::DSA absoulate path C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:58:16::SCWPlatform::DSA directory C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw
+TRACE::2026-03-14.14:58:16::SCWPlatform:: Platform Path C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:58:16::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-14.14:58:16::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2026-03-14.14:58:16::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2026-03-14.14:58:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-14.14:58:16::SCWMssOS::Checking the sw design at  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:58:16::SCWMssOS::DEBUG:  swdes dump  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-03-14.14:58:16::SCWMssOS::Sw design exists and opened at  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:58:16::SCWPlatform::Trying to open the hw design at C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:58:16::SCWPlatform::DSA given C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:58:16::SCWPlatform::DSA absoulate path C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:58:16::SCWPlatform::DSA directory C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw
+TRACE::2026-03-14.14:58:16::SCWPlatform:: Platform Path C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:58:16::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-14.14:58:16::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2026-03-14.14:58:16::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2026-03-14.14:58:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-14.14:58:16::SCWMssOS::Checking the sw design at  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:58:16::SCWMssOS::DEBUG:  swdes dump  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-03-14.14:58:16::SCWMssOS::Sw design exists and opened at  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:58:16::SCWWriter::formatted JSON is {
+	"platformName":	"Software_Controlled_Datapath_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"Software_Controlled_Datapath_wrapper",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/Software_Controlled_Datapath_wrapper.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"Software_Controlled_Datapath_wrapper",
+	"systems":	[{
+			"systemName":	"Software_Controlled_Datapath_wrapper",
+			"systemDesc":	"Software_Controlled_Datapath_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"Software_Controlled_Datapath_wrapper",
+			"sysActiveDom":	"standalone_microblaze_0",
+			"sysDefaultDom":	"standalone_microblaze_0",
+			"domains":	[{
+					"domainName":	"standalone_microblaze_0",
+					"domainDispName":	"standalone_microblaze_0",
+					"domainDesc":	"standalone_microblaze_0",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"9.2",
+					"mssFile":	"",
+					"md5Digest":	"43c7c075edf9de20332a31d304250ca9",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2026-03-14.14:58:16::SCWPlatform::updated the xpfm file.
+TRACE::2026-03-14.14:58:16::SCWPlatform::Trying to open the hw design at C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:58:16::SCWPlatform::DSA given C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:58:16::SCWPlatform::DSA absoulate path C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:58:16::SCWPlatform::DSA directory C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw
+TRACE::2026-03-14.14:58:16::SCWPlatform:: Platform Path C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/hw/Software_Controlled_Datapath_wrapper.xsa
+TRACE::2026-03-14.14:58:16::SCWPlatform:: Unique name xilinx:nexys_video::0.0
+TRACE::2026-03-14.14:58:16::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2026-03-14.14:58:16::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2026-03-14.14:58:16::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2026-03-14.14:58:16::SCWMssOS::Checking the sw design at  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
+TRACE::2026-03-14.14:58:16::SCWMssOS::DEBUG:  swdes dump  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss|system||
+
+TRACE::2026-03-14.14:58:16::SCWMssOS::Sw design exists and opened at  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/system.mss
