@@ -130,7 +130,7 @@ begin
             scl => scl,
             sda => sda,
             sim_live => is_live);  --  '0' simulate audio; '1' live audio
-
+   
 	-------------------------------------------------------------------------------
 	-- Address counter for RAM
 	-- What range of addresses does it need to span?  Should it start at zero or something else?
@@ -170,6 +170,12 @@ begin
     ch2.to_bram <= ch2.current_sample when (exSel = '0') else
                     exRBus;
 	
+	-----------------------------------------------------------------------------------------
+	-- Send the unsigned current sample out to external controller
+	-----------------------------------------------------------------------------------------
+	Lbus_out <= ch1.current_sample;
+    Rbus_out <= ch2.current_sample;
+    
 	-------------------------------------------------------------------------------
 	-- Triggering Logic: A positive crossing of the trigger occurs when the previous value is 
 	--	less than the trigger and the current value is greater than or equal to
