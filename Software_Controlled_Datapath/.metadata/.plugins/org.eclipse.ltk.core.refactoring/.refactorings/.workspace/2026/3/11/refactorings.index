@@ -1,0 +1,6 @@
+1773475832452	Delete resource 'Software_Controlled_Datapath_wrapper/hw/drivers'
+1773475966923	Delete resource 'Software_Controlled_Datapath_wrapper/microblaze_0/standalone_microblaze_0/bsp/microblaze_0/libsrc/OScope_2Channel_IP_v1_0'
+1773502209379	Delete resource 'Software_Controlled_Datapath_wrapper'
+1773502257198	Delete resource 'Software_Controlled_Datapath_Vitis_system'
+1773502729069	Delete resource 'Software_Controlled_Datapath_wrapper_V2/hw/drivers'
+1773502901039	Delete resource 'Software_Controlled_Datapath_wrapper_V2/microblaze_0/standalone_microblaze_0/bsp/microblaze_0/libsrc/OScope_2Channel_IP_v1_0'

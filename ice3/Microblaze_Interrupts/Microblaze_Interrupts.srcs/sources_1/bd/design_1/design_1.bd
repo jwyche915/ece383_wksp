@@ -866,9 +866,9 @@
           "LED"
         ]
       },
-      "axi_uartlite_0_interrupt": {
+      "My_Counter_IP_0_roll": {
         "ports": [
-          "axi_uartlite_0/interrupt",
+          "My_Counter_IP_0/roll",
           "microblaze_0/Interrupt"
         ]
       },

@@ -2,7 +2,7 @@
 --Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
---Date        : Wed Mar  4 08:31:34 2026
+--Date        : Wed Mar  4 19:55:55 2026
 --Host        : WycheSurfacePro running 64-bit major release  (build 9200)
 --Command     : generate_target design_1.bd
 --Design      : design_1
@@ -1012,6 +1012,7 @@ architecture STRUCTURE of design_1 is
     s00_axi_rready : in STD_LOGIC
   );
   end component design_1_My_Counter_IP_0_0;
+  signal My_Counter_IP_0_roll : STD_LOGIC;
   signal axi_smc_1_M00_AXI_ARADDR : STD_LOGIC_VECTOR ( 28 downto 0 );
   signal axi_smc_1_M00_AXI_ARBURST : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal axi_smc_1_M00_AXI_ARCACHE : STD_LOGIC_VECTOR ( 3 downto 0 );
@@ -1081,7 +1082,6 @@ architecture STRUCTURE of design_1 is
   signal axi_smc_M01_AXI_WREADY : STD_LOGIC;
   signal axi_smc_M01_AXI_WSTRB : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal axi_smc_M01_AXI_WVALID : STD_LOGIC;
-  signal axi_uartlite_0_interrupt : STD_LOGIC;
   signal clk_wiz_1_clk_out2 : STD_LOGIC;
   signal clk_wiz_1_locked : STD_LOGIC;
   signal mdm_1_debug_sys_rst : STD_LOGIC;
@@ -1189,9 +1189,9 @@ architecture STRUCTURE of design_1 is
   signal rst_clk_wiz_1_100M_peripheral_aresetn : STD_LOGIC_VECTOR ( 0 to 0 );
   signal rst_mig_7series_0_100M_peripheral_aresetn : STD_LOGIC_VECTOR ( 0 to 0 );
   signal util_ds_buf_0_BUFG_O : STD_LOGIC_VECTOR ( 0 to 0 );
-  signal NLW_My_Counter_IP_0_roll_UNCONNECTED : STD_LOGIC;
   signal NLW_axi_smc_M00_AXI_arprot_UNCONNECTED : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal NLW_axi_smc_M00_AXI_awprot_UNCONNECTED : STD_LOGIC_VECTOR ( 2 downto 0 );
+  signal NLW_axi_uartlite_0_interrupt_UNCONNECTED : STD_LOGIC;
   signal NLW_microblaze_0_M_AXI_IC_AWLOCK_UNCONNECTED : STD_LOGIC;
   signal NLW_microblaze_0_M_AXI_IC_AWVALID_UNCONNECTED : STD_LOGIC;
   signal NLW_microblaze_0_M_AXI_IC_BREADY_UNCONNECTED : STD_LOGIC;
@@ -1255,7 +1255,7 @@ begin
 My_Counter_IP_0: component design_1_My_Counter_IP_0_0
      port map (
       LED(7 downto 0) => LED(7 downto 0),
-      roll => NLW_My_Counter_IP_0_roll_UNCONNECTED,
+      roll => My_Counter_IP_0_roll,
       s00_axi_aclk => microblaze_0_Clk,
       s00_axi_araddr(6 downto 0) => axi_smc_M01_AXI_ARADDR(6 downto 0),
       s00_axi_aresetn => rst_clk_wiz_1_100M_peripheral_aresetn(0),
@@ -1429,7 +1429,7 @@ axi_smc_1: component design_1_axi_smc_1_0
     );
 axi_uartlite_0: component design_1_axi_uartlite_0_0
      port map (
-      interrupt => axi_uartlite_0_interrupt,
+      interrupt => NLW_axi_uartlite_0_interrupt_UNCONNECTED,
       rx => usb_uart_rxd,
       s_axi_aclk => microblaze_0_Clk,
       s_axi_araddr(3 downto 0) => axi_smc_M00_AXI_ARADDR(3 downto 0),
@@ -1502,7 +1502,7 @@ microblaze_0: component design_1_microblaze_0_0
       I_AS => microblaze_0_ilmb_1_ADDRSTROBE,
       Instr(0 to 31) => microblaze_0_ilmb_1_READDBUS(0 to 31),
       Instr_Addr(0 to 31) => microblaze_0_ilmb_1_ABUS(0 to 31),
-      Interrupt => axi_uartlite_0_interrupt,
+      Interrupt => My_Counter_IP_0_roll,
       Interrupt_Ack(0 to 1) => NLW_microblaze_0_Interrupt_Ack_UNCONNECTED(0 to 1),
       Interrupt_Address(0 to 31) => B"00000000000000000000000000000000",
       M_AXI_DC_ARADDR(31 downto 0) => microblaze_0_M_AXI_DC_ARADDR(31 downto 0),

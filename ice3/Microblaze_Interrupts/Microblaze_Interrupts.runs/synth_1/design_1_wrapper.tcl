@@ -171,7 +171,7 @@ set_property used_in_implementation false [get_files -all c:/Users/Jason.Wyche/s
 set_property used_in_implementation false [get_files -all c:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.gen/sources_1/bd/design_1/ip/design_1_rst_mig_7series_0_100M_0/design_1_rst_mig_7series_0_100M_0_board.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.gen/sources_1/bd/design_1/ip/design_1_rst_mig_7series_0_100M_0/design_1_rst_mig_7series_0_100M_0.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.gen/sources_1/bd/design_1/ip/design_1_rst_mig_7series_0_100M_0/design_1_rst_mig_7series_0_100M_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.gen/sources_1/bd/design_1/design_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.gen/sources_1/bd/design_1/design_1_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/data/mb_bootloop_le.elf]
 
 OPTRACE "Adding files" END { }

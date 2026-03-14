@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Mar  4 08:31:49 2026" VIVADOVERSION="2024.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Mar  4 19:56:26 2026" VIVADOVERSION="2024.2">
 
   <SYSTEMINFO ARCH="artix7" BOARD="digilentinc.com:nexys_video:part0:1.2" DEVICE="7a200t" NAME="design_1" PACKAGE="sbg484" SPEEDGRADE="-1"/>
 
@@ -164,7 +164,11 @@
             <CONNECTION INSTANCE="External_Ports" PORT="LED"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="roll" SIGIS="undef"/>
+        <PORT DIR="O" NAME="roll" SIGIS="undef" SIGNAME="My_Counter_IP_0_roll">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="microblaze_0" PORT="Interrupt"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT CLKFREQUENCY="100000000" DIR="I" NAME="s00_axi_aclk" SIGIS="clk" SIGNAME="clk_wiz_1_clk_out1">
           <CONNECTIONS>
             <CONNECTION INSTANCE="clk_wiz_1" PORT="clk_out1"/>
@@ -1620,11 +1624,7 @@
         <PARAMETER NAME="C_HIGHADDR" VALUE="0x4060FFFF"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="O" NAME="interrupt" SENSITIVITY="EDGE_RISING" SIGIS="INTERRUPT" SIGNAME="axi_uartlite_0_interrupt">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0" PORT="Interrupt"/>
-          </CONNECTIONS>
-        </PORT>
+        <PORT DIR="O" NAME="interrupt" SENSITIVITY="EDGE_RISING" SIGIS="INTERRUPT"/>
         <PORT DIR="I" NAME="rx" SIGIS="undef" SIGNAME="axi_uartlite_0_rx">
           <CONNECTIONS>
             <CONNECTION INSTANCE="design_1_imp" PORT="usb_uart_rxd"/>
@@ -2590,7 +2590,7 @@
         <PARAMETER NAME="C_INSTANCE" VALUE="design_1_microblaze_0_0"/>
         <PARAMETER NAME="C_INSTR_SIZE" VALUE="32"/>
         <PARAMETER NAME="C_INTERCONNECT" VALUE="2"/>
-        <PARAMETER NAME="C_INTERRUPT_IS_EDGE" VALUE="1"/>
+        <PARAMETER NAME="C_INTERRUPT_IS_EDGE" VALUE="0"/>
         <PARAMETER NAME="C_I_AXI" VALUE="0"/>
         <PARAMETER NAME="C_I_LMB" VALUE="1"/>
         <PARAMETER NAME="C_I_LMB_PROTOCOL" VALUE="0"/>
@@ -2895,9 +2895,9 @@
             <CONNECTION INSTANCE="microblaze_0_local_memory_ilmb_v10" PORT="M_ABus"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="Interrupt" SIGIS="INTERRUPT" SIGNAME="axi_uartlite_0_interrupt">
+        <PORT DIR="I" NAME="Interrupt" SIGIS="INTERRUPT" SIGNAME="My_Counter_IP_0_roll">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="axi_uartlite_0" PORT="interrupt"/>
+            <CONNECTION INSTANCE="My_Counter_IP_0" PORT="roll"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="0" NAME="Interrupt_Ack" RIGHT="1" SIGIS="undef"/>

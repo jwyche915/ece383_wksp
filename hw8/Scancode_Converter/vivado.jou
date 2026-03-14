@@ -23,3 +23,67 @@
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/Jason.Wyche/source/repos/ece383_wksp/hw8/Scancode_Converter/Scancode_Converter.xpr
+add_files -norecurse {C:/Users/Jason.Wyche/source/repos/ece383_wksp/hw8/Scancode_Converter/src/keyboard.vhd C:/Users/Jason.Wyche/source/repos/ece383_wksp/hw8/Scancode_Converter/src/lec11.vhdl C:/Users/Jason.Wyche/source/repos/ece383_wksp/hw8/Scancode_Converter/src/lec11_dp.vhdl}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property target_language VHDL [current_project]
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse C:/Users/Jason.Wyche/source/repos/ece383_wksp/hw8/Scancode_Converter/src/lec11_tb.vhdl
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+close [ open C:/Users/Jason.Wyche/source/repos/ece383_wksp/hw8/Scancode_Converter/src/lec11_cu.vhd w ]
+add_files C:/Users/Jason.Wyche/source/repos/ece383_wksp/hw8/Scancode_Converter/src/lec11_cu.vhd
+update_compile_order -fileset sources_1
+add_files -norecurse C:/Users/Jason.Wyche/source/repos/ece383_wksp/hw8/Scancode_Converter/src/counter.vhd
+update_compile_order -fileset sources_1
+remove_files  C:/Users/Jason.Wyche/source/repos/ece383_wksp/hw8/Scancode_Converter/src/counter.vhd
+add_files -norecurse C:/Users/Jason.Wyche/source/repos/ece383_wksp/hw8/Scancode_Converter/src/counter.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+remove_files  C:/Users/Jason.Wyche/source/repos/ece383_wksp/hw8/Scancode_Converter/src/counter.vhd
+set_property -name {xsim.simulate.runtime} -value {150us} -objects [get_filesets sim_1]
+launch_simulation
+launch_simulation
+source lec11_tb.tcl
+close_sim
+set_property -name {xsim.simulate.runtime} -value {1000us} -objects [get_filesets sim_1]
+launch_simulation
+source lec11_tb.tcl
+close_sim
+set_property -name {xsim.simulate.runtime} -value {3000us} -objects [get_filesets sim_1]
+launch_simulation
+source lec11_tb.tcl
+close_sim
+set_property -name {xsim.simulate.runtime} -value {4000us} -objects [get_filesets sim_1]
+launch_simulation
+source lec11_tb.tcl
+current_wave_config {Untitled 4}
+add_wave {{/lec11_tb/uut/cu/state}} 
+current_wave_config {Untitled 4}
+add_wave {{/lec11_tb/uut/cu/cw}} 
+current_wave_config {Untitled 4}
+add_wave {{/lec11_tb/uut/dp/shiftReg}} 
+current_wave_config {Untitled 4}
+add_wave {{/lec11_tb/uut/dp/keyCntr}} 
+current_wave_config {Untitled 4}
+add_wave {{/lec11_tb/uut/dp/sw}} 
+save_wave_config {C:/Users/Jason.Wyche/source/repos/ece383_wksp/hw8/Scancode_Converter/lec11_tb_behav.wcfg}
+add_files -fileset sim_1 -norecurse C:/Users/Jason.Wyche/source/repos/ece383_wksp/hw8/Scancode_Converter/lec11_tb_behav.wcfg
+set_property xsim.view C:/Users/Jason.Wyche/source/repos/ece383_wksp/hw8/Scancode_Converter/lec11_tb_behav.wcfg [get_filesets sim_1]
+close_sim
+launch_simulation
+open_wave_config C:/Users/Jason.Wyche/source/repos/ece383_wksp/hw8/Scancode_Converter/lec11_tb_behav.wcfg
+source lec11_tb.tcl
+save_wave_config {C:/Users/Jason.Wyche/source/repos/ece383_wksp/hw8/Scancode_Converter/lec11_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/Jason.Wyche/source/repos/ece383_wksp/hw8/Scancode_Converter/lec11_tb_behav.wcfg
+source lec11_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/Jason.Wyche/source/repos/ece383_wksp/hw8/Scancode_Converter/lec11_tb_behav.wcfg
+source lec11_tb.tcl
+close_sim

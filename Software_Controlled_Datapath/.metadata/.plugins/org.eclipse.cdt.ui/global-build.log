@@ -1,0 +1,29 @@
+Nothing to build in platform 'Software_Controlled_Datapath_wrapper_V2'
+
+10:37:24 **** Clean-only build of configuration Debug for project Software_Controlled_Datapath_Vitis_V2 ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/platform.o  ./src/helloworld.d ./src/platform.d  Software_Controlled_Datapath_Vitis_V2.elf.size  Software_Controlled_Datapath_Vitis_V2.elf
+' '
+10:37:24 **** Build of configuration Debug for project Software_Controlled_Datapath_Vitis_V2 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I"C:\Users\Jason.Wyche\source\repos\ece383_wksp\Software_Controlled_Datapath\Software_Controlled_Datapath_wrapper_V2\microblaze_0\standalone_microblaze_0\bsp\microblaze_0\include" -c -fmessage-length=0 -MT"src/helloworld.o" -IC:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper_V2/export/Software_Controlled_Datapath_wrapper_V2/sw/Software_Controlled_Datapath_wrapper_V2/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I"C:\Users\Jason.Wyche\source\repos\ece383_wksp\Software_Controlled_Datapath\Software_Controlled_Datapath_wrapper_V2\microblaze_0\standalone_microblaze_0\bsp\microblaze_0\include" -c -fmessage-length=0 -MT"src/platform.o" -IC:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper_V2/export/Software_Controlled_Datapath_wrapper_V2/sw/Software_Controlled_Datapath_wrapper_V2/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: Software_Controlled_Datapath_Vitis_V2.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -L"C:\Users\Jason.Wyche\source\repos\ece383_wksp\Software_Controlled_Datapath\Software_Controlled_Datapath_wrapper_V2\microblaze_0\standalone_microblaze_0\bsp\microblaze_0\lib" -Wl,-T -Wl,../src/lscript.ld -LC:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper_V2/export/Software_Controlled_Datapath_wrapper_V2/sw/Software_Controlled_Datapath_wrapper_V2/standalone_microblaze_0/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Software_Controlled_Datapath_Vitis_V2.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Software_Controlled_Datapath_Vitis_V2.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Software_Controlled_Datapath_Vitis_V2.elf  |tee "Software_Controlled_Datapath_Vitis_V2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2341	     24	   3427	   5792	   16a0	Software_Controlled_Datapath_Vitis_V2.elf
+'Finished building: Software_Controlled_Datapath_Vitis_V2.elf.size'
+' '

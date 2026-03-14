@@ -8,7 +8,7 @@
   **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
   **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
   **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-  **** Start of session at: Wed Mar  4 08:33:24 2026
+  **** Start of session at: Wed Mar  4 19:58:03 2026
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 
@@ -18,7 +18,7 @@ INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Jason.Wyche/source/r
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
 WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
 Current IP cache path is c:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.cache/ip 
-add_files: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 367.098 ; gain = 71.555
+add_files: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 367.938 ; gain = 74.020
 Command: read_checkpoint -auto_incremental -incremental C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp
 INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
@@ -31,38 +31,38 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 11216
+INFO: [Synth 8-7075] Helper process launched with PID 14920
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1105.422 ; gain = 469.871
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1102.449 ; gain = 468.152
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:39]
 INFO: [Synth 8-3491] module 'design_1' declared at 'c:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.gen/sources_1/bd/design_1/synth/design_1.vhd:531' bound to instance 'design_1_i' of component 'design_1' [C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:64]
 INFO: [Synth 8-638] synthesizing module 'design_1' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.gen/sources_1/bd/design_1/synth/design_1.vhd:559]
-INFO: [Synth 8-3491] module 'design_1_My_Counter_IP_0_0' declared at 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.runs/synth_1/.Xil/Vivado-3896-WycheSurfacePro/realtime/design_1_My_Counter_IP_0_0_stub.vhdl:6' bound to instance 'My_Counter_IP_0' of component 'design_1_My_Counter_IP_0_0' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.gen/sources_1/bd/design_1/synth/design_1.vhd:1255]
-INFO: [Synth 8-638] synthesizing module 'design_1_My_Counter_IP_0_0' [C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.runs/synth_1/.Xil/Vivado-3896-WycheSurfacePro/realtime/design_1_My_Counter_IP_0_0_stub.vhdl:41]
-INFO: [Synth 8-3491] module 'design_1_axi_smc_0' declared at 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.runs/synth_1/.Xil/Vivado-3896-WycheSurfacePro/realtime/design_1_axi_smc_0_stub.vhdl:6' bound to instance 'axi_smc' of component 'design_1_axi_smc_0' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.gen/sources_1/bd/design_1/synth/design_1.vhd:1281]
-INFO: [Synth 8-638] synthesizing module 'design_1_axi_smc_0' [C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.runs/synth_1/.Xil/Vivado-3896-WycheSurfacePro/realtime/design_1_axi_smc_0_stub.vhdl:77]
-INFO: [Synth 8-3491] module 'design_1_axi_smc_1_0' declared at 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.runs/synth_1/.Xil/Vivado-3896-WycheSurfacePro/realtime/design_1_axi_smc_1_0_stub.vhdl:6' bound to instance 'axi_smc_1' of component 'design_1_axi_smc_1_0' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.gen/sources_1/bd/design_1/synth/design_1.vhd:1343]
-INFO: [Synth 8-638] synthesizing module 'design_1_axi_smc_1_0' [C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.runs/synth_1/.Xil/Vivado-3896-WycheSurfacePro/realtime/design_1_axi_smc_1_0_stub.vhdl:102]
-INFO: [Synth 8-3491] module 'design_1_axi_uartlite_0_0' declared at 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.runs/synth_1/.Xil/Vivado-3896-WycheSurfacePro/realtime/design_1_axi_uartlite_0_0_stub.vhdl:6' bound to instance 'axi_uartlite_0' of component 'design_1_axi_uartlite_0_0' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.gen/sources_1/bd/design_1/synth/design_1.vhd:1430]
-INFO: [Synth 8-638] synthesizing module 'design_1_axi_uartlite_0_0' [C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.runs/synth_1/.Xil/Vivado-3896-WycheSurfacePro/realtime/design_1_axi_uartlite_0_0_stub.vhdl:40]
-INFO: [Synth 8-3491] module 'design_1_clk_wiz_1_0' declared at 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.runs/synth_1/.Xil/Vivado-3896-WycheSurfacePro/realtime/design_1_clk_wiz_1_0_stub.vhdl:6' bound to instance 'clk_wiz_1' of component 'design_1_clk_wiz_1_0' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.gen/sources_1/bd/design_1/synth/design_1.vhd:1455]
-INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_1_0' [C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.runs/synth_1/.Xil/Vivado-3896-WycheSurfacePro/realtime/design_1_clk_wiz_1_0_stub.vhdl:19]
-INFO: [Synth 8-3491] module 'design_1_mdm_1_0' declared at 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.runs/synth_1/.Xil/Vivado-3896-WycheSurfacePro/realtime/design_1_mdm_1_0_stub.vhdl:6' bound to instance 'mdm_1' of component 'design_1_mdm_1_0' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.gen/sources_1/bd/design_1/synth/design_1.vhd:1463]
-INFO: [Synth 8-638] synthesizing module 'design_1_mdm_1_0' [C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.runs/synth_1/.Xil/Vivado-3896-WycheSurfacePro/realtime/design_1_mdm_1_0_stub.vhdl:28]
-INFO: [Synth 8-3491] module 'design_1_microblaze_0_0' declared at 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.runs/synth_1/.Xil/Vivado-3896-WycheSurfacePro/realtime/design_1_microblaze_0_0_stub.vhdl:6' bound to instance 'microblaze_0' of component 'design_1_microblaze_0_0' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.gen/sources_1/bd/design_1/synth/design_1.vhd:1476]
-INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_0' [C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.runs/synth_1/.Xil/Vivado-3896-WycheSurfacePro/realtime/design_1_microblaze_0_0_stub.vhdl:144]
+INFO: [Synth 8-3491] module 'design_1_My_Counter_IP_0_0' declared at 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.runs/synth_1/.Xil/Vivado-9396-WycheSurfacePro/realtime/design_1_My_Counter_IP_0_0_stub.vhdl:6' bound to instance 'My_Counter_IP_0' of component 'design_1_My_Counter_IP_0_0' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.gen/sources_1/bd/design_1/synth/design_1.vhd:1255]
+INFO: [Synth 8-638] synthesizing module 'design_1_My_Counter_IP_0_0' [C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.runs/synth_1/.Xil/Vivado-9396-WycheSurfacePro/realtime/design_1_My_Counter_IP_0_0_stub.vhdl:41]
+INFO: [Synth 8-3491] module 'design_1_axi_smc_0' declared at 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.runs/synth_1/.Xil/Vivado-9396-WycheSurfacePro/realtime/design_1_axi_smc_0_stub.vhdl:6' bound to instance 'axi_smc' of component 'design_1_axi_smc_0' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.gen/sources_1/bd/design_1/synth/design_1.vhd:1281]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_smc_0' [C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.runs/synth_1/.Xil/Vivado-9396-WycheSurfacePro/realtime/design_1_axi_smc_0_stub.vhdl:77]
+INFO: [Synth 8-3491] module 'design_1_axi_smc_1_0' declared at 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.runs/synth_1/.Xil/Vivado-9396-WycheSurfacePro/realtime/design_1_axi_smc_1_0_stub.vhdl:6' bound to instance 'axi_smc_1' of component 'design_1_axi_smc_1_0' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.gen/sources_1/bd/design_1/synth/design_1.vhd:1343]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_smc_1_0' [C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.runs/synth_1/.Xil/Vivado-9396-WycheSurfacePro/realtime/design_1_axi_smc_1_0_stub.vhdl:102]
+INFO: [Synth 8-3491] module 'design_1_axi_uartlite_0_0' declared at 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.runs/synth_1/.Xil/Vivado-9396-WycheSurfacePro/realtime/design_1_axi_uartlite_0_0_stub.vhdl:6' bound to instance 'axi_uartlite_0' of component 'design_1_axi_uartlite_0_0' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.gen/sources_1/bd/design_1/synth/design_1.vhd:1430]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_uartlite_0_0' [C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.runs/synth_1/.Xil/Vivado-9396-WycheSurfacePro/realtime/design_1_axi_uartlite_0_0_stub.vhdl:40]
+INFO: [Synth 8-3491] module 'design_1_clk_wiz_1_0' declared at 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.runs/synth_1/.Xil/Vivado-9396-WycheSurfacePro/realtime/design_1_clk_wiz_1_0_stub.vhdl:6' bound to instance 'clk_wiz_1' of component 'design_1_clk_wiz_1_0' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.gen/sources_1/bd/design_1/synth/design_1.vhd:1455]
+INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_1_0' [C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.runs/synth_1/.Xil/Vivado-9396-WycheSurfacePro/realtime/design_1_clk_wiz_1_0_stub.vhdl:19]
+INFO: [Synth 8-3491] module 'design_1_mdm_1_0' declared at 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.runs/synth_1/.Xil/Vivado-9396-WycheSurfacePro/realtime/design_1_mdm_1_0_stub.vhdl:6' bound to instance 'mdm_1' of component 'design_1_mdm_1_0' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.gen/sources_1/bd/design_1/synth/design_1.vhd:1463]
+INFO: [Synth 8-638] synthesizing module 'design_1_mdm_1_0' [C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.runs/synth_1/.Xil/Vivado-9396-WycheSurfacePro/realtime/design_1_mdm_1_0_stub.vhdl:28]
+INFO: [Synth 8-3491] module 'design_1_microblaze_0_0' declared at 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.runs/synth_1/.Xil/Vivado-9396-WycheSurfacePro/realtime/design_1_microblaze_0_0_stub.vhdl:6' bound to instance 'microblaze_0' of component 'design_1_microblaze_0_0' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.gen/sources_1/bd/design_1/synth/design_1.vhd:1476]
+INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_0' [C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.runs/synth_1/.Xil/Vivado-9396-WycheSurfacePro/realtime/design_1_microblaze_0_0_stub.vhdl:144]
 INFO: [Synth 8-638] synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.gen/sources_1/bd/design_1/synth/design_1.vhd:41]
-INFO: [Synth 8-3491] module 'design_1_dlmb_bram_if_cntlr_0' declared at 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.runs/synth_1/.Xil/Vivado-3896-WycheSurfacePro/realtime/design_1_dlmb_bram_if_cntlr_0_stub.vhdl:6' bound to instance 'dlmb_bram_if_cntlr' of component 'design_1_dlmb_bram_if_cntlr_0' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.gen/sources_1/bd/design_1/synth/design_1.vhd:213]
-INFO: [Synth 8-638] synthesizing module 'design_1_dlmb_bram_if_cntlr_0' [C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.runs/synth_1/.Xil/Vivado-3896-WycheSurfacePro/realtime/design_1_dlmb_bram_if_cntlr_0_stub.vhdl:38]
-INFO: [Synth 8-3491] module 'design_1_dlmb_v10_0' declared at 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.runs/synth_1/.Xil/Vivado-3896-WycheSurfacePro/realtime/design_1_dlmb_v10_0_stub.vhdl:6' bound to instance 'dlmb_v10' of component 'design_1_dlmb_v10_0' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.gen/sources_1/bd/design_1/synth/design_1.vhd:267]
-INFO: [Synth 8-638] synthesizing module 'design_1_dlmb_v10_0' [C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.runs/synth_1/.Xil/Vivado-3896-WycheSurfacePro/realtime/design_1_dlmb_v10_0_stub.vhdl:43]
-INFO: [Synth 8-3491] module 'design_1_ilmb_bram_if_cntlr_0' declared at 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.runs/synth_1/.Xil/Vivado-3896-WycheSurfacePro/realtime/design_1_ilmb_bram_if_cntlr_0_stub.vhdl:6' bound to instance 'ilmb_bram_if_cntlr' of component 'design_1_ilmb_bram_if_cntlr_0' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.gen/sources_1/bd/design_1/synth/design_1.vhd:295]
-INFO: [Synth 8-638] synthesizing module 'design_1_ilmb_bram_if_cntlr_0' [C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.runs/synth_1/.Xil/Vivado-3896-WycheSurfacePro/realtime/design_1_ilmb_bram_if_cntlr_0_stub.vhdl:38]
-INFO: [Synth 8-3491] module 'design_1_ilmb_v10_0' declared at 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.runs/synth_1/.Xil/Vivado-3896-WycheSurfacePro/realtime/design_1_ilmb_v10_0_stub.vhdl:6' bound to instance 'ilmb_v10' of component 'design_1_ilmb_v10_0' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.gen/sources_1/bd/design_1/synth/design_1.vhd:349]
-INFO: [Synth 8-638] synthesizing module 'design_1_ilmb_v10_0' [C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.runs/synth_1/.Xil/Vivado-3896-WycheSurfacePro/realtime/design_1_ilmb_v10_0_stub.vhdl:43]
-INFO: [Synth 8-3491] module 'design_1_lmb_bram_0' declared at 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.runs/synth_1/.Xil/Vivado-3896-WycheSurfacePro/realtime/design_1_lmb_bram_0_stub.vhdl:6' bound to instance 'lmb_bram' of component 'design_1_lmb_bram_0' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.gen/sources_1/bd/design_1/synth/design_1.vhd:377]
-INFO: [Synth 8-638] synthesizing module 'design_1_lmb_bram_0' [C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.runs/synth_1/.Xil/Vivado-3896-WycheSurfacePro/realtime/design_1_lmb_bram_0_stub.vhdl:34]
+INFO: [Synth 8-3491] module 'design_1_dlmb_bram_if_cntlr_0' declared at 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.runs/synth_1/.Xil/Vivado-9396-WycheSurfacePro/realtime/design_1_dlmb_bram_if_cntlr_0_stub.vhdl:6' bound to instance 'dlmb_bram_if_cntlr' of component 'design_1_dlmb_bram_if_cntlr_0' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.gen/sources_1/bd/design_1/synth/design_1.vhd:213]
+INFO: [Synth 8-638] synthesizing module 'design_1_dlmb_bram_if_cntlr_0' [C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.runs/synth_1/.Xil/Vivado-9396-WycheSurfacePro/realtime/design_1_dlmb_bram_if_cntlr_0_stub.vhdl:38]
+INFO: [Synth 8-3491] module 'design_1_dlmb_v10_0' declared at 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.runs/synth_1/.Xil/Vivado-9396-WycheSurfacePro/realtime/design_1_dlmb_v10_0_stub.vhdl:6' bound to instance 'dlmb_v10' of component 'design_1_dlmb_v10_0' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.gen/sources_1/bd/design_1/synth/design_1.vhd:267]
+INFO: [Synth 8-638] synthesizing module 'design_1_dlmb_v10_0' [C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.runs/synth_1/.Xil/Vivado-9396-WycheSurfacePro/realtime/design_1_dlmb_v10_0_stub.vhdl:43]
+INFO: [Synth 8-3491] module 'design_1_ilmb_bram_if_cntlr_0' declared at 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.runs/synth_1/.Xil/Vivado-9396-WycheSurfacePro/realtime/design_1_ilmb_bram_if_cntlr_0_stub.vhdl:6' bound to instance 'ilmb_bram_if_cntlr' of component 'design_1_ilmb_bram_if_cntlr_0' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.gen/sources_1/bd/design_1/synth/design_1.vhd:295]
+INFO: [Synth 8-638] synthesizing module 'design_1_ilmb_bram_if_cntlr_0' [C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.runs/synth_1/.Xil/Vivado-9396-WycheSurfacePro/realtime/design_1_ilmb_bram_if_cntlr_0_stub.vhdl:38]
+INFO: [Synth 8-3491] module 'design_1_ilmb_v10_0' declared at 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.runs/synth_1/.Xil/Vivado-9396-WycheSurfacePro/realtime/design_1_ilmb_v10_0_stub.vhdl:6' bound to instance 'ilmb_v10' of component 'design_1_ilmb_v10_0' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.gen/sources_1/bd/design_1/synth/design_1.vhd:349]
+INFO: [Synth 8-638] synthesizing module 'design_1_ilmb_v10_0' [C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.runs/synth_1/.Xil/Vivado-9396-WycheSurfacePro/realtime/design_1_ilmb_v10_0_stub.vhdl:43]
+INFO: [Synth 8-3491] module 'design_1_lmb_bram_0' declared at 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.runs/synth_1/.Xil/Vivado-9396-WycheSurfacePro/realtime/design_1_lmb_bram_0_stub.vhdl:6' bound to instance 'lmb_bram' of component 'design_1_lmb_bram_0' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.gen/sources_1/bd/design_1/synth/design_1.vhd:377]
+INFO: [Synth 8-638] synthesizing module 'design_1_lmb_bram_0' [C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.runs/synth_1/.Xil/Vivado-9396-WycheSurfacePro/realtime/design_1_lmb_bram_0_stub.vhdl:34]
 INFO: [Synth 8-256] done synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' (0#1) [c:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.gen/sources_1/bd/design_1/synth/design_1.vhd:41]
 WARNING: [Synth 8-5640] Port 'ui_addn_clk_1' is missing in component declaration [c:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.gen/sources_1/bd/design_1/synth/design_1.vhd:727]
 WARNING: [Synth 8-5640] Port 'ui_addn_clk_2' is missing in component declaration [c:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.gen/sources_1/bd/design_1/synth/design_1.vhd:727]
@@ -72,29 +72,29 @@ WARNING: [Synth 8-5640] Port 'app_sr_active' is missing in component declaration
 WARNING: [Synth 8-5640] Port 'app_ref_ack' is missing in component declaration [c:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.gen/sources_1/bd/design_1/synth/design_1.vhd:727]
 WARNING: [Synth 8-5640] Port 'app_zq_ack' is missing in component declaration [c:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.gen/sources_1/bd/design_1/synth/design_1.vhd:727]
 WARNING: [Synth 8-5640] Port 'device_temp' is missing in component declaration [c:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.gen/sources_1/bd/design_1/synth/design_1.vhd:727]
-INFO: [Synth 8-3491] module 'design_1_mig_7series_0_0' declared at 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.runs/synth_1/.Xil/Vivado-3896-WycheSurfacePro/realtime/design_1_mig_7series_0_0_stub.vhdl:6' bound to instance 'mig_7series_0' of component 'design_1_mig_7series_0_0' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.gen/sources_1/bd/design_1/synth/design_1.vhd:1629]
-INFO: [Synth 8-638] synthesizing module 'design_1_mig_7series_0_0' [C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.runs/synth_1/.Xil/Vivado-3896-WycheSurfacePro/realtime/design_1_mig_7series_0_0_stub.vhdl:80]
-INFO: [Synth 8-3491] module 'design_1_rst_clk_wiz_1_100M_0' declared at 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.runs/synth_1/.Xil/Vivado-3896-WycheSurfacePro/realtime/design_1_rst_clk_wiz_1_100M_0_stub.vhdl:6' bound to instance 'rst_clk_wiz_1_100M' of component 'design_1_rst_clk_wiz_1_100M_0' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.gen/sources_1/bd/design_1/synth/design_1.vhd:1692]
-INFO: [Synth 8-638] synthesizing module 'design_1_rst_clk_wiz_1_100M_0' [C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.runs/synth_1/.Xil/Vivado-3896-WycheSurfacePro/realtime/design_1_rst_clk_wiz_1_100M_0_stub.vhdl:28]
-INFO: [Synth 8-3491] module 'design_1_rst_mig_7series_0_100M_0' declared at 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.runs/synth_1/.Xil/Vivado-3896-WycheSurfacePro/realtime/design_1_rst_mig_7series_0_100M_0_stub.vhdl:6' bound to instance 'rst_mig_7series_0_100M' of component 'design_1_rst_mig_7series_0_100M_0' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.gen/sources_1/bd/design_1/synth/design_1.vhd:1705]
-INFO: [Synth 8-638] synthesizing module 'design_1_rst_mig_7series_0_100M_0' [C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.runs/synth_1/.Xil/Vivado-3896-WycheSurfacePro/realtime/design_1_rst_mig_7series_0_100M_0_stub.vhdl:28]
-INFO: [Synth 8-3491] module 'design_1_util_ds_buf_0_0' declared at 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.runs/synth_1/.Xil/Vivado-3896-WycheSurfacePro/realtime/design_1_util_ds_buf_0_0_stub.vhdl:6' bound to instance 'util_ds_buf_0' of component 'design_1_util_ds_buf_0_0' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.gen/sources_1/bd/design_1/synth/design_1.vhd:1718]
-INFO: [Synth 8-638] synthesizing module 'design_1_util_ds_buf_0_0' [C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.runs/synth_1/.Xil/Vivado-3896-WycheSurfacePro/realtime/design_1_util_ds_buf_0_0_stub.vhdl:20]
+INFO: [Synth 8-3491] module 'design_1_mig_7series_0_0' declared at 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.runs/synth_1/.Xil/Vivado-9396-WycheSurfacePro/realtime/design_1_mig_7series_0_0_stub.vhdl:6' bound to instance 'mig_7series_0' of component 'design_1_mig_7series_0_0' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.gen/sources_1/bd/design_1/synth/design_1.vhd:1629]
+INFO: [Synth 8-638] synthesizing module 'design_1_mig_7series_0_0' [C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.runs/synth_1/.Xil/Vivado-9396-WycheSurfacePro/realtime/design_1_mig_7series_0_0_stub.vhdl:80]
+INFO: [Synth 8-3491] module 'design_1_rst_clk_wiz_1_100M_0' declared at 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.runs/synth_1/.Xil/Vivado-9396-WycheSurfacePro/realtime/design_1_rst_clk_wiz_1_100M_0_stub.vhdl:6' bound to instance 'rst_clk_wiz_1_100M' of component 'design_1_rst_clk_wiz_1_100M_0' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.gen/sources_1/bd/design_1/synth/design_1.vhd:1692]
+INFO: [Synth 8-638] synthesizing module 'design_1_rst_clk_wiz_1_100M_0' [C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.runs/synth_1/.Xil/Vivado-9396-WycheSurfacePro/realtime/design_1_rst_clk_wiz_1_100M_0_stub.vhdl:28]
+INFO: [Synth 8-3491] module 'design_1_rst_mig_7series_0_100M_0' declared at 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.runs/synth_1/.Xil/Vivado-9396-WycheSurfacePro/realtime/design_1_rst_mig_7series_0_100M_0_stub.vhdl:6' bound to instance 'rst_mig_7series_0_100M' of component 'design_1_rst_mig_7series_0_100M_0' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.gen/sources_1/bd/design_1/synth/design_1.vhd:1705]
+INFO: [Synth 8-638] synthesizing module 'design_1_rst_mig_7series_0_100M_0' [C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.runs/synth_1/.Xil/Vivado-9396-WycheSurfacePro/realtime/design_1_rst_mig_7series_0_100M_0_stub.vhdl:28]
+INFO: [Synth 8-3491] module 'design_1_util_ds_buf_0_0' declared at 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.runs/synth_1/.Xil/Vivado-9396-WycheSurfacePro/realtime/design_1_util_ds_buf_0_0_stub.vhdl:6' bound to instance 'util_ds_buf_0' of component 'design_1_util_ds_buf_0_0' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.gen/sources_1/bd/design_1/synth/design_1.vhd:1718]
+INFO: [Synth 8-638] synthesizing module 'design_1_util_ds_buf_0_0' [C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.runs/synth_1/.Xil/Vivado-9396-WycheSurfacePro/realtime/design_1_util_ds_buf_0_0_stub.vhdl:20]
 INFO: [Synth 8-256] done synthesizing module 'design_1' (0#1) [c:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.gen/sources_1/bd/design_1/synth/design_1.vhd:559]
 INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (0#1) [C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:39]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1221.973 ; gain = 586.422
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1220.352 ; gain = 586.055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1221.973 ; gain = 586.422
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1220.352 ; gain = 586.055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1221.973 ; gain = 586.422
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1220.352 ; gain = 586.055
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1221.973 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1220.352 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -139,23 +139,23 @@ Parsing XDC File [C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_
 Finished Parsing XDC File [C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1248.012 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1227.328 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1248.012 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1227.328 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_1_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:02 ; elapsed = 00:00:16 . Memory (MB): peak = 1248.062 ; gain = 612.512
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:16 . Memory (MB): peak = 1227.477 ; gain = 593.180
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a200tsbg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:02 ; elapsed = 00:00:16 . Memory (MB): peak = 1248.062 ; gain = 612.512
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:16 . Memory (MB): peak = 1227.477 ; gain = 593.180
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -274,10 +274,10 @@ Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_smc_1. (constraint
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/rst_mig_7series_0_100M. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/My_Counter_IP_0. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:02 ; elapsed = 00:00:16 . Memory (MB): peak = 1248.062 ; gain = 612.512
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:16 . Memory (MB): peak = 1227.477 ; gain = 593.180
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:16 . Memory (MB): peak = 1248.062 ; gain = 612.512
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:16 . Memory (MB): peak = 1227.477 ; gain = 593.180
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -300,25 +300,25 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:02 ; elapsed = 00:00:19 . Memory (MB): peak = 1248.062 ; gain = 612.512
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:18 . Memory (MB): peak = 1227.477 ; gain = 593.180
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:04 ; elapsed = 00:00:25 . Memory (MB): peak = 1379.891 ; gain = 744.340
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:24 . Memory (MB): peak = 1380.520 ; gain = 746.223
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:04 ; elapsed = 00:00:25 . Memory (MB): peak = 1380.188 ; gain = 744.637
+Finished Timing Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:24 . Memory (MB): peak = 1380.742 ; gain = 746.445
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:04 ; elapsed = 00:00:25 . Memory (MB): peak = 1391.113 ; gain = 755.562
+Finished Technology Mapping : Time (s): cpu = 00:00:11 ; elapsed = 00:00:24 . Memory (MB): peak = 1391.684 ; gain = 757.387
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -336,37 +336,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:04 ; elapsed = 00:00:29 . Memory (MB): peak = 1607.246 ; gain = 971.695
+Finished IO Insertion : Time (s): cpu = 00:00:12 ; elapsed = 00:00:28 . Memory (MB): peak = 1607.617 ; gain = 973.320
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:04 ; elapsed = 00:00:29 . Memory (MB): peak = 1607.246 ; gain = 971.695
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:12 ; elapsed = 00:00:28 . Memory (MB): peak = 1607.617 ; gain = 973.320
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:04 ; elapsed = 00:00:29 . Memory (MB): peak = 1607.246 ; gain = 971.695
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:12 ; elapsed = 00:00:28 . Memory (MB): peak = 1607.617 ; gain = 973.320
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:04 ; elapsed = 00:00:29 . Memory (MB): peak = 1607.246 ; gain = 971.695
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:12 ; elapsed = 00:00:28 . Memory (MB): peak = 1607.617 ; gain = 973.320
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:29 . Memory (MB): peak = 1607.246 ; gain = 971.695
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:28 . Memory (MB): peak = 1607.617 ; gain = 973.320
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:04 ; elapsed = 00:00:29 . Memory (MB): peak = 1607.246 ; gain = 971.695
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:12 ; elapsed = 00:00:28 . Memory (MB): peak = 1607.617 ; gain = 973.320
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -418,25 +418,25 @@ Report Cell Usage:
 |18    |OBUF                                   |     9|
 +------+---------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:04 ; elapsed = 00:00:29 . Memory (MB): peak = 1607.246 ; gain = 971.695
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:12 ; elapsed = 00:00:28 . Memory (MB): peak = 1607.617 ; gain = 973.320
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:03 ; elapsed = 00:00:26 . Memory (MB): peak = 1607.246 ; gain = 945.605
-Synthesis Optimization Complete : Time (s): cpu = 00:00:04 ; elapsed = 00:00:29 . Memory (MB): peak = 1607.246 ; gain = 971.695
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:25 . Memory (MB): peak = 1607.617 ; gain = 966.195
+Synthesis Optimization Complete : Time (s): cpu = 00:00:12 ; elapsed = 00:00:28 . Memory (MB): peak = 1607.617 ; gain = 973.320
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1616.461 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1607.617 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1622.699 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1607.617 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete | Checksum: cc695762
+Synth Design complete | Checksum: a304d65
 INFO: [Common 17-83] Releasing license: Synthesis
 61 Infos, 11 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:37 . Memory (MB): peak = 1622.699 ; gain = 1227.438
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1622.699 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:36 . Memory (MB): peak = 1607.617 ; gain = 1212.246
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1607.617 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.runs/synth_1/design_1_wrapper.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Mar  4 08:34:12 2026...
+INFO: [Common 17-206] Exiting Vivado at Wed Mar  4 19:58:49 2026...

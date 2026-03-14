@@ -19,3 +19,13 @@ platform active {design_1_wrapper}
 platform generate -quick
 catch {platform remove design_1_wrapper}
 platform generate
+platform create -name {design_1_wrapper}\
+-hw {C:\Users\Jason.Wyche\source\repos\ece383_wksp\ice3\Microblaze_Interrupts\design_1_wrapper.xsa}\
+-out {C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts}
+
+platform write
+domain create -name {standalone_microblaze_0} -display-name {standalone_microblaze_0} -os {standalone} -proc {microblaze_0} -runtime {cpp} -arch {32-bit} -support-app {hello_world}
+platform generate -domains 
+platform active {design_1_wrapper}
+platform generate -quick
+platform generate

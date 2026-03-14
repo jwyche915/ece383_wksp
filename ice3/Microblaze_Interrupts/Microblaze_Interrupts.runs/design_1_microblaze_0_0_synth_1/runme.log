@@ -8,7 +8,7 @@
   **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
   **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
   **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-  **** Start of session at: Wed Mar  4 08:32:05 2026
+  **** Start of session at: Wed Mar  4 19:56:44 2026
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 
@@ -26,9 +26,9 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200
 INFO: [Device 21-403] Loading part xc7a200tsbg484-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 10756
+INFO: [Synth 8-7075] Helper process launched with PID 7340
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1015.891 ; gain = 469.012
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1015.680 ; gain = 468.188
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_0' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/synth/design_1_microblaze_0_0.vhd:190]
 	Parameter C_SCO bound to: 0 - type: integer 
@@ -122,7 +122,7 @@ INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_0' [c:/Users/Jaso
 	Parameter C_DEBUG_EXTERNAL_TRACE bound to: 0 - type: integer 
 	Parameter C_DEBUG_TRACE_ASYNC_RESET bound to: 0 - type: integer 
 	Parameter C_DEBUG_PROFILE_SIZE bound to: 0 - type: integer 
-	Parameter C_INTERRUPT_IS_EDGE bound to: 1 - type: integer 
+	Parameter C_INTERRUPT_IS_EDGE bound to: 0 - type: integer 
 	Parameter C_EDGE_IS_POSITIVE bound to: 1 - type: integer 
 	Parameter C_ASYNC_INTERRUPT bound to: 1 - type: integer 
 	Parameter C_ASYNC_WAKEUP bound to: 3 - type: integer 
@@ -305,18 +305,18 @@ WARNING: [Synth 8-7129] Port Snoop_TLB_PID[1] in module MMU is either unconnecte
 WARNING: [Synth 8-7129] Port Snoop_TLB_PID[2] in module MMU is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:17 . Memory (MB): peak = 1366.684 ; gain = 819.805
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:18 . Memory (MB): peak = 1367.922 ; gain = 820.430
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:17 . Memory (MB): peak = 1366.684 ; gain = 819.805
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:18 . Memory (MB): peak = 1367.922 ; gain = 820.430
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:17 . Memory (MB): peak = 1366.684 ; gain = 819.805
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:18 . Memory (MB): peak = 1367.922 ; gain = 820.430
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.377 . Memory (MB): peak = 1366.684 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.367 . Memory (MB): peak = 1367.922 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 675 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -335,7 +335,7 @@ Parsing XDC File [C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_
 Finished Parsing XDC File [C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.runs/design_1_microblaze_0_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1382.617 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1399.480 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 463 instances were transformed.
   FDR => FDRE: 158 instances
@@ -346,24 +346,24 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 16 instances
   RAM32X1D => RAM32X1D (RAMD32(x2)): 32 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.127 . Memory (MB): peak = 1382.949 ; gain = 0.332
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.150 . Memory (MB): peak = 1399.516 ; gain = 0.035
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:30 . Memory (MB): peak = 1382.949 ; gain = 836.070
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:31 . Memory (MB): peak = 1399.516 ; gain = 852.023
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a200tsbg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:30 . Memory (MB): peak = 1382.949 ; gain = 836.070
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:31 . Memory (MB): peak = 1399.516 ; gain = 852.023
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.runs/design_1_microblaze_0_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:30 . Memory (MB): peak = 1382.949 ; gain = 836.070
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:31 . Memory (MB): peak = 1399.516 ; gain = 852.023
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'cache_state_reg' in module 'Icache'
 ---------------------------------------------------------------------------------------------------
@@ -377,7 +377,7 @@ INFO: [Synth 8-802] inferred FSM for state register 'cache_state_reg' in module 
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'cache_state_reg' using encoding 'sequential' in module 'Icache'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:33 . Memory (MB): peak = 1382.949 ; gain = 836.070
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:34 . Memory (MB): peak = 1399.516 ; gain = 852.023
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -434,25 +434,25 @@ WARNING: [Synth 8-3332] Sequential element (msr_reg_i/OF_EX_MSR_Bits[29].Using_F
 WARNING: [Synth 8-3332] Sequential element (msr_reg_i/OF_EX_MSR_Bits[31].Using_FDR.MSR_ex_I/Using_FPGA.Native) is unused and will be removed from module Data_Flow_gti.
 WARNING: [Synth 8-3332] Sequential element (msr_reg_i/OF_EX_MSR_Bits[31].Using_FDR.MSR_of_I/Using_FPGA.Native) is unused and will be removed from module Data_Flow_gti.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:44 . Memory (MB): peak = 1382.949 ; gain = 836.070
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:45 . Memory (MB): peak = 1399.516 ; gain = 852.023
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:51 . Memory (MB): peak = 1390.531 ; gain = 843.652
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:51 . Memory (MB): peak = 1399.516 ; gain = 852.023
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:52 . Memory (MB): peak = 1425.551 ; gain = 878.672
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:52 . Memory (MB): peak = 1419.438 ; gain = 871.945
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:09 ; elapsed = 00:00:53 . Memory (MB): peak = 1443.402 ; gain = 896.523
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:54 . Memory (MB): peak = 1437.273 ; gain = 889.781
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -470,37 +470,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:09 ; elapsed = 00:00:57 . Memory (MB): peak = 1617.473 ; gain = 1070.594
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:58 . Memory (MB): peak = 1611.281 ; gain = 1063.789
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:09 ; elapsed = 00:00:57 . Memory (MB): peak = 1617.473 ; gain = 1070.594
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:58 . Memory (MB): peak = 1611.281 ; gain = 1063.789
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:09 ; elapsed = 00:00:58 . Memory (MB): peak = 1617.473 ; gain = 1070.594
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:58 . Memory (MB): peak = 1611.281 ; gain = 1063.789
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:09 ; elapsed = 00:00:58 . Memory (MB): peak = 1617.473 ; gain = 1070.594
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:58 . Memory (MB): peak = 1611.281 ; gain = 1063.789
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:58 . Memory (MB): peak = 1617.473 ; gain = 1070.594
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:58 . Memory (MB): peak = 1611.281 ; gain = 1063.789
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:09 ; elapsed = 00:00:58 . Memory (MB): peak = 1617.473 ; gain = 1070.594
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:58 . Memory (MB): peak = 1611.281 ; gain = 1063.789
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -521,7 +521,7 @@ Report Cell Usage:
 |3     |LUT1     |    33|
 |4     |LUT2     |   152|
 |5     |LUT3     |   302|
-|6     |LUT4     |   271|
+|6     |LUT4     |   270|
 |7     |LUT5     |   283|
 |8     |LUT6     |   598|
 |10    |MULT_AND |     1|
@@ -535,23 +535,23 @@ Report Cell Usage:
 |19    |XORCY    |    94|
 |20    |FDCE     |     7|
 |21    |FDR      |   125|
-|22    |FDRE     |  1167|
+|22    |FDRE     |  1165|
 |23    |FDS      |     1|
 |24    |FDSE     |    60|
 +------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:09 ; elapsed = 00:00:58 . Memory (MB): peak = 1617.473 ; gain = 1070.594
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:58 . Memory (MB): peak = 1611.281 ; gain = 1063.789
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 11508 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:04 ; elapsed = 00:00:52 . Memory (MB): peak = 1617.473 ; gain = 1054.328
-Synthesis Optimization Complete : Time (s): cpu = 00:00:09 ; elapsed = 00:00:58 . Memory (MB): peak = 1617.473 ; gain = 1070.594
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:52 . Memory (MB): peak = 1611.281 ; gain = 1032.195
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:58 . Memory (MB): peak = 1611.281 ; gain = 1063.789
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.143 . Memory (MB): peak = 1617.473 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.142 . Memory (MB): peak = 1611.281 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 625 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1635.016 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1630.609 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 286 instances were transformed.
   (MUXCY,XORCY) => CARRY4: 47 instances
@@ -562,16 +562,16 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 16 instances
   RAM32X1D => RAM32X1D (RAMD32(x2)): 32 instances
 
-Synth Design complete | Checksum: fd92b5dc
+Synth Design complete | Checksum: 13b6a27d
 INFO: [Common 17-83] Releasing license: Synthesis
 28 Infos, 137 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:11 ; elapsed = 00:01:04 . Memory (MB): peak = 1635.016 ; gain = 1324.660
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1635.016 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:01:05 . Memory (MB): peak = 1630.609 ; gain = 1322.637
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1630.609 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.runs/design_1_microblaze_0_0_synth_1/design_1_microblaze_0_0.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_microblaze_0_0, cache-ID = 85c2dcd5f9edd8bd
-INFO: [Coretcl 2-1174] Renamed 857 cell refs.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1635.016 ; gain = 0.000
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_microblaze_0_0, cache-ID = 7c5185fc4b1ad88f
+INFO: [Coretcl 2-1174] Renamed 856 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1630.609 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/ice3/Microblaze_Interrupts/Microblaze_Interrupts.runs/design_1_microblaze_0_0_synth_1/design_1_microblaze_0_0.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file design_1_microblaze_0_0_utilization_synth.rpt -pb design_1_microblaze_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Mar  4 08:33:21 2026...
+INFO: [Common 17-206] Exiting Vivado at Wed Mar  4 19:58:00 2026...

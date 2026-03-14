@@ -1,6 +1,6 @@
 Nothing to build in platform 'design_1_wrapper'
 
-09:15:05 **** Incremental Build of configuration Debug for project Microblaze_Interrupts_Vitis ****
+20:15:00 **** Incremental Build of configuration Debug for project Microblaze_Interrupts_Vitis ****
 make all 
 'Building file: ../src/helloworld.c'
 'Invoking: MicroBlaze gcc compiler'

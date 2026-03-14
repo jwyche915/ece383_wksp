@@ -1,0 +1,156 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Sat Mar 14 00:30:25 2026
+# Process ID         : 16024
+# Current directory  : C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent12100 C:\Users\Jason.Wyche\source\repos\ece383_wksp\Software_Controlled_Datapath\Software_Controlled_Datapath.xpr
+# Log file           : C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/vivado.log
+# Journal file       : C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath\vivado.jou
+# Running On         : WycheSurfacePro
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 22631
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i5-1245U
+# CPU Frequency      : 2496 MHz
+# CPU Physical cores : 10
+# CPU Logical cores  : 12
+# Host memory        : 16995 MB
+# Swap memory        : 2550 MB
+# Total Virtual      : 19545 MB
+# Available Virtual  : 7655 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.xpr
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:OScope_2Channel_IP:1.0 OScope_2Channel_IP_0
+endgroup
+set_property location {1 197 -350} [get_bd_cells OScope_2Channel_IP_0]
+set_property location {4 851 -540} [get_bd_cells OScope_2Channel_IP_0]
+startgroup
+make_bd_pins_external  [get_bd_cells OScope_2Channel_IP_0]
+make_bd_intf_pins_external  [get_bd_cells OScope_2Channel_IP_0]
+endgroup
+undo
+startgroup
+make_bd_pins_external  [get_bd_pins OScope_2Channel_IP_0/ac_mclk]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins OScope_2Channel_IP_0/ac_dac_sdata]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins OScope_2Channel_IP_0/ac_bclk]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins OScope_2Channel_IP_0/ac_lrclk]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins OScope_2Channel_IP_0/scl]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins OScope_2Channel_IP_0/sda]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins OScope_2Channel_IP_0/tmds]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins OScope_2Channel_IP_0/tmdsb]
+endgroup
+set_property name ac_mclk [get_bd_ports ac_mclk_0]
+set_property name ac_dac_sdata [get_bd_ports ac_dac_sdata_0]
+set_property name ac_bclk [get_bd_ports ac_bclk_0]
+set_property name ac_lrclk [get_bd_ports ac_lrclk_0]
+set_property location {2048 -599} [get_bd_ports ac_lrclk]
+set_property name scl [get_bd_ports scl_0]
+set_property name sda [get_bd_ports sda_0]
+set_property name tmds [get_bd_ports tmds_0]
+set_property name tmdsb [get_bd_ports tmdsb_0]
+set_property location {3 960 -633} [get_bd_cells OScope_2Channel_IP_0]
+set_property location {3 959 -607} [get_bd_cells OScope_2Channel_IP_0]
+set_property location {3 958 -565} [get_bd_cells OScope_2Channel_IP_0]
+startgroup
+make_bd_pins_external  [get_bd_pins OScope_2Channel_IP_0/ac_adc_sdata]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins OScope_2Channel_IP_0/btn]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins OScope_2Channel_IP_0/switch]
+endgroup
+set_property name ac_adc_sdata [get_bd_ports ac_adc_sdata_0]
+set_property name btn [get_bd_ports btn_0]
+set_property name switch [get_bd_ports switch_0]
+connect_bd_net [get_bd_pins OScope_2Channel_IP_0/flagQ] [get_bd_pins microblaze_0/Interrupt]
+set_property location {3 1009 -661} [get_bd_cells OScope_2Channel_IP_0]
+set_property location {3 1024 -606} [get_bd_cells OScope_2Channel_IP_0]
+set_property location {3 1010 -634} [get_bd_cells OScope_2Channel_IP_0]
+set_property location {-24 -660} [get_bd_ports ac_adc_sdata]
+set_property location {-23 -640} [get_bd_ports btn]
+set_property location {-22 -587} [get_bd_ports switch]
+set_property location {-27 -691} [get_bd_ports ac_adc_sdata]
+set_property location {2124 -535} [get_bd_ports sda]
+set_property location {2115 -803} [get_bd_ports ac_mclk]
+set_property location {2131 -770} [get_bd_ports ac_dac_sdata]
+set_property location {2140 -734} [get_bd_ports ac_bclk]
+set_property location {2137 -695} [get_bd_ports ac_lrclk]
+set_property location {2134 -654} [get_bd_ports scl]
+set_property location {2125 -620} [get_bd_ports tmds]
+set_property location {2131 -584} [get_bd_ports sda]
+set_property location {2129 -549} [get_bd_ports tmdsb]
+set_property location {2131 -483} [get_bd_ports tmdsb]
+set_property location {2138 -540} [get_bd_ports sda]
+set_property location {2138 -595} [get_bd_ports tmds]
+set_property location {2141 -624} [get_bd_ports sda]
+set_property location {2135 -558} [get_bd_ports tmdsb]
+add_files -fileset constrs_1 -norecurse C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/IP_src/Software_Controlled_Datapath.xdc
+import_files -fileset constrs_1 C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/IP_src/Software_Controlled_Datapath.xdc
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_1/clk_out1 (100 MHz)} Clk_slave {Auto} Clk_xbar {/clk_wiz_1/clk_out1 (100 MHz)} Master {/microblaze_0 (Periph)} Slave {/OScope_2Channel_IP_0/S00_AXI} ddr_seg {Auto} intc_ip {/axi_smc} master_apm {0}}  [get_bd_intf_pins OScope_2Channel_IP_0/S00_AXI]
+validate_bd_design
+make_wrapper -files [get_files C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.srcs/sources_1/bd/design_1/design_1.bd] -top
+reset_run synth_1
+reset_run design_1_microblaze_0_0_synth_1
+reset_run design_1_axi_smc_0_synth_1
+reset_run design_1_axi_smc_1_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+reset_run synth_1
+reset_run design_1_OScope_2Channel_IP_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:user:OScope_2Channel_IP:1.0 [get_ips  design_1_OScope_2Channel_IP_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips design_1_OScope_2Channel_IP_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.srcs/sources_1/bd/design_1/design_1.bd]
+catch { config_ip_cache -export [get_ips -all design_1_axi_smc_0] }
+catch { [ delete_ip_run [get_ips -all design_1_axi_smc_0] ] }
+catch { config_ip_cache -export [get_ips -all design_1_axi_smc_1_0] }
+catch { config_ip_cache -export [get_ips -all design_1_OScope_2Channel_IP_0_0] }
+export_ip_user_files -of_objects [get_files C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs design_1_OScope_2Channel_IP_0_0_synth_1 -jobs 6
+wait_on_run design_1_OScope_2Channel_IP_0_0_synth_1
+export_simulation -lib_map_path [list {modelsim=C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.cache/compile_simlib/modelsim} {questa=C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.cache/compile_simlib/questa} {riviera=C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.cache/compile_simlib/riviera} {activehdl=C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.cache/compile_simlib/activehdl}] -of_objects [get_files C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.ip_user_files -ipstatic_source_dir C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.ip_user_files/ipstatic -use_ip_compiled_libs -force -quiet
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:user:OScope_2Channel_IP:1.0 [get_ips  design_1_OScope_2Channel_IP_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips design_1_OScope_2Channel_IP_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.srcs/sources_1/bd/design_1/design_1.bd]
+catch { config_ip_cache -export [get_ips -all design_1_axi_smc_0] }
+catch { config_ip_cache -export [get_ips -all design_1_axi_smc_1_0] }
+catch { config_ip_cache -export [get_ips -all design_1_OScope_2Channel_IP_0_0] }
+export_ip_user_files -of_objects [get_files C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs design_1_OScope_2Channel_IP_0_0_synth_1 -jobs 6
+wait_on_run design_1_OScope_2Channel_IP_0_0_synth_1
+export_simulation -lib_map_path [list {modelsim=C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.cache/compile_simlib/modelsim} {questa=C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.cache/compile_simlib/questa} {riviera=C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.cache/compile_simlib/riviera} {activehdl=C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.cache/compile_simlib/activehdl}] -of_objects [get_files C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.ip_user_files -ipstatic_source_dir C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.ip_user_files/ipstatic -use_ip_compiled_libs -force -quiet
+make_wrapper -files [get_files C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.srcs/sources_1/bd/design_1/design_1.bd] -top
+validate_bd_design -force
+make_wrapper -files [get_files C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.srcs/sources_1/bd/design_1/design_1.bd] -top
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper.xsa
