@@ -330,3 +330,146 @@ setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "incoming_sample", true);
 applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "incoming_sample"); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
 // Elapsed time: 159 seconds
 setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "current_sample"); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+// HMemoryUtils.trashcanNow. Engine heap size: 912 MB. GUI used memory: 91 MB. Current time: 3/14/26, 3:29:19 PM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 912 MB. GUI used memory: 90 MB. Current time: 3/14/26, 3:59:22 PM MDT
+// Elapsed time: 4472 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "current_sample"); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "current_sample"); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+// Elapsed time: 17 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "current_sample"); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+// HMemoryUtils.trashcanNow. Engine heap size: 912 MB. GUI used memory: 89 MB. Current time: 3/14/26, 4:29:25 PM MDT
+// Elapsed time: 32 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "current_sample"); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+// Elapsed time: 15 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "current_sample"); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+// Elapsed time: 22 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "write_address", true); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "write_address"); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "write_address"); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "OScope_2Channel_IP_slave_lite_v1_0_S00_AXI.vhd", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "LBus_out"); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+// Elapsed time: 57 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "LBus_out"); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+// Elapsed time: 59 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "LBus_out"); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "LBus_out"); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+// Elapsed time: 111 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "lab2_datapath.vhdl", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "write_address"); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+// Elapsed time: 35 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "write_address"); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "OScope_2Channel_IP_slave_lite_v1_0_S00_AXI.vhd", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "lab2_datapath.vhdl", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "write_address"); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "write_address"); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+// Elapsed time: 17 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "OScope_2Channel_IP_slave_lite_v1_0_S00_AXI.vhd", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "LBus_out"); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+// Elapsed time: 138 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "LBus_out"); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+// Elapsed time: 56 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "LBus_out"); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+// HMemoryUtils.trashcanNow. Engine heap size: 912 MB. GUI used memory: 90 MB. Current time: 3/14/26, 4:59:28 PM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 912 MB. GUI used memory: 90 MB. Current time: 3/14/26, 5:29:31 PM MDT
+// WARNING: HEventQueue.dispatchEvent() is taking  5574016 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 912 MB. GUI used memory: 89 MB. Current time: 3/14/26, 7:25:16 PM MDT
+// WARNING: HEventQueue.dispatchEvent() is taking  1811 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1169 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1062 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2266690 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 912 MB. GUI used memory: 90 MB. Current time: 3/14/26, 8:08:24 PM MDT
+// Elapsed time: 12733 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "lab2_datapath.vhdl", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// Elapsed time: 32 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "exLBus", true); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "exLBus"); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+// Elapsed time: 54 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "exLBus"); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+// HMemoryUtils.trashcanNow. Engine heap size: 912 MB. GUI used memory: 90 MB. Current time: 3/14/26, 8:38:27 PM MDT
+// Elapsed time: 2369 seconds
+selectCodeEditor("lab2_datapath.vhdl", 379, 566); // ae (lab2_datapath.vhdl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "OScope_2Channel_IP_slave_lite_v1_0_S00_AXI.vhd", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// Elapsed time: 22 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "LBus_out"); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+// Elapsed time: 307 seconds
+selectCodeEditor("OScope_2Channel_IP_slave_lite_v1_0_S00_AXI.vhd", 410, 449); // ae (OScope_2Channel_IP_slave_lite_v1_0_S00_AXI.vhd)
+// Elapsed time: 105 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "flagQ", true); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "flagQ"); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+// Elapsed time: 11 seconds
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "flagQ"); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+// Elapsed time: 19 seconds
+selectCodeEditor("OScope_2Channel_IP_slave_lite_v1_0_S00_AXI.vhd", 631, 285); // ae (OScope_2Channel_IP_slave_lite_v1_0_S00_AXI.vhd)
+// Elapsed time: 44 seconds
+selectCodeEditor("OScope_2Channel_IP_slave_lite_v1_0_S00_AXI.vhd", 663, 845); // ae (OScope_2Channel_IP_slave_lite_v1_0_S00_AXI.vhd)
+// WARNING: HEventQueue.dispatchEvent() is taking  1783 ms.
+// Elapsed time: 40 seconds
+selectCodeEditor("OScope_2Channel_IP_slave_lite_v1_0_S00_AXI.vhd", 293, 1047); // ae (OScope_2Channel_IP_slave_lite_v1_0_S00_AXI.vhd)
+// Elapsed time: 20 seconds
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "flagQ"); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "flagQ"); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "flagQ"); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "flagQ"); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "flagQ"); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "flagQ"); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "flagQ"); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "flagQ"); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "flagQ"); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "flagQ"); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "flagQ"); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+// Elapsed time: 26 seconds
+selectCodeEditor("OScope_2Channel_IP_slave_lite_v1_0_S00_AXI.vhd", 327, 1084); // ae (OScope_2Channel_IP_slave_lite_v1_0_S00_AXI.vhd)
+// WARNING: HEventQueue.dispatchEvent() is taking  1387 ms.
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  1785 ms.
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 07h:39m:42s
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 07h:39m:45s
+// Elapsed time: 89 seconds
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "OScope_2Channel_IP_slave_lite_v1_0_S00_AXI.vhd", 3, true, false); // o (PlanAheadTabBaseWorkspace_JideTabbedPane) - Popup Trigger
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Package IP - OScope_2Channel_IP", 3); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Identification", 0); // S (PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST)
+// Elapsed time: 35 seconds
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Compatibility", 1); // S (PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Compatibility", 1); // S (PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "File Groups", 2); // S (PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Customization Parameters", 3); // S (PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "File Groups", 2); // S (PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST)
+selectButton(PAResourceItoN.MessageBanner_CHANGES_DETECTED_IN_VIVADO_PROJECT_THAT, "Merge changes from File Groups Wizard"); // h (PAResourceItoN.MessageBanner_CHANGES_DETECTED_IN_VIVADO_PROJECT_THAT)
+// TclEventType: PACKAGER_COMPONENT_RESET
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: ipx::merge_project_changes files [ipx::current_core] 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // S (PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST)
+selectButton(PAResourceItoN.MessageBanner_CHANGES_DETECTED_IN_IP_THAT_REQUIRE, "IP has been modified."); // h (PAResourceItoN.MessageBanner_CHANGES_DETECTED_IN_IP_THAT_REQUIRE)
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceQtoS.ReviewContentPanel_RE_PACKAGE_IP, "Re-Package IP"); // a (PAResourceQtoS.ReviewContentPanel_RE_PACKAGE_IP)
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property core_revision 17 [ipx::current_core] 
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: ipx::check_integrity [ipx::current_core] 
+// Tcl Message: INFO: [IP_Flow 19-2181] Payment is not required for this core. 
+// Tcl Message: INFO: [Ipptcl 7-1486] check_integrity: Integrity check passed. 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: update_ip_catalog -rebuild -repo_path c:/Users/Jason.Wyche/source/repos/ece383_wksp/ip_repo/OScope_2Channel_IP_1_0 
+// Tcl Message: INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/Jason.Wyche/source/repos/ece383_wksp/ip_repo/OScope_2Channel_IP_1_0' 
+// TclEventType: FILE_SET_CHANGE
+selectButton("OptionPane.button", "OK", "Package IP"); // JButton (OptionPane.button)
+// HMemoryUtils.trashcanNow. Engine heap size: 912 MB. GUI used memory: 96 MB. Current time: 3/14/26, 9:08:30 PM MDT

@@ -127,6 +127,8 @@ architecture arch_imp of OScope_2Channel_IP_slave_lite_v1_0_S00_AXI is
 	signal w_trig_volt: unsigned(10 downto 0);
 	signal w_trig_time: unsigned(10 downto 0);
 	
+	signal w_flagQ: std_logic;
+	
 	component lab2_datapath
         Port ( clk : in  STD_LOGIC;
             reset_n : in  STD_LOGIC;
@@ -674,7 +676,7 @@ begin
                      (x"0000" & w_Rbus_out) when (axi_araddr(ADDR_LSB+OPT_MEM_ADDR_BITS downto ADDR_LSB) = "00110" ) else 
                      slv_reg7 when (axi_araddr(ADDR_LSB+OPT_MEM_ADDR_BITS downto ADDR_LSB) = "00111" ) else 
                      slv_reg8 when (axi_araddr(ADDR_LSB+OPT_MEM_ADDR_BITS downto ADDR_LSB) = "01000" ) else 
-                     slv_reg9 when (axi_araddr(ADDR_LSB+OPT_MEM_ADDR_BITS downto ADDR_LSB) = "01001" ) else 
+                     (x"0000000" & b"000" & w_flagQ) when (axi_araddr(ADDR_LSB+OPT_MEM_ADDR_BITS downto ADDR_LSB) = "01001" ) else 
                      slv_reg10 when (axi_araddr(ADDR_LSB+OPT_MEM_ADDR_BITS downto ADDR_LSB) = "01010" ) else 
                      (x"00000" & b"0" & std_logic_vector(w_trig_volt)) when (axi_araddr(ADDR_LSB+OPT_MEM_ADDR_BITS downto ADDR_LSB) = "01011" ) else 
                      (x"00000" & b"0" & std_logic_vector(w_trig_time)) when (axi_araddr(ADDR_LSB+OPT_MEM_ADDR_BITS downto ADDR_LSB) = "01100" ) else 
@@ -723,7 +725,7 @@ begin
             Rbus_out => w_Rbus_out,
             exLbus => slv_reg7(15 downto 0),
             exRbus => slv_reg8(15 downto 0),		
-            flagQ => flagQ,
+            flagQ => w_flagQ,
             flagClear => slv_reg10(0),
             trig_volt => w_trig_volt,
             trig_time => w_trig_time);
@@ -733,6 +735,8 @@ begin
             reset_n => S_AXI_ARESETN,
             sw => sw,
             cw => cw);
+            
+        flagQ <= w_flagQ;
 	-- User logic ends
 
 end arch_imp;
