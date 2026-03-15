@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item key="org.eclipse.cdt.utils.ui.controls.FileListControl" value="C:\Users\Jason.Wyche\source\repos\ece383_wksp\Software_Controlled_Datapath\Software_Controlled_Datapath_wrapper_V2\microblaze_0\standalone_microblaze_0\bsp\microblaze_0\lib"/>
+	<item key="org.eclipse.cdt.utils.ui.controls.FileListControl" value="C:\Users\Jason.Wyche\source\repos\ece383_wksp\Software_Controlled_Datapath\Software_Controlled_Datapath_wrapper\microblaze_0\standalone_microblaze_0\bsp\microblaze_0\include"/>
 	<section name="completion_proposal_size">
 	</section>
 	<section name="org.eclipse.cdt.ui.text.hover.CMacroExpansionExploration">

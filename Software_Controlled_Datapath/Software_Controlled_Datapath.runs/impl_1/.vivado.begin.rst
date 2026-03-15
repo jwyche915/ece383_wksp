@@ -8,3 +8,8 @@
     <Process Command="vivado.bat" Owner="Jason.Wyche" Host="WYCHESURFACEPRO" Pid="3352" HostCore="12" HostMemory="016995635200">
     </Process>
 </ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="Jason.Wyche" Host="WYCHESURFACEPRO" Pid="10412" HostCore="12" HostMemory="016995635200">
+    </Process>
+</ProcessHandle>

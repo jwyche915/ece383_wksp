@@ -1,4 +1,4 @@
-15:16:37 **** Incremental Build of configuration Debug for project Software_Controlled_Datapath_Vitis ****
+20:30:33 **** Incremental Build of configuration Debug for project Software_Controlled_Datapath_Vitis ****
 make all 
 'Building file: ../src/Software_Controlled_Datapath.c'
 'Invoking: MicroBlaze gcc compiler'
@@ -13,9 +13,9 @@ mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/Jason.Wyche/source/repos/ece383_w
 'Invoking: MicroBlaze Print Size'
 mb-size Software_Controlled_Datapath_Vitis.elf  |tee "Software_Controlled_Datapath_Vitis.elf.size"
    text	   data	    bss	    dec	    hex	filename
-   7692	     24	   3428	  11144	   2b88	Software_Controlled_Datapath_Vitis.elf
+   7532	     24	   3428	  10984	   2ae8	Software_Controlled_Datapath_Vitis.elf
 'Finished building: Software_Controlled_Datapath_Vitis.elf.size'
 ' '
 
-15:16:39 Build Finished (took 1s.415ms)
+20:30:34 Build Finished (took 1s.483ms)
 

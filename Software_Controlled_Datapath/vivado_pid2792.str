@@ -1467,3 +1467,454 @@ dismissDialog("Export Hardware Platform"); // d (dialog13)
 dismissDialog("Export Hardware Platform"); // bh (Export Hardware Platform Progress)
 // [GUI Memory]: 288 MB (+4157kb) [05:22:47]
 // HMemoryUtils.trashcanNow. Engine heap size: 1,494 MB. GUI used memory: 198 MB. Current time: 3/14/26, 2:57:52 PM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,494 MB. GUI used memory: 197 MB. Current time: 3/14/26, 3:27:55 PM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,494 MB. GUI used memory: 197 MB. Current time: 3/14/26, 3:57:58 PM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,494 MB. GUI used memory: 196 MB. Current time: 3/14/26, 4:28:01 PM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,494 MB. GUI used memory: 197 MB. Current time: 3/14/26, 4:58:04 PM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,494 MB. GUI used memory: 196 MB. Current time: 3/14/26, 5:28:08 PM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,494 MB. GUI used memory: 198 MB. Current time: 3/14/26, 7:25:15 PM MDT
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 5575660 ms. Increasing delay to 3000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1792 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1098 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1203 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2266940 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,494 MB. GUI used memory: 198 MB. Current time: 3/14/26, 8:08:25 PM MDT
+// Elapsed time: 21112 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 5); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Software_Controlled_Datapath.xdc]", 7, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Software_Controlled_Datapath.xdc]", 7, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+selectButton(RDIResource.HCodeView_FIND_TEXT_IN_FILE, (String) null); // w (RDIResource.HCodeView_FIND_TEXT_IN_FILE): TRUE
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "swi"); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "swi"); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "swi"); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "swi"); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,494 MB. GUI used memory: 198 MB. Current time: 3/14/26, 8:38:27 PM MDT
+// Elapsed time: 1369 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "swi"); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "swi"); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+// Elapsed time: 30 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "swi"); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+// Elapsed time: 296 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "swi"); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+// Elapsed time: 45 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "swi"); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+// Elapsed time: 424 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "swi"); // d.c (RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectButton(PAResourceOtoP.PlanAheadTab_REFRESH_IP_CATALOG, "Refresh IP Catalog"); // h (PAResourceOtoP.PlanAheadTab_REFRESH_IP_CATALOG)
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: IP_LOCK_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  1346 ms.
+// TclEventType: IP_LOCK_CHANGE
+// Tcl Message: update_ip_catalog -rebuild -scan_changes 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Jason.Wyche/source/repos/ece383_wksp/ip_repo/OScope_2Channel_IP_1_0'. 
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: IP_SUMMARY_RESULTS
+// Tcl Message: report_ip_status -name ip_status 
+dismissDialog("Refresh IP Catalog"); // bh (Refresh IP Catalog Progress)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 11h:48m:00s
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 11h:48m:06s
+selectButton(PAResourceItoN.IPStatusSectionPanel_UPGRADE_SELECTED, "Upgrade Selected"); // a (PAResourceItoN.IPStatusSectionPanel_UPGRADE_SELECTED)
+// Run Command: PAResourceCommand.PACommandNames_UPGRADE_IP
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: upgrade_ip -vlnv xilinx.com:user:OScope_2Channel_IP:1.0 [get_ips  design_1_OScope_2Channel_IP_0_0] -log ip_upgrade.log 
+// TclEventType: RUN_RESET
+// Tcl Message: Upgrading 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.srcs/sources_1/bd/design_1/design_1.bd' 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: INFO: [IP_Flow 19-3422] Upgraded design_1_OScope_2Channel_IP_0_0 (OScope_2Channel_IP_v1.0 1.0) from revision 16 to revision 17 
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: Wrote  : <C:\Users\Jason.Wyche\source\repos\ece383_wksp\Software_Controlled_Datapath\Software_Controlled_Datapath.srcs\sources_1\bd\design_1\design_1.bd>  
+// Tcl Message: INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/ip_upgrade.log'. 
+// Tcl Message: export_ip_user_files -of_objects [get_ips design_1_OScope_2Channel_IP_0_0] -no_script -sync -force -quiet 
+selectButton("OptionPane.button", "OK", "Upgrade IP"); // JButton (OptionPane.button)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 11h:48m:12s
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 11h:48m:14s
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate", "Generate Output Products"); // a (PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY)
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: generate_target all [get_files  C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.srcs/sources_1/bd/design_1/design_1.bd] 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_CLOSE_DIAGRAM
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: INFO: [BD 5-943] Reserving offset range <0x4060_0000 [ 64K ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M00_AXI'. This will be used by smartconnect on path for routing. INFO: [BD 5-943] Reserving offset range <0x44A0_0000 [ 64K ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M01_AXI'. This will be used by smartconnect on path for routing. INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_axi_smc_0: SmartConnect design_1_axi_smc_0 is in Low-Area Mode. 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_CLOSE_DIAGRAM
+// TclEventType: REPORT_IP_STATUS_STALE
+// Tcl Message: INFO: [BD 5-943] Reserving offset range <0x8000_0000 [ 512M ]> from slave interface '/axi_smc_1/S00_AXI' to master interface '/axi_smc_1/M00_AXI'. This will be used by smartconnect on path for routing. INFO: [BD 5-943] Reserving offset range <0x8000_0000 [ 512M ]> from slave interface '/axi_smc_1/S01_AXI' to master interface '/axi_smc_1/M00_AXI'. This will be used by smartconnect on path for routing. INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_axi_smc_1_0: SmartConnect design_1_axi_smc_1_0 is in High-performance Mode. 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_1 clk_wiz propagate INFO: [xilinx.com:ip:microblaze:11.0-16] /microblaze_0: Setting D-cache cacheable area base address C_DCACHE_BASEADDR to 0x80000000 and high address C_DCACHE_HIGHADDR to 0x9FFFFFFF. INFO: [xilinx.com:ip:microblaze:11.0-16] /microblaze_0: Setting I-cache cacheable area base address C_ICACHE_BASEADDR to 0x80000000 and high address C_ICACHE_HIGHADDR to 0x9FFFFFFF. INFO: [xilinx.com:ip:microblaze:11.0-9] /microblaze_0: Setting C_BASE_VECTORS to 0x00000000. 
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: Wrote  : <C:\Users\Jason.Wyche\source\repos\ece383_wksp\Software_Controlled_Datapath\Software_Controlled_Datapath.srcs\sources_1\bd\design_1\design_1.bd>  VHDL Output written to : c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/synth/design_1.vhd VHDL Output written to : c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/sim/design_1.vhd VHDL Output written to : c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd 
+// TclEventType: COMPOSITE_FILE_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,494 MB. GUI used memory: 201 MB. Current time: 3/14/26, 9:06:43 PM MDT
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: Exporting to file c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/hw_handoff/design_1_axi_smc_0.hwh Generated Hardware Definition File c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/design_1_axi_smc_0.hwdef 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc . 
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: Exporting to file c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/hw_handoff/design_1_axi_smc_1_0.hwh Generated Hardware Definition File c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/synth/design_1_axi_smc_1_0.hwdef 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc_1 . 
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: COMPOSITE_FILE_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block OScope_2Channel_IP_0 . 
+// Tcl Message: Exporting to file c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh Generated Hardware Definition File c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/synth/design_1.hwdef 
+// Tcl Message: generate_target: Time (s): cpu = 00:00:09 ; elapsed = 00:00:43 . Memory (MB): peak = 2233.812 ; gain = 0.000 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all design_1_axi_smc_0] } 
+// Tcl Message: INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.cache/ip/2024.2/d/0/d0144ff7c25bdb4c/design_1_axi_smc_0_sim_netlist.v to c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/design_1_axi_smc_0_sim_netlist.v. INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/design_1_axi_smc_0_sim_netlist.v 
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: OOC_IP_CACHE_USED
+// Tcl Message: catch { config_ip_cache -export [get_ips -all design_1_axi_smc_1_0] } 
+// Tcl Message: INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.cache/ip/2024.2/f/c/fc3abbb9046d14bf/design_1_axi_smc_1_0_sim_netlist.v to c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/design_1_axi_smc_1_0_sim_netlist.v. INFO: [IP_Flow 19-6926] IPCACHE: added file to list for BOM: c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/design_1_axi_smc_1_0_sim_netlist.v 
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: OOC_IP_CACHE_USED
+// Tcl Message: catch { config_ip_cache -export [get_ips -all design_1_OScope_2Channel_IP_0_0] } 
+// TclEventType: PROJ_DESIGN_MODE_SET
+// Tcl Message: INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_OScope_2Channel_IP_0_0 
+// TclEventType: PROJ_DESIGN_MODE_SET
+// WARNING: HEventQueue.dispatchEvent() is taking  1022 ms.
+// Tcl Message: export_ip_user_files -of_objects [get_files C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.srcs/sources_1/bd/design_1/design_1.bd] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs design_1_OScope_2Channel_IP_0_0_synth_1 -jobs 6 
+// Tcl Message: INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_OScope_2Channel_IP_0_0 
+// Tcl Message: [Sat Mar 14 21:07:07 2026] Launched design_1_OScope_2Channel_IP_0_0_synth_1... Run output will be captured here: C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.runs/design_1_OScope_2Channel_IP_0_0_synth_1/runme.log 
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,494 MB. GUI used memory: 206 MB. Current time: 3/14/26, 9:07:14 PM MDT
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/W.b': 01m:03s
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 71 seconds
+selectButton("OptionPane.button", "OK", "Generate Output Products"); // JButton (OptionPane.button)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 11h:49m:28s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper(STRUCTURE) (design_1_wrapper.vhd), design_1_i : design_1 (design_1.bd)]", 2, true, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_OPEN_FILE_WITH, "Open With"); // an (PAResourceCommand.PACommandNames_OPEN_FILE_WITH, Open With)
+selectMenuItem(PAResourceCommand.PACommandNames_CREATE_TOP_HDL, "Create HDL Wrapper..."); // aq (PAResourceCommand.PACommandNames_CREATE_TOP_HDL, create_top_hdl_menu)
+// Run Command: PAResourceCommand.PACommandNames_CREATE_TOP_HDL
+selectButton(RDIResource.BaseDialog_OK, "OK", "Create HDL Wrapper"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Create HDL Wrapper"); // a (dialog15)
+// Tcl Message: make_wrapper -files [get_files C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.srcs/sources_1/bd/design_1/design_1.bd] -top 
+// Elapsed time: 27 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 21, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes", "Synthesis is Out-of-date"); // a (RDIResource.BaseDialog_YES)
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // u (dialog16)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp with file C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.runs/synth_1/design_1_wrapper.dcp 
+dismissDialog("Resetting Runs"); // bh (Resetting Runs Progress)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 6 
+// Tcl Message: INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_OScope_2Channel_IP_0_0 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: COMPOSITE_FILE_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: [Sat Mar 14 21:08:10 2026] Launched design_1_OScope_2Channel_IP_0_0_synth_1, synth_1... Run output will be captured here: design_1_OScope_2Channel_IP_0_0_synth_1: C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.runs/design_1_OScope_2Channel_IP_0_0_synth_1/runme.log synth_1: C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.runs/synth_1/runme.log [Sat Mar 14 21:08:10 2026] Launched impl_1... Run output will be captured here: C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.runs/impl_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 2233.812 ; gain = 0.000 
+dismissDialog("Generate Bitstream"); // bh (Generate Bitstream Progress)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 11h:50m:14s
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 11h:51m:32s
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 11h:51m:36s
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// [GUI Memory]: 311 MB (+9182kb) [11:56:12]
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 423 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel", "Bitstream Generation Completed"); // a (RDIResource.BaseDialog_CANCEL)
+dismissDialog("Bitstream Generation Completed"); // W.a (dialog17)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ai (PAResourceItoN.MainMenuMgr_FILE, File)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // an (PAResourceItoN.MainMenuMgr_PROJECT, Project)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // an (PAResourceItoN.MainMenuMgr_PROJECT, Project)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // an (PAResourceItoN.MainMenuMgr_CHECKPOINT, Checkpoint)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // an (PAResourceItoN.MainMenuMgr_IP, IP)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // an (PAResourceItoN.MainMenuMgr_TEXT_EDITOR, Text Editor)
+selectMenu(PAResourceItoN.MainMenuMgr_IMPORT, "Import"); // an (PAResourceItoN.MainMenuMgr_IMPORT, Import)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // an (PAResourceItoN.MainMenuMgr_EXPORT, Export)
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_HARDWARE, "Export Hardware..."); // aq (PAResourceCommand.PACommandNames_EXPORT_HARDWARE, export_hardware_menu)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ai (PAResourceItoN.MainMenuMgr_FILE, File)
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_HARDWARE
+// Tcl (Dont Echo) Command: 'get_property pfm_name [get_files -all {C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.srcs/sources_1/bd/design_1/design_1.bd}]'
+selectButton("NEXT", "Next", "Export Hardware Platform"); // JButton (NEXT)
+selectButton("NEXT", "Next", "Export Hardware Platform"); // JButton (NEXT)
+setText(PAResourceEtoH.ExportFixedPlatformWizard_EXPORT_DIRECTORY, "C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath"); // Z (PAResourceEtoH.ExportFixedPlatformWizard_EXPORT_DIRECTORY)
+setText(PAResourceEtoH.ExportFixedPlatformWizard_XSA_FILE_NAME, "Software_Controlled_Datapath_wrapper"); // ad (PAResourceEtoH.ExportFixedPlatformWizard_XSA_FILE_NAME)
+// Elapsed time: 73 seconds
+selectButton("NEXT", "Next", "Export Hardware Platform"); // JButton (NEXT)
+selectButton("OptionPane.button", "Yes", "Module Already Exported"); // JButton (OptionPane.button)
+selectButton("FINISH", "Finish", "Export Hardware Platform"); // JButton (FINISH)
+// 'n' command handler elapsed time: 99 seconds
+dismissDialog("Export Hardware Platform"); // d (dialog18)
+// Tcl Message: write_hw_platform -fixed -include_bit -force -file C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper.xsa 
+// Tcl Message: INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper.xsa ... 
+// Tcl Message: INFO: [Project 1-1943] The Hardware Platform can be used for Hardware INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper.xsa 
+dismissDialog("Export Hardware Platform"); // bh (Export Hardware Platform Progress)
+selectButton(RDIResource.BaseReportTab_RERUN, "Rerun"); // h (RDIResource.BaseReportTab_RERUN)
+// Tcl Command: 'report_ip_status -name ip_status '
+// TclEventType: IP_SUMMARY_RESULTS
+// Tcl Message: report_ip_status -name ip_status  
+// HMemoryUtils.trashcanNow. Engine heap size: 1,494 MB. GUI used memory: 211 MB. Current time: 3/14/26, 9:37:17 PM MDT
+// WARNING: HEventQueue.dispatchEvent() is taking  3637274 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  15991524 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,494 MB. GUI used memory: 211 MB. Current time: 3/15/26, 3:25:32 AM MDT
+// WARNING: HEventQueue.dispatchEvent() is taking  23352523 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1438 ms. Increasing delay to 4314 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,494 MB. GUI used memory: 211 MB. Current time: 3/15/26, 9:54:48 AM MDT
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 2416 ms. Increasing delay to 3000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1910421 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,494 MB. GUI used memory: 211 MB. Current time: 3/15/26, 10:26:41 AM MDT
+// WARNING: HEventQueue.dispatchEvent() is taking  1148 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 2739 ms. Increasing delay to 8217 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,494 MB. GUI used memory: 211 MB. Current time: 3/15/26, 3:26:48 PM MDT
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 17999068 ms. Increasing delay to 4000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2423 ms.

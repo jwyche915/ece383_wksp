@@ -17,7 +17,4 @@ domain create -name {standalone_microblaze_0} -display-name {standalone_microbla
 platform generate -domains 
 platform active {Software_Controlled_Datapath_wrapper}
 platform generate -quick
-platform clean
-platform generate
-platform clean
 platform generate

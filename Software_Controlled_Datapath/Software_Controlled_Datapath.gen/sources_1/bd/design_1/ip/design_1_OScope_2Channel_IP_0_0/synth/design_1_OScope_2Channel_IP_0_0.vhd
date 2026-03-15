@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:user:OScope_2Channel_IP:1.0
--- IP Revision: 16
+-- IP Revision: 17
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -140,7 +140,7 @@ ARCHITECTURE design_1_OScope_2Channel_IP_0_0_arch OF design_1_OScope_2Channel_IP
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF design_1_OScope_2Channel_IP_0_0_arch : ARCHITECTURE IS "design_1_OScope_2Channel_IP_0_0,OScope_2Channel_IP,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF design_1_OScope_2Channel_IP_0_0_arch: ARCHITECTURE IS "design_1_OScope_2Channel_IP_0_0,OScope_2Channel_IP,{x_ipProduct=Vivado 2024.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=OScope_2Channel_IP,x_ipVersion=1.0,x_ipCoreRevision=16,x_ipLanguage=VHDL,x_ipSimLanguage=VHDL,C_S00_AXI_DATA_WIDTH=32,C_S00_AXI_ADDR_WIDTH=7}";
+  ATTRIBUTE CORE_GENERATION_INFO OF design_1_OScope_2Channel_IP_0_0_arch: ARCHITECTURE IS "design_1_OScope_2Channel_IP_0_0,OScope_2Channel_IP,{x_ipProduct=Vivado 2024.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=OScope_2Channel_IP,x_ipVersion=1.0,x_ipCoreRevision=17,x_ipLanguage=VHDL,x_ipSimLanguage=VHDL,C_S00_AXI_DATA_WIDTH=32,C_S00_AXI_ADDR_WIDTH=7}";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_MODE : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER : STRING;

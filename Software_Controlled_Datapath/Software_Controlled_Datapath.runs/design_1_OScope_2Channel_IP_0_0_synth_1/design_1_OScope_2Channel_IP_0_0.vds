@@ -3,8 +3,8 @@
 # SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Sat Mar 14 13:54:27 2026
-# Process ID         : 15296
+# Start of session at: Sat Mar 14 21:08:19 2026
+# Process ID         : 22824
 # Current directory  : C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.runs/design_1_OScope_2Channel_IP_0_0_synth_1
 # Command line       : vivado.exe -log design_1_OScope_2Channel_IP_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_OScope_2Channel_IP_0_0.tcl
 # Log file           : C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.runs/design_1_OScope_2Channel_IP_0_0_synth_1/design_1_OScope_2Channel_IP_0_0.vds
@@ -17,9 +17,9 @@
 # CPU Physical cores : 10
 # CPU Logical cores  : 12
 # Host memory        : 16995 MB
-# Swap memory        : 2550 MB
-# Total Virtual      : 19545 MB
-# Available Virtual  : 3766 MB
+# Swap memory        : 4226 MB
+# Total Virtual      : 21222 MB
+# Available Virtual  : 4243 MB
 #-----------------------------------------------------------
 source design_1_OScope_2Channel_IP_0_0.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
@@ -35,37 +35,37 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200
 INFO: [Device 21-403] Loading part xc7a200tsbg484-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 15752
+INFO: [Synth 8-7075] Helper process launched with PID 584
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1014.258 ; gain = 468.262
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1015.602 ; gain = 468.801
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'design_1_OScope_2Channel_IP_0_0' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ip/design_1_OScope_2Channel_IP_0_0/synth/design_1_OScope_2Channel_IP_0_0.vhd:94]
 	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S00_AXI_ADDR_WIDTH bound to: 7 - type: integer 
-INFO: [Synth 8-3491] module 'OScope_2Channel_IP' declared at 'c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/hdl/OScope_2Channel_IP.vhd:5' bound to instance 'U0' of component 'OScope_2Channel_IP' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ip/design_1_OScope_2Channel_IP_0_0/synth/design_1_OScope_2Channel_IP_0_0.vhd:176]
-INFO: [Synth 8-638] synthesizing module 'OScope_2Channel_IP' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/hdl/OScope_2Channel_IP.vhd:62]
+INFO: [Synth 8-3491] module 'OScope_2Channel_IP' declared at 'c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/hdl/OScope_2Channel_IP.vhd:5' bound to instance 'U0' of component 'OScope_2Channel_IP' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ip/design_1_OScope_2Channel_IP_0_0/synth/design_1_OScope_2Channel_IP_0_0.vhd:176]
+INFO: [Synth 8-638] synthesizing module 'OScope_2Channel_IP' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/hdl/OScope_2Channel_IP.vhd:62]
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 7 - type: integer 
-INFO: [Synth 8-3491] module 'OScope_2Channel_IP_slave_lite_v1_0_S00_AXI' declared at 'c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/hdl/OScope_2Channel_IP_slave_lite_v1_0_S00_AXI.vhd:5' bound to instance 'OScope_2Channel_IP_slave_lite_v1_0_S00_AXI_inst' of component 'OScope_2Channel_IP_slave_lite_v1_0_S00_AXI' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/hdl/OScope_2Channel_IP.vhd:112]
-INFO: [Synth 8-638] synthesizing module 'OScope_2Channel_IP_slave_lite_v1_0_S00_AXI' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/hdl/OScope_2Channel_IP_slave_lite_v1_0_S00_AXI.vhd:98]
-INFO: [Synth 8-226] default block is never used [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/hdl/OScope_2Channel_IP_slave_lite_v1_0_S00_AXI.vhd:329]
-INFO: [Synth 8-3491] module 'lab2_datapath' declared at 'c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/lab2_datapath.vhdl:18' bound to instance 'datapath' of component 'lab2_datapath' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/hdl/OScope_2Channel_IP_slave_lite_v1_0_S00_AXI.vhd:703]
-INFO: [Synth 8-638] synthesizing module 'lab2_datapath' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/lab2_datapath.vhdl:44]
-INFO: [Synth 8-3491] module 'Audio_Codec_Wrapper' declared at 'c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/Audio_Codec_Wrapper.vhd:35' bound to instance 'Audio_Codec' of component 'Audio_Codec_Wrapper' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/lab2_datapath.vhdl:117]
-INFO: [Synth 8-638] synthesizing module 'Audio_Codec_Wrapper' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/Audio_Codec_Wrapper.vhd:53]
-INFO: [Synth 8-3491] module 'audio_init' declared at 'c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/audio_init.v:24' bound to instance 'initialize_audio' of component 'audio_init' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/Audio_Codec_Wrapper.vhd:143]
-INFO: [Synth 8-6157] synthesizing module 'audio_init' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/audio_init.v:24]
-INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/audio_init.v:51]
-INFO: [Synth 8-638] synthesizing module 'TWICtl' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/TWICtl.vhd:119]
-INFO: [Synth 8-226] default block is never used [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/TWICtl.vhd:330]
-INFO: [Synth 8-226] default block is never used [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/TWICtl.vhd:363]
-INFO: [Synth 8-226] default block is never used [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/TWICtl.vhd:381]
-INFO: [Synth 8-226] default block is never used [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/TWICtl.vhd:399]
-INFO: [Synth 8-226] default block is never used [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/TWICtl.vhd:417]
-INFO: [Synth 8-256] done synthesizing module 'TWICtl' (0#1) [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/TWICtl.vhd:119]
-INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/audio_init.v:151]
-INFO: [Synth 8-6155] done synthesizing module 'audio_init' (0#1) [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/audio_init.v:24]
-INFO: [Synth 8-3491] module 'clk_wiz_1' declared at 'c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ip/design_1_OScope_2Channel_IP_0_0/src/clk_wiz_1/clk_wiz_1.v:66' bound to instance 'audiocodec_master_clock' of component 'clk_wiz_1' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/Audio_Codec_Wrapper.vhd:150]
+INFO: [Synth 8-3491] module 'OScope_2Channel_IP_slave_lite_v1_0_S00_AXI' declared at 'c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/hdl/OScope_2Channel_IP_slave_lite_v1_0_S00_AXI.vhd:5' bound to instance 'OScope_2Channel_IP_slave_lite_v1_0_S00_AXI_inst' of component 'OScope_2Channel_IP_slave_lite_v1_0_S00_AXI' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/hdl/OScope_2Channel_IP.vhd:112]
+INFO: [Synth 8-638] synthesizing module 'OScope_2Channel_IP_slave_lite_v1_0_S00_AXI' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/hdl/OScope_2Channel_IP_slave_lite_v1_0_S00_AXI.vhd:98]
+INFO: [Synth 8-226] default block is never used [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/hdl/OScope_2Channel_IP_slave_lite_v1_0_S00_AXI.vhd:331]
+INFO: [Synth 8-3491] module 'lab2_datapath' declared at 'c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/lab2_datapath.vhdl:18' bound to instance 'datapath' of component 'lab2_datapath' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/hdl/OScope_2Channel_IP_slave_lite_v1_0_S00_AXI.vhd:705]
+INFO: [Synth 8-638] synthesizing module 'lab2_datapath' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/lab2_datapath.vhdl:44]
+INFO: [Synth 8-3491] module 'Audio_Codec_Wrapper' declared at 'c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/Audio_Codec_Wrapper.vhd:35' bound to instance 'Audio_Codec' of component 'Audio_Codec_Wrapper' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/lab2_datapath.vhdl:117]
+INFO: [Synth 8-638] synthesizing module 'Audio_Codec_Wrapper' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/Audio_Codec_Wrapper.vhd:53]
+INFO: [Synth 8-3491] module 'audio_init' declared at 'c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/audio_init.v:24' bound to instance 'initialize_audio' of component 'audio_init' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/Audio_Codec_Wrapper.vhd:143]
+INFO: [Synth 8-6157] synthesizing module 'audio_init' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/audio_init.v:24]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/audio_init.v:51]
+INFO: [Synth 8-638] synthesizing module 'TWICtl' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/TWICtl.vhd:119]
+INFO: [Synth 8-226] default block is never used [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/TWICtl.vhd:330]
+INFO: [Synth 8-226] default block is never used [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/TWICtl.vhd:363]
+INFO: [Synth 8-226] default block is never used [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/TWICtl.vhd:381]
+INFO: [Synth 8-226] default block is never used [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/TWICtl.vhd:399]
+INFO: [Synth 8-226] default block is never used [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/TWICtl.vhd:417]
+INFO: [Synth 8-256] done synthesizing module 'TWICtl' (0#1) [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/TWICtl.vhd:119]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/audio_init.v:151]
+INFO: [Synth 8-6155] done synthesizing module 'audio_init' (0#1) [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/audio_init.v:24]
+INFO: [Synth 8-3491] module 'clk_wiz_1' declared at 'c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ip/design_1_OScope_2Channel_IP_0_0/src/clk_wiz_1/clk_wiz_1.v:66' bound to instance 'audiocodec_master_clock' of component 'clk_wiz_1' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/Audio_Codec_Wrapper.vhd:150]
 INFO: [Synth 8-6157] synthesizing module 'clk_wiz_1' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ip/design_1_OScope_2Channel_IP_0_0/src/clk_wiz_1/clk_wiz_1.v:66]
 INFO: [Synth 8-6157] synthesizing module 'clk_wiz_1_clk_wiz' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ip/design_1_OScope_2Channel_IP_0_0/src/clk_wiz_1/clk_wiz_1_clk_wiz.v:66]
 INFO: [Synth 8-6157] synthesizing module 'IBUF' [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:75825]
@@ -77,9 +77,9 @@ INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [C:/Xilinx/Vivado/202
 INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_1_clk_wiz' (0#1) [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ip/design_1_OScope_2Channel_IP_0_0/src/clk_wiz_1/clk_wiz_1_clk_wiz.v:66]
 INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_1' (0#1) [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ip/design_1_OScope_2Channel_IP_0_0/src/clk_wiz_1/clk_wiz_1.v:66]
 	Parameter C_DATA_WIDTH bound to: 24 - type: integer 
-INFO: [Synth 8-3491] module 'i2s_ctl' declared at 'c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/i2s_ctl.vhd:36' bound to instance 'audio_inout' of component 'i2s_ctl' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/Audio_Codec_Wrapper.vhd:157]
-INFO: [Synth 8-638] synthesizing module 'i2s_ctl' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/i2s_ctl.vhd:63]
-INFO: [Synth 8-256] done synthesizing module 'i2s_ctl' (0#1) [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/i2s_ctl.vhd:63]
+INFO: [Synth 8-3491] module 'i2s_ctl' declared at 'c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/i2s_ctl.vhd:36' bound to instance 'audio_inout' of component 'i2s_ctl' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/Audio_Codec_Wrapper.vhd:157]
+INFO: [Synth 8-638] synthesizing module 'i2s_ctl' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/i2s_ctl.vhd:63]
+INFO: [Synth 8-256] done synthesizing module 'i2s_ctl' (0#1) [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/i2s_ctl.vhd:63]
 	Parameter BRAM_SIZE bound to: 18Kb - type: string 
 	Parameter DEVICE bound to: 7SERIES - type: string 
 	Parameter DO_REG bound to: 0 - type: integer 
@@ -153,7 +153,7 @@ INFO: [Synth 8-256] done synthesizing module 'i2s_ctl' (0#1) [c:/Users/Jason.Wyc
 	Parameter SIM_COLLISION_CHECK bound to: NONE - type: string 
 	Parameter SRVAL bound to: 72'b000000000000000000000000000000000000000000000000000000000000000000000000 
 	Parameter WRITE_WIDTH bound to: 16 - type: integer 
-INFO: [Synth 8-3491] module 'BRAM_SDP_MACRO' declared at 'C:/Xilinx/Vivado/2024.2/data/vhdl/src/unimacro/BRAM_SDP_MACRO.vhd:38' bound to instance 'leftChannelMemory' of component 'BRAM_SDP_MACRO' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/Audio_Codec_Wrapper.vhd:191]
+INFO: [Synth 8-3491] module 'BRAM_SDP_MACRO' declared at 'C:/Xilinx/Vivado/2024.2/data/vhdl/src/unimacro/BRAM_SDP_MACRO.vhd:38' bound to instance 'leftChannelMemory' of component 'BRAM_SDP_MACRO' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/Audio_Codec_Wrapper.vhd:191]
 INFO: [Synth 8-638] synthesizing module 'unimacro_BRAM_SDP_MACRO' [C:/Xilinx/Vivado/2024.2/data/vhdl/src/unimacro/BRAM_SDP_MACRO.vhd:217]
 	Parameter DOA_REG bound to: 0 - type: integer 
 	Parameter DOB_REG bound to: 0 - type: integer 
@@ -316,7 +316,7 @@ INFO: [Synth 8-256] done synthesizing module 'unimacro_BRAM_SDP_MACRO' (0#1) [C:
 	Parameter SIM_COLLISION_CHECK bound to: NONE - type: string 
 	Parameter SRVAL bound to: 72'b000000000000000000000000000000000000000000000000000000000000000000000000 
 	Parameter WRITE_WIDTH bound to: 16 - type: integer 
-INFO: [Synth 8-3491] module 'BRAM_SDP_MACRO' declared at 'C:/Xilinx/Vivado/2024.2/data/vhdl/src/unimacro/BRAM_SDP_MACRO.vhd:38' bound to instance 'rightChannelMemory' of component 'BRAM_SDP_MACRO' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/Audio_Codec_Wrapper.vhd:281]
+INFO: [Synth 8-3491] module 'BRAM_SDP_MACRO' declared at 'C:/Xilinx/Vivado/2024.2/data/vhdl/src/unimacro/BRAM_SDP_MACRO.vhd:38' bound to instance 'rightChannelMemory' of component 'BRAM_SDP_MACRO' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/Audio_Codec_Wrapper.vhd:281]
 INFO: [Synth 8-638] synthesizing module 'unimacro_BRAM_SDP_MACRO__parameterized0' [C:/Xilinx/Vivado/2024.2/data/vhdl/src/unimacro/BRAM_SDP_MACRO.vhd:217]
 	Parameter DOA_REG bound to: 0 - type: integer 
 	Parameter DOB_REG bound to: 0 - type: integer 
@@ -406,12 +406,12 @@ INFO: [Synth 8-638] synthesizing module 'unimacro_BRAM_SDP_MACRO__parameterized0
 	Parameter WRITE_WIDTH_B bound to: 18 - type: integer 
 INFO: [Synth 8-113] binding component instance 'ram18_bl' to cell 'RAMB18E1' [C:/Xilinx/Vivado/2024.2/data/vhdl/src/unimacro/BRAM_SDP_MACRO.vhd:2374]
 INFO: [Synth 8-256] done synthesizing module 'unimacro_BRAM_SDP_MACRO__parameterized0' (0#1) [C:/Xilinx/Vivado/2024.2/data/vhdl/src/unimacro/BRAM_SDP_MACRO.vhd:217]
-INFO: [Synth 8-256] done synthesizing module 'Audio_Codec_Wrapper' (0#1) [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/Audio_Codec_Wrapper.vhd:53]
-INFO: [Synth 8-638] synthesizing module 'counter' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/counter.vhd:48]
-INFO: [Synth 8-256] done synthesizing module 'counter' (0#1) [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/counter.vhd:48]
-INFO: [Synth 8-3491] module 'trigger_detector' declared at 'c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/trigger_detector.vhd:9' bound to instance 'trig_v_detect' of component 'trigger_detector' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/lab2_datapath.vhdl:185]
-INFO: [Synth 8-638] synthesizing module 'trigger_detector' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/trigger_detector.vhd:20]
-INFO: [Synth 8-256] done synthesizing module 'trigger_detector' (0#1) [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/trigger_detector.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'Audio_Codec_Wrapper' (0#1) [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/Audio_Codec_Wrapper.vhd:53]
+INFO: [Synth 8-638] synthesizing module 'counter' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/counter.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'counter' (0#1) [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/counter.vhd:48]
+INFO: [Synth 8-3491] module 'trigger_detector' declared at 'c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/trigger_detector.vhd:9' bound to instance 'trig_v_detect' of component 'trigger_detector' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/lab2_datapath.vhdl:185]
+INFO: [Synth 8-638] synthesizing module 'trigger_detector' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/trigger_detector.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'trigger_detector' (0#1) [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/trigger_detector.vhd:20]
 	Parameter BRAM_SIZE bound to: 18Kb - type: string 
 	Parameter DEVICE bound to: 7SERIES - type: string 
 	Parameter DO_REG bound to: 0 - type: integer 
@@ -485,7 +485,7 @@ INFO: [Synth 8-256] done synthesizing module 'trigger_detector' (0#1) [c:/Users/
 	Parameter SIM_COLLISION_CHECK bound to: NONE - type: string 
 	Parameter SRVAL bound to: 72'b000000000000000000000000000000000000000000000000000000000000000000000000 
 	Parameter WRITE_WIDTH bound to: 16 - type: integer 
-INFO: [Synth 8-3491] module 'BRAM_SDP_MACRO' declared at 'C:/Xilinx/Vivado/2024.2/data/vhdl/src/unimacro/BRAM_SDP_MACRO.vhd:38' bound to instance 'leftChannelMemory' of component 'BRAM_SDP_MACRO' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/lab2_datapath.vhdl:202]
+INFO: [Synth 8-3491] module 'BRAM_SDP_MACRO' declared at 'C:/Xilinx/Vivado/2024.2/data/vhdl/src/unimacro/BRAM_SDP_MACRO.vhd:38' bound to instance 'leftChannelMemory' of component 'BRAM_SDP_MACRO' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/lab2_datapath.vhdl:202]
 INFO: [Synth 8-638] synthesizing module 'unimacro_BRAM_SDP_MACRO__parameterized1' [C:/Xilinx/Vivado/2024.2/data/vhdl/src/unimacro/BRAM_SDP_MACRO.vhd:217]
 	Parameter DOA_REG bound to: 0 - type: integer 
 	Parameter DOB_REG bound to: 0 - type: integer 
@@ -648,7 +648,7 @@ INFO: [Synth 8-256] done synthesizing module 'unimacro_BRAM_SDP_MACRO__parameter
 	Parameter SIM_COLLISION_CHECK bound to: NONE - type: string 
 	Parameter SRVAL bound to: 72'b000000000000000000000000000000000000000000000000000000000000000000000000 
 	Parameter WRITE_WIDTH bound to: 16 - type: integer 
-INFO: [Synth 8-3491] module 'BRAM_SDP_MACRO' declared at 'C:/Xilinx/Vivado/2024.2/data/vhdl/src/unimacro/BRAM_SDP_MACRO.vhd:38' bound to instance 'rightChannelMemory' of component 'BRAM_SDP_MACRO' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/lab2_datapath.vhdl:292]
+INFO: [Synth 8-3491] module 'BRAM_SDP_MACRO' declared at 'C:/Xilinx/Vivado/2024.2/data/vhdl/src/unimacro/BRAM_SDP_MACRO.vhd:38' bound to instance 'rightChannelMemory' of component 'BRAM_SDP_MACRO' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/lab2_datapath.vhdl:292]
 INFO: [Synth 8-638] synthesizing module 'unimacro_BRAM_SDP_MACRO__parameterized2' [C:/Xilinx/Vivado/2024.2/data/vhdl/src/unimacro/BRAM_SDP_MACRO.vhd:217]
 	Parameter DOA_REG bound to: 0 - type: integer 
 	Parameter DOB_REG bound to: 0 - type: integer 
@@ -738,84 +738,85 @@ INFO: [Synth 8-638] synthesizing module 'unimacro_BRAM_SDP_MACRO__parameterized2
 	Parameter WRITE_WIDTH_B bound to: 18 - type: integer 
 INFO: [Synth 8-113] binding component instance 'ram18_bl' to cell 'RAMB18E1' [C:/Xilinx/Vivado/2024.2/data/vhdl/src/unimacro/BRAM_SDP_MACRO.vhd:2374]
 INFO: [Synth 8-256] done synthesizing module 'unimacro_BRAM_SDP_MACRO__parameterized2' (0#1) [C:/Xilinx/Vivado/2024.2/data/vhdl/src/unimacro/BRAM_SDP_MACRO.vhd:217]
-INFO: [Synth 8-638] synthesizing module 'numeric_stepper' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/numeric_stepper.vhd:29]
-INFO: [Synth 8-638] synthesizing module 'button_debounce' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/button_debounce.vhdl:31]
+INFO: [Synth 8-638] synthesizing module 'numeric_stepper' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/numeric_stepper.vhd:29]
+INFO: [Synth 8-638] synthesizing module 'button_debounce' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/button_debounce.vhdl:31]
 	Parameter N bound to: 20 - type: integer 
-INFO: [Synth 8-3491] module 'lec10' declared at 'c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/lec10.vhdl:24' bound to instance 'delay_counter' of component 'lec10' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/button_debounce.vhdl:62]
-INFO: [Synth 8-638] synthesizing module 'lec10' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/lec10.vhdl:33]
-INFO: [Synth 8-256] done synthesizing module 'lec10' (0#1) [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/lec10.vhdl:33]
-INFO: [Synth 8-256] done synthesizing module 'button_debounce' (0#1) [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/button_debounce.vhdl:31]
-INFO: [Synth 8-256] done synthesizing module 'numeric_stepper' (0#1) [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/numeric_stepper.vhd:29]
-INFO: [Synth 8-638] synthesizing module 'numeric_stepper__parameterized0' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/numeric_stepper.vhd:29]
-INFO: [Synth 8-256] done synthesizing module 'numeric_stepper__parameterized0' (0#1) [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/numeric_stepper.vhd:29]
-INFO: [Synth 8-3491] module 'video' declared at 'c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/video.vhdl:11' bound to instance 'video_inst' of component 'video' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/lab2_datapath.vhdl:447]
-INFO: [Synth 8-638] synthesizing module 'video' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/video.vhdl:22]
-INFO: [Synth 8-3491] module 'clk_wiz_0' declared at 'c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ip/design_1_OScope_2Channel_IP_0_0/src/clk_wiz_0/clk_wiz_0.v:67' bound to instance 'mmcm_adv_inst_display_clocks' of component 'clk_wiz_0' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/video.vhdl:51]
+INFO: [Synth 8-3491] module 'lec10' declared at 'c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/lec10.vhdl:24' bound to instance 'delay_counter' of component 'lec10' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/button_debounce.vhdl:62]
+INFO: [Synth 8-638] synthesizing module 'lec10' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/lec10.vhdl:33]
+INFO: [Synth 8-256] done synthesizing module 'lec10' (0#1) [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/lec10.vhdl:33]
+INFO: [Synth 8-256] done synthesizing module 'button_debounce' (0#1) [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/button_debounce.vhdl:31]
+INFO: [Synth 8-256] done synthesizing module 'numeric_stepper' (0#1) [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/numeric_stepper.vhd:29]
+INFO: [Synth 8-638] synthesizing module 'numeric_stepper__parameterized0' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/numeric_stepper.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'numeric_stepper__parameterized0' (0#1) [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/numeric_stepper.vhd:29]
+INFO: [Synth 8-3491] module 'video' declared at 'c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/video.vhdl:11' bound to instance 'video_inst' of component 'video' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/lab2_datapath.vhdl:447]
+INFO: [Synth 8-638] synthesizing module 'video' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/video.vhdl:22]
+INFO: [Synth 8-3491] module 'clk_wiz_0' declared at 'c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ip/design_1_OScope_2Channel_IP_0_0/src/clk_wiz_0/clk_wiz_0.v:67' bound to instance 'mmcm_adv_inst_display_clocks' of component 'clk_wiz_0' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/video.vhdl:51]
 INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ip/design_1_OScope_2Channel_IP_0_0/src/clk_wiz_0/clk_wiz_0.v:67]
 INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0_clk_wiz' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ip/design_1_OScope_2Channel_IP_0_0/src/clk_wiz_0/clk_wiz_0_clk_wiz.v:67]
 INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV__parameterized0' [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:84588]
 INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV__parameterized0' (0#1) [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:84588]
 INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0_clk_wiz' (0#1) [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ip/design_1_OScope_2Channel_IP_0_0/src/clk_wiz_0/clk_wiz_0_clk_wiz.v:67]
 INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ip/design_1_OScope_2Channel_IP_0_0/src/clk_wiz_0/clk_wiz_0.v:67]
-INFO: [Synth 8-638] synthesizing module 'vga' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/vga.vhd:21]
-INFO: [Synth 8-3491] module 'vga_signal_generator' declared at 'c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/vga_signal_generator.vhd:8' bound to instance 'inst_vga_signal_gen' of component 'vga_signal_generator' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/vga.vhd:27]
-INFO: [Synth 8-638] synthesizing module 'vga_signal_generator' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/vga_signal_generator.vhd:15]
-INFO: [Synth 8-638] synthesizing module 'counter__parameterized0' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/counter.vhd:48]
-INFO: [Synth 8-256] done synthesizing module 'counter__parameterized0' (0#1) [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/counter.vhd:48]
-INFO: [Synth 8-638] synthesizing module 'counter__parameterized1' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/counter.vhd:48]
-INFO: [Synth 8-256] done synthesizing module 'counter__parameterized1' (0#1) [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/counter.vhd:48]
-INFO: [Synth 8-256] done synthesizing module 'vga_signal_generator' (0#1) [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/vga_signal_generator.vhd:15]
-INFO: [Synth 8-3491] module 'color_mapper' declared at 'c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/color_mapper.vhd:13' bound to instance 'inst_color_mapper' of component 'color_mapper' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/vga.vhd:35]
-INFO: [Synth 8-638] synthesizing module 'color_mapper' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/color_mapper.vhd:21]
-INFO: [Synth 8-256] done synthesizing module 'color_mapper' (0#1) [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/color_mapper.vhd:21]
-INFO: [Synth 8-256] done synthesizing module 'vga' (0#1) [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/vga.vhd:21]
-INFO: [Synth 8-638] synthesizing module 'dvid' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/dvid.vhdl:31]
-INFO: [Synth 8-3491] module 'TDMS_encoder' declared at 'c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/tdms.vhdl:14' bound to instance 'TDMS_encoder_red' of component 'TDMS_encoder' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/dvid.vhdl:56]
-INFO: [Synth 8-638] synthesizing module 'TDMS_encoder' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/tdms.vhdl:22]
-INFO: [Synth 8-256] done synthesizing module 'TDMS_encoder' (0#1) [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/tdms.vhdl:22]
-INFO: [Synth 8-3491] module 'TDMS_encoder' declared at 'c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/tdms.vhdl:14' bound to instance 'TDMS_encoder_green' of component 'TDMS_encoder' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/dvid.vhdl:57]
-INFO: [Synth 8-3491] module 'TDMS_encoder' declared at 'c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/tdms.vhdl:14' bound to instance 'TDMS_encoder_blue' of component 'TDMS_encoder' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/dvid.vhdl:58]
+INFO: [Synth 8-638] synthesizing module 'vga' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/vga.vhd:21]
+INFO: [Synth 8-3491] module 'vga_signal_generator' declared at 'c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/vga_signal_generator.vhd:8' bound to instance 'inst_vga_signal_gen' of component 'vga_signal_generator' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/vga.vhd:27]
+INFO: [Synth 8-638] synthesizing module 'vga_signal_generator' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/vga_signal_generator.vhd:15]
+INFO: [Synth 8-638] synthesizing module 'counter__parameterized0' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/counter.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'counter__parameterized0' (0#1) [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/counter.vhd:48]
+INFO: [Synth 8-638] synthesizing module 'counter__parameterized1' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/counter.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'counter__parameterized1' (0#1) [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/counter.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'vga_signal_generator' (0#1) [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/vga_signal_generator.vhd:15]
+INFO: [Synth 8-3491] module 'color_mapper' declared at 'c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/color_mapper.vhd:13' bound to instance 'inst_color_mapper' of component 'color_mapper' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/vga.vhd:35]
+INFO: [Synth 8-638] synthesizing module 'color_mapper' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/color_mapper.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'color_mapper' (0#1) [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/color_mapper.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'vga' (0#1) [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/vga.vhd:21]
+INFO: [Synth 8-638] synthesizing module 'dvid' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/dvid.vhdl:31]
+INFO: [Synth 8-3491] module 'TDMS_encoder' declared at 'c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/tdms.vhdl:14' bound to instance 'TDMS_encoder_red' of component 'TDMS_encoder' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/dvid.vhdl:56]
+INFO: [Synth 8-638] synthesizing module 'TDMS_encoder' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/tdms.vhdl:22]
+INFO: [Synth 8-256] done synthesizing module 'TDMS_encoder' (0#1) [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/tdms.vhdl:22]
+INFO: [Synth 8-3491] module 'TDMS_encoder' declared at 'c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/tdms.vhdl:14' bound to instance 'TDMS_encoder_green' of component 'TDMS_encoder' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/dvid.vhdl:57]
+INFO: [Synth 8-3491] module 'TDMS_encoder' declared at 'c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/tdms.vhdl:14' bound to instance 'TDMS_encoder_blue' of component 'TDMS_encoder' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/dvid.vhdl:58]
 	Parameter DDR_ALIGNMENT bound to: C0 - type: string 
 	Parameter INIT bound to: 1'b0 
 	Parameter SRTYPE bound to: ASYNC - type: string 
-INFO: [Synth 8-113] binding component instance 'ODDR2_red' to cell 'ODDR2' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/dvid.vhdl:60]
+INFO: [Synth 8-113] binding component instance 'ODDR2_red' to cell 'ODDR2' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/dvid.vhdl:60]
 	Parameter DDR_ALIGNMENT bound to: C0 - type: string 
 	Parameter INIT bound to: 1'b0 
 	Parameter SRTYPE bound to: ASYNC - type: string 
-INFO: [Synth 8-113] binding component instance 'ODDR2_green' to cell 'ODDR2' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/dvid.vhdl:63]
+INFO: [Synth 8-113] binding component instance 'ODDR2_green' to cell 'ODDR2' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/dvid.vhdl:63]
 	Parameter DDR_ALIGNMENT bound to: C0 - type: string 
 	Parameter INIT bound to: 1'b0 
 	Parameter SRTYPE bound to: ASYNC - type: string 
-INFO: [Synth 8-113] binding component instance 'ODDR2_blue' to cell 'ODDR2' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/dvid.vhdl:66]
+INFO: [Synth 8-113] binding component instance 'ODDR2_blue' to cell 'ODDR2' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/dvid.vhdl:66]
 	Parameter DDR_ALIGNMENT bound to: C0 - type: string 
 	Parameter INIT bound to: 1'b0 
 	Parameter SRTYPE bound to: ASYNC - type: string 
-INFO: [Synth 8-113] binding component instance 'ODDR2_clock' to cell 'ODDR2' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/dvid.vhdl:69]
-INFO: [Synth 8-256] done synthesizing module 'dvid' (0#1) [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/dvid.vhdl:31]
-INFO: [Synth 8-113] binding component instance 'OBUFDS_blue' to cell 'OBUFDS' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/video.vhdl:96]
-INFO: [Synth 8-113] binding component instance 'OBUFDS_red' to cell 'OBUFDS' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/video.vhdl:98]
-INFO: [Synth 8-113] binding component instance 'OBUFDS_green' to cell 'OBUFDS' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/video.vhdl:100]
-INFO: [Synth 8-113] binding component instance 'OBUFDS_clock' to cell 'OBUFDS' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/video.vhdl:102]
-INFO: [Synth 8-256] done synthesizing module 'video' (0#1) [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/video.vhdl:22]
-INFO: [Synth 8-638] synthesizing module 'flag_register' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/flag_register.vhd:42]
-INFO: [Synth 8-256] done synthesizing module 'flag_register' (0#1) [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/flag_register.vhd:42]
-INFO: [Synth 8-256] done synthesizing module 'lab2_datapath' (0#1) [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/lab2_datapath.vhdl:44]
-INFO: [Synth 8-3491] module 'lab2_fsm' declared at 'c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/lab2_fsm.vhdl:25' bound to instance 'control' of component 'lab2_fsm' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/hdl/OScope_2Channel_IP_slave_lite_v1_0_S00_AXI.vhd:731]
-INFO: [Synth 8-638] synthesizing module 'lab2_fsm' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/lab2_fsm.vhdl:32]
-INFO: [Synth 8-256] done synthesizing module 'lab2_fsm' (0#1) [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/lab2_fsm.vhdl:32]
-INFO: [Synth 8-256] done synthesizing module 'OScope_2Channel_IP_slave_lite_v1_0_S00_AXI' (0#1) [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/hdl/OScope_2Channel_IP_slave_lite_v1_0_S00_AXI.vhd:98]
-INFO: [Synth 8-256] done synthesizing module 'OScope_2Channel_IP' (0#1) [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/hdl/OScope_2Channel_IP.vhd:62]
+INFO: [Synth 8-113] binding component instance 'ODDR2_clock' to cell 'ODDR2' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/dvid.vhdl:69]
+INFO: [Synth 8-256] done synthesizing module 'dvid' (0#1) [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/dvid.vhdl:31]
+INFO: [Synth 8-113] binding component instance 'OBUFDS_blue' to cell 'OBUFDS' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/video.vhdl:96]
+INFO: [Synth 8-113] binding component instance 'OBUFDS_red' to cell 'OBUFDS' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/video.vhdl:98]
+INFO: [Synth 8-113] binding component instance 'OBUFDS_green' to cell 'OBUFDS' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/video.vhdl:100]
+INFO: [Synth 8-113] binding component instance 'OBUFDS_clock' to cell 'OBUFDS' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/video.vhdl:102]
+INFO: [Synth 8-256] done synthesizing module 'video' (0#1) [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/video.vhdl:22]
+INFO: [Synth 8-638] synthesizing module 'flag_register' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/flag_register.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'flag_register' (0#1) [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/flag_register.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'lab2_datapath' (0#1) [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/lab2_datapath.vhdl:44]
+INFO: [Synth 8-3491] module 'lab2_fsm' declared at 'c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/lab2_fsm.vhdl:25' bound to instance 'control' of component 'lab2_fsm' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/hdl/OScope_2Channel_IP_slave_lite_v1_0_S00_AXI.vhd:733]
+INFO: [Synth 8-638] synthesizing module 'lab2_fsm' [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/lab2_fsm.vhdl:32]
+INFO: [Synth 8-256] done synthesizing module 'lab2_fsm' (0#1) [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/lab2_fsm.vhdl:32]
+INFO: [Synth 8-256] done synthesizing module 'OScope_2Channel_IP_slave_lite_v1_0_S00_AXI' (0#1) [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/hdl/OScope_2Channel_IP_slave_lite_v1_0_S00_AXI.vhd:98]
+INFO: [Synth 8-256] done synthesizing module 'OScope_2Channel_IP' (0#1) [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/hdl/OScope_2Channel_IP.vhd:62]
 INFO: [Synth 8-256] done synthesizing module 'design_1_OScope_2Channel_IP_0_0' (0#1) [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ip/design_1_OScope_2Channel_IP_0_0/synth/design_1_OScope_2Channel_IP_0_0.vhd:94]
-WARNING: [Synth 8-6014] Unused sequential element timeOutCnt_reg was removed.  [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/TWICtl.vhd:236]
-WARNING: [Synth 8-6014] Unused sequential element errTypeR_reg was removed.  [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/TWICtl.vhd:313]
-WARNING: [Synth 8-6014] Unused sequential element regData1_reg was removed.  [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/audio_init.v:135]
-WARNING: [Synth 8-6014] Unused sequential element initFbWe_reg was removed.  [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/audio_init.v:150]
-WARNING: [Synth 8-3848] Net ch1[prev_sample] in module/entity lab2_datapath does not have driver. [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/lab2_datapath.vhdl:74]
-WARNING: [Synth 8-3848] Net ch2[prev_sample] in module/entity lab2_datapath does not have driver. [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/src/lab2_datapath.vhdl:74]
-WARNING: [Synth 8-6014] Unused sequential element slv_reg5_reg was removed.  [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/hdl/OScope_2Channel_IP_slave_lite_v1_0_S00_AXI.vhd:300]
-WARNING: [Synth 8-6014] Unused sequential element slv_reg6_reg was removed.  [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/hdl/OScope_2Channel_IP_slave_lite_v1_0_S00_AXI.vhd:301]
-WARNING: [Synth 8-6014] Unused sequential element slv_reg11_reg was removed.  [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/hdl/OScope_2Channel_IP_slave_lite_v1_0_S00_AXI.vhd:306]
-WARNING: [Synth 8-6014] Unused sequential element slv_reg12_reg was removed.  [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/d649/hdl/OScope_2Channel_IP_slave_lite_v1_0_S00_AXI.vhd:307]
+WARNING: [Synth 8-6014] Unused sequential element timeOutCnt_reg was removed.  [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/TWICtl.vhd:236]
+WARNING: [Synth 8-6014] Unused sequential element errTypeR_reg was removed.  [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/TWICtl.vhd:313]
+WARNING: [Synth 8-6014] Unused sequential element regData1_reg was removed.  [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/audio_init.v:135]
+WARNING: [Synth 8-6014] Unused sequential element initFbWe_reg was removed.  [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/audio_init.v:150]
+WARNING: [Synth 8-3848] Net ch1[prev_sample] in module/entity lab2_datapath does not have driver. [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/lab2_datapath.vhdl:74]
+WARNING: [Synth 8-3848] Net ch2[prev_sample] in module/entity lab2_datapath does not have driver. [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/src/lab2_datapath.vhdl:74]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg5_reg was removed.  [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/hdl/OScope_2Channel_IP_slave_lite_v1_0_S00_AXI.vhd:302]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg6_reg was removed.  [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/hdl/OScope_2Channel_IP_slave_lite_v1_0_S00_AXI.vhd:303]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg9_reg was removed.  [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/hdl/OScope_2Channel_IP_slave_lite_v1_0_S00_AXI.vhd:306]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg11_reg was removed.  [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/hdl/OScope_2Channel_IP_slave_lite_v1_0_S00_AXI.vhd:308]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg12_reg was removed.  [c:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.gen/sources_1/bd/design_1/ipshared/3e5d/hdl/OScope_2Channel_IP_slave_lite_v1_0_S00_AXI.vhd:309]
 WARNING: [Synth 8-7129] Port ch1[to_ac][17] in module color_mapper is either unconnected or has no load
 WARNING: [Synth 8-7129] Port ch1[to_ac][16] in module color_mapper is either unconnected or has no load
 WARNING: [Synth 8-7129] Port ch1[to_ac][15] in module color_mapper is either unconnected or has no load
@@ -918,18 +919,18 @@ WARNING: [Synth 8-7129] Port ch1[to_bram][1] in module color_mapper is either un
 WARNING: [Synth 8-7129] Port ch1[to_bram][0] in module color_mapper is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1167.367 ; gain = 621.371
+Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1167.531 ; gain = 620.730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1167.367 ; gain = 621.371
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1167.531 ; gain = 620.730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1167.367 ; gain = 621.371
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1167.531 ; gain = 620.730
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.083 . Memory (MB): peak = 1167.367 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.079 . Memory (MB): peak = 1167.531 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 14 Unisim elements for replacement
 WARNING: [Netlist 29-151] Pin 'C1' on instance 'U0/OScope_2Channel_IP_slave_lite_v1_0_S00_AXI_inst/datapath/video_inst/inst_dvid/ODDR2_blue' of cell type 'ODDR2' does not have an equivalent function on the new cell type 'ODDR'. Net 'clk_n' that is connected to this pin will not be connected to the replacement instance.
 WARNING: [Netlist 29-151] Pin 'C1' on instance 'U0/OScope_2Channel_IP_slave_lite_v1_0_S00_AXI_inst/datapath/video_inst/inst_dvid/ODDR2_clock' of cell type 'ODDR2' does not have an equivalent function on the new cell type 'ODDR'. Net 'clk_n' that is connected to this pin will not be connected to the replacement instance.
@@ -956,23 +957,23 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_OScope_2Channel_IP_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1258.102 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1262.246 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 8 instances were transformed.
   OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS(x2)): 4 instances
   ODDR2 => ODDR: 4 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.070 . Memory (MB): peak = 1258.500 ; gain = 0.398
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 1262.406 ; gain = 0.160
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:18 . Memory (MB): peak = 1258.500 ; gain = 712.504
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:17 . Memory (MB): peak = 1262.406 ; gain = 715.605
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a200tsbg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:18 . Memory (MB): peak = 1258.500 ; gain = 712.504
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:17 . Memory (MB): peak = 1262.406 ; gain = 715.605
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -984,7 +985,7 @@ Applied set_property KEEP_HIERARCHY = SOFT for U0/OScope_2Channel_IP_slave_lite_
 Applied set_property KEEP_HIERARCHY = SOFT for U0/OScope_2Channel_IP_slave_lite_v1_0_S00_AXI_inst/datapath/video_inst/mmcm_adv_inst_display_clocks. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for U0/OScope_2Channel_IP_slave_lite_v1_0_S00_AXI_inst/datapath/Audio_Codec/audiocodec_master_clock. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:04 ; elapsed = 00:00:18 . Memory (MB): peak = 1258.500 ; gain = 712.504
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:04 ; elapsed = 00:00:18 . Memory (MB): peak = 1262.406 ; gain = 715.605
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'TWICtl'
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'button_debounce'
@@ -1046,7 +1047,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_write_reg' using enc
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_read_reg' using encoding 'sequential' in module 'OScope_2Channel_IP_slave_lite_v1_0_S00_AXI'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:20 . Memory (MB): peak = 1258.500 ; gain = 712.504
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:19 . Memory (MB): peak = 1262.406 ; gain = 715.605
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -1073,7 +1074,7 @@ Detailed RTL Component Info :
 	   2 Input      1 Bit         XORs := 42    
 +---Registers : 
 	               33 Bit    Registers := 1     
-	               32 Bit    Registers := 31    
+	               32 Bit    Registers := 30    
 	               31 Bit    Registers := 1     
 	               24 Bit    Registers := 2     
 	               20 Bit    Registers := 4     
@@ -1090,8 +1091,8 @@ Detailed RTL Component Info :
 	                2 Bit    Registers := 3     
 	                1 Bit    Registers := 38    
 +---Muxes : 
-	   2 Input   32 Bit        Muxes := 31    
-	  32 Input   32 Bit        Muxes := 28    
+	   2 Input   32 Bit        Muxes := 30    
+	  32 Input   32 Bit        Muxes := 27    
 	   5 Input   24 Bit        Muxes := 1     
 	   3 Input   20 Bit        Muxes := 4     
 	   2 Input   18 Bit        Muxes := 2     
@@ -1137,26 +1138,26 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:41 . Memory (MB): peak = 1368.645 ; gain = 822.648
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:40 . Memory (MB): peak = 1370.590 ; gain = 823.789
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-565] redefining clock 's00_axi_aclk'
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:47 . Memory (MB): peak = 1373.293 ; gain = 827.297
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:46 . Memory (MB): peak = 1374.473 ; gain = 827.672
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:54 . Memory (MB): peak = 1432.824 ; gain = 886.828
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:53 . Memory (MB): peak = 1434.852 ; gain = 888.051
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:55 . Memory (MB): peak = 1447.676 ; gain = 901.680
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:53 . Memory (MB): peak = 1450.754 ; gain = 903.953
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -1176,37 +1177,37 @@ Finished Final Netlist Cleanup
 CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'Audio_Codeci_0' to logic
 CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'Audio_Codeci_1' to logic
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:01:01 . Memory (MB): peak = 1608.703 ; gain = 1062.707
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:57 . Memory (MB): peak = 1609.941 ; gain = 1063.141
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:01:01 . Memory (MB): peak = 1608.703 ; gain = 1062.707
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:57 . Memory (MB): peak = 1609.941 ; gain = 1063.141
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:01:01 . Memory (MB): peak = 1608.703 ; gain = 1062.707
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:57 . Memory (MB): peak = 1609.941 ; gain = 1063.141
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:01:01 . Memory (MB): peak = 1608.703 ; gain = 1062.707
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:57 . Memory (MB): peak = 1609.941 ; gain = 1063.141
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:01:01 . Memory (MB): peak = 1608.703 ; gain = 1062.707
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:58 . Memory (MB): peak = 1609.941 ; gain = 1063.141
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:01:01 . Memory (MB): peak = 1608.703 ; gain = 1062.707
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:58 . Memory (MB): peak = 1609.941 ; gain = 1063.141
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -1225,29 +1226,29 @@ Report Cell Usage:
 |1     |BUFG       |     7|
 |2     |CARRY4     |    84|
 |3     |LUT1       |    60|
-|4     |LUT2       |   218|
-|5     |LUT3       |   174|
-|6     |LUT4       |   134|
-|7     |LUT5       |   295|
-|8     |LUT6       |   553|
+|4     |LUT2       |   234|
+|5     |LUT3       |   175|
+|6     |LUT4       |   133|
+|7     |LUT5       |   270|
+|8     |LUT6       |   557|
 |9     |MMCME2_ADV |     2|
-|10    |MUXF7      |   112|
+|10    |MUXF7      |    91|
 |11    |ODDR2      |     4|
 |12    |RAMB18E1   |     4|
-|16    |FDRE       |  1452|
+|16    |FDRE       |  1420|
 |17    |FDSE       |    40|
 |18    |IBUF       |     2|
 |19    |OBUFDS     |     4|
 +------+-----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:01:01 . Memory (MB): peak = 1608.703 ; gain = 1062.707
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:58 . Memory (MB): peak = 1609.941 ; gain = 1063.141
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 2 critical warnings and 242 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:58 . Memory (MB): peak = 1608.703 ; gain = 971.574
-Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:01:02 . Memory (MB): peak = 1608.703 ; gain = 1062.707
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:54 . Memory (MB): peak = 1609.941 ; gain = 968.266
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:58 . Memory (MB): peak = 1609.941 ; gain = 1063.141
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.074 . Memory (MB): peak = 1608.703 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 210 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.045 . Memory (MB): peak = 1609.941 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 189 Unisim elements for replacement
 WARNING: [Netlist 29-151] Pin 'C1' on instance 'U0/OScope_2Channel_IP_slave_lite_v1_0_S00_AXI_inst/datapath/video_inst/inst_dvid/ODDR2_blue' of cell type 'ODDR2' does not have an equivalent function on the new cell type 'ODDR'. Net 'clk_out3' that is connected to this pin will not be connected to the replacement instance.
 WARNING: [Netlist 29-151] Pin 'C1' on instance 'U0/OScope_2Channel_IP_slave_lite_v1_0_S00_AXI_inst/datapath/video_inst/inst_dvid/ODDR2_clock' of cell type 'ODDR2' does not have an equivalent function on the new cell type 'ODDR'. Net 'clk_out3' that is connected to this pin will not be connected to the replacement instance.
 WARNING: [Netlist 29-151] Pin 'C1' on instance 'U0/OScope_2Channel_IP_slave_lite_v1_0_S00_AXI_inst/datapath/video_inst/inst_dvid/ODDR2_green' of cell type 'ODDR2' does not have an equivalent function on the new cell type 'ODDR'. Net 'clk_out3' that is connected to this pin will not be connected to the replacement instance.
@@ -1256,22 +1257,22 @@ INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 CRITICAL WARNING: [Shape Builder 18-119] Failed to create I/OLOGIC Route Through shape for instance U0/OScope_2Channel_IP_slave_lite_v1_0_S00_AXI_inst/datapath/video_inst/mmcm_adv_inst_display_clocks/inst/clkin1_ibufg. Found overlapping instances within the shape: U0/OScope_2Channel_IP_slave_lite_v1_0_S00_AXI_inst/datapath/Audio_Codec/audiocodec_master_clock/inst/clkin1_ibufg and U0/OScope_2Channel_IP_slave_lite_v1_0_S00_AXI_inst/datapath/video_inst/mmcm_adv_inst_display_clocks/inst/clkin1_ibufg.
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1624.078 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1625.371 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 8 instances were transformed.
   OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS(x2)): 4 instances
   ODDR2 => ODDR: 4 instances
 
-Synth Design complete | Checksum: a1d15e8d
+Synth Design complete | Checksum: b706af62
 INFO: [Common 17-83] Releasing license: Synthesis
-149 Infos, 122 Warnings, 3 Critical Warnings and 0 Errors encountered.
+149 Infos, 123 Warnings, 3 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:01:10 . Memory (MB): peak = 1624.078 ; gain = 1315.617
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1624.078 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:01:03 . Memory (MB): peak = 1625.371 ; gain = 1315.121
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1625.371 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.runs/design_1_OScope_2Channel_IP_0_0_synth_1/design_1_OScope_2Channel_IP_0_0.dcp' has been generated.
 INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
 INFO: [Coretcl 2-1174] Renamed 39 cell refs.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1624.078 ; gain = 0.000
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1625.371 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath.runs/design_1_OScope_2Channel_IP_0_0_synth_1/design_1_OScope_2Channel_IP_0_0.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file design_1_OScope_2Channel_IP_0_0_utilization_synth.rpt -pb design_1_OScope_2Channel_IP_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat Mar 14 13:55:44 2026...
+INFO: [Common 17-206] Exiting Vivado at Sat Mar 14 21:09:27 2026...
