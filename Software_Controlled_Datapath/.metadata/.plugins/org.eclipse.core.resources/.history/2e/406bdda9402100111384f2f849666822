@@ -1,0 +1,247 @@
+/*--------------------------------------------------------------------
+-- Name:	Maj Jeff Falkinburg
+-- Date:	Feb 16, 2017
+-- File:	lec18.c
+-- Event:	Lecture 18
+-- Crs:	ECE 383
+--
+-- Purp:	MicroBlaze Tutorial that implements a custom IP to microBlaze.
+--
+-- Documentation:	MicroBlaze Tutorial
+--
+-- Academic Integrity Statement: I certify that, while others may have
+-- assisted me in brain storming, debugging and validating this program,
+-- the program itself is my own work. I understand that submitting code
+-- which is the work of other individuals is a violation of the honor
+-- code.  I also understand that if I knowingly give my original work to
+-- another individual is also a violation of the honor code.
+--
+-- Modified by: Jason Wyche
+-- Date: 14 Mar 2026
+-- Purpose: Used original code as a template for a software controller for
+-- an oscilloscope datapath.
+-------------------------------------------------------------------------*/
+
+/******************************************************************************
+ * This application configures UART 16550 to baud rate 9600.
+ * PS7 UART (Zynq) is not initialized by this application, since
+ * bootrom/bsp configures it to baud rate 115200
+ *
+ * ------------------------------------------------
+ * | UART TYPE   BAUD RATE                        |
+ * ------------------------------------------------
+ *   uartns550   9600
+ *   uartlite    Configurable only in HW design
+ *   ps7_uart    115200 (configured by bootrom/bsp)
+ */
+
+/***************************** Include Files ********************************/
+
+#include "xparameters.h"
+#include "stdio.h"
+#include "xstatus.h"
+#include "platform.h"
+#include "xil_printf.h"						// Contains xil_printf
+#include <xuartlite_l.h>					// Contains XUartLite_RecvByte
+#include <xil_io.h>							// Contains Xil_Out8 and its variations
+
+/************************** Constant Definitions ****************************/
+
+/*
+ * The following constants define the slave registers used for our Counter PCORE
+ */
+#define countQReg		0x44a00000			// 8 LSBs of slv_reg0 read=Q, write=D
+#define	countCtrlReg	0x44a00004			// 2 LSBs of slv_reg1 are control
+#define	countRollReg	0x44a00008			// 1 LSBs of slv_reg2 for roll
+
+// addressed for values read in from OScope datapath
+#define LBUS_OUT_REG			0x44a00014			// 4 LSBs of slv_reg5 are left output from Oscope audio codec
+#define RBUS_OUT_REG			0x44a00018			// 4 LSBs of slv_reg6 are right output from Oscope audio codec
+#define AUDIO_RDY_FLAG_REG		0x44a00024			// lsb of slv_reg9 is audio ready flag from OScope datapath
+#define TRIG_VOLT_REG			0x44a0002C			// Bits 10 downto 0 are voltage trigger setting
+#define TRIG_TIME_REG			0x44a00030			// Bits 10 downto 0 are time trigger setting
+
+// addresses for values written to OScope datapath
+#define EX_WR_ADDR_REG			0x44a00000			// Bits 9 downto 0 are BRAM address to store audio sample
+#define EX_WR_EN_REG			0x44a00004			// Bit 0 is the BRAM write enable bit
+#define EX_LBUS_REG				0x44a0001C			// 2 LSBs of slv_reg7 are used to store external input to left BRAM
+#define EX_RBUS_REG				0x44a00020			// 2 LSBs of slv_reg8 are used to store external input to right BRAM
+#define CLR_AUDIO_RDY_FLAG_REG	0x44a00028			// lsb of slv_rev10 used to clear audio ready flag from OScope datapath
+
+#define FLAG_CLEAR		0x01
+#define FLAG_RELEASE	0x00
+
+/*
+ * The following constants define the Counter commands
+ */
+#define count_HOLD		0x00		// The control bits are defined in the VHDL
+#define	count_COUNT		0x01		// code contained in lec18.vhdl.  They are
+#define	count_LOAD		0x02		// added here to centralize the bit values in
+#define count_RESET		0x03		// a single place.
+
+#define printf xil_printf			/* A smaller footprint printf */
+
+#define	uartRegAddr			0x40600000		// read <= RX, write => TX
+
+/************************** Function Prototypes ****************************/
+
+
+/************************** Variable Definitions **************************/
+
+/*
+ * The following are declared globally so they are zeroed and so they are
+ * easily accessible from a debugger
+ */
+
+int main()
+{
+	unsigned char c;
+	uint32_t LBus_out;
+	uint32_t RBus_out;
+//	uint32_t audio_in_left[1024];
+//	uint32_t audio_in_right[1024];
+
+	init_platform();
+
+	printf("\r\nWelcome to Software Controlled Datapath\n\r");
+	printf("*****PRESS ? FOR TROUBLESHOOTING MENU*****\r\n");
+
+	while(1) {
+
+    	c=XUartLite_RecvByte(uartRegAddr);
+
+    	switch(c) {
+
+    		/*-------------------------------------------------
+    		 * Reply with the help menu
+    		 *-------------------------------------------------
+			 */
+    		case '?':
+    			printf("-----------------------------------\r\n");
+    			printf("	Troubleshooting Menu\r\n");
+    			printf("-----------------------------------\r\n");
+    			printf("?: help menu\r\n");
+    			printf("o: k\r\n");
+    			printf("r: READ REGISTER values from OScope\r\n");
+    			printf("d: DRAW LINES - horizontal on channel 1 and diagonal on channel 2\r\n");
+    			printf("m: POLL READY FLAG - test rx ready flag, read live samples, clear flag, and fill buffer\r\n");
+    			printf("f: FLUSH terminal\r\n");
+    			break;
+
+			/*-------------------------------------------------
+			 * Basic I/O loopback
+			 *-------------------------------------------------
+			 */
+    		case 'o':
+    			printf("k \r\n");
+    			break;
+
+    		/*------------------------------------------------------------
+    		 * READ REGISTERS...view register values read into Microblaze
+    		 * -----------------------------------------------------------*/
+    		case 'r':
+    			LBus_out = Xil_In32(LBUS_OUT_REG);
+    			RBus_out = Xil_In32(RBUS_OUT_REG);
+
+    			printf("\r\nCurrent slave register values read into Microblaze from OScope\r\n");
+    			printf("- Voltage Trigger (slv_reg11): %d\r\n",Xil_In32(TRIG_VOLT_REG));
+    			printf("- Time Trigger (slv_reg12): %d\r\n",Xil_In32(TRIG_TIME_REG));
+    			printf("- Audio Ready Flag (slv_reg9): x%x\r\n",Xil_In8(AUDIO_RDY_FLAG_REG));
+    			printf("- Audio Codec Left Output - prescale (LBus_out[15:0] : slv_reg5): %d\r\n",LBus_out);
+    			printf("- Audio Codec Left Output - scaled (LBus_out[15:7] : slv_reg5): %d\r\n",(LBus_out>>7));
+    			printf("- Audio Codec Right Output - prescale (RBus_out[15:0] : slv_reg6): %d\r\n",RBus_out);
+    			printf("- Audio Codec Right Output - scaled (RBus_out[15:7] : slv_reg6): %d\r\n",(RBus_out>>7));
+    			break;
+
+    		/*----------------------------------------------------
+    		 * LINES...draw a straight line on channel 1 and a
+    		 * diagonal line on channel 2 of the OScope output
+    		 *----------------------------------------------------*/
+    		case 'd':
+    			printf("\r\nDrawing a horizontal line on channel 1 and a diagonal line on channel 2\r\n");
+    			for (int i=0; i<1024; i++){
+    				   Xil_Out16(EX_WR_ADDR_REG,i);		//exWrADDR = i --> set BRAM address
+    				   Xil_Out16(EX_LBUS_REG,(220<<7));	//exLBus = 185 --> row for horizontal line
+    				                 	 	 	 	 	// shift value to upper 9 bits for value scaling in OScope
+    				   Xil_Out16(EX_RBUS_REG,(i<<7));	//exRBus = i --> diagonal line
+    				   	   	   	   	   	   	   	   	    // shift value to upper 9 bits for value scaling in OScope
+    				   Xil_Out8(EX_WR_EN_REG,1);			// exWen = 1 --> write data to address in BRAM
+    				   Xil_Out8(EX_WR_EN_REG,0);			// exWen = 0 --> stop writing to BRAM
+    			}
+    			printf("Done writing values for lines to BRAM\r\n");
+    			break;
+
+    		/*---------------------------------------------------------
+    		 * POLL READY FLAG...test rx ready flag, read live samples,
+    		 * clear flag, and fill buffer
+    		 *---------------------------------------------------------*/
+    		case 'm':
+				printf("\r\nPolling ready flag and storing live samples\r\n");
+//				for (int i=50; i<200; i++){
+//					while (!Xil_In8(AUDIO_RDY_FLAG_REG));
+//					//printf("Ready Flag (before clearing) = %x\r\n",Xil_In8(AUDIO_RDY_FLAG_REG));
+//					audio_in_left[i] = Xil_In32(LBUS_OUT_REG);
+//	    			audio_in_right[i] = Xil_In32(RBUS_OUT_REG);
+//	    			Xil_Out8(CLR_AUDIO_RDY_FLAG_REG,FLAG_CLEAR);		//clear flag
+//	    			Xil_Out8(CLR_AUDIO_RDY_FLAG_REG,FLAG_RELEASE);		//release clear, so flag can be set again
+//	    			//printf("Ready Flag (after clearing) = %x\r\n",Xil_In8(AUDIO_RDY_FLAG_REG));
+//	    			if ((i % 50) == 0){
+//	    				printf("audio_in_left[%d]: %d\r\n",i,audio_in_left[i]);
+//	    				printf("audio_in_right[%d]: %d\r\n",i,audio_in_right[i]);
+//	    			}
+//				}
+				break;
+
+//			/*-------------------------------------------------
+//			 * Tell the counter to count up
+//			 *-------------------------------------------------
+//			 */
+//    		case 'c':
+//    			Xil_Out8(countCtrlReg,count_COUNT);
+//    			Xil_Out8(countCtrlReg,count_HOLD);
+//    			break;
+//
+//			/*-------------------------------------------------
+//			 * Tell the counter to load a value
+//			 *-------------------------------------------------
+//			 */
+//        	case 'l':
+//        		printf("Enter a 0-9 value to store in the counter: ");
+//            	c=XUartLite_RecvByte(uartRegAddr) - 0x30;
+//        		Xil_Out8(countQReg,c);					// put value into slv_reg1
+//        		Xil_Out8(countCtrlReg,count_LOAD);				// load command
+//    			printf("%c\r\n",c+0x30);
+//        		break;
+//
+//			/*-------------------------------------------------
+//			 * Reset the counter
+//			 *-------------------------------------------------
+//			 */
+//            case 'r':
+//            	Xil_Out8(countCtrlReg,count_RESET);				// reset command
+//            	break;
+
+			/*-------------------------------------------------
+			 * Clear the terminal window
+			 *-------------------------------------------------
+			 */
+            case 'f':
+            	for (c=0; c<40; c++) printf("\r\n");
+               	break;
+
+			/*-------------------------------------------------
+			 * Unknown character was
+			 *-------------------------------------------------
+			 */
+    		default:
+    			printf("unrecognized character: %c\r\n",c);
+    			break;
+    	} // end case
+    } // end while
+
+    cleanup_platform();
+
+    return 0;
+
+} // end main
+

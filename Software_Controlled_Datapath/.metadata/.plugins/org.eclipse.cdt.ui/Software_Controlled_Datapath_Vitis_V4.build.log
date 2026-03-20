@@ -1,0 +1,26 @@
+08:54:13 **** Build of configuration Debug for project Software_Controlled_Datapath_Vitis_V4 ****
+make all 
+'Building file: ../src/Software_Controlled_Datapath.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I"C:\Users\Jason.Wyche\source\repos\ece383_wksp\Software_Controlled_Datapath\Software_Controlled_Datapath_wrapper\microblaze_0\standalone_microblaze_0\bsp\microblaze_0\include" -c -fmessage-length=0 -MT"src/Software_Controlled_Datapath.o" -IC:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/export/Software_Controlled_Datapath_wrapper/sw/Software_Controlled_Datapath_wrapper/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Software_Controlled_Datapath.d" -MT"src/Software_Controlled_Datapath.o" -o "src/Software_Controlled_Datapath.o" "../src/Software_Controlled_Datapath.c"
+'Finished building: ../src/Software_Controlled_Datapath.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -I"C:\Users\Jason.Wyche\source\repos\ece383_wksp\Software_Controlled_Datapath\Software_Controlled_Datapath_wrapper\microblaze_0\standalone_microblaze_0\bsp\microblaze_0\include" -c -fmessage-length=0 -MT"src/platform.o" -IC:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/export/Software_Controlled_Datapath_wrapper/sw/Software_Controlled_Datapath_wrapper/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: Software_Controlled_Datapath_Vitis_V4.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper/export/Software_Controlled_Datapath_wrapper/sw/Software_Controlled_Datapath_wrapper/standalone_microblaze_0/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Software_Controlled_Datapath_Vitis_V4.elf"  ./src/Software_Controlled_Datapath.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Software_Controlled_Datapath_Vitis_V4.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Software_Controlled_Datapath_Vitis_V4.elf  |tee "Software_Controlled_Datapath_Vitis_V4.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   9636	     24	   3428	  13088	   3320	Software_Controlled_Datapath_Vitis_V4.elf
+'Finished building: Software_Controlled_Datapath_Vitis_V4.elf.size'
+' '
+
+08:54:17 Build Finished (took 3s.587ms)
+

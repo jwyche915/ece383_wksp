@@ -18,3 +18,35 @@ platform generate -domains
 platform active {Software_Controlled_Datapath_wrapper}
 platform generate -quick
 platform generate
+platform clean
+platform generate
+platform clean
+platform clean
+platform generate
+platform clean
+platform clean
+platform generate
+platform clean
+platform clean
+platform clean
+platform generate
+platform clean
+platform generate
+platform active {Software_Controlled_Datapath_wrapper}
+platform config -updatehw {C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_wrapper.xsa}
+catch {platform remove Software_Controlled_Datapath_wrapper}
+platform create -name {Software_Controlled_Datapath_wrapper}\
+-hw {C:\Users\Jason.Wyche\source\repos\ece383_wksp\Software_Controlled_Datapath\Software_Controlled_Datapath_wrapper.xsa}\
+-out {C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath}
+
+platform write
+domain create -name {standalone_microblaze_0} -display-name {standalone_microblaze_0} -os {standalone} -proc {microblaze_0} -runtime {cpp} -arch {32-bit} -support-app {hello_world}
+platform generate -domains 
+platform active {Software_Controlled_Datapath_wrapper}
+platform generate -quick
+platform generate
+platform clean
+platform generate
+platform clean
+platform clean
+platform generate

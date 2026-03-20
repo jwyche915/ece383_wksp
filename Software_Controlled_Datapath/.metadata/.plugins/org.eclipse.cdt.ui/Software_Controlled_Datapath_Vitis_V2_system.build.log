@@ -1,0 +1,6 @@
+08:02:34 **** Build of configuration Debug for project Software_Controlled_Datapath_Vitis_V2_system ****
+make all 
+Skipping SD card image generation. Reason: "The system project only has applications for microblaze processors."
+
+08:02:34 Build Finished (took 204ms)
+
