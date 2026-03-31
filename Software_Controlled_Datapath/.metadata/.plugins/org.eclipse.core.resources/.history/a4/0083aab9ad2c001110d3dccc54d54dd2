@@ -98,9 +98,6 @@ int main(void) {
 	uint16_t audio_in_left[AUDIO_SIG_ARRAY_SIZE];
 	uint16_t audio_in_right[AUDIO_SIG_ARRAY_SIZE];
 
-	uint16_t trigger_voltage;
-	uint16_t trigger_time;
-
 	init_platform();
 
 	printf("\r\nWelcome to Software Controlled Datapath\n\r");
@@ -180,8 +177,6 @@ int main(void) {
 			 * clear flag, fill buffer, and print buffer to UART
 			 * -------------------------------------------------------*/
 			case 'm':
-				microblaze_disable_interrupts();
-
 				printf("\r\nPolling ready flag and storing live samples\r\n");
 				for (int i=0; i < AUDIO_SIG_ARRAY_SIZE; i++){
 					while (!Xil_In8(AUDIO_RDY_FLAG_REG));
@@ -201,8 +196,6 @@ int main(void) {
 				}
 				printf("Done printing samples\r\n");
 
-				microblaze_enable_interrupts();
-
 				break;
 
 			/*--------------------------------------------------------
@@ -221,55 +214,6 @@ int main(void) {
 				printf("Done writing to BRAM\r\n");
 				break;
 
-			/*--------------------------------------------------------
-			 * case ‘t’: Given trig_volt and Array_L,
-			 * write a command to search through the C-array to find the
-			 * trigger point, and printf this location to the terminal
-			 * ------------------------------------------------------*/
-			case 't':
-				trigger_voltage = Xil_In16(TRIG_VOLT_REG);
-				trigger_time = Xil_In16(TRIG_TIME_REG);
-
-				printf("\r\nSearching for voltage trigger point\r\n");
-				printf("Voltage Trigger Point = %d\r\n",trigger_voltage);
-				for (int i=1; i < AUDIO_SIG_ARRAY_SIZE; i++){
-					if (((audio_in_left[i-1]>>7) <(trigger_voltage + 36)) && ((audio_in_left[i]>>7) >= (trigger_voltage + 36))){
-						printf("Found voltage trigger point\r\n");
-						printf("audio_in_left[%d] = %d\r\n", (i-1), (audio_in_left[i-1]>>7));
-						printf("audio_in_left[%d] = %d\r\n", i, (audio_in_left[i]>>7));
-						break;
-					}
-					else if (i == (AUDIO_SIG_ARRAY_SIZE-1)){
-						printf("Voltage trigger point not found\r\n");
-					}
-				}
-
-				break;
-
-			/*-----------------------------------------------------
-			 * case ‘z’: Given this trigger location in the Array_L,
-			 * write the appropriate data values in the Array_L to
-			 * the BRAM, so the sine wave appears triggered.
-			 * ---------------------------------------------------*/
-			case 'z':
-				trigger_voltage = Xil_In16(TRIG_VOLT_REG);
-				trigger_time = Xil_In16(TRIG_TIME_REG);
-
-				printf("\r\nWriting to BRAM starting at trigger time\r\n");
-				for (int i=1; i < AUDIO_SIG_ARRAY_SIZE; i++){
-					if (((audio_in_left[i-1]>>7) < (trigger_voltage + 36)) && ((audio_in_left[i]>>7) >= (trigger_voltage + 36))){
-	this is incorrect -->   for (int j = i; j < (AUDIO_SIG_ARRAY_SIZE + i); j = j % AUDIO_SIG_ARRAY_SIZE){
-						   Xil_Out16(EX_WR_ADDR_REG,((trigger_time++)%AUDIO_SIG_ARRAY_SIZE));					//exWrADDR = i --> set BRAM address
-						   Xil_Out16(EX_LBUS_REG,audio_in_left[j]);
-						   Xil_Out16(EX_RBUS_REG,audio_in_right[j]);
-						   Xil_Out8(EX_WR_EN_REG,1);			// exWen = 1 --> write data to address in BRAM
-						   Xil_Out8(EX_WR_EN_REG,0);			// exWen = 0 --> stop writing to BRAM
-					   }
-					   break;
-					}
-				}
-				printf("Done writing to BRAM\r\n");
-				break;
 
 //			/*-------------------------------------------------
 //			 * Tell the counter to count up

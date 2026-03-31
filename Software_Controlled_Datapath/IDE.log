@@ -5572,3 +5572,457 @@ con
 ----------------End of Script----------------
 
 09:52:07 INFO  : Launch script is exported to file 'C:\Users\Jason.Wyche\source\repos\ece383_wksp\Software_Controlled_Datapath\Software_Controlled_Datapath_NEW_system\_ide\scripts\debugger_software_controlled_datapath_new-default.tcl'
+15:50:10 INFO  : Disconnected from the channel tcfchan#34.
+20:05:01 DEBUG : Logs will be stored at 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/IDE.log'.
+20:05:02 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\Jason.Wyche\source\repos\ece383_wksp\Software_Controlled_Datapath\temp_xsdb_launch_script.tcl
+20:05:07 INFO  : Registering command handlers for Vitis TCF services
+20:05:07 INFO  : Platform repository initialization has completed.
+20:05:11 INFO  : XSCT server has started successfully.
+20:05:11 INFO  : plnx-install-location is set to ''
+20:05:11 INFO  : Successfully done setting XSCT server connection channel  
+20:05:28 INFO  : Successfully done setting workspace for the tool. 
+20:05:28 INFO  : Successfully done query RDI_DATADIR 
+20:17:29 INFO  : Checking for BSP changes to sync application flags for project 'Software_Controlled_Datapath_NEW'...
+20:17:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:17:49 INFO  : Jtag cable 'Digilent Nexys Video 210276BA0139B' is selected.
+20:17:49 INFO  : 'jtag frequency' command is executed.
+20:17:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276BA0139B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276BA0139B-13636093-0"}' command is executed.
+20:17:55 INFO  : Device configured successfully with "C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_NEW/_ide/bitstream/Software_Controlled_Datapath_V2.bit"
+20:17:55 INFO  : Context for processor 'microblaze_0' is selected.
+20:17:55 INFO  : Hardware design and registers information is loaded from 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_V2/export/Software_Controlled_Datapath_V2/hw/Software_Controlled_Datapath_V2.xsa'.
+20:17:55 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:17:55 INFO  : Context for processor 'microblaze_0' is selected.
+20:17:55 INFO  : System reset is completed.
+20:17:58 INFO  : 'after 3000' command is executed.
+20:17:58 INFO  : Context for processor 'microblaze_0' is selected.
+20:17:58 INFO  : The application 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_NEW/Debug/Software_Controlled_Datapath_NEW.elf' is downloaded to processor 'microblaze_0'.
+20:17:58 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276BA0139B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276BA0139B-13636093-0"}
+fpga -file C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_NEW/_ide/bitstream/Software_Controlled_Datapath_V2.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_V2/export/Software_Controlled_Datapath_V2/hw/Software_Controlled_Datapath_V2.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_NEW/Debug/Software_Controlled_Datapath_NEW.elf
+----------------End of Script----------------
+
+20:17:59 INFO  : Context for processor 'microblaze_0' is selected.
+20:17:59 INFO  : 'con' command is executed.
+20:17:59 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+20:17:59 INFO  : Launch script is exported to file 'C:\Users\Jason.Wyche\source\repos\ece383_wksp\Software_Controlled_Datapath\Software_Controlled_Datapath_NEW_system\_ide\scripts\debugger_software_controlled_datapath_new-default.tcl'
+20:39:41 INFO  : Checking for BSP changes to sync application flags for project 'Software_Controlled_Datapath_NEW'...
+20:40:00 INFO  : Checking for BSP changes to sync application flags for project 'Software_Controlled_Datapath_NEW'...
+20:41:02 INFO  : Disconnected from the channel tcfchan#1.
+20:41:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:41:12 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+20:41:12 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+20:41:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:41:25 INFO  : Jtag cable 'Digilent Nexys Video 210276BA0139B' is selected.
+20:41:25 INFO  : 'jtag frequency' command is executed.
+20:41:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276BA0139B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276BA0139B-13636093-0"}' command is executed.
+20:41:30 INFO  : Device configured successfully with "C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_NEW/_ide/bitstream/Software_Controlled_Datapath_V2.bit"
+20:41:30 INFO  : Context for processor 'microblaze_0' is selected.
+20:41:31 INFO  : Hardware design and registers information is loaded from 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_V2/export/Software_Controlled_Datapath_V2/hw/Software_Controlled_Datapath_V2.xsa'.
+20:41:31 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:41:31 INFO  : Context for processor 'microblaze_0' is selected.
+20:41:31 INFO  : System reset is completed.
+20:41:34 INFO  : 'after 3000' command is executed.
+20:41:34 INFO  : Context for processor 'microblaze_0' is selected.
+20:41:34 INFO  : The application 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_NEW/Debug/Software_Controlled_Datapath_NEW.elf' is downloaded to processor 'microblaze_0'.
+20:41:34 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276BA0139B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276BA0139B-13636093-0"}
+fpga -file C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_NEW/_ide/bitstream/Software_Controlled_Datapath_V2.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_V2/export/Software_Controlled_Datapath_V2/hw/Software_Controlled_Datapath_V2.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_NEW/Debug/Software_Controlled_Datapath_NEW.elf
+----------------End of Script----------------
+
+20:41:34 INFO  : Context for processor 'microblaze_0' is selected.
+20:41:34 INFO  : 'con' command is executed.
+20:41:34 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+20:41:34 INFO  : Launch script is exported to file 'C:\Users\Jason.Wyche\source\repos\ece383_wksp\Software_Controlled_Datapath\Software_Controlled_Datapath_NEW_system\_ide\scripts\debugger_software_controlled_datapath_new-default.tcl'
+21:00:23 INFO  : Checking for BSP changes to sync application flags for project 'Software_Controlled_Datapath_NEW'...
+21:00:38 INFO  : Disconnected from the channel tcfchan#2.
+21:00:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:00:39 INFO  : Jtag cable 'Digilent Nexys Video 210276BA0139B' is selected.
+21:00:39 INFO  : 'jtag frequency' command is executed.
+21:00:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276BA0139B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276BA0139B-13636093-0"}' command is executed.
+21:00:45 INFO  : Device configured successfully with "C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_NEW/_ide/bitstream/Software_Controlled_Datapath_V2.bit"
+21:00:45 INFO  : Context for processor 'microblaze_0' is selected.
+21:00:45 INFO  : Hardware design and registers information is loaded from 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_V2/export/Software_Controlled_Datapath_V2/hw/Software_Controlled_Datapath_V2.xsa'.
+21:00:45 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:00:45 INFO  : Context for processor 'microblaze_0' is selected.
+21:00:45 INFO  : System reset is completed.
+21:00:48 INFO  : 'after 3000' command is executed.
+21:00:48 INFO  : Context for processor 'microblaze_0' is selected.
+21:00:49 INFO  : The application 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_NEW/Debug/Software_Controlled_Datapath_NEW.elf' is downloaded to processor 'microblaze_0'.
+21:00:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276BA0139B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276BA0139B-13636093-0"}
+fpga -file C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_NEW/_ide/bitstream/Software_Controlled_Datapath_V2.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_V2/export/Software_Controlled_Datapath_V2/hw/Software_Controlled_Datapath_V2.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_NEW/Debug/Software_Controlled_Datapath_NEW.elf
+----------------End of Script----------------
+
+21:00:49 INFO  : Context for processor 'microblaze_0' is selected.
+21:00:49 INFO  : 'con' command is executed.
+21:00:49 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+21:00:49 INFO  : Launch script is exported to file 'C:\Users\Jason.Wyche\source\repos\ece383_wksp\Software_Controlled_Datapath\Software_Controlled_Datapath_NEW_system\_ide\scripts\debugger_software_controlled_datapath_new-default.tcl'
+21:41:31 INFO  : Checking for BSP changes to sync application flags for project 'Software_Controlled_Datapath_NEW'...
+21:41:50 INFO  : Disconnected from the channel tcfchan#3.
+21:41:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:41:51 INFO  : Jtag cable 'Digilent Nexys Video 210276BA0139B' is selected.
+21:41:51 INFO  : 'jtag frequency' command is executed.
+21:41:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276BA0139B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276BA0139B-13636093-0"}' command is executed.
+21:41:57 INFO  : Device configured successfully with "C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_NEW/_ide/bitstream/Software_Controlled_Datapath_V2.bit"
+21:41:57 INFO  : Context for processor 'microblaze_0' is selected.
+21:41:58 INFO  : Hardware design and registers information is loaded from 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_V2/export/Software_Controlled_Datapath_V2/hw/Software_Controlled_Datapath_V2.xsa'.
+21:41:58 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:41:58 INFO  : Context for processor 'microblaze_0' is selected.
+21:41:58 INFO  : System reset is completed.
+21:42:01 INFO  : 'after 3000' command is executed.
+21:42:01 INFO  : Context for processor 'microblaze_0' is selected.
+21:42:01 INFO  : The application 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_NEW/Debug/Software_Controlled_Datapath_NEW.elf' is downloaded to processor 'microblaze_0'.
+21:42:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276BA0139B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276BA0139B-13636093-0"}
+fpga -file C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_NEW/_ide/bitstream/Software_Controlled_Datapath_V2.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_V2/export/Software_Controlled_Datapath_V2/hw/Software_Controlled_Datapath_V2.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_NEW/Debug/Software_Controlled_Datapath_NEW.elf
+----------------End of Script----------------
+
+21:42:01 INFO  : Context for processor 'microblaze_0' is selected.
+21:42:01 INFO  : 'con' command is executed.
+21:42:01 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+21:42:01 INFO  : Launch script is exported to file 'C:\Users\Jason.Wyche\source\repos\ece383_wksp\Software_Controlled_Datapath\Software_Controlled_Datapath_NEW_system\_ide\scripts\debugger_software_controlled_datapath_new-default.tcl'
+21:45:21 INFO  : Checking for BSP changes to sync application flags for project 'Software_Controlled_Datapath_NEW'...
+21:45:36 INFO  : Disconnected from the channel tcfchan#4.
+21:45:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:45:47 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+21:45:47 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+21:45:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:45:55 INFO  : Jtag cable 'Digilent Nexys Video 210276BA0139B' is selected.
+21:45:55 INFO  : 'jtag frequency' command is executed.
+21:45:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276BA0139B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276BA0139B-13636093-0"}' command is executed.
+21:46:01 INFO  : Device configured successfully with "C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_NEW/_ide/bitstream/Software_Controlled_Datapath_V2.bit"
+21:46:01 INFO  : Context for processor 'microblaze_0' is selected.
+21:46:02 INFO  : Hardware design and registers information is loaded from 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_V2/export/Software_Controlled_Datapath_V2/hw/Software_Controlled_Datapath_V2.xsa'.
+21:46:02 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:46:02 INFO  : Context for processor 'microblaze_0' is selected.
+21:46:02 INFO  : System reset is completed.
+21:46:05 INFO  : 'after 3000' command is executed.
+21:46:05 INFO  : Context for processor 'microblaze_0' is selected.
+21:46:05 INFO  : The application 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_NEW/Debug/Software_Controlled_Datapath_NEW.elf' is downloaded to processor 'microblaze_0'.
+21:46:05 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276BA0139B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276BA0139B-13636093-0"}
+fpga -file C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_NEW/_ide/bitstream/Software_Controlled_Datapath_V2.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_V2/export/Software_Controlled_Datapath_V2/hw/Software_Controlled_Datapath_V2.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_NEW/Debug/Software_Controlled_Datapath_NEW.elf
+----------------End of Script----------------
+
+21:46:05 INFO  : Context for processor 'microblaze_0' is selected.
+21:46:05 INFO  : 'con' command is executed.
+21:46:05 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+21:46:05 INFO  : Launch script is exported to file 'C:\Users\Jason.Wyche\source\repos\ece383_wksp\Software_Controlled_Datapath\Software_Controlled_Datapath_NEW_system\_ide\scripts\debugger_software_controlled_datapath_new-default.tcl'
+21:48:28 INFO  : Checking for BSP changes to sync application flags for project 'Software_Controlled_Datapath_NEW'...
+21:48:39 INFO  : Disconnected from the channel tcfchan#5.
+21:48:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:48:40 INFO  : Jtag cable 'Digilent Nexys Video 210276BA0139B' is selected.
+21:48:40 INFO  : 'jtag frequency' command is executed.
+21:48:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276BA0139B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276BA0139B-13636093-0"}' command is executed.
+21:48:46 INFO  : Device configured successfully with "C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_NEW/_ide/bitstream/Software_Controlled_Datapath_V2.bit"
+21:48:46 INFO  : Context for processor 'microblaze_0' is selected.
+21:48:47 INFO  : Hardware design and registers information is loaded from 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_V2/export/Software_Controlled_Datapath_V2/hw/Software_Controlled_Datapath_V2.xsa'.
+21:48:47 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:48:47 INFO  : Context for processor 'microblaze_0' is selected.
+21:48:47 INFO  : System reset is completed.
+21:48:50 INFO  : 'after 3000' command is executed.
+21:48:50 INFO  : Context for processor 'microblaze_0' is selected.
+21:48:50 INFO  : The application 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_NEW/Debug/Software_Controlled_Datapath_NEW.elf' is downloaded to processor 'microblaze_0'.
+21:48:50 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276BA0139B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276BA0139B-13636093-0"}
+fpga -file C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_NEW/_ide/bitstream/Software_Controlled_Datapath_V2.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_V2/export/Software_Controlled_Datapath_V2/hw/Software_Controlled_Datapath_V2.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_NEW/Debug/Software_Controlled_Datapath_NEW.elf
+----------------End of Script----------------
+
+21:48:50 INFO  : Context for processor 'microblaze_0' is selected.
+21:48:50 INFO  : 'con' command is executed.
+21:48:50 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+21:48:50 INFO  : Launch script is exported to file 'C:\Users\Jason.Wyche\source\repos\ece383_wksp\Software_Controlled_Datapath\Software_Controlled_Datapath_NEW_system\_ide\scripts\debugger_software_controlled_datapath_new-default.tcl'
+21:50:45 INFO  : Checking for BSP changes to sync application flags for project 'Software_Controlled_Datapath_NEW'...
+21:51:00 INFO  : Disconnected from the channel tcfchan#6.
+21:51:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:51:10 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+21:51:10 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+21:51:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:51:17 INFO  : Jtag cable 'Digilent Nexys Video 210276BA0139B' is selected.
+21:51:17 INFO  : 'jtag frequency' command is executed.
+21:51:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276BA0139B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276BA0139B-13636093-0"}' command is executed.
+21:51:23 INFO  : Device configured successfully with "C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_NEW/_ide/bitstream/Software_Controlled_Datapath_V2.bit"
+21:51:23 INFO  : Context for processor 'microblaze_0' is selected.
+21:51:23 INFO  : Hardware design and registers information is loaded from 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_V2/export/Software_Controlled_Datapath_V2/hw/Software_Controlled_Datapath_V2.xsa'.
+21:51:23 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:51:23 INFO  : Context for processor 'microblaze_0' is selected.
+21:51:23 INFO  : System reset is completed.
+21:51:26 INFO  : 'after 3000' command is executed.
+21:51:26 INFO  : Context for processor 'microblaze_0' is selected.
+21:51:26 INFO  : The application 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_NEW/Debug/Software_Controlled_Datapath_NEW.elf' is downloaded to processor 'microblaze_0'.
+21:51:26 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276BA0139B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276BA0139B-13636093-0"}
+fpga -file C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_NEW/_ide/bitstream/Software_Controlled_Datapath_V2.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_V2/export/Software_Controlled_Datapath_V2/hw/Software_Controlled_Datapath_V2.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_NEW/Debug/Software_Controlled_Datapath_NEW.elf
+----------------End of Script----------------
+
+21:51:27 INFO  : Context for processor 'microblaze_0' is selected.
+21:51:27 INFO  : 'con' command is executed.
+21:51:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+21:51:27 INFO  : Launch script is exported to file 'C:\Users\Jason.Wyche\source\repos\ece383_wksp\Software_Controlled_Datapath\Software_Controlled_Datapath_NEW_system\_ide\scripts\debugger_software_controlled_datapath_new-default.tcl'
+21:53:39 INFO  : Checking for BSP changes to sync application flags for project 'Software_Controlled_Datapath_NEW'...
+21:54:02 INFO  : Disconnected from the channel tcfchan#7.
+21:54:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:54:12 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+21:54:12 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+21:54:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:54:19 INFO  : Jtag cable 'Digilent Nexys Video 210276BA0139B' is selected.
+21:54:19 INFO  : 'jtag frequency' command is executed.
+21:54:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276BA0139B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276BA0139B-13636093-0"}' command is executed.
+21:54:25 INFO  : Device configured successfully with "C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_NEW/_ide/bitstream/Software_Controlled_Datapath_V2.bit"
+21:54:25 INFO  : Context for processor 'microblaze_0' is selected.
+21:54:25 INFO  : Hardware design and registers information is loaded from 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_V2/export/Software_Controlled_Datapath_V2/hw/Software_Controlled_Datapath_V2.xsa'.
+21:54:25 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:54:25 INFO  : Context for processor 'microblaze_0' is selected.
+21:54:25 INFO  : System reset is completed.
+21:54:28 INFO  : 'after 3000' command is executed.
+21:54:28 INFO  : Context for processor 'microblaze_0' is selected.
+21:54:28 INFO  : The application 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_NEW/Debug/Software_Controlled_Datapath_NEW.elf' is downloaded to processor 'microblaze_0'.
+21:54:28 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276BA0139B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276BA0139B-13636093-0"}
+fpga -file C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_NEW/_ide/bitstream/Software_Controlled_Datapath_V2.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_V2/export/Software_Controlled_Datapath_V2/hw/Software_Controlled_Datapath_V2.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_NEW/Debug/Software_Controlled_Datapath_NEW.elf
+----------------End of Script----------------
+
+21:54:29 INFO  : Context for processor 'microblaze_0' is selected.
+21:54:29 INFO  : 'con' command is executed.
+21:54:29 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+21:54:29 INFO  : Launch script is exported to file 'C:\Users\Jason.Wyche\source\repos\ece383_wksp\Software_Controlled_Datapath\Software_Controlled_Datapath_NEW_system\_ide\scripts\debugger_software_controlled_datapath_new-default.tcl'
+21:55:58 INFO  : Checking for BSP changes to sync application flags for project 'Software_Controlled_Datapath_NEW'...
+21:56:06 INFO  : Disconnected from the channel tcfchan#8.
+21:56:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:56:16 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+21:56:16 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+21:56:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:56:26 INFO  : Jtag cable 'Digilent Nexys Video 210276BA0139B' is selected.
+21:56:26 INFO  : 'jtag frequency' command is executed.
+21:56:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276BA0139B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276BA0139B-13636093-0"}' command is executed.
+21:56:32 INFO  : Device configured successfully with "C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_NEW/_ide/bitstream/Software_Controlled_Datapath_V2.bit"
+21:56:32 INFO  : Context for processor 'microblaze_0' is selected.
+21:56:32 INFO  : Hardware design and registers information is loaded from 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_V2/export/Software_Controlled_Datapath_V2/hw/Software_Controlled_Datapath_V2.xsa'.
+21:56:32 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:56:32 INFO  : Context for processor 'microblaze_0' is selected.
+21:56:32 INFO  : System reset is completed.
+21:56:35 INFO  : 'after 3000' command is executed.
+21:56:35 INFO  : Context for processor 'microblaze_0' is selected.
+21:56:36 INFO  : The application 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_NEW/Debug/Software_Controlled_Datapath_NEW.elf' is downloaded to processor 'microblaze_0'.
+21:56:36 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276BA0139B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276BA0139B-13636093-0"}
+fpga -file C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_NEW/_ide/bitstream/Software_Controlled_Datapath_V2.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_V2/export/Software_Controlled_Datapath_V2/hw/Software_Controlled_Datapath_V2.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_NEW/Debug/Software_Controlled_Datapath_NEW.elf
+----------------End of Script----------------
+
+21:56:36 INFO  : Context for processor 'microblaze_0' is selected.
+21:56:36 INFO  : 'con' command is executed.
+21:56:36 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+21:56:36 INFO  : Launch script is exported to file 'C:\Users\Jason.Wyche\source\repos\ece383_wksp\Software_Controlled_Datapath\Software_Controlled_Datapath_NEW_system\_ide\scripts\debugger_software_controlled_datapath_new-default.tcl'
+22:03:54 INFO  : Checking for BSP changes to sync application flags for project 'Software_Controlled_Datapath_NEW'...
+22:04:09 INFO  : Checking for BSP changes to sync application flags for project 'Software_Controlled_Datapath_NEW'...
+22:04:23 INFO  : Disconnected from the channel tcfchan#9.
+22:04:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:04:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+22:04:33 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+22:04:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:04:41 INFO  : Jtag cable 'Digilent Nexys Video 210276BA0139B' is selected.
+22:04:41 INFO  : 'jtag frequency' command is executed.
+22:04:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276BA0139B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276BA0139B-13636093-0"}' command is executed.
+22:04:46 INFO  : Device configured successfully with "C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_NEW/_ide/bitstream/Software_Controlled_Datapath_V2.bit"
+22:04:46 INFO  : Context for processor 'microblaze_0' is selected.
+22:04:47 INFO  : Hardware design and registers information is loaded from 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_V2/export/Software_Controlled_Datapath_V2/hw/Software_Controlled_Datapath_V2.xsa'.
+22:04:47 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+22:04:47 INFO  : Context for processor 'microblaze_0' is selected.
+22:04:47 INFO  : System reset is completed.
+22:04:50 INFO  : 'after 3000' command is executed.
+22:04:50 INFO  : Context for processor 'microblaze_0' is selected.
+22:04:50 INFO  : The application 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_NEW/Debug/Software_Controlled_Datapath_NEW.elf' is downloaded to processor 'microblaze_0'.
+22:04:50 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276BA0139B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276BA0139B-13636093-0"}
+fpga -file C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_NEW/_ide/bitstream/Software_Controlled_Datapath_V2.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_V2/export/Software_Controlled_Datapath_V2/hw/Software_Controlled_Datapath_V2.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_NEW/Debug/Software_Controlled_Datapath_NEW.elf
+----------------End of Script----------------
+
+22:04:50 INFO  : Context for processor 'microblaze_0' is selected.
+22:04:50 INFO  : 'con' command is executed.
+22:04:50 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+22:04:50 INFO  : Launch script is exported to file 'C:\Users\Jason.Wyche\source\repos\ece383_wksp\Software_Controlled_Datapath\Software_Controlled_Datapath_NEW_system\_ide\scripts\debugger_software_controlled_datapath_new-default.tcl'
+22:35:54 INFO  : Disconnected from the channel tcfchan#10.
