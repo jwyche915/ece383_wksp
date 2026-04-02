@@ -21,6 +21,7 @@
 
 #include "xparameters.h"
 #include "stdio.h"
+#include "stdbool.h"
 #include "xstatus.h"
 
 #include "platform.h"
@@ -40,21 +41,6 @@
 #define	countRollReg	0x44a0002C//countBase+8			// 1 LSBs of slv_reg2 for roll flag
 #define	countClearReg	0x44a0002C//countBase+0xc		// 1 LSBs of slv_reg3 (0) roll clear flag
 
-///*
-// * The following constants define the Counter commands
-// */
-//#define count_HOLD		0x00		// The control bits are defined in the VHDL
-//#define	count_COUNT		0x01		// code contained in lec18.vhdl.  They are
-//#define	count_LOAD		0x02		// added here to centralize the bit values in
-//#define count_RESET		0x03		// a single place.
-//
-///*
-// * The following constants define the slave registers used for our Counter PCORE
-// */
-//#define countQReg		0x44a00000			// 8 LSBs of slv_reg0 read=Q, write=D
-//#define	countCtrlReg	0x44a00004			// 2 LSBs of slv_reg1 are control
-//#define	countRollReg	0x44a00008			// 1 LSBs of slv_reg2 for roll
-
 // addressed for values read in from OScope datapath
 #define LBUS_OUT_REG			0x44a00014			// 4 LSBs of slv_reg5 are left output from Oscope audio codec
 #define RBUS_OUT_REG			0x44a00018			// 4 LSBs of slv_reg6 are right output from Oscope audio codec
@@ -72,6 +58,8 @@
 #define FLAG_CLEAR		0x01
 #define FLAG_RELEASE	0x00
 
+#define AUDIO_SIG_ARRAY_SIZE	1024
+#define GRID_X_MAX				620
 
 #define printf xil_printf			/* A smaller footprint printf */
 
@@ -80,6 +68,11 @@
 /************************** Function Prototypes ****************************/
 void myISR(void);
 
+void fill_buff_polling(uint16_t *left_audio_buff, uint16_t *right_audio_buff);
+bool is_triggered(uint16_t trigger_voltage, uint16_t trigger_time, uint16_t *audio_buff, int index);
+int find_trigger_index(uint16_t trigger_voltage, uint16_t trigger_time, uint16_t *left_audio_buff);
+void write_BRAM(uint16_t trigger_voltage, uint16_t trigger_time, uint16_t *left_audio_buff, uint16_t *right_audio_buff);
+
 /************************** Variable Definitions **************************/
 /*
  * The following are declared globally so they are zeroed and so they are
@@ -87,18 +80,15 @@ void myISR(void);
  */
 u16 isrCount = 0;
 
+uint16_t audio_in_left[AUDIO_SIG_ARRAY_SIZE];
+uint16_t audio_in_right[AUDIO_SIG_ARRAY_SIZE];
+
 int main(void) {
 
 	unsigned char c;
 
 	uint16_t LBus_out;
 	uint16_t RBus_out;
-
-	const int AUDIO_SIG_ARRAY_SIZE = 1024;
-	uint16_t audio_in_left[AUDIO_SIG_ARRAY_SIZE];
-	uint16_t audio_in_right[AUDIO_SIG_ARRAY_SIZE];
-
-	const int GRID_X_MAX = 620;
 
 	uint16_t trigger_voltage;
 	uint16_t trigger_time;
@@ -129,7 +119,8 @@ int main(void) {
 				printf("o: k\r\n");
 				printf("r: READ REGISTER values from OScope\r\n");
 				printf("d: DRAW LINES - horizontal on channel 1 and diagonal on channel 2\r\n");
-				printf("m: POLL READY FLAG - test rx ready flag, read live samples, clear flag, and fill buffer\r\n");
+				printf("m: FILL BUFFER (POLL READY FLAG) - test rx ready flag, read live samples, clear flag, and fill buffer\r\n");
+				printf("t: TRIGGER LOCATE - find trigger point using buffer from option 'm'\r\n");
 				printf("w: WRITE TO BRAM (NO TRIGGER) - write samples from option 'm' into datapath BRAM\r\n");
 				printf("z: WRITE TO BRAM (TRIGGER) - aligns signal at intersection of voltage and time triggers\r\n");
 				printf("f: FLUSH terminal\r\n");
@@ -228,7 +219,7 @@ int main(void) {
 				break;
 
 			/*--------------------------------------------------------
-			 * case ‘t’: Given trig_volt and Array_L,
+			 * case ‘t’: Given trig_volt, trig_time, and Array_L,
 			 * write a command to search through the C-array to find the
 			 * trigger point, and printf this location to the terminal
 			 * ------------------------------------------------------*/
@@ -281,58 +272,20 @@ int main(void) {
 				printf("Trigger Time: %d\r\n",trigger_time);
 				break;
 
-//			/*-------------------------------------------------
-//			 * Tell the counter to count up
-//			 *-------------------------------------------------
-//			 */
-//    		case 'c':
-//    			Xil_Out8(countCtrlReg,count_COUNT);
-//    			Xil_Out8(countCtrlReg,count_HOLD);
-//    			break;
-//
-//			/*-------------------------------------------------
-//			 * Start the counter to count up
-//			 *-------------------------------------------------
-//			 */
-//        	case 's':
-//        		Xil_Out8(countCtrlReg,count_COUNT);
-//        		break;
-//
-//			/*-------------------------------------------------
-//			 * Stop the counter from counting
-//			 *-------------------------------------------------
-//			 */
-//        	case 'S':
-//        		Xil_Out8(countCtrlReg,count_HOLD);
-//        		break;
-//
-//			/*-------------------------------------------------
-//			 * Tell the counter to load a value
-//			 *-------------------------------------------------
-//			 */
-//        	case 'l':
-//        		printf("Enter a 0-9 value to store in the counter: ");
-//            	c=XUartLite_RecvByte(uartRegAddr) - 0x30;
-//        		Xil_Out8(countQReg,c);						// put value into slv_reg1
-//        		Xil_Out8(countCtrlReg,count_LOAD);			// load command
-//    			printf("%c\r\n",c+0x30);
-//        		break;
-//
-//			/*-------------------------------------------------
-//			 * Reset the counter
-//			 *-------------------------------------------------
-//			 */
-//            case 'r':
-//            	Xil_Out8(countCtrlReg,count_RESET);				// reset command
-//            	break;
-//
-//			/*-------------------------------------------------
-//			 * Clear the ISR counter
-//			 *-------------------------------------------------
-//			 */
-//			case 'i':
-//				isrCount = 0;				// clear ISR Count
-//				break;
+			/*--------------------------------------------------
+			 * case 'g': CONTINUOUS MODE (POLLING) - combines
+			 *
+			 * -------------------------------------------------
+			 */
+			case 'g':
+				trigger_voltage = Xil_In16(TRIG_VOLT_REG);
+				trigger_time = Xil_In16(TRIG_TIME_REG);
+
+				fill_buff_polling(audio_in_left, audio_in_right);
+				find_trigger_index(trigger_voltage, trigger_time, audio_in_left);
+				write_BRAM(trigger_voltage, trigger_time, audio_in_left, audio_in_right);
+
+				break;
 
 			/*-------------------------------------------------
 			 * Clear the terminal window
@@ -363,4 +316,48 @@ void myISR(void) {
 	isrCount = isrCount + 1;
 	Xil_Out8(countClearReg, 0x01);					// Clear the flag and then you MUST
 	Xil_Out8(countClearReg, 0x00);					// allow the flag to be reset later
+}
+
+void fill_buff_polling(uint16_t *left_audio_buff, uint16_t *right_audio_buff){
+	microblaze_disable_interrupts();
+
+	for (int i=0; i < AUDIO_SIG_ARRAY_SIZE; i++){
+		while (!Xil_In8(AUDIO_RDY_FLAG_REG));
+		left_audio_buff[i] = Xil_In16(LBUS_OUT_REG);
+		right_audio_buff[i] = Xil_In16(RBUS_OUT_REG);
+		Xil_Out8(CLR_AUDIO_RDY_FLAG_REG, FLAG_CLEAR);
+		Xil_Out8(CLR_AUDIO_RDY_FLAG_REG, FLAG_RELEASE);
+	}
+
+	microblaze_enable_interrupts();
+}
+
+bool is_triggered(uint16_t trigger_voltage, uint16_t trigger_time, uint16_t *audio_buff, int index){
+	return (((audio_buff[index-1]>>7) > (trigger_voltage + 36)) && ((audio_buff[index]>>7) <= (trigger_voltage + 36)) && (index > trigger_time));
+}
+
+int find_trigger_index(uint16_t trigger_voltage, uint16_t trigger_time, uint16_t *left_audio_buff){
+	int index = 0;
+	for (int i=1; i < AUDIO_SIG_ARRAY_SIZE; i++){
+		if ( is_triggered(trigger_voltage, trigger_time, left_audio_buff, i) ){
+		  index = i;
+		  break;
+		}
+	}
+
+	return index;
+}
+
+void write_BRAM(uint16_t trigger_voltage, uint16_t trigger_time, uint16_t *left_audio_buff, uint16_t *right_audio_buff){
+	int write_index = find_trigger_index(trigger_voltage, trigger_time, left_audio_buff) - trigger_time;
+
+	for (int j = 0; j < (GRID_X_MAX + 1); j++){
+	   Xil_Out16(EX_WR_ADDR_REG,j);					//exWrADDR = i --> set BRAM address
+	   Xil_Out16(EX_LBUS_REG,left_audio_buff[write_index]);
+	   Xil_Out16(EX_RBUS_REG,right_audio_buff[write_index]);
+	   Xil_Out8(EX_WR_EN_REG,1);			// exWen = 1 --> write data to address in BRAM
+	   Xil_Out8(EX_WR_EN_REG,0);			// exWen = 0 --> stop writing to BRAM
+
+	   write_index++;
+	}
 }
