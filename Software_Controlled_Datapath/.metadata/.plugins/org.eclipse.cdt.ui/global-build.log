@@ -1,14 +1,10 @@
 Nothing to build in platform 'Software_Controlled_Datapath_V2'
 
-22:04:09 **** Incremental Build of configuration Debug for project Software_Controlled_Datapath_NEW ****
+21:29:46 **** Incremental Build of configuration Debug for project Software_Controlled_Datapath_NEW ****
 make all 
 'Building file: ../src/helloworld.c'
 'Invoking: MicroBlaze gcc compiler'
 mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -IC:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_V2/export/Software_Controlled_Datapath_V2/sw/Software_Controlled_Datapath_V2/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-../src/helloworld.c: In function 'main':
-../src/helloworld.c:102:18: warning: variable 'trigger_time' set but not used [-Wunused-but-set-variable]
-  102 |         uint16_t trigger_time;
-      |                  ^~~~~~~~~~~~
 'Finished building: ../src/helloworld.c'
 ' '
 'Building target: Software_Controlled_Datapath_NEW.elf'
@@ -19,6 +15,6 @@ mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/Jason.Wyche/source/repos/ece383_w
 'Invoking: MicroBlaze Print Size'
 mb-size Software_Controlled_Datapath_NEW.elf  |tee "Software_Controlled_Datapath_NEW.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  11212	     24	  49516	  60752	   ed50	Software_Controlled_Datapath_NEW.elf
+  12180	     24	  49516	  61720	   f118	Software_Controlled_Datapath_NEW.elf
 'Finished building: Software_Controlled_Datapath_NEW.elf.size'
 ' '

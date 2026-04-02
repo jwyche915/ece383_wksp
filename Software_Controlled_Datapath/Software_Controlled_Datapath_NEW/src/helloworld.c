@@ -98,6 +98,8 @@ int main(void) {
 	uint16_t audio_in_left[AUDIO_SIG_ARRAY_SIZE];
 	uint16_t audio_in_right[AUDIO_SIG_ARRAY_SIZE];
 
+	const int GRID_X_MAX = 620;
+
 	uint16_t trigger_voltage;
 	uint16_t trigger_time;
 
@@ -128,7 +130,8 @@ int main(void) {
 				printf("r: READ REGISTER values from OScope\r\n");
 				printf("d: DRAW LINES - horizontal on channel 1 and diagonal on channel 2\r\n");
 				printf("m: POLL READY FLAG - test rx ready flag, read live samples, clear flag, and fill buffer\r\n");
-				printf("w: WRITE TO BRAM - write samples from option 'm' into datapath BRAM\r\n");
+				printf("w: WRITE TO BRAM (NO TRIGGER) - write samples from option 'm' into datapath BRAM\r\n");
+				printf("z: WRITE TO BRAM (TRIGGER) - aligns signal at intersection of voltage and time triggers\r\n");
 				printf("f: FLUSH terminal\r\n");
 				break;
 
@@ -195,8 +198,11 @@ int main(void) {
 				printf("Printing stored samples\r\n");
 				for (int i=0; i < AUDIO_SIG_ARRAY_SIZE; i++){
 					if (i%50 == 0){
-						printf("audio_in_left[%d] = %d\r\n",i,audio_in_left[i]);
+						printf("audio_in_left[%d] = %d\r\n",i,(audio_in_left[i]>>7));
 						printf("audio_in_right[%d] = %d\r\n",i,audio_in_right[i]);
+					}
+					if (i == 1023){
+						printf("audio_in[left%d] = %d\r\n",i,(audio_in_left[i]>>7));
 					}
 				}
 				printf("Done printing samples\r\n");
@@ -233,7 +239,7 @@ int main(void) {
 				printf("\r\nSearching for voltage trigger point\r\n");
 				printf("Voltage Trigger Point = %d\r\n",trigger_voltage);
 				for (int i=1; i < AUDIO_SIG_ARRAY_SIZE; i++){
-					if (((audio_in_left[i-1]>>7) <(trigger_voltage + 36)) && ((audio_in_left[i]>>7) >= (trigger_voltage + 36))){
+					if (((audio_in_left[i-1]>>7) > (trigger_voltage + 36)) && ((audio_in_left[i]>>7) <= (trigger_voltage + 36)) && (i > trigger_time)){
 						printf("Found voltage trigger point\r\n");
 						printf("audio_in_left[%d] = %d\r\n", (i-1), (audio_in_left[i-1]>>7));
 						printf("audio_in_left[%d] = %d\r\n", i, (audio_in_left[i]>>7));
@@ -257,18 +263,22 @@ int main(void) {
 
 				printf("\r\nWriting to BRAM starting at trigger time\r\n");
 				for (int i=1; i < AUDIO_SIG_ARRAY_SIZE; i++){
-					if (((audio_in_left[i-1]>>7) < (trigger_voltage + 36)) && ((audio_in_left[i]>>7) >= (trigger_voltage + 36))){
-	this is incorrect -->   for (int j = i; j < (AUDIO_SIG_ARRAY_SIZE + i); j = j % AUDIO_SIG_ARRAY_SIZE){
-						   Xil_Out16(EX_WR_ADDR_REG,((trigger_time++)%AUDIO_SIG_ARRAY_SIZE));					//exWrADDR = i --> set BRAM address
-						   Xil_Out16(EX_LBUS_REG,audio_in_left[j]);
-						   Xil_Out16(EX_RBUS_REG,audio_in_right[j]);
+					if (((audio_in_left[i-1]>>7) > (trigger_voltage + 36)) && ((audio_in_left[i]>>7) <= (trigger_voltage + 36)) && (i > trigger_time)){
+					   int sample_index = i - trigger_time;
+					   for (int j = 0; j < (GRID_X_MAX + 1); j++){
+						   Xil_Out16(EX_WR_ADDR_REG,j);					//exWrADDR = i --> set BRAM address
+						   Xil_Out16(EX_LBUS_REG,audio_in_left[sample_index]);
+						   Xil_Out16(EX_RBUS_REG,audio_in_right[sample_index]);
 						   Xil_Out8(EX_WR_EN_REG,1);			// exWen = 1 --> write data to address in BRAM
 						   Xil_Out8(EX_WR_EN_REG,0);			// exWen = 0 --> stop writing to BRAM
+
+						   sample_index++;
 					   }
 					   break;
 					}
 				}
 				printf("Done writing to BRAM\r\n");
+				printf("Trigger Time: %d\r\n",trigger_time);
 				break;
 
 //			/*-------------------------------------------------
