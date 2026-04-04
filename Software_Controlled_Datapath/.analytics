@@ -339,3 +339,24 @@ timestamp=[2026-04-02 09:14:44], mode=BUILD, duration=0:00:01.401, duration_ms=1
 timestamp=[2026-04-02 09:21:51], mode=BUILD, duration=0:00:00.384, duration_ms=384, data={name=Software_Controlled_Datapath_NEW, configuration=Debug, clean_build=false}
 timestamp=[2026-04-02 09:24:57], mode=BUILD, duration=0:00:00.393, duration_ms=393, data={name=Software_Controlled_Datapath_NEW, configuration=Debug, clean_build=false}
 timestamp=[2026-04-02 09:25:33], mode=BUILD, duration=0:00:01.460, duration_ms=1460, data={name=Software_Controlled_Datapath_NEW, configuration=Debug, clean_build=false}
+timestamp=[2026-04-02 14:27:10], mode=WORKBENCH_START, duration=0:00:57.661, duration_ms=57661, data={}
+timestamp=[2026-04-02 14:27:10], mode=WORKBENCH_UI_INIT, duration=0:00:00.188, duration_ms=188, data={editors_count=3, platform_editors_count=0, projects_count=12, platform_projects_count=2, active_platform_editor=false, projects=RemoteSystemsTempFiles,Software_Controlled_Datapath_NEW,Software_Controlled_Datapath_NEW_system,Software_Controlled_Datapath_V2,Software_Controlled_Datapath_Vitis,Software_Controlled_Datapath_Vitis_V2,Software_Controlled_Datapath_Vitis_V2_system,Software_Controlled_Datapath_Vitis_V3,Software_Controlled_Datapath_Vitis_V4,Software_Controlled_Datapath_Vitis_V4_system,Software_Controlled_Datapath_Vitis_system,Software_Controlled_Datapath_wrapper}
+timestamp=[2026-04-02 14:27:10], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.144, duration_ms=144, data={}
+timestamp=[2026-04-02 14:36:04], mode=BUILD, duration=0:00:04.426, duration_ms=4426, data={name=Software_Controlled_Datapath_NEW, configuration=Debug, clean_build=false}
+timestamp=[2026-04-02 14:37:47], mode=BUILD, duration=0:00:01.437, duration_ms=1437, data={name=Software_Controlled_Datapath_NEW, configuration=Debug, clean_build=false}
+timestamp=[2026-04-02 14:40:30], mode=BUILD, duration=0:00:01.449, duration_ms=1449, data={name=Software_Controlled_Datapath_NEW, configuration=Debug, clean_build=false}
+timestamp=[2026-04-02 14:41:23], mode=BUILD, duration=0:00:01.446, duration_ms=1446, data={name=Software_Controlled_Datapath_NEW, configuration=Debug, clean_build=false}
+timestamp=[2026-04-02 14:44:57], mode=BUILD, duration=0:00:01.509, duration_ms=1509, data={name=Software_Controlled_Datapath_NEW, configuration=Debug, clean_build=false}
+timestamp=[2026-04-02 14:46:34], mode=BUILD, duration=0:00:01.551, duration_ms=1551, data={name=Software_Controlled_Datapath_NEW, configuration=Debug, clean_build=false}
+timestamp=[2026-04-04 13:00:55], mode=WORKBENCH_START, duration=0:00:38.849, duration_ms=38849, data={}
+timestamp=[2026-04-04 13:00:55], mode=WORKBENCH_UI_INIT, duration=0:00:00.193, duration_ms=193, data={editors_count=3, platform_editors_count=0, projects_count=12, platform_projects_count=2, active_platform_editor=false, projects=RemoteSystemsTempFiles,Software_Controlled_Datapath_NEW,Software_Controlled_Datapath_NEW_system,Software_Controlled_Datapath_V2,Software_Controlled_Datapath_Vitis,Software_Controlled_Datapath_Vitis_V2,Software_Controlled_Datapath_Vitis_V2_system,Software_Controlled_Datapath_Vitis_V3,Software_Controlled_Datapath_Vitis_V4,Software_Controlled_Datapath_Vitis_V4_system,Software_Controlled_Datapath_Vitis_system,Software_Controlled_Datapath_wrapper}
+timestamp=[2026-04-04 13:00:56], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.167, duration_ms=167, data={}
+timestamp=[2026-04-04 13:43:04], mode=BUILD, duration=0:00:02.006, duration_ms=2006, data={name=Software_Controlled_Datapath_NEW, configuration=Debug, clean_build=true}
+timestamp=[2026-04-04 13:43:07], mode=BUILD, duration=0:00:03.126, duration_ms=3126, data={name=Software_Controlled_Datapath_NEW, configuration=Debug, clean_build=false}
+timestamp=[2026-04-04 13:44:43], mode=BUILD, duration=0:00:04.667, duration_ms=4667, data={name=Software_Controlled_Datapath_NEW, configuration=Debug, clean_build=false}
+timestamp=[2026-04-04 13:46:23], mode=BUILD, duration=0:00:01.399, duration_ms=1399, data={name=Software_Controlled_Datapath_NEW, configuration=Debug, clean_build=false}
+timestamp=[2026-04-04 14:15:31], mode=BUILD, duration=0:00:01.399, duration_ms=1399, data={name=Software_Controlled_Datapath_NEW, configuration=Debug, clean_build=false}
+timestamp=[2026-04-04 14:27:26], mode=BUILD, duration=0:00:01.456, duration_ms=1456, data={name=Software_Controlled_Datapath_NEW, configuration=Debug, clean_build=false}
+timestamp=[2026-04-04 14:41:32], mode=BUILD, duration=0:00:00.419, duration_ms=419, data={name=Software_Controlled_Datapath_NEW, configuration=Debug, clean_build=false}
+timestamp=[2026-04-04 14:43:23], mode=BUILD, duration=0:00:01.414, duration_ms=1414, data={name=Software_Controlled_Datapath_NEW, configuration=Debug, clean_build=false}
+timestamp=[2026-04-04 14:57:26], mode=BUILD, duration=0:00:01.524, duration_ms=1524, data={name=Software_Controlled_Datapath_NEW, configuration=Debug, clean_build=false}
