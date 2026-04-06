@@ -1,0 +1,21 @@
+15:48:34 **** Incremental Build of configuration Debug for project Software_Controlled_Datapath_NEW ****
+make all 
+'Building file: ../src/Software_Controlled_Datapath.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Software_Controlled_Datapath.o" -IC:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_V2/export/Software_Controlled_Datapath_V2/sw/Software_Controlled_Datapath_V2/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Software_Controlled_Datapath.d" -MT"src/Software_Controlled_Datapath.o" -o "src/Software_Controlled_Datapath.o" "../src/Software_Controlled_Datapath.c"
+'Finished building: ../src/Software_Controlled_Datapath.c'
+' '
+'Building target: Software_Controlled_Datapath_NEW.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/Jason.Wyche/source/repos/ece383_wksp/Software_Controlled_Datapath/Software_Controlled_Datapath_V2/export/Software_Controlled_Datapath_V2/sw/Software_Controlled_Datapath_V2/standalone_microblaze_0/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Software_Controlled_Datapath_NEW.elf"  ./src/Software_Controlled_Datapath.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Software_Controlled_Datapath_NEW.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Software_Controlled_Datapath_NEW.elf  |tee "Software_Controlled_Datapath_NEW.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  12812	     24	  53612	  66448	  10390	Software_Controlled_Datapath_NEW.elf
+'Finished building: Software_Controlled_Datapath_NEW.elf.size'
+' '
+
+15:48:35 Build Finished (took 1s.477ms)
+

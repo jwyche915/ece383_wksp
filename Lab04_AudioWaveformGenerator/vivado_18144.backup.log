@@ -1,0 +1,35 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Sat Apr  4 17:02:51 2026
+# Process ID         : 18144
+# Current directory  : C:/Users/Jason.Wyche/source/repos/ece383_wksp/Lab04_AudioWaveformGenerator
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent18908 C:\Users\Jason.Wyche\source\repos\ece383_wksp\Lab04_AudioWaveformGenerator\Lab4.xpr
+# Log file           : C:/Users/Jason.Wyche/source/repos/ece383_wksp/Lab04_AudioWaveformGenerator/vivado.log
+# Journal file       : C:/Users/Jason.Wyche/source/repos/ece383_wksp/Lab04_AudioWaveformGenerator\vivado.jou
+# Running On         : WycheSurfacePro
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 22631
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i5-1245U
+# CPU Frequency      : 2496 MHz
+# CPU Physical cores : 10
+# CPU Logical cores  : 12
+# Host memory        : 16995 MB
+# Swap memory        : 2550 MB
+# Total Virtual      : 19545 MB
+# Available Virtual  : 8113 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Jason.Wyche/source/repos/ece383_wksp/Lab04_AudioWaveformGenerator/Lab4.xpr
+INFO: [Project 1-313] Project file moved from 'C:/383/ece383-lab4' since last save.
+WARNING: [filemgmt 56-2] Board Part Repository Path: Could not find the directory 'C:/Users/Jason.Wyche/source/repos/Users/jimmi/AppData/Roaming/Xilinx/Vivado/2024.2/xhub/board_store/xilinx_board_store', nor could it be found using path 'C:/Users/jimmi/AppData/Roaming/Xilinx/Vivado/2024.2/xhub/board_store/xilinx_board_store'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+open_project: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1134.391 ; gain = 90.609
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Apr  5 14:05:33 2026...
