@@ -1,0 +1,343 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Mon Apr  6 07:49:36 2026
+# Process ID         : 1184
+# Current directory  : C:/Users/Jason.Wyche/source/repos/ece383_wksp/Lab04_AudioWaveformGenerator
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent10968 C:\Users\Jason.Wyche\source\repos\ece383_wksp\Lab04_AudioWaveformGenerator\Lab4.xpr
+# Log file           : C:/Users/Jason.Wyche/source/repos/ece383_wksp/Lab04_AudioWaveformGenerator/vivado.log
+# Journal file       : C:/Users/Jason.Wyche/source/repos/ece383_wksp/Lab04_AudioWaveformGenerator\vivado.jou
+# Running On         : WycheSurfacePro
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 22631
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i5-1245U
+# CPU Frequency      : 2496 MHz
+# CPU Physical cores : 10
+# CPU Logical cores  : 12
+# Host memory        : 16995 MB
+# Swap memory        : 2550 MB
+# Total Virtual      : 19545 MB
+# Available Virtual  : 11193 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Jason.Wyche/source/repos/ece383_wksp/Lab04_AudioWaveformGenerator/Lab4.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2024.2
+  **** Build date : Oct 29 2024 at 10:25:41
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2024.2.0
+  ****** Build date   : Oct 30 2024-12:19:07
+    **** Build number : 2024.2.1730312347
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+      ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:16 . Memory (MB): peak = 1313.262 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210276BA0139B
+set_property PROGRAM.FILE {C:/Users/Jason.Wyche/source/repos/ece383_wksp/Lab04_AudioWaveformGenerator/Lab4.runs/impl_1/Lab4.bit} [get_hw_devices xc7a200t_0]
+current_hw_device [get_hw_devices xc7a200t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {C:/Users/Jason.Wyche/source/repos/ece383_wksp/Lab04_AudioWaveformGenerator/Lab4.runs/impl_1/Lab4.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1313.262 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jason.Wyche\source\repos\ece383_wksp\Lab04_AudioWaveformGenerator\Lab4.srcs\sources_1\imports\ece383-lab4\Lab4_dp.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jason.Wyche\source\repos\ece383_wksp\Lab04_AudioWaveformGenerator\Lab4.srcs\sources_1\imports\ece383-lab4\Interpolate.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jason.Wyche\source\repos\ece383_wksp\Lab04_AudioWaveformGenerator\Lab4.srcs\sources_1\imports\ece383-lab4\Lab4_dp.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jason.Wyche\source\repos\ece383_wksp\Lab04_AudioWaveformGenerator\Lab4.srcs\sources_1\imports\ece383-lab4\Lab4_dp.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jason.Wyche\source\repos\ece383_wksp\Lab04_AudioWaveformGenerator\Lab4.srcs\sources_1\imports\ece383-lab4\Lab4_dp.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jason.Wyche\source\repos\ece383_wksp\Lab04_AudioWaveformGenerator\Lab4.srcs\sources_1\imports\ece383-lab4\Interpolate.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jason.Wyche\source\repos\ece383_wksp\Lab04_AudioWaveformGenerator\Lab4.srcs\sources_1\imports\ece383-lab4\Lab4_dp.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jason.Wyche\source\repos\ece383_wksp\Lab04_AudioWaveformGenerator\Lab4.srcs\sources_1\imports\ece383-lab4\Lab4_dp.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jason.Wyche\source\repos\ece383_wksp\Lab04_AudioWaveformGenerator\Lab4.srcs\sources_1\imports\ece383-lab4\Lab4.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jason.Wyche\source\repos\ece383_wksp\Lab04_AudioWaveformGenerator\Lab4.srcs\sources_1\imports\ece383-lab4\Lab4_dp.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jason.Wyche\source\repos\ece383_wksp\Lab04_AudioWaveformGenerator\Lab4.srcs\sources_1\imports\ece383-lab4\Interpolate.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jason.Wyche\source\repos\ece383_wksp\Lab04_AudioWaveformGenerator\Lab4.srcs\sources_1\imports\ece383-lab4\Lab4_dp.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jason.Wyche\source\repos\ece383_wksp\Lab04_AudioWaveformGenerator\Lab4.srcs\sources_1\imports\ece383-lab4\Lab4_dp.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jason.Wyche\source\repos\ece383_wksp\Lab04_AudioWaveformGenerator\Lab4.srcs\sources_1\imports\ece383-lab4\Lab4.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jason.Wyche\source\repos\ece383_wksp\Lab04_AudioWaveformGenerator\Lab4.srcs\sources_1\imports\ece383-lab4\Lab4_dp.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jason.Wyche\source\repos\ece383_wksp\Lab04_AudioWaveformGenerator\Lab4.srcs\sources_1\imports\ece383-lab4\Interpolate.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jason.Wyche\source\repos\ece383_wksp\Lab04_AudioWaveformGenerator\Lab4.srcs\sources_1\imports\ece383-lab4\Interpolate.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jason.Wyche\source\repos\ece383_wksp\Lab04_AudioWaveformGenerator\Lab4.srcs\sources_1\imports\ece383-lab4\Interpolate.vhd:]
+current_fileset -simset [ get_filesets Interpolate ]
+set_property -name {xsim.simulate.runtime} -value {100ns} -objects [get_filesets Interpolate]
+launch_simulation -simset [get_filesets Interpolate ]
+Command: launch_simulation  -simset Interpolate
+INFO: [Vivado 12-12493] Simulation top is 'Interpolate_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/Lab04_AudioWaveformGenerator/Lab4.sim/Interpolate/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'Interpolate'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2024.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/Jason.Wyche/source/repos/ece383_wksp/Lab04_AudioWaveformGenerator/Lab4.sim/Interpolate/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'Interpolate_tb' in fileset 'Interpolate'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'Interpolate'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/Lab04_AudioWaveformGenerator/Lab4.sim/Interpolate/behav/xsim'
+"xvlog --incr --relax -prj Interpolate_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jason.Wyche/source/repos/ece383_wksp/Lab04_AudioWaveformGenerator/Lab4.srcs/sources_1/imports/lab2_code_for_cadets/audio_init.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module audio_init
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jason.Wyche/source/repos/ece383_wksp/Lab04_AudioWaveformGenerator/Lab4.sim/Interpolate/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl --incr --relax -prj Interpolate_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Jason.Wyche/source/repos/ece383_wksp/Lab04_AudioWaveformGenerator/Lab4.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'clk_wiz_0_clk_wiz'
+INFO: [VRFC 10-3107] analyzing entity 'clk_wiz_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Jason.Wyche/source/repos/ece383_wksp/Lab04_AudioWaveformGenerator/Lab4.srcs/sources_1/imports/ece383-lab4/Amplify.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Amplify'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Jason.Wyche/source/repos/ece383_wksp/Lab04_AudioWaveformGenerator/Lab4.srcs/sources_1/imports/ece383-lab4/BaseAndNextReg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'BaseAndNextReg'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Jason.Wyche/source/repos/ece383_wksp/Lab04_AudioWaveformGenerator/Lab4.srcs/sources_1/imports/ece383-lab4/IndexOffsetReg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'IndexOffsetReg'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Jason.Wyche/source/repos/ece383_wksp/Lab04_AudioWaveformGenerator/Lab4.srcs/sources_1/imports/ece383-lab4/Interpolate.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Interpolate'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Jason.Wyche/source/repos/ece383_wksp/Lab04_AudioWaveformGenerator/Lab4.srcs/sources_1/imports/ece383-lab4/Lab4_cu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Lab4_cu'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Jason.Wyche/source/repos/ece383_wksp/Lab04_AudioWaveformGenerator/Lab4.srcs/sources_1/imports/ece383-lab4/Lab4_dp.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Lab4_dp'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Jason.Wyche/source/repos/ece383_wksp/Lab04_AudioWaveformGenerator/Lab4.srcs/sources_1/imports/ece383-lab4/LookupTable.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'LookupTable'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Jason.Wyche/source/repos/ece383_wksp/Lab04_AudioWaveformGenerator/Lab4.srcs/sources_1/imports/ece383-lab4/ResultReg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ResultReg'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Jason.Wyche/source/repos/ece383_wksp/Lab04_AudioWaveformGenerator/Lab4.srcs/sources_1/imports/ece383-lab4/Lab4.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Lab4'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Jason.Wyche/source/repos/ece383_wksp/Lab04_AudioWaveformGenerator/Lab4.srcs/sources_1/imports/lab2_code_for_cadets/Audio_Codec_Wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Audio_Codec_Wrapper'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Jason.Wyche/source/repos/ece383_wksp/Lab04_AudioWaveformGenerator/Lab4.srcs/sources_1/imports/lab2_code_for_cadets/i2s_ctl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'i2s_ctl'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Jason.Wyche/source/repos/ece383_wksp/Lab04_AudioWaveformGenerator/Lab4.srcs/sources_1/imports/lab2_code_for_cadets/TWICtl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'TWICtl'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Jason.Wyche/source/repos/ece383_wksp/Lab04_AudioWaveformGenerator/Lab4.srcs/sim_1/new/Interpolate_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Interpolate_tb'
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 1313.262 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '9' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/Lab04_AudioWaveformGenerator/Lab4.sim/Interpolate/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Interpolate_tb_behav xil_defaultlib.Interpolate_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Interpolate_tb_behav xil_defaultlib.Interpolate_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling module xil_defaultlib.glbl
+Compiling architecture interpolate_arch of entity xil_defaultlib.Interpolate [\Interpolate(whole_bits=8,frac_b...]
+Compiling architecture behavior of entity xil_defaultlib.interpolate_tb
+Built simulation snapshot Interpolate_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 1313.262 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '10' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/Lab04_AudioWaveformGenerator/Lab4.sim/Interpolate/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Interpolate_tb_behav -key {Behavioral:Interpolate:Functional:Interpolate_tb} -tclbatch {Interpolate_tb.tcl} -view {C:/Users/Jason.Wyche/source/repos/ece383_wksp/Lab04_AudioWaveformGenerator/Interpolate_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config C:/Users/Jason.Wyche/source/repos/ece383_wksp/Lab04_AudioWaveformGenerator/Interpolate_tb_behav.wcfg
+source Interpolate_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100ns
+Note: Offset 0.0: base = -200: next = 200: actual = -200
+Time: 10 ns  Iteration: 0  Process: /Interpolate_tb/stim_proc  File: C:/Users/Jason.Wyche/source/repos/ece383_wksp/Lab04_AudioWaveformGenerator/Lab4.srcs/sim_1/new/Interpolate_tb.vhd
+Note: Offset ~1.0: base = -200: next = 200: actual = 198
+Time: 20 ns  Iteration: 0  Process: /Interpolate_tb/stim_proc  File: C:/Users/Jason.Wyche/source/repos/ece383_wksp/Lab04_AudioWaveformGenerator/Lab4.srcs/sim_1/new/Interpolate_tb.vhd
+Note: Offset 0.5: base = -200: next = 200: actual = 0
+Time: 30 ns  Iteration: 0  Process: /Interpolate_tb/stim_proc  File: C:/Users/Jason.Wyche/source/repos/ece383_wksp/Lab04_AudioWaveformGenerator/Lab4.srcs/sim_1/new/Interpolate_tb.vhd
+Note: Offset 0.25: base = -200: next = 200: actual = -100
+Time: 40 ns  Iteration: 0  Process: /Interpolate_tb/stim_proc  File: C:/Users/Jason.Wyche/source/repos/ece383_wksp/Lab04_AudioWaveformGenerator/Lab4.srcs/sim_1/new/Interpolate_tb.vhd
+Note: Offset 0.75: base = -200: next = 200: actual = 100
+Time: 50 ns  Iteration: 0  Process: /Interpolate_tb/stim_proc  File: C:/Users/Jason.Wyche/source/repos/ece383_wksp/Lab04_AudioWaveformGenerator/Lab4.srcs/sim_1/new/Interpolate_tb.vhd
+Note: Offset 0.25: base = -2495: next = -2197: actual = -2421
+Time: 60 ns  Iteration: 0  Process: /Interpolate_tb/stim_proc  File: C:/Users/Jason.Wyche/source/repos/ece383_wksp/Lab04_AudioWaveformGenerator/Lab4.srcs/sim_1/new/Interpolate_tb.vhd
+Note: All Q8.8 signed interpolation tests passed!
+Time: 60 ns  Iteration: 0  Process: /Interpolate_tb/stim_proc  File: C:/Users/Jason.Wyche/source/repos/ece383_wksp/Lab04_AudioWaveformGenerator/Lab4.srcs/sim_1/new/Interpolate_tb.vhd
+xsim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1313.262 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Interpolate_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:29 . Memory (MB): peak = 1313.262 ; gain = 0.000
+run 1 ms
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation -simset [get_filesets Interpolate ]
+Command: launch_simulation  -simset Interpolate
+INFO: [Vivado 12-12493] Simulation top is 'Interpolate_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/Lab04_AudioWaveformGenerator/Lab4.sim/Interpolate/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'Interpolate'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2024.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/Jason.Wyche/source/repos/ece383_wksp/Lab04_AudioWaveformGenerator/Lab4.sim/Interpolate/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'Interpolate_tb' in fileset 'Interpolate'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'Interpolate'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/Lab04_AudioWaveformGenerator/Lab4.sim/Interpolate/behav/xsim'
+"xvlog --incr --relax -prj Interpolate_tb_vlog.prj"
+"xvhdl --incr --relax -prj Interpolate_tb_vhdl.prj"
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1389.492 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '6' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/Lab04_AudioWaveformGenerator/Lab4.sim/Interpolate/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Interpolate_tb_behav xil_defaultlib.Interpolate_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Interpolate_tb_behav xil_defaultlib.Interpolate_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Jason.Wyche/source/repos/ece383_wksp/Lab04_AudioWaveformGenerator/Lab4.sim/Interpolate/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Interpolate_tb_behav -key {Behavioral:Interpolate:Functional:Interpolate_tb} -tclbatch {Interpolate_tb.tcl} -view {C:/Users/Jason.Wyche/source/repos/ece383_wksp/Lab04_AudioWaveformGenerator/Interpolate_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config C:/Users/Jason.Wyche/source/repos/ece383_wksp/Lab04_AudioWaveformGenerator/Interpolate_tb_behav.wcfg
+source Interpolate_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100ns
+Note: Offset 0.0: base = -200: next = 200: actual = -200
+Time: 10 ns  Iteration: 0  Process: /Interpolate_tb/stim_proc  File: C:/Users/Jason.Wyche/source/repos/ece383_wksp/Lab04_AudioWaveformGenerator/Lab4.srcs/sim_1/new/Interpolate_tb.vhd
+Note: Offset ~1.0: base = -200: next = 200: actual = 198
+Time: 20 ns  Iteration: 0  Process: /Interpolate_tb/stim_proc  File: C:/Users/Jason.Wyche/source/repos/ece383_wksp/Lab04_AudioWaveformGenerator/Lab4.srcs/sim_1/new/Interpolate_tb.vhd
+Note: Offset 0.5: base = -200: next = 200: actual = 0
+Time: 30 ns  Iteration: 0  Process: /Interpolate_tb/stim_proc  File: C:/Users/Jason.Wyche/source/repos/ece383_wksp/Lab04_AudioWaveformGenerator/Lab4.srcs/sim_1/new/Interpolate_tb.vhd
+Note: Offset 0.25: base = -200: next = 200: actual = -100
+Time: 40 ns  Iteration: 0  Process: /Interpolate_tb/stim_proc  File: C:/Users/Jason.Wyche/source/repos/ece383_wksp/Lab04_AudioWaveformGenerator/Lab4.srcs/sim_1/new/Interpolate_tb.vhd
+Note: Offset 0.75: base = -200: next = 200: actual = 100
+Time: 50 ns  Iteration: 0  Process: /Interpolate_tb/stim_proc  File: C:/Users/Jason.Wyche/source/repos/ece383_wksp/Lab04_AudioWaveformGenerator/Lab4.srcs/sim_1/new/Interpolate_tb.vhd
+Note: Offset 0.25: base = -2495: next = -2197: actual = -2421
+Time: 60 ns  Iteration: 0  Process: /Interpolate_tb/stim_proc  File: C:/Users/Jason.Wyche/source/repos/ece383_wksp/Lab04_AudioWaveformGenerator/Lab4.srcs/sim_1/new/Interpolate_tb.vhd
+Note: All Q8.8 signed interpolation tests passed!
+Time: 60 ns  Iteration: 0  Process: /Interpolate_tb/stim_proc  File: C:/Users/Jason.Wyche/source/repos/ece383_wksp/Lab04_AudioWaveformGenerator/Lab4.srcs/sim_1/new/Interpolate_tb.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Interpolate_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:15 . Memory (MB): peak = 1392.977 ; gain = 3.484
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/Jason.Wyche/source/repos/ece383_wksp/Lab04_AudioWaveformGenerator/Lab4.srcs/utils_1/imports/synth_1/Lab4.dcp with file C:/Users/Jason.Wyche/source/repos/ece383_wksp/Lab04_AudioWaveformGenerator/Lab4.runs/synth_1/Lab4.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Mon Apr  6 09:08:44 2026] Launched synth_1...
+Run output will be captured here: C:/Users/Jason.Wyche/source/repos/ece383_wksp/Lab04_AudioWaveformGenerator/Lab4.runs/synth_1/runme.log
+[Mon Apr  6 09:08:44 2026] Launched impl_1...
+Run output will be captured here: C:/Users/Jason.Wyche/source/repos/ece383_wksp/Lab04_AudioWaveformGenerator/Lab4.runs/impl_1/runme.log
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jason.Wyche\source\repos\ece383_wksp\Lab04_AudioWaveformGenerator\Lab4.srcs\sources_1\imports\ece383-lab4\Lab4.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jason.Wyche\source\repos\ece383_wksp\Lab04_AudioWaveformGenerator\Lab4.srcs\sources_1\imports\ece383-lab4\Lab4_dp.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jason.Wyche\source\repos\ece383_wksp\Lab04_AudioWaveformGenerator\Lab4.srcs\sources_1\imports\ece383-lab4\Interpolate.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jason.Wyche\source\repos\ece383_wksp\Lab04_AudioWaveformGenerator\Lab4.srcs\sim_1\new\Interpolate_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jason.Wyche\source\repos\ece383_wksp\Lab04_AudioWaveformGenerator\Lab4.srcs\sources_1\imports\ece383-lab4\Lab4_dp.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jason.Wyche\source\repos\ece383_wksp\Lab04_AudioWaveformGenerator\Lab4.srcs\sources_1\imports\ece383-lab4\Lab4_dp.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jason.Wyche\source\repos\ece383_wksp\Lab04_AudioWaveformGenerator\Lab4.srcs\sources_1\imports\ece383-lab4\Lab4.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jason.Wyche\source\repos\ece383_wksp\Lab04_AudioWaveformGenerator\Lab4.srcs\sources_1\imports\ece383-lab4\Lab4_dp.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jason.Wyche\source\repos\ece383_wksp\Lab04_AudioWaveformGenerator\Lab4.srcs\sources_1\imports\ece383-lab4\Interpolate.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jason.Wyche\source\repos\ece383_wksp\Lab04_AudioWaveformGenerator\Lab4.srcs\sim_1\new\Interpolate_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jason.Wyche\source\repos\ece383_wksp\Lab04_AudioWaveformGenerator\Lab4.srcs\sources_1\imports\ece383-lab4\Lab4.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jason.Wyche\source\repos\ece383_wksp\Lab04_AudioWaveformGenerator\Lab4.srcs\sources_1\imports\ece383-lab4\Lab4.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2024.2
+  **** Build date : Oct 29 2024 at 10:25:41
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2024.2.0
+  ****** Build date   : Oct 30 2024-12:19:07
+    **** Build number : 2024.2.1730312347
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+      ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:16 . Memory (MB): peak = 1571.520 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210276BA0139B
+set_property PROGRAM.FILE {C:/Users/Jason.Wyche/source/repos/ece383_wksp/Lab04_AudioWaveformGenerator/Lab4.runs/impl_1/Lab4.bit} [get_hw_devices xc7a200t_0]
+current_hw_device [get_hw_devices xc7a200t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {C:/Users/Jason.Wyche/source/repos/ece383_wksp/Lab04_AudioWaveformGenerator/Lab4.runs/impl_1/Lab4.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1571.520 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210276BA0139B
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Apr  6 09:36:59 2026...

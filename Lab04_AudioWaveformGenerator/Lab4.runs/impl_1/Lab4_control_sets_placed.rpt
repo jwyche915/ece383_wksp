@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date         : Sun Apr  5 19:43:08 2026
+| Date         : Wed Apr  8 08:22:19 2026
 | Host         : WycheSurfacePro running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file Lab4_control_sets_placed.rpt
 | Design       : Lab4
@@ -73,8 +73,8 @@ Table of Contents
 +----------------------------------------------------+-----------------------------------------------------------------------+-----------------------------------------------------------+------------------+----------------+--------------+
 |                    Clock Signal                    |                             Enable Signal                             |                      Set/Reset Signal                     | Slice Load Count | Bel Load Count | Bels / Slice |
 +----------------------------------------------------+-----------------------------------------------------------------------+-----------------------------------------------------------+------------------+----------------+--------------+
-|  CU/next_state_reg[0]_i_2_n_0                      |                                                                       | CU/next_state1                                            |                1 |              1 |         1.00 |
 |  CU/next_state_reg[2]_i_2_n_0                      |                                                                       | CU/next_state_reg[2]_i_3_n_0                              |                1 |              1 |         1.00 |
+|  CU/next_state_reg[0]_i_2_n_0                      |                                                                       | CU/next_state1                                            |                1 |              1 |         1.00 |
 |  CU/next_state_reg[1]_i_2_n_0                      |                                                                       | CU/next_state_reg[1]_i_3_n_0                              |                1 |              1 |         1.00 |
 |  Audio_Codec/audiocodec_master_clock/inst/clk_out2 | Audio_Codec/initialize_audio/twi_controller/FSM_gray_state[3]_i_1_n_0 |                                                           |                3 |              4 |         1.33 |
 |  Audio_Codec/audiocodec_master_clock/inst/clk_out2 | Audio_Codec/initialize_audio/twi_controller/E[0]                      | Audio_Codec/audio_inout/SR[0]                             |                1 |              4 |         4.00 |
@@ -86,10 +86,10 @@ Table of Contents
 |  Audio_Codec/audiocodec_master_clock/inst/clk_out2 | Audio_Codec/initialize_audio/twi_controller/sclCnt[6]_i_2_n_0         | Audio_Codec/initialize_audio/twi_controller/sclCnt0_0     |                2 |              7 |         3.50 |
 |  Audio_Codec/audiocodec_master_clock/inst/clk_out2 | Audio_Codec/initialize_audio/twi_controller/dataByte[7]_i_1_n_0       |                                                           |                2 |              8 |         4.00 |
 |  Audio_Codec/audiocodec_master_clock/inst/clk_out2 | reset_n_IBUF                                                          |                                                           |                4 |             10 |         2.50 |
-|  clk_IBUF_BUFG                                     | CU/cw[3]                                                              |                                                           |                4 |             16 |         4.00 |
 |  clk_IBUF_BUFG                                     | CU/cw[0]                                                              |                                                           |                4 |             16 |         4.00 |
 |  clk_IBUF_BUFG                                     | CU/cw[1]                                                              |                                                           |                5 |             16 |         3.20 |
 |  clk_IBUF_BUFG                                     | CU/cw[2]                                                              |                                                           |                4 |             16 |         4.00 |
+|  clk_IBUF_BUFG                                     | CU/cw[3]                                                              |                                                           |                4 |             16 |         4.00 |
 |  clk_IBUF_BUFG                                     | Audio_Codec/audio_inout/Data_Out_int[31]_i_1_n_0                      |                                                           |                7 |             17 |         2.43 |
 |  Audio_Codec/audiocodec_master_clock/inst/clk_out2 | Audio_Codec/initialize_audio/initWord[30]_i_1_n_0                     |                                                           |                6 |             18 |         3.00 |
 |  Audio_Codec/audiocodec_master_clock/inst/clk_out2 |                                                                       |                                                           |               13 |             25 |         1.92 |

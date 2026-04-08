@@ -1,7 +1,7 @@
-Running: xsim.dir/Interpolate_tb_behav/xsimk.exe -simmode gui -wdb Interpolate_tb_behav.wdb -simrunnum 0 -socket 49233
+Running: xsim.dir/Interpolate_tb_behav/xsimk.exe -simmode gui -wdb Interpolate_tb_behav.wdb -simrunnum 0 -socket 60252
 Design successfully loaded
-Design Loading Memory Usage: 27052 KB (Peak: 27052 KB)
-Design Loading CPU Usage: 1061 ms
+Design Loading Memory Usage: 27360 KB (Peak: 27360 KB)
+Design Loading CPU Usage: 421 ms
 Simulation completed
-Simulation Memory Usage: 28644 KB (Peak: 28644 KB)
-Simulation CPU Usage: 1155 ms
+Simulation Memory Usage: 28104 KB (Peak: 28104 KB)
+Simulation CPU Usage: 437 ms

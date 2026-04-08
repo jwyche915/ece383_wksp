@@ -64,16 +64,16 @@ IKI_DLLESPEC extern void execute_8(char*, char *);
 IKI_DLLESPEC extern void execute_9(char*, char *);
 IKI_DLLESPEC extern void execute_10(char*, char *);
 IKI_DLLESPEC extern void execute_11(char*, char *);
-IKI_DLLESPEC extern void execute_51(char*, char *);
+IKI_DLLESPEC extern void execute_48(char*, char *);
+IKI_DLLESPEC extern void execute_42(char*, char *);
+IKI_DLLESPEC extern void execute_43(char*, char *);
+IKI_DLLESPEC extern void execute_44(char*, char *);
 IKI_DLLESPEC extern void execute_45(char*, char *);
 IKI_DLLESPEC extern void execute_46(char*, char *);
 IKI_DLLESPEC extern void execute_47(char*, char *);
-IKI_DLLESPEC extern void execute_48(char*, char *);
-IKI_DLLESPEC extern void execute_49(char*, char *);
-IKI_DLLESPEC extern void execute_50(char*, char *);
 IKI_DLLESPEC extern void vlog_transfunc_eventcallback(char*, char*, unsigned, unsigned, unsigned, char *);
 IKI_DLLESPEC extern void vhdl_transfunc_eventcallback(char*, char*, unsigned, unsigned, unsigned, char *);
-funcp funcTab[19] = {(funcp)execute_2, (funcp)execute_3, (funcp)execute_4, (funcp)execute_5, (funcp)execute_6, (funcp)execute_7, (funcp)execute_8, (funcp)execute_9, (funcp)execute_10, (funcp)execute_11, (funcp)execute_51, (funcp)execute_45, (funcp)execute_46, (funcp)execute_47, (funcp)execute_48, (funcp)execute_49, (funcp)execute_50, (funcp)vlog_transfunc_eventcallback, (funcp)vhdl_transfunc_eventcallback};
+funcp funcTab[19] = {(funcp)execute_2, (funcp)execute_3, (funcp)execute_4, (funcp)execute_5, (funcp)execute_6, (funcp)execute_7, (funcp)execute_8, (funcp)execute_9, (funcp)execute_10, (funcp)execute_11, (funcp)execute_48, (funcp)execute_42, (funcp)execute_43, (funcp)execute_44, (funcp)execute_45, (funcp)execute_46, (funcp)execute_47, (funcp)vlog_transfunc_eventcallback, (funcp)vhdl_transfunc_eventcallback};
 const int NumRelocateId= 19;
 
 void relocate(char *dp)

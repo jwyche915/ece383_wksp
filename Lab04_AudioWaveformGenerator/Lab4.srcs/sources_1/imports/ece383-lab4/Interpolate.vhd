@@ -12,8 +12,8 @@ use IEEE.NUMERIC_STD.ALL;
 
 entity Interpolate is
     generic (
-        whole_bits : natural := 8;
-        frac_bits : natural := 8;
+        whole_bits : natural := 4;
+        frac_bits : natural := 4;
         data_size : natural := 16);
     port ( offset : in STD_LOGIC_VECTOR (frac_bits-1 downto 0);
            base_value : in STD_LOGIC_VECTOR (data_size-1 downto 0);
@@ -35,7 +35,7 @@ begin
     delta_x_offset <= (signed_next - signed_base) * signed_offset;
     
     -- TODO: Compute the base + delta*offset to get the interpolated value; -- Q16.0 + [Q17.8 sliced to Q16.0]
-    base_plus_delta_x_offset <= signed_base + delta_x_offset((whole_bits+data_size)-1 downto frac_bits);
+    base_plus_delta_x_offset <= signed_base + delta_x_offset((frac_bits+data_size)-1 downto frac_bits);
   
     interpolated_out <= std_logic_vector(base_plus_delta_x_offset);
     

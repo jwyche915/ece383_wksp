@@ -3,8 +3,8 @@
 # SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Sun Apr  5 19:42:41 2026
-# Process ID         : 7220
+# Start of session at: Wed Apr  8 08:21:48 2026
+# Process ID         : 23240
 # Current directory  : C:/Users/Jason.Wyche/source/repos/ece383_wksp/Lab04_AudioWaveformGenerator/Lab4.runs/impl_1
 # Command line       : vivado.exe -log Lab4.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Lab4.tcl -notrace
 # Log file           : C:/Users/Jason.Wyche/source/repos/ece383_wksp/Lab04_AudioWaveformGenerator/Lab4.runs/impl_1/Lab4.vdi
@@ -19,6 +19,6 @@
 # Host memory        : 16995 MB
 # Swap memory        : 2550 MB
 # Total Virtual      : 19545 MB
-# Available Virtual  : 7586 MB
+# Available Virtual  : 5888 MB
 #-----------------------------------------------------------
 source Lab4.tcl -notrace
